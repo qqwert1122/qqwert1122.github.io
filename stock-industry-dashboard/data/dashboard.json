@@ -1,7 +1,7 @@
 {
   "title": "산업별 지표 대시보드",
-  "generated_at": "2026-07-07T13:34:15+09:00",
-  "generated_label": "2026-07-07 13:34 KST",
+  "generated_at": "2026-07-07T13:49:25+09:00",
+  "generated_label": "2026-07-07 13:49 KST",
   "timezone": "Asia/Seoul",
   "industries": [
     "반도체",
@@ -128,8 +128,8 @@
     },
     {
       "name": "KOSIS",
-      "status": "ok",
-      "message": "2/3개 지표 자동 수집"
+      "status": "partial",
+      "message": "0/3개 지표 자동 수집"
     },
     {
       "name": "한국 수출",
@@ -2131,8 +2131,8 @@
       "id": "2fa967d70ff4",
       "industry": "은행/금융",
       "industry_en": "Banks & Financials",
-      "group": "스프레드",
-      "group_en": "Spreads",
+      "group": "신용 스프레드",
+      "group_en": "Credit Spreads",
       "name": "미국 BAA 회사채-10년 국채 스프레드",
       "name_en": "US BAA Corporate-10Y Treasury Spread",
       "meaning": "신용 위험과 자금 조달 여건이 얼마나 빡빡한지 확인합니다.",
@@ -9421,30 +9421,30 @@
       "period_label": "2026.04.24 - 2026.07.06"
     },
     {
-      "id": "a8966d5df783",
+      "id": "73605cb1caf0",
       "industry": "반도체",
       "industry_en": "Semiconductors",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "삼성전자 주가",
-      "name_en": "삼성전자 Stock Price",
-      "meaning": "삼성전자 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "삼성전자 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 290250.0,
+      "name": "삼성전자(005930.KS)",
+      "name_en": "삼성전자(005930.KS)",
+      "meaning": "삼성전자(005930.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "삼성전자(005930.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 288500.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "290,250원",
+      "display_value": "288,500원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -27750.0,
-      "change_pct": -8.726415094339623,
-      "change_abs_label": "-27,750원",
-      "change_pct_label": "-8.7%",
-      "yoy_pct": 306.5126050420168,
-      "yoy_pct_label": "+306.5%",
+      "change_abs": -29500.0,
+      "change_pct": -9.276729559748432,
+      "change_abs_label": "-29,500원",
+      "change_pct_label": "-9.3%",
+      "yoy_pct": 304.06162464985994,
+      "yoy_pct_label": "+304.1%",
       "history": [
         {
           "date": "2026-04-27",
@@ -9636,21 +9636,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 290250.0
+          "value": 288500.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "5ad52a353f0d",
+      "id": "308bbd1b432a",
       "industry": "반도체",
       "industry_en": "Semiconductors",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "NVIDIA 주가",
-      "name_en": "NVIDIA Stock Price",
-      "meaning": "NVIDIA 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "NVIDIA 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "NVIDIA(NVDA)",
+      "name_en": "NVIDIA(NVDA)",
+      "meaning": "NVIDIA(NVDA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "NVIDIA(NVDA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 195.5500030517578,
       "unit": "$",
       "unit_en": "USD",
@@ -9863,30 +9863,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "811be114866e",
+      "id": "978b7b09e6c6",
       "industry": "데이터인프라",
       "industry_en": "Data Infrastructure",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "NAVER 주가",
-      "name_en": "NAVER Stock Price",
-      "meaning": "NAVER 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "NAVER 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 193900.0,
+      "name": "NAVER(035420.KS)",
+      "name_en": "NAVER(035420.KS)",
+      "meaning": "NAVER(035420.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "NAVER(035420.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 193700.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "193,900원",
+      "display_value": "193,700원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -2700.0,
-      "change_pct": -1.3733468972533025,
-      "change_abs_label": "-2,700원",
-      "change_pct_label": "-1.4%",
-      "yoy_pct": -17.48936170212766,
-      "yoy_pct_label": "-17.5%",
+      "change_abs": -2900.0,
+      "change_pct": -1.4750762970498488,
+      "change_abs_label": "-2,900원",
+      "change_pct_label": "-1.5%",
+      "yoy_pct": -17.57446808510639,
+      "yoy_pct_label": "-17.6%",
       "history": [
         {
           "date": "2026-04-27",
@@ -10078,21 +10078,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 193900.0
+          "value": 193700.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "e630d9477f01",
+      "id": "4af5a09d8c1f",
       "industry": "데이터인프라",
       "industry_en": "Data Infrastructure",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Microsoft 주가",
-      "name_en": "Microsoft Stock Price",
-      "meaning": "Microsoft 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Microsoft 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Microsoft(MSFT)",
+      "name_en": "Microsoft(MSFT)",
+      "meaning": "Microsoft(MSFT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Microsoft(MSFT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 386.739990234375,
       "unit": "$",
       "unit_en": "USD",
@@ -10305,30 +10305,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "36b237bab0d2",
+      "id": "357faedb889d",
       "industry": "자동차",
       "industry_en": "Automobiles",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "현대차 주가",
-      "name_en": "현대차 Stock Price",
-      "meaning": "현대차 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "현대차 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 465000.0,
+      "name": "현대차(005380.KS)",
+      "name_en": "현대차(005380.KS)",
+      "meaning": "현대차(005380.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "현대차(005380.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 462000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "465,000원",
+      "display_value": "462,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -37000.0,
-      "change_pct": -7.370517928286857,
-      "change_abs_label": "-37,000원",
-      "change_pct_label": "-7.4%",
-      "yoy_pct": 118.3098591549296,
-      "yoy_pct_label": "+118.3%",
+      "change_abs": -40000.0,
+      "change_pct": -7.968127490039844,
+      "change_abs_label": "-40,000원",
+      "change_pct_label": "-8.0%",
+      "yoy_pct": 116.90140845070425,
+      "yoy_pct_label": "+116.9%",
       "history": [
         {
           "date": "2026-04-27",
@@ -10520,21 +10520,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 465000.0
+          "value": 462000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "da2ed60eb6c2",
+      "id": "bb4517dfeb65",
       "industry": "자동차",
       "industry_en": "Automobiles",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Toyota 주가",
-      "name_en": "Toyota Stock Price",
-      "meaning": "Toyota 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Toyota 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Toyota(TM)",
+      "name_en": "Toyota(TM)",
+      "meaning": "Toyota(TM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Toyota(TM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 179.8000030517578,
       "unit": "$",
       "unit_en": "USD",
@@ -10747,30 +10747,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "b16268d2ba7e",
+      "id": "401396037f0e",
       "industry": "전기차",
       "industry_en": "EVs",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "LG에너지솔루션 주가",
-      "name_en": "LG에너지솔루션 Stock Price",
-      "meaning": "LG에너지솔루션 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "LG에너지솔루션 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 326000.0,
+      "name": "LG에너지솔루션(373220.KS)",
+      "name_en": "LG에너지솔루션(373220.KS)",
+      "meaning": "LG에너지솔루션(373220.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "LG에너지솔루션(373220.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 324500.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "326,000원",
+      "display_value": "324,500원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -28500.0,
-      "change_pct": -8.039492242595204,
-      "change_abs_label": "-28,500원",
-      "change_pct_label": "-8.0%",
-      "yoy_pct": -14.771241830065362,
-      "yoy_pct_label": "-14.8%",
+      "change_abs": -30000.0,
+      "change_pct": -8.462623413258108,
+      "change_abs_label": "-30,000원",
+      "change_pct_label": "-8.5%",
+      "yoy_pct": -15.163398692810459,
+      "yoy_pct_label": "-15.2%",
       "history": [
         {
           "date": "2026-04-27",
@@ -10962,21 +10962,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 326000.0
+          "value": 324500.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "bac79a3c6c8b",
+      "id": "b410cee1fb25",
       "industry": "전기차",
       "industry_en": "EVs",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Tesla 주가",
-      "name_en": "Tesla Stock Price",
-      "meaning": "Tesla 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Tesla 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Tesla(TSLA)",
+      "name_en": "Tesla(TSLA)",
+      "meaning": "Tesla(TSLA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Tesla(TSLA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 419.7699890136719,
       "unit": "$",
       "unit_en": "USD",
@@ -11189,30 +11189,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "f59cd7269ee2",
+      "id": "dc57e5380aee",
       "industry": "조선",
       "industry_en": "Shipbuilding",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "HD현대중공업 주가",
-      "name_en": "HD현대중공업 Stock Price",
-      "meaning": "HD현대중공업 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "HD현대중공업 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 541000.0,
+      "name": "HD현대중공업(329180.KS)",
+      "name_en": "HD현대중공업(329180.KS)",
+      "meaning": "HD현대중공업(329180.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "HD현대중공업(329180.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 542000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "541,000원",
+      "display_value": "542,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -42000.0,
-      "change_pct": -7.204116638078906,
-      "change_abs_label": "-42,000원",
-      "change_pct_label": "-7.2%",
-      "yoy_pct": 10.29561671763506,
-      "yoy_pct_label": "+10.3%",
+      "change_abs": -41000.0,
+      "change_pct": -7.032590051457976,
+      "change_abs_label": "-41,000원",
+      "change_pct_label": "-7.0%",
+      "yoy_pct": 10.499490316004078,
+      "yoy_pct_label": "+10.5%",
       "history": [
         {
           "date": "2026-04-27",
@@ -11404,21 +11404,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 541000.0
+          "value": 542000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "a7e0981cb6b0",
+      "id": "d240866c2602",
       "industry": "조선",
       "industry_en": "Shipbuilding",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Huntington Ingalls 주가",
-      "name_en": "Huntington Ingalls Stock Price",
-      "meaning": "Huntington Ingalls 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Huntington Ingalls 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Huntington Ingalls(HII)",
+      "name_en": "Huntington Ingalls(HII)",
+      "meaning": "Huntington Ingalls(HII)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Huntington Ingalls(HII)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 294.1000061035156,
       "unit": "$",
       "unit_en": "USD",
@@ -11631,30 +11631,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "4bf3fdc7eb05",
+      "id": "f18445e2954e",
       "industry": "철강/소재",
       "industry_en": "Steel & Materials",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "POSCO홀딩스 주가",
-      "name_en": "POSCO홀딩스 Stock Price",
-      "meaning": "POSCO홀딩스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "POSCO홀딩스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 309000.0,
+      "name": "POSCO홀딩스(005490.KS)",
+      "name_en": "POSCO홀딩스(005490.KS)",
+      "meaning": "POSCO홀딩스(005490.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "POSCO홀딩스(005490.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 309500.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "309,000원",
+      "display_value": "309,500원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -12500.0,
-      "change_pct": -3.8880248833592534,
-      "change_abs_label": "-12,500원",
-      "change_pct_label": "-3.9%",
-      "yoy_pct": 0.16207455429497752,
-      "yoy_pct_label": "+0.2%",
+      "change_abs": -12000.0,
+      "change_pct": -3.732503888024885,
+      "change_abs_label": "-12,000원",
+      "change_pct_label": "-3.7%",
+      "yoy_pct": 0.32414910858995505,
+      "yoy_pct_label": "+0.3%",
       "history": [
         {
           "date": "2026-04-27",
@@ -11846,21 +11846,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 309000.0
+          "value": 309500.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "43854ec3217b",
+      "id": "4e6caef16f26",
       "industry": "철강/소재",
       "industry_en": "Steel & Materials",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Nucor 주가",
-      "name_en": "Nucor Stock Price",
-      "meaning": "Nucor 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Nucor 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Nucor(NUE)",
+      "name_en": "Nucor(NUE)",
+      "meaning": "Nucor(NUE)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Nucor(NUE)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 223.9199981689453,
       "unit": "$",
       "unit_en": "USD",
@@ -12073,30 +12073,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "72db1895e4ef",
+      "id": "ecc828144f7e",
       "industry": "화학/정유",
       "industry_en": "Chemicals & Refining",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "LG화학 주가",
-      "name_en": "LG화학 Stock Price",
-      "meaning": "LG화학 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "LG화학 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 262500.0,
+      "name": "LG화학(051910.KS)",
+      "name_en": "LG화학(051910.KS)",
+      "meaning": "LG화학(051910.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "LG화학(051910.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 262000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "262,500원",
+      "display_value": "262,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -14000.0,
-      "change_pct": -5.063291139240511,
-      "change_abs_label": "-14,000원",
-      "change_pct_label": "-5.1%",
-      "yoy_pct": -12.935323383084574,
-      "yoy_pct_label": "-12.9%",
+      "change_abs": -14500.0,
+      "change_pct": -5.244122965641951,
+      "change_abs_label": "-14,500원",
+      "change_pct_label": "-5.2%",
+      "yoy_pct": -13.101160862354888,
+      "yoy_pct_label": "-13.1%",
       "history": [
         {
           "date": "2026-04-27",
@@ -12288,21 +12288,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 262500.0
+          "value": 262000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "3f2530d44b67",
+      "id": "844af39f856d",
       "industry": "화학/정유",
       "industry_en": "Chemicals & Refining",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Exxon Mobil 주가",
-      "name_en": "Exxon Mobil Stock Price",
-      "meaning": "Exxon Mobil 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Exxon Mobil 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Exxon Mobil(XOM)",
+      "name_en": "Exxon Mobil(XOM)",
+      "meaning": "Exxon Mobil(XOM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Exxon Mobil(XOM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 136.44000244140625,
       "unit": "$",
       "unit_en": "USD",
@@ -12515,30 +12515,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "b13757778922",
+      "id": "98de535a0a23",
       "industry": "은행/금융",
       "industry_en": "Banks & Financials",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "KB금융 주가",
-      "name_en": "KB금융 Stock Price",
-      "meaning": "KB금융 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "KB금융 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 169700.0,
+      "name": "KB금융(105560.KS)",
+      "name_en": "KB금융(105560.KS)",
+      "meaning": "KB금융(105560.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "KB금융(105560.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 170100.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "169,700원",
+      "display_value": "170,100원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -1200.0,
-      "change_pct": -0.702165008777067,
-      "change_abs_label": "-1,200원",
-      "change_pct_label": "-0.7%",
-      "yoy_pct": 53.020739404869246,
-      "yoy_pct_label": "+53.0%",
+      "change_abs": -800.0,
+      "change_pct": -0.4681100058513743,
+      "change_abs_label": "-800원",
+      "change_pct_label": "-0.5%",
+      "yoy_pct": 53.38142470694318,
+      "yoy_pct_label": "+53.4%",
       "history": [
         {
           "date": "2026-04-27",
@@ -12730,21 +12730,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 169700.0
+          "value": 170100.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "7cdc23ec2a6a",
+      "id": "0b637efd9c49",
       "industry": "은행/금융",
       "industry_en": "Banks & Financials",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "JPMorgan Chase 주가",
-      "name_en": "JPMorgan Chase Stock Price",
-      "meaning": "JPMorgan Chase 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "JPMorgan Chase 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "JPMorgan Chase(JPM)",
+      "name_en": "JPMorgan Chase(JPM)",
+      "meaning": "JPMorgan Chase(JPM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "JPMorgan Chase(JPM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 337.7200012207031,
       "unit": "$",
       "unit_en": "USD",
@@ -12957,30 +12957,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "ae95070cb039",
+      "id": "20977ed178d1",
       "industry": "건설/부동산",
       "industry_en": "Construction & Real Estate",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "현대건설 주가",
-      "name_en": "현대건설 Stock Price",
-      "meaning": "현대건설 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "현대건설 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 106900.0,
+      "name": "현대건설(000720.KS)",
+      "name_en": "현대건설(000720.KS)",
+      "meaning": "현대건설(000720.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "현대건설(000720.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 106600.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "106,900원",
+      "display_value": "106,600원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -8100.0,
-      "change_pct": -7.043478260869563,
-      "change_abs_label": "-8,100원",
-      "change_pct_label": "-7.0%",
-      "yoy_pct": 58.37037037037036,
-      "yoy_pct_label": "+58.4%",
+      "change_abs": -8400.0,
+      "change_pct": -7.304347826086954,
+      "change_abs_label": "-8,400원",
+      "change_pct_label": "-7.3%",
+      "yoy_pct": 57.92592592592594,
+      "yoy_pct_label": "+57.9%",
       "history": [
         {
           "date": "2026-04-27",
@@ -13172,21 +13172,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 106900.0
+          "value": 106600.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "c13b02591234",
+      "id": "7e86761dbeda",
       "industry": "건설/부동산",
       "industry_en": "Construction & Real Estate",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "D.R. Horton 주가",
-      "name_en": "D.R. Horton Stock Price",
-      "meaning": "D.R. Horton 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "D.R. Horton 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "D.R. Horton(DHI)",
+      "name_en": "D.R. Horton(DHI)",
+      "meaning": "D.R. Horton(DHI)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "D.R. Horton(DHI)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 156.8800048828125,
       "unit": "$",
       "unit_en": "USD",
@@ -13399,30 +13399,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "2bf01c52f705",
+      "id": "f1309b1d96bf",
       "industry": "방산",
       "industry_en": "Defense",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "한화에어로스페이스 주가",
-      "name_en": "한화에어로스페이스 Stock Price",
-      "meaning": "한화에어로스페이스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "한화에어로스페이스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 1095000.0,
+      "name": "한화에어로스페이스(012450.KS)",
+      "name_en": "한화에어로스페이스(012450.KS)",
+      "meaning": "한화에어로스페이스(012450.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "한화에어로스페이스(012450.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 1086000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "1,095,000원",
+      "display_value": "1,086,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -64000.0,
-      "change_pct": -5.522001725625536,
-      "change_abs_label": "-64,000원",
-      "change_pct_label": "-5.5%",
-      "yoy_pct": 9.939759036144569,
-      "yoy_pct_label": "+9.9%",
+      "change_abs": -73000.0,
+      "change_pct": -6.298533218291635,
+      "change_abs_label": "-73,000원",
+      "change_pct_label": "-6.3%",
+      "yoy_pct": 9.036144578313255,
+      "yoy_pct_label": "+9.0%",
       "history": [
         {
           "date": "2026-04-27",
@@ -13614,21 +13614,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 1095000.0
+          "value": 1086000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "2c7cfe7bacc5",
+      "id": "880406c0aba7",
       "industry": "방산",
       "industry_en": "Defense",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Lockheed Martin 주가",
-      "name_en": "Lockheed Martin Stock Price",
-      "meaning": "Lockheed Martin 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Lockheed Martin 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Lockheed Martin(LMT)",
+      "name_en": "Lockheed Martin(LMT)",
+      "meaning": "Lockheed Martin(LMT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Lockheed Martin(LMT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 538.0,
       "unit": "$",
       "unit_en": "USD",
@@ -13841,15 +13841,15 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "0be13a62f52a",
+      "id": "3054b46e95f2",
       "industry": "스테이블코인",
       "industry_en": "Stablecoins",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Coinbase 주가",
-      "name_en": "Coinbase Stock Price",
-      "meaning": "Coinbase 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Coinbase 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Coinbase(COIN)",
+      "name_en": "Coinbase(COIN)",
+      "meaning": "Coinbase(COIN)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Coinbase(COIN)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 168.8699951171875,
       "unit": "$",
       "unit_en": "USD",
@@ -14062,15 +14062,15 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "1f4fea267bca",
+      "id": "f1f724a230f7",
       "industry": "스테이블코인",
       "industry_en": "Stablecoins",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Circle 주가",
-      "name_en": "Circle Stock Price",
-      "meaning": "Circle 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Circle 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Circle(CRCL)",
+      "name_en": "Circle(CRCL)",
+      "meaning": "Circle(CRCL)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Circle(CRCL)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 68.6500015258789,
       "unit": "$",
       "unit_en": "USD",
@@ -14283,30 +14283,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "314fd1928fff",
+      "id": "6b5151610375",
       "industry": "전력",
       "industry_en": "Power",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "한국전력 주가",
-      "name_en": "한국전력 Stock Price",
-      "meaning": "한국전력 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "한국전력 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 37700.0,
+      "name": "한국전력(015760.KS)",
+      "name_en": "한국전력(015760.KS)",
+      "meaning": "한국전력(015760.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "한국전력(015760.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 37600.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "37,700원",
+      "display_value": "37,600원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -1450.0,
-      "change_pct": -3.703703703703709,
-      "change_abs_label": "-1,450원",
-      "change_pct_label": "-3.7%",
-      "yoy_pct": -2.204928664072636,
-      "yoy_pct_label": "-2.2%",
+      "change_abs": -1550.0,
+      "change_pct": -3.9591315453384457,
+      "change_abs_label": "-1,550원",
+      "change_pct_label": "-4.0%",
+      "yoy_pct": -2.4643320363164745,
+      "yoy_pct_label": "-2.5%",
       "history": [
         {
           "date": "2026-04-27",
@@ -14498,21 +14498,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 37700.0
+          "value": 37600.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "9cfedc67a874",
+      "id": "5c34f945ce51",
       "industry": "전력",
       "industry_en": "Power",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "GE Vernova 주가",
-      "name_en": "GE Vernova Stock Price",
-      "meaning": "GE Vernova 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "GE Vernova 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "GE Vernova(GEV)",
+      "name_en": "GE Vernova(GEV)",
+      "meaning": "GE Vernova(GEV)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "GE Vernova(GEV)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 1152.0400390625,
       "unit": "$",
       "unit_en": "USD",
@@ -14725,30 +14725,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "73489a01f018",
+      "id": "3484513a5bdb",
       "industry": "로봇",
       "industry_en": "Robotics",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "두산로보틱스 주가",
-      "name_en": "두산로보틱스 Stock Price",
-      "meaning": "두산로보틱스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "두산로보틱스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 77600.0,
+      "name": "두산로보틱스(454910.KS)",
+      "name_en": "두산로보틱스(454910.KS)",
+      "meaning": "두산로보틱스(454910.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "두산로보틱스(454910.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 77300.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "77,600원",
+      "display_value": "77,300원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -4900.0,
-      "change_pct": -5.939393939393945,
-      "change_abs_label": "-4,900원",
-      "change_pct_label": "-5.9%",
-      "yoy_pct": 28.47682119205297,
-      "yoy_pct_label": "+28.5%",
+      "change_abs": -5200.0,
+      "change_pct": -6.303030303030299,
+      "change_abs_label": "-5,200원",
+      "change_pct_label": "-6.3%",
+      "yoy_pct": 27.98013245033113,
+      "yoy_pct_label": "+28.0%",
       "history": [
         {
           "date": "2026-04-27",
@@ -14940,21 +14940,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 77600.0
+          "value": 77300.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "b52c55500a3b",
+      "id": "d9b2a105ae08",
       "industry": "로봇",
       "industry_en": "Robotics",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Teradyne 주가",
-      "name_en": "Teradyne Stock Price",
-      "meaning": "Teradyne 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Teradyne 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Teradyne(TER)",
+      "name_en": "Teradyne(TER)",
+      "meaning": "Teradyne(TER)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Teradyne(TER)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 379.5199890136719,
       "unit": "$",
       "unit_en": "USD",
@@ -15167,30 +15167,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "b43ff8625910",
+      "id": "1708f3deb23c",
       "industry": "우주",
       "industry_en": "Space",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "쎄트렉아이 주가",
-      "name_en": "쎄트렉아이 Stock Price",
-      "meaning": "쎄트렉아이 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "쎄트렉아이 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 80000.0,
+      "name": "쎄트렉아이(099320.KQ)",
+      "name_en": "쎄트렉아이(099320.KQ)",
+      "meaning": "쎄트렉아이(099320.KQ)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "쎄트렉아이(099320.KQ)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 80500.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "80,000원",
+      "display_value": "80,500원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -10300.0,
-      "change_pct": -11.406423034330015,
-      "change_abs_label": "-10,300원",
-      "change_pct_label": "-11.4%",
-      "yoy_pct": 63.432073544433095,
-      "yoy_pct_label": "+63.4%",
+      "change_abs": -9800.0,
+      "change_pct": -10.852713178294572,
+      "change_abs_label": "-9,800원",
+      "change_pct_label": "-10.9%",
+      "yoy_pct": 64.45352400408579,
+      "yoy_pct_label": "+64.5%",
       "history": [
         {
           "date": "2026-04-27",
@@ -15382,21 +15382,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 80000.0
+          "value": 80500.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "3bc568e3f872",
+      "id": "f23893f07b0e",
       "industry": "우주",
       "industry_en": "Space",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Rocket Lab 주가",
-      "name_en": "Rocket Lab Stock Price",
-      "meaning": "Rocket Lab 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Rocket Lab 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Rocket Lab(RKLB)",
+      "name_en": "Rocket Lab(RKLB)",
+      "meaning": "Rocket Lab(RKLB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Rocket Lab(RKLB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 93.08999633789062,
       "unit": "$",
       "unit_en": "USD",
@@ -15609,15 +15609,15 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "469b376ac0ba",
+      "id": "95cabb4c530d",
       "industry": "바이오",
       "industry_en": "Biotech",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "삼성바이오로직스 주가",
-      "name_en": "삼성바이오로직스 Stock Price",
-      "meaning": "삼성바이오로직스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "삼성바이오로직스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "삼성바이오로직스(207940.KS)",
+      "name_en": "삼성바이오로직스(207940.KS)",
+      "meaning": "삼성바이오로직스(207940.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "삼성바이오로직스(207940.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 1395000.0,
       "unit": "원",
       "unit_en": "KRW",
@@ -15830,15 +15830,15 @@
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "67ae87fce792",
+      "id": "426f63931dfa",
       "industry": "바이오",
       "industry_en": "Biotech",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Eli Lilly 주가",
-      "name_en": "Eli Lilly Stock Price",
-      "meaning": "Eli Lilly 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Eli Lilly 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Eli Lilly(LLY)",
+      "name_en": "Eli Lilly(LLY)",
+      "meaning": "Eli Lilly(LLY)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Eli Lilly(LLY)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 1200.06005859375,
       "unit": "$",
       "unit_en": "USD",
@@ -16051,30 +16051,30 @@
       "period_label": "2026.04.27 - 2026.07.06"
     },
     {
-      "id": "96c572bd8b90",
+      "id": "c04f98aa050d",
       "industry": "배터리",
       "industry_en": "Batteries",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "삼성SDI 주가",
-      "name_en": "삼성SDI Stock Price",
-      "meaning": "삼성SDI 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "삼성SDI 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 438000.0,
+      "name": "삼성SDI(006400.KS)",
+      "name_en": "삼성SDI(006400.KS)",
+      "meaning": "삼성SDI(006400.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "삼성SDI(006400.KS)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "value": 436500.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "438,000원",
+      "display_value": "436,500원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -13500.0,
-      "change_pct": -2.9900332225913595,
-      "change_abs_label": "-13,500원",
-      "change_pct_label": "-3.0%",
-      "yoy_pct": 117.91044776119404,
-      "yoy_pct_label": "+117.9%",
+      "change_abs": -15000.0,
+      "change_pct": -3.322259136212624,
+      "change_abs_label": "-15,000원",
+      "change_pct_label": "-3.3%",
+      "yoy_pct": 117.16417910447761,
+      "yoy_pct_label": "+117.2%",
       "history": [
         {
           "date": "2026-04-27",
@@ -16266,21 +16266,21 @@
         },
         {
           "date": "2026-07-07",
-          "value": 438000.0
+          "value": 436500.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
     },
     {
-      "id": "91d323ad84ac",
+      "id": "8f9705d7a4f7",
       "industry": "배터리",
       "industry_en": "Batteries",
       "group": "대표주가",
       "group_en": "Representative Stock Prices",
-      "name": "Albemarle 주가",
-      "name_en": "Albemarle Stock Price",
-      "meaning": "Albemarle 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "meaning_en": "Albemarle 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "name": "Albemarle(ALB)",
+      "name_en": "Albemarle(ALB)",
+      "meaning": "Albemarle(ALB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
+      "meaning_en": "Albemarle(ALB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "value": 133.8000030517578,
       "unit": "$",
       "unit_en": "USD",
@@ -19579,10 +19579,10 @@
       "name_en": "US EV Charging Stations",
       "meaning": "미국 EV 충전소 수는 전기차 보급 환경과 충전 인프라 투자 흐름을 보여주는 지표입니다.",
       "meaning_en": "US EV charging station count shows EV adoption conditions and charging infrastructure investment trends.",
-      "value": 88820.0,
+      "value": 88918.0,
       "unit": "곳",
       "unit_en": "stations",
-      "display_value": "88,820.0 곳",
+      "display_value": "88,918.0 곳",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
@@ -19597,7 +19597,7 @@
       "history": [
         {
           "date": "2026-07-07",
-          "value": 88820.0
+          "value": 88918.0
         }
       ],
       "period_label": "2026.07.07"
@@ -19612,10 +19612,10 @@
       "name_en": "US EV Charging Ports",
       "meaning": "미국 EV 충전 포트 수는 전기차 이용 편의성과 인프라 확장 속도를 확인하는 지표입니다.",
       "meaning_en": "US EV charging port count shows EV usability and the pace of infrastructure expansion.",
-      "value": 288266.0,
+      "value": 288447.0,
       "unit": "개",
       "unit_en": "ports",
-      "display_value": "288,266.0 개",
+      "display_value": "288,447.0 개",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
@@ -19630,452 +19630,10 @@
       "history": [
         {
           "date": "2026-07-07",
-          "value": 288266.0
+          "value": 288447.0
         }
       ],
       "period_label": "2026.07.07"
-    },
-    {
-      "id": "320be6d22e2e",
-      "industry": "건설/부동산",
-      "industry_en": "Construction & Real Estate",
-      "group": "국내 주택",
-      "group_en": "Korea Housing",
-      "name": "한국 주택매매가격지수",
-      "name_en": "Korea Home Sale Price Index",
-      "meaning": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
-      "meaning_en": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
-      "value": 96.1686227,
-      "unit": "지수",
-      "unit_en": "Index",
-      "display_value": "96.17 지수",
-      "frequency": "월간",
-      "frequency_en": "Monthly",
-      "observed_at": "2025-03-01",
-      "observed_label": "2025.03",
-      "next_update_label": "2025.04",
-      "change_abs": 0.0137210500000009,
-      "change_pct": 0.014269735358829472,
-      "change_abs_label": "+0.01 지수",
-      "change_pct_label": "+0.0%",
-      "yoy_pct": 0.3985847910131124,
-      "yoy_pct_label": "+0.4%",
-      "history": [
-        {
-          "date": "2021-04-01",
-          "value": 98.17542084
-        },
-        {
-          "date": "2021-05-01",
-          "value": 98.86155873
-        },
-        {
-          "date": "2021-06-01",
-          "value": 100.0
-        },
-        {
-          "date": "2021-07-01",
-          "value": 100.8527701
-        },
-        {
-          "date": "2021-08-01",
-          "value": 101.8232676
-        },
-        {
-          "date": "2021-09-01",
-          "value": 102.7556195
-        },
-        {
-          "date": "2021-10-01",
-          "value": 103.6644343
-        },
-        {
-          "date": "2021-11-01",
-          "value": 104.3169996
-        },
-        {
-          "date": "2021-12-01",
-          "value": 104.6169034
-        },
-        {
-          "date": "2022-01-01",
-          "value": 104.7193237
-        },
-        {
-          "date": "2022-02-01",
-          "value": 104.7501852
-        },
-        {
-          "date": "2022-03-01",
-          "value": 104.7681327
-        },
-        {
-          "date": "2022-04-01",
-          "value": 104.8296115
-        },
-        {
-          "date": "2022-05-01",
-          "value": 104.8440136
-        },
-        {
-          "date": "2022-06-01",
-          "value": 104.8372099
-        },
-        {
-          "date": "2022-07-01",
-          "value": 104.7582611
-        },
-        {
-          "date": "2022-08-01",
-          "value": 104.4590502
-        },
-        {
-          "date": "2022-09-01",
-          "value": 103.9498545
-        },
-        {
-          "date": "2022-10-01",
-          "value": 103.1485214
-        },
-        {
-          "date": "2022-11-01",
-          "value": 101.7361712
-        },
-        {
-          "date": "2022-12-01",
-          "value": 99.72380843
-        },
-        {
-          "date": "2023-01-01",
-          "value": 98.2335662
-        },
-        {
-          "date": "2023-02-01",
-          "value": 97.10790976
-        },
-        {
-          "date": "2023-03-01",
-          "value": 96.34640819
-        },
-        {
-          "date": "2023-04-01",
-          "value": 95.89740291
-        },
-        {
-          "date": "2023-05-01",
-          "value": 95.68618947
-        },
-        {
-          "date": "2023-06-01",
-          "value": 95.63459488
-        },
-        {
-          "date": "2023-07-01",
-          "value": 95.66082943
-        },
-        {
-          "date": "2023-08-01",
-          "value": 95.80974121
-        },
-        {
-          "date": "2023-09-01",
-          "value": 96.04961444
-        },
-        {
-          "date": "2023-10-01",
-          "value": 96.24235212
-        },
-        {
-          "date": "2023-11-01",
-          "value": 96.27707003
-        },
-        {
-          "date": "2023-12-01",
-          "value": 96.17770118
-        },
-        {
-          "date": "2024-01-01",
-          "value": 96.04017992
-        },
-        {
-          "date": "2024-02-01",
-          "value": 95.90192663
-        },
-        {
-          "date": "2024-03-01",
-          "value": 95.78683096
-        },
-        {
-          "date": "2024-04-01",
-          "value": 95.73790935
-        },
-        {
-          "date": "2024-05-01",
-          "value": 95.71735078
-        },
-        {
-          "date": "2024-06-01",
-          "value": 95.75427614
-        },
-        {
-          "date": "2024-07-01",
-          "value": 95.89980579
-        },
-        {
-          "date": "2024-08-01",
-          "value": 96.12914525
-        },
-        {
-          "date": "2024-09-01",
-          "value": 96.29618613
-        },
-        {
-          "date": "2024-10-01",
-          "value": 96.36714121
-        },
-        {
-          "date": "2024-11-01",
-          "value": 96.37408597
-        },
-        {
-          "date": "2024-12-01",
-          "value": 96.30494577
-        },
-        {
-          "date": "2025-01-01",
-          "value": 96.20897892
-        },
-        {
-          "date": "2025-02-01",
-          "value": 96.15490165
-        },
-        {
-          "date": "2025-03-01",
-          "value": 96.1686227
-        }
-      ],
-      "period_label": "2021.04 - 2025.03"
-    },
-    {
-      "id": "65615e553195",
-      "industry": "건설/부동산",
-      "industry_en": "Construction & Real Estate",
-      "group": "건설 허가",
-      "group_en": "Construction Permits",
-      "name": "한국 건축허가 동수",
-      "name_en": "Korea Building Permits Count",
-      "meaning": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
-      "meaning_en": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
-      "value": 11813.0,
-      "unit": "동",
-      "unit_en": "동",
-      "display_value": "11,813.0 동",
-      "frequency": "월간",
-      "frequency_en": "Monthly",
-      "observed_at": "2026-04-01",
-      "observed_label": "2026.04",
-      "next_update_label": "2026.05",
-      "change_abs": 898.0,
-      "change_pct": 8.227210261108574,
-      "change_abs_label": "+898.00 동",
-      "change_pct_label": "+8.2%",
-      "yoy_pct": 2.42781583282754,
-      "yoy_pct_label": "+2.4%",
-      "history": [
-        {
-          "date": "2022-05-01",
-          "value": 19700.0
-        },
-        {
-          "date": "2022-06-01",
-          "value": 16918.0
-        },
-        {
-          "date": "2022-07-01",
-          "value": 15973.0
-        },
-        {
-          "date": "2022-08-01",
-          "value": 16129.0
-        },
-        {
-          "date": "2022-09-01",
-          "value": 13785.0
-        },
-        {
-          "date": "2022-10-01",
-          "value": 13616.0
-        },
-        {
-          "date": "2022-11-01",
-          "value": 15309.0
-        },
-        {
-          "date": "2022-12-01",
-          "value": 14373.0
-        },
-        {
-          "date": "2023-01-01",
-          "value": 10255.0
-        },
-        {
-          "date": "2023-02-01",
-          "value": 10540.0
-        },
-        {
-          "date": "2023-03-01",
-          "value": 13454.0
-        },
-        {
-          "date": "2023-04-01",
-          "value": 12569.0
-        },
-        {
-          "date": "2023-05-01",
-          "value": 13492.0
-        },
-        {
-          "date": "2023-06-01",
-          "value": 13700.0
-        },
-        {
-          "date": "2023-07-01",
-          "value": 11648.0
-        },
-        {
-          "date": "2023-08-01",
-          "value": 12826.0
-        },
-        {
-          "date": "2023-09-01",
-          "value": 11687.0
-        },
-        {
-          "date": "2023-10-01",
-          "value": 10502.0
-        },
-        {
-          "date": "2023-11-01",
-          "value": 12530.0
-        },
-        {
-          "date": "2023-12-01",
-          "value": 11738.0
-        },
-        {
-          "date": "2024-01-01",
-          "value": 10115.0
-        },
-        {
-          "date": "2024-02-01",
-          "value": 9472.0
-        },
-        {
-          "date": "2024-03-01",
-          "value": 11086.0
-        },
-        {
-          "date": "2024-04-01",
-          "value": 12229.0
-        },
-        {
-          "date": "2024-05-01",
-          "value": 12398.0
-        },
-        {
-          "date": "2024-06-01",
-          "value": 10674.0
-        },
-        {
-          "date": "2024-07-01",
-          "value": 11754.0
-        },
-        {
-          "date": "2024-08-01",
-          "value": 10437.0
-        },
-        {
-          "date": "2024-09-01",
-          "value": 9326.0
-        },
-        {
-          "date": "2024-10-01",
-          "value": 10873.0
-        },
-        {
-          "date": "2024-11-01",
-          "value": 11345.0
-        },
-        {
-          "date": "2024-12-01",
-          "value": 12032.0
-        },
-        {
-          "date": "2025-01-01",
-          "value": 7417.0
-        },
-        {
-          "date": "2025-02-01",
-          "value": 8455.0
-        },
-        {
-          "date": "2025-03-01",
-          "value": 10950.0
-        },
-        {
-          "date": "2025-04-01",
-          "value": 11533.0
-        },
-        {
-          "date": "2025-05-01",
-          "value": 10783.0
-        },
-        {
-          "date": "2025-06-01",
-          "value": 10361.0
-        },
-        {
-          "date": "2025-07-01",
-          "value": 10637.0
-        },
-        {
-          "date": "2025-08-01",
-          "value": 9741.0
-        },
-        {
-          "date": "2025-09-01",
-          "value": 12138.0
-        },
-        {
-          "date": "2025-10-01",
-          "value": 8871.0
-        },
-        {
-          "date": "2025-11-01",
-          "value": 10596.0
-        },
-        {
-          "date": "2025-12-01",
-          "value": 12350.0
-        },
-        {
-          "date": "2026-01-01",
-          "value": 8812.0
-        },
-        {
-          "date": "2026-02-01",
-          "value": 7248.0
-        },
-        {
-          "date": "2026-03-01",
-          "value": 10915.0
-        },
-        {
-          "date": "2026-04-01",
-          "value": 11813.0
-        }
-      ],
-      "period_label": "2022.05 - 2026.04"
     },
     {
       "id": "f5b24e872a87",
