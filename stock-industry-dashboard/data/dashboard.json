@@ -1,7 +1,7 @@
 {
   "title": "산업별 지표 대시보드",
-  "generated_at": "2026-07-07T13:20:46+09:00",
-  "generated_label": "2026-07-07 13:20 KST",
+  "generated_at": "2026-07-07T13:34:15+09:00",
+  "generated_label": "2026-07-07 13:34 KST",
   "timezone": "Asia/Seoul",
   "industries": [
     "반도체",
@@ -73,8 +73,8 @@
     },
     {
       "name": "ECOS 신용스프레드",
-      "status": "partial",
-      "message": "0/2개 지표 자동 수집"
+      "status": "ok",
+      "message": "2/2개 지표 자동 수집"
     },
     {
       "name": "대표주가",
@@ -128,8 +128,8 @@
     },
     {
       "name": "KOSIS",
-      "status": "partial",
-      "message": "0/3개 지표 자동 수집"
+      "status": "ok",
+      "message": "2/3개 지표 자동 수집"
     },
     {
       "name": "한국 수출",
@@ -8979,6 +8979,448 @@
       "period_label": "2026.04.29 - 2026.07.03"
     },
     {
+      "id": "e571cc471e26",
+      "industry": "은행/금융",
+      "industry_en": "Banks & Financials",
+      "group": "신용 스프레드",
+      "group_en": "Credit Spreads",
+      "name": "한국 회사채 AA- 3Y-국고채 3Y 스프레드",
+      "name_en": "Korea AA- Corporate 3Y-KTB 3Y Spread",
+      "meaning": "한국 회사채 AA- 3년 금리와 국고채 3년 금리의 차이로 국내 우량 기업 신용위험과 자금조달 여건을 확인합니다.",
+      "meaning_en": "Spread between Korea AA- 3Y corporate bonds and 3Y government bonds, used to read domestic high-grade credit risk and funding conditions.",
+      "value": 0.683,
+      "unit": "%",
+      "unit_en": "%",
+      "display_value": "0.68%",
+      "frequency": "일간",
+      "frequency_en": "Daily",
+      "observed_at": "2026-07-06",
+      "observed_label": "2026.07.06",
+      "next_update_label": "2026.07.07",
+      "change_abs": -0.0020000000000000018,
+      "change_pct": -0.29197080291970545,
+      "change_abs_label": "-0.00%p",
+      "change_pct_label": "-0.3%",
+      "yoy_pct": 38.821138211382134,
+      "yoy_pct_label": "+38.8%",
+      "history": [
+        {
+          "date": "2026-04-24",
+          "value": 0.649
+        },
+        {
+          "date": "2026-04-27",
+          "value": 0.655
+        },
+        {
+          "date": "2026-04-28",
+          "value": 0.653
+        },
+        {
+          "date": "2026-04-29",
+          "value": 0.66
+        },
+        {
+          "date": "2026-04-30",
+          "value": 0.653
+        },
+        {
+          "date": "2026-05-04",
+          "value": 0.653
+        },
+        {
+          "date": "2026-05-06",
+          "value": 0.654
+        },
+        {
+          "date": "2026-05-07",
+          "value": 0.653
+        },
+        {
+          "date": "2026-05-08",
+          "value": 0.649
+        },
+        {
+          "date": "2026-05-11",
+          "value": 0.647
+        },
+        {
+          "date": "2026-05-12",
+          "value": 0.637
+        },
+        {
+          "date": "2026-05-13",
+          "value": 0.638
+        },
+        {
+          "date": "2026-05-14",
+          "value": 0.63
+        },
+        {
+          "date": "2026-05-15",
+          "value": 0.625
+        },
+        {
+          "date": "2026-05-18",
+          "value": 0.624
+        },
+        {
+          "date": "2026-05-19",
+          "value": 0.626
+        },
+        {
+          "date": "2026-05-20",
+          "value": 0.626
+        },
+        {
+          "date": "2026-05-21",
+          "value": 0.628
+        },
+        {
+          "date": "2026-05-22",
+          "value": 0.625
+        },
+        {
+          "date": "2026-05-26",
+          "value": 0.631
+        },
+        {
+          "date": "2026-05-27",
+          "value": 0.625
+        },
+        {
+          "date": "2026-05-28",
+          "value": 0.618
+        },
+        {
+          "date": "2026-05-29",
+          "value": 0.622
+        },
+        {
+          "date": "2026-06-01",
+          "value": 0.62
+        },
+        {
+          "date": "2026-06-02",
+          "value": 0.624
+        },
+        {
+          "date": "2026-06-04",
+          "value": 0.622
+        },
+        {
+          "date": "2026-06-05",
+          "value": 0.619
+        },
+        {
+          "date": "2026-06-08",
+          "value": 0.625
+        },
+        {
+          "date": "2026-06-09",
+          "value": 0.636
+        },
+        {
+          "date": "2026-06-10",
+          "value": 0.618
+        },
+        {
+          "date": "2026-06-11",
+          "value": 0.611
+        },
+        {
+          "date": "2026-06-12",
+          "value": 0.625
+        },
+        {
+          "date": "2026-06-15",
+          "value": 0.629
+        },
+        {
+          "date": "2026-06-16",
+          "value": 0.631
+        },
+        {
+          "date": "2026-06-17",
+          "value": 0.635
+        },
+        {
+          "date": "2026-06-18",
+          "value": 0.631
+        },
+        {
+          "date": "2026-06-19",
+          "value": 0.635
+        },
+        {
+          "date": "2026-06-22",
+          "value": 0.632
+        },
+        {
+          "date": "2026-06-23",
+          "value": 0.647
+        },
+        {
+          "date": "2026-06-24",
+          "value": 0.656
+        },
+        {
+          "date": "2026-06-25",
+          "value": 0.646
+        },
+        {
+          "date": "2026-06-26",
+          "value": 0.658
+        },
+        {
+          "date": "2026-06-29",
+          "value": 0.663
+        },
+        {
+          "date": "2026-06-30",
+          "value": 0.672
+        },
+        {
+          "date": "2026-07-01",
+          "value": 0.675
+        },
+        {
+          "date": "2026-07-02",
+          "value": 0.684
+        },
+        {
+          "date": "2026-07-03",
+          "value": 0.685
+        },
+        {
+          "date": "2026-07-06",
+          "value": 0.683
+        }
+      ],
+      "period_label": "2026.04.24 - 2026.07.06"
+    },
+    {
+      "id": "7a72f2f6bb0f",
+      "industry": "은행/금융",
+      "industry_en": "Banks & Financials",
+      "group": "신용 스프레드",
+      "group_en": "Credit Spreads",
+      "name": "한국 회사채 BBB- 3Y-국고채 3Y 스프레드",
+      "name_en": "Korea BBB- Corporate 3Y-KTB 3Y Spread",
+      "meaning": "한국 회사채 BBB- 3년 금리와 국고채 3년 금리의 차이로 국내 하위등급 신용위험과 위험회피 강도를 확인합니다.",
+      "meaning_en": "Spread between Korea BBB- 3Y corporate bonds and 3Y government bonds, used to read lower-grade credit risk and risk aversion.",
+      "value": 6.5,
+      "unit": "%",
+      "unit_en": "%",
+      "display_value": "6.50%",
+      "frequency": "일간",
+      "frequency_en": "Daily",
+      "observed_at": "2026-07-06",
+      "observed_label": "2026.07.06",
+      "next_update_label": "2026.07.07",
+      "change_abs": -0.0039999999999995595,
+      "change_pct": -0.061500615006138126,
+      "change_abs_label": "-0.00%p",
+      "change_pct_label": "-0.1%",
+      "yoy_pct": 2.8155646947168655,
+      "yoy_pct_label": "+2.8%",
+      "history": [
+        {
+          "date": "2026-04-24",
+          "value": 6.439
+        },
+        {
+          "date": "2026-04-27",
+          "value": 6.446
+        },
+        {
+          "date": "2026-04-28",
+          "value": 6.442
+        },
+        {
+          "date": "2026-04-29",
+          "value": 6.451
+        },
+        {
+          "date": "2026-04-30",
+          "value": 6.435
+        },
+        {
+          "date": "2026-05-04",
+          "value": 6.435
+        },
+        {
+          "date": "2026-05-06",
+          "value": 6.441
+        },
+        {
+          "date": "2026-05-07",
+          "value": 6.443
+        },
+        {
+          "date": "2026-05-08",
+          "value": 6.441
+        },
+        {
+          "date": "2026-05-11",
+          "value": 6.439
+        },
+        {
+          "date": "2026-05-12",
+          "value": 6.432
+        },
+        {
+          "date": "2026-05-13",
+          "value": 6.437
+        },
+        {
+          "date": "2026-05-14",
+          "value": 6.429
+        },
+        {
+          "date": "2026-05-15",
+          "value": 6.423
+        },
+        {
+          "date": "2026-05-18",
+          "value": 6.425
+        },
+        {
+          "date": "2026-05-19",
+          "value": 6.427
+        },
+        {
+          "date": "2026-05-20",
+          "value": 6.427
+        },
+        {
+          "date": "2026-05-21",
+          "value": 6.431
+        },
+        {
+          "date": "2026-05-22",
+          "value": 6.432
+        },
+        {
+          "date": "2026-05-26",
+          "value": 6.447
+        },
+        {
+          "date": "2026-05-27",
+          "value": 6.433
+        },
+        {
+          "date": "2026-05-28",
+          "value": 6.426
+        },
+        {
+          "date": "2026-05-29",
+          "value": 6.429
+        },
+        {
+          "date": "2026-06-01",
+          "value": 6.426
+        },
+        {
+          "date": "2026-06-02",
+          "value": 6.432
+        },
+        {
+          "date": "2026-06-04",
+          "value": 6.426
+        },
+        {
+          "date": "2026-06-05",
+          "value": 6.425
+        },
+        {
+          "date": "2026-06-08",
+          "value": 6.431
+        },
+        {
+          "date": "2026-06-09",
+          "value": 6.453
+        },
+        {
+          "date": "2026-06-10",
+          "value": 6.428
+        },
+        {
+          "date": "2026-06-11",
+          "value": 6.419
+        },
+        {
+          "date": "2026-06-12",
+          "value": 6.445
+        },
+        {
+          "date": "2026-06-15",
+          "value": 6.453
+        },
+        {
+          "date": "2026-06-16",
+          "value": 6.461
+        },
+        {
+          "date": "2026-06-17",
+          "value": 6.461
+        },
+        {
+          "date": "2026-06-18",
+          "value": 6.457
+        },
+        {
+          "date": "2026-06-19",
+          "value": 6.459
+        },
+        {
+          "date": "2026-06-22",
+          "value": 6.457
+        },
+        {
+          "date": "2026-06-23",
+          "value": 6.473
+        },
+        {
+          "date": "2026-06-24",
+          "value": 6.476
+        },
+        {
+          "date": "2026-06-25",
+          "value": 6.466
+        },
+        {
+          "date": "2026-06-26",
+          "value": 6.48
+        },
+        {
+          "date": "2026-06-29",
+          "value": 6.481
+        },
+        {
+          "date": "2026-06-30",
+          "value": 6.491
+        },
+        {
+          "date": "2026-07-01",
+          "value": 6.494
+        },
+        {
+          "date": "2026-07-02",
+          "value": 6.504
+        },
+        {
+          "date": "2026-07-03",
+          "value": 6.504
+        },
+        {
+          "date": "2026-07-06",
+          "value": 6.5
+        }
+      ],
+      "period_label": "2026.04.24 - 2026.07.06"
+    },
+    {
       "id": "a8966d5df783",
       "industry": "반도체",
       "industry_en": "Semiconductors",
@@ -8988,21 +9430,21 @@
       "name_en": "삼성전자 Stock Price",
       "meaning": "삼성전자 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "삼성전자 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 290750.0,
+      "value": 290250.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "290,750원",
+      "display_value": "290,250원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -27250.0,
-      "change_pct": -8.569182389937103,
-      "change_abs_label": "-27,250원",
-      "change_pct_label": "-8.6%",
-      "yoy_pct": 307.2128851540616,
-      "yoy_pct_label": "+307.2%",
+      "change_abs": -27750.0,
+      "change_pct": -8.726415094339623,
+      "change_abs_label": "-27,750원",
+      "change_pct_label": "-8.7%",
+      "yoy_pct": 306.5126050420168,
+      "yoy_pct_label": "+306.5%",
       "history": [
         {
           "date": "2026-04-27",
@@ -9194,7 +9636,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 290750.0
+          "value": 290250.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -9430,21 +9872,21 @@
       "name_en": "NAVER Stock Price",
       "meaning": "NAVER 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "NAVER 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 195300.0,
+      "value": 193900.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "195,300원",
+      "display_value": "193,900원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -1300.0,
-      "change_pct": -0.661241098677523,
-      "change_abs_label": "-1,300원",
-      "change_pct_label": "-0.7%",
-      "yoy_pct": -16.893617021276597,
-      "yoy_pct_label": "-16.9%",
+      "change_abs": -2700.0,
+      "change_pct": -1.3733468972533025,
+      "change_abs_label": "-2,700원",
+      "change_pct_label": "-1.4%",
+      "yoy_pct": -17.48936170212766,
+      "yoy_pct_label": "-17.5%",
       "history": [
         {
           "date": "2026-04-27",
@@ -9636,7 +10078,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 195300.0
+          "value": 193900.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -10314,21 +10756,21 @@
       "name_en": "LG에너지솔루션 Stock Price",
       "meaning": "LG에너지솔루션 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "LG에너지솔루션 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 325500.0,
+      "value": 326000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "325,500원",
+      "display_value": "326,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -29000.0,
-      "change_pct": -8.180535966149504,
-      "change_abs_label": "-29,000원",
-      "change_pct_label": "-8.2%",
-      "yoy_pct": -14.901960784313728,
-      "yoy_pct_label": "-14.9%",
+      "change_abs": -28500.0,
+      "change_pct": -8.039492242595204,
+      "change_abs_label": "-28,500원",
+      "change_pct_label": "-8.0%",
+      "yoy_pct": -14.771241830065362,
+      "yoy_pct_label": "-14.8%",
       "history": [
         {
           "date": "2026-04-27",
@@ -10520,7 +10962,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 325500.0
+          "value": 326000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -10756,21 +11198,21 @@
       "name_en": "HD현대중공업 Stock Price",
       "meaning": "HD현대중공업 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "HD현대중공업 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 542000.0,
+      "value": 541000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "542,000원",
+      "display_value": "541,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -41000.0,
-      "change_pct": -7.032590051457976,
-      "change_abs_label": "-41,000원",
-      "change_pct_label": "-7.0%",
-      "yoy_pct": 10.499490316004078,
-      "yoy_pct_label": "+10.5%",
+      "change_abs": -42000.0,
+      "change_pct": -7.204116638078906,
+      "change_abs_label": "-42,000원",
+      "change_pct_label": "-7.2%",
+      "yoy_pct": 10.29561671763506,
+      "yoy_pct_label": "+10.3%",
       "history": [
         {
           "date": "2026-04-27",
@@ -10962,7 +11404,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 542000.0
+          "value": 541000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -11198,21 +11640,21 @@
       "name_en": "POSCO홀딩스 Stock Price",
       "meaning": "POSCO홀딩스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "POSCO홀딩스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 309500.0,
+      "value": 309000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "309,500원",
+      "display_value": "309,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -12000.0,
-      "change_pct": -3.732503888024885,
-      "change_abs_label": "-12,000원",
-      "change_pct_label": "-3.7%",
-      "yoy_pct": 0.32414910858995505,
-      "yoy_pct_label": "+0.3%",
+      "change_abs": -12500.0,
+      "change_pct": -3.8880248833592534,
+      "change_abs_label": "-12,500원",
+      "change_pct_label": "-3.9%",
+      "yoy_pct": 0.16207455429497752,
+      "yoy_pct_label": "+0.2%",
       "history": [
         {
           "date": "2026-04-27",
@@ -11404,7 +11846,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 309500.0
+          "value": 309000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -11640,21 +12082,21 @@
       "name_en": "LG화학 Stock Price",
       "meaning": "LG화학 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "LG화학 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 262000.0,
+      "value": 262500.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "262,000원",
+      "display_value": "262,500원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -14500.0,
-      "change_pct": -5.244122965641951,
-      "change_abs_label": "-14,500원",
-      "change_pct_label": "-5.2%",
-      "yoy_pct": -13.101160862354888,
-      "yoy_pct_label": "-13.1%",
+      "change_abs": -14000.0,
+      "change_pct": -5.063291139240511,
+      "change_abs_label": "-14,000원",
+      "change_pct_label": "-5.1%",
+      "yoy_pct": -12.935323383084574,
+      "yoy_pct_label": "-12.9%",
       "history": [
         {
           "date": "2026-04-27",
@@ -11846,7 +12288,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 262000.0
+          "value": 262500.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -12082,21 +12524,21 @@
       "name_en": "KB금융 Stock Price",
       "meaning": "KB금융 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "KB금융 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 169850.0,
+      "value": 169700.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "169,850원",
+      "display_value": "169,700원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -1050.0,
-      "change_pct": -0.6143943826799281,
-      "change_abs_label": "-1,050원",
-      "change_pct_label": "-0.6%",
-      "yoy_pct": 53.155996393146985,
-      "yoy_pct_label": "+53.2%",
+      "change_abs": -1200.0,
+      "change_pct": -0.702165008777067,
+      "change_abs_label": "-1,200원",
+      "change_pct_label": "-0.7%",
+      "yoy_pct": 53.020739404869246,
+      "yoy_pct_label": "+53.0%",
       "history": [
         {
           "date": "2026-04-27",
@@ -12288,7 +12730,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 169850.0
+          "value": 169700.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -12524,21 +12966,21 @@
       "name_en": "현대건설 Stock Price",
       "meaning": "현대건설 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "현대건설 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 107300.0,
+      "value": 106900.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "107,300원",
+      "display_value": "106,900원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -7700.0,
-      "change_pct": -6.695652173913047,
-      "change_abs_label": "-7,700원",
-      "change_pct_label": "-6.7%",
-      "yoy_pct": 58.962962962962976,
-      "yoy_pct_label": "+59.0%",
+      "change_abs": -8100.0,
+      "change_pct": -7.043478260869563,
+      "change_abs_label": "-8,100원",
+      "change_pct_label": "-7.0%",
+      "yoy_pct": 58.37037037037036,
+      "yoy_pct_label": "+58.4%",
       "history": [
         {
           "date": "2026-04-27",
@@ -12730,7 +13172,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 107300.0
+          "value": 106900.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -12966,21 +13408,21 @@
       "name_en": "한화에어로스페이스 Stock Price",
       "meaning": "한화에어로스페이스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "한화에어로스페이스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 1089000.0,
+      "value": 1095000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "1,089,000원",
+      "display_value": "1,095,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -70000.0,
-      "change_pct": -6.039689387402936,
-      "change_abs_label": "-70,000원",
-      "change_pct_label": "-6.0%",
-      "yoy_pct": 9.337349397590366,
-      "yoy_pct_label": "+9.3%",
+      "change_abs": -64000.0,
+      "change_pct": -5.522001725625536,
+      "change_abs_label": "-64,000원",
+      "change_pct_label": "-5.5%",
+      "yoy_pct": 9.939759036144569,
+      "yoy_pct_label": "+9.9%",
       "history": [
         {
           "date": "2026-04-27",
@@ -13172,7 +13614,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 1089000.0
+          "value": 1095000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -13850,21 +14292,21 @@
       "name_en": "한국전력 Stock Price",
       "meaning": "한국전력 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "한국전력 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 37450.0,
+      "value": 37700.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "37,450원",
+      "display_value": "37,700원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -1700.0,
-      "change_pct": -4.3422733077905455,
-      "change_abs_label": "-1,700원",
-      "change_pct_label": "-4.3%",
-      "yoy_pct": -2.853437094682232,
-      "yoy_pct_label": "-2.9%",
+      "change_abs": -1450.0,
+      "change_pct": -3.703703703703709,
+      "change_abs_label": "-1,450원",
+      "change_pct_label": "-3.7%",
+      "yoy_pct": -2.204928664072636,
+      "yoy_pct_label": "-2.2%",
       "history": [
         {
           "date": "2026-04-27",
@@ -14056,7 +14498,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 37450.0
+          "value": 37700.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -14292,21 +14734,21 @@
       "name_en": "두산로보틱스 Stock Price",
       "meaning": "두산로보틱스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "두산로보틱스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 77900.0,
+      "value": 77600.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "77,900원",
+      "display_value": "77,600원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -4600.0,
-      "change_pct": -5.575757575757578,
-      "change_abs_label": "-4,600원",
-      "change_pct_label": "-5.6%",
-      "yoy_pct": 28.97350993377483,
-      "yoy_pct_label": "+29.0%",
+      "change_abs": -4900.0,
+      "change_pct": -5.939393939393945,
+      "change_abs_label": "-4,900원",
+      "change_pct_label": "-5.9%",
+      "yoy_pct": 28.47682119205297,
+      "yoy_pct_label": "+28.5%",
       "history": [
         {
           "date": "2026-04-27",
@@ -14498,7 +14940,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 77900.0
+          "value": 77600.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -14734,21 +15176,21 @@
       "name_en": "쎄트렉아이 Stock Price",
       "meaning": "쎄트렉아이 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "쎄트렉아이 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 80100.0,
+      "value": 80000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "80,100원",
+      "display_value": "80,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -10200.0,
-      "change_pct": -11.29568106312292,
-      "change_abs_label": "-10,200원",
-      "change_pct_label": "-11.3%",
-      "yoy_pct": 63.63636363636365,
-      "yoy_pct_label": "+63.6%",
+      "change_abs": -10300.0,
+      "change_pct": -11.406423034330015,
+      "change_abs_label": "-10,300원",
+      "change_pct_label": "-11.4%",
+      "yoy_pct": 63.432073544433095,
+      "yoy_pct_label": "+63.4%",
       "history": [
         {
           "date": "2026-04-27",
@@ -14940,7 +15382,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 80100.0
+          "value": 80000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -15176,21 +15618,21 @@
       "name_en": "삼성바이오로직스 Stock Price",
       "meaning": "삼성바이오로직스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "삼성바이오로직스 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 1389000.0,
+      "value": 1395000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "1,389,000원",
+      "display_value": "1,395,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -16000.0,
-      "change_pct": -1.1387900355871894,
-      "change_abs_label": "-16,000원",
-      "change_pct_label": "-1.1%",
-      "yoy_pct": -15.333317535794189,
-      "yoy_pct_label": "-15.3%",
+      "change_abs": -10000.0,
+      "change_pct": -0.7117437722419906,
+      "change_abs_label": "-10,000원",
+      "change_pct_label": "-0.7%",
+      "yoy_pct": -14.967586726013604,
+      "yoy_pct_label": "-15.0%",
       "history": [
         {
           "date": "2026-04-27",
@@ -15382,7 +15824,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 1389000.0
+          "value": 1395000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -15618,21 +16060,21 @@
       "name_en": "삼성SDI Stock Price",
       "meaning": "삼성SDI 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "삼성SDI 주가는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 437500.0,
+      "value": 438000.0,
       "unit": "원",
       "unit_en": "KRW",
-      "display_value": "437,500원",
+      "display_value": "438,000원",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -14000.0,
-      "change_pct": -3.100775193798455,
-      "change_abs_label": "-14,000원",
-      "change_pct_label": "-3.1%",
-      "yoy_pct": 117.66169154228857,
-      "yoy_pct_label": "+117.7%",
+      "change_abs": -13500.0,
+      "change_pct": -2.9900332225913595,
+      "change_abs_label": "-13,500원",
+      "change_pct_label": "-3.0%",
+      "yoy_pct": 117.91044776119404,
+      "yoy_pct_label": "+117.9%",
       "history": [
         {
           "date": "2026-04-27",
@@ -15824,7 +16266,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 437500.0
+          "value": 438000.0
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07"
@@ -16060,7 +16502,7 @@
       "name_en": "Total Stablecoin Supply",
       "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
       "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
-      "value": 310.7968080698332,
+      "value": 310.8351546333597,
       "unit": "$B",
       "unit_en": "$B",
       "display_value": "$310.8B",
@@ -16069,28 +16511,28 @@
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 0.04744245752027609,
-      "change_pct": 0.015267113233452534,
-      "change_abs_label": "+0.05B",
+      "change_abs": 0.08887575248053281,
+      "change_pct": 0.02860074553445724,
+      "change_abs_label": "+0.09B",
       "change_pct_label": "+0.0%",
       "yoy_pct": null,
       "yoy_pct_label": "n/a",
       "history": [
         {
           "date": "2026-06-07",
-          "value": 314.60497894628963
+          "value": 314.601348159423
         },
         {
           "date": "2026-06-30",
-          "value": 311.3370812755846
+          "value": 311.33352867139143
         },
         {
           "date": "2026-07-06",
-          "value": 310.74936561231294
+          "value": 310.7462788808792
         },
         {
           "date": "2026-07-07",
-          "value": 310.7968080698332
+          "value": 310.8351546333597
         }
       ],
       "period_label": "2026.06.07 - 2026.07.07"
@@ -16105,7 +16547,7 @@
       "name_en": "USDT Supply",
       "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
       "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
-      "value": 184.23074156892997,
+      "value": 184.22485149775045,
       "unit": "$B",
       "unit_en": "$B",
       "display_value": "$184.2B",
@@ -16114,8 +16556,8 @@
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 0.03040229271786643,
-      "change_pct": 0.01650501450611852,
+      "change_abs": 0.030401320721125558,
+      "change_pct": 0.016505014506096316,
       "change_abs_label": "+0.03B",
       "change_pct_label": "+0.0%",
       "yoy_pct": null,
@@ -16123,19 +16565,19 @@
       "history": [
         {
           "date": "2026-06-07",
-          "value": 186.82377954117322
+          "value": 186.81780656755254
         },
         {
           "date": "2026-06-30",
-          "value": 184.85642803071602
+          "value": 184.85051795561233
         },
         {
           "date": "2026-07-06",
-          "value": 184.2003392762121
+          "value": 184.19445017702932
         },
         {
           "date": "2026-07-07",
-          "value": 184.23074156892997
+          "value": 184.22485149775045
         }
       ],
       "period_label": "2026.06.07 - 2026.07.07"
@@ -16150,17 +16592,17 @@
       "name_en": "USDC Supply",
       "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
       "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
-      "value": 73.25574831827863,
+      "value": 73.25143010076542,
       "unit": "$B",
       "unit_en": "$B",
-      "display_value": "$73.26B",
+      "display_value": "$73.25B",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 0.2097555811849503,
-      "change_pct": 0.287155493854252,
+      "change_abs": 0.205162949977435,
+      "change_pct": 0.2808671243308414,
       "change_abs_label": "+0.21B",
       "change_pct_label": "+0.3%",
       "yoy_pct": null,
@@ -16168,19 +16610,19 @@
       "history": [
         {
           "date": "2026-06-07",
-          "value": 75.50386578312204
+          "value": 75.504149430369
         },
         {
           "date": "2026-06-30",
-          "value": 73.9071616876421
+          "value": 73.90743933651117
         },
         {
           "date": "2026-07-06",
-          "value": 73.04599273709368
+          "value": 73.04626715078798
         },
         {
           "date": "2026-07-07",
-          "value": 73.25574831827863
+          "value": 73.25143010076542
         }
       ],
       "period_label": "2026.06.07 - 2026.07.07"
@@ -19137,10 +19579,10 @@
       "name_en": "US EV Charging Stations",
       "meaning": "미국 EV 충전소 수는 전기차 보급 환경과 충전 인프라 투자 흐름을 보여주는 지표입니다.",
       "meaning_en": "US EV charging station count shows EV adoption conditions and charging infrastructure investment trends.",
-      "value": 88813.0,
+      "value": 88820.0,
       "unit": "곳",
       "unit_en": "stations",
-      "display_value": "88,813.0 곳",
+      "display_value": "88,820.0 곳",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
@@ -19155,7 +19597,7 @@
       "history": [
         {
           "date": "2026-07-07",
-          "value": 88813.0
+          "value": 88820.0
         }
       ],
       "period_label": "2026.07.07"
@@ -19170,10 +19612,10 @@
       "name_en": "US EV Charging Ports",
       "meaning": "미국 EV 충전 포트 수는 전기차 이용 편의성과 인프라 확장 속도를 확인하는 지표입니다.",
       "meaning_en": "US EV charging port count shows EV usability and the pace of infrastructure expansion.",
-      "value": 288252.0,
+      "value": 288266.0,
       "unit": "개",
       "unit_en": "ports",
-      "display_value": "288,252.0 개",
+      "display_value": "288,266.0 개",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
@@ -19188,10 +19630,452 @@
       "history": [
         {
           "date": "2026-07-07",
-          "value": 288252.0
+          "value": 288266.0
         }
       ],
       "period_label": "2026.07.07"
+    },
+    {
+      "id": "320be6d22e2e",
+      "industry": "건설/부동산",
+      "industry_en": "Construction & Real Estate",
+      "group": "국내 주택",
+      "group_en": "Korea Housing",
+      "name": "한국 주택매매가격지수",
+      "name_en": "Korea Home Sale Price Index",
+      "meaning": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
+      "meaning_en": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
+      "value": 96.1686227,
+      "unit": "지수",
+      "unit_en": "Index",
+      "display_value": "96.17 지수",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2025-03-01",
+      "observed_label": "2025.03",
+      "next_update_label": "2025.04",
+      "change_abs": 0.0137210500000009,
+      "change_pct": 0.014269735358829472,
+      "change_abs_label": "+0.01 지수",
+      "change_pct_label": "+0.0%",
+      "yoy_pct": 0.3985847910131124,
+      "yoy_pct_label": "+0.4%",
+      "history": [
+        {
+          "date": "2021-04-01",
+          "value": 98.17542084
+        },
+        {
+          "date": "2021-05-01",
+          "value": 98.86155873
+        },
+        {
+          "date": "2021-06-01",
+          "value": 100.0
+        },
+        {
+          "date": "2021-07-01",
+          "value": 100.8527701
+        },
+        {
+          "date": "2021-08-01",
+          "value": 101.8232676
+        },
+        {
+          "date": "2021-09-01",
+          "value": 102.7556195
+        },
+        {
+          "date": "2021-10-01",
+          "value": 103.6644343
+        },
+        {
+          "date": "2021-11-01",
+          "value": 104.3169996
+        },
+        {
+          "date": "2021-12-01",
+          "value": 104.6169034
+        },
+        {
+          "date": "2022-01-01",
+          "value": 104.7193237
+        },
+        {
+          "date": "2022-02-01",
+          "value": 104.7501852
+        },
+        {
+          "date": "2022-03-01",
+          "value": 104.7681327
+        },
+        {
+          "date": "2022-04-01",
+          "value": 104.8296115
+        },
+        {
+          "date": "2022-05-01",
+          "value": 104.8440136
+        },
+        {
+          "date": "2022-06-01",
+          "value": 104.8372099
+        },
+        {
+          "date": "2022-07-01",
+          "value": 104.7582611
+        },
+        {
+          "date": "2022-08-01",
+          "value": 104.4590502
+        },
+        {
+          "date": "2022-09-01",
+          "value": 103.9498545
+        },
+        {
+          "date": "2022-10-01",
+          "value": 103.1485214
+        },
+        {
+          "date": "2022-11-01",
+          "value": 101.7361712
+        },
+        {
+          "date": "2022-12-01",
+          "value": 99.72380843
+        },
+        {
+          "date": "2023-01-01",
+          "value": 98.2335662
+        },
+        {
+          "date": "2023-02-01",
+          "value": 97.10790976
+        },
+        {
+          "date": "2023-03-01",
+          "value": 96.34640819
+        },
+        {
+          "date": "2023-04-01",
+          "value": 95.89740291
+        },
+        {
+          "date": "2023-05-01",
+          "value": 95.68618947
+        },
+        {
+          "date": "2023-06-01",
+          "value": 95.63459488
+        },
+        {
+          "date": "2023-07-01",
+          "value": 95.66082943
+        },
+        {
+          "date": "2023-08-01",
+          "value": 95.80974121
+        },
+        {
+          "date": "2023-09-01",
+          "value": 96.04961444
+        },
+        {
+          "date": "2023-10-01",
+          "value": 96.24235212
+        },
+        {
+          "date": "2023-11-01",
+          "value": 96.27707003
+        },
+        {
+          "date": "2023-12-01",
+          "value": 96.17770118
+        },
+        {
+          "date": "2024-01-01",
+          "value": 96.04017992
+        },
+        {
+          "date": "2024-02-01",
+          "value": 95.90192663
+        },
+        {
+          "date": "2024-03-01",
+          "value": 95.78683096
+        },
+        {
+          "date": "2024-04-01",
+          "value": 95.73790935
+        },
+        {
+          "date": "2024-05-01",
+          "value": 95.71735078
+        },
+        {
+          "date": "2024-06-01",
+          "value": 95.75427614
+        },
+        {
+          "date": "2024-07-01",
+          "value": 95.89980579
+        },
+        {
+          "date": "2024-08-01",
+          "value": 96.12914525
+        },
+        {
+          "date": "2024-09-01",
+          "value": 96.29618613
+        },
+        {
+          "date": "2024-10-01",
+          "value": 96.36714121
+        },
+        {
+          "date": "2024-11-01",
+          "value": 96.37408597
+        },
+        {
+          "date": "2024-12-01",
+          "value": 96.30494577
+        },
+        {
+          "date": "2025-01-01",
+          "value": 96.20897892
+        },
+        {
+          "date": "2025-02-01",
+          "value": 96.15490165
+        },
+        {
+          "date": "2025-03-01",
+          "value": 96.1686227
+        }
+      ],
+      "period_label": "2021.04 - 2025.03"
+    },
+    {
+      "id": "65615e553195",
+      "industry": "건설/부동산",
+      "industry_en": "Construction & Real Estate",
+      "group": "건설 허가",
+      "group_en": "Construction Permits",
+      "name": "한국 건축허가 동수",
+      "name_en": "Korea Building Permits Count",
+      "meaning": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
+      "meaning_en": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
+      "value": 11813.0,
+      "unit": "동",
+      "unit_en": "동",
+      "display_value": "11,813.0 동",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": 898.0,
+      "change_pct": 8.227210261108574,
+      "change_abs_label": "+898.00 동",
+      "change_pct_label": "+8.2%",
+      "yoy_pct": 2.42781583282754,
+      "yoy_pct_label": "+2.4%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 19700.0
+        },
+        {
+          "date": "2022-06-01",
+          "value": 16918.0
+        },
+        {
+          "date": "2022-07-01",
+          "value": 15973.0
+        },
+        {
+          "date": "2022-08-01",
+          "value": 16129.0
+        },
+        {
+          "date": "2022-09-01",
+          "value": 13785.0
+        },
+        {
+          "date": "2022-10-01",
+          "value": 13616.0
+        },
+        {
+          "date": "2022-11-01",
+          "value": 15309.0
+        },
+        {
+          "date": "2022-12-01",
+          "value": 14373.0
+        },
+        {
+          "date": "2023-01-01",
+          "value": 10255.0
+        },
+        {
+          "date": "2023-02-01",
+          "value": 10540.0
+        },
+        {
+          "date": "2023-03-01",
+          "value": 13454.0
+        },
+        {
+          "date": "2023-04-01",
+          "value": 12569.0
+        },
+        {
+          "date": "2023-05-01",
+          "value": 13492.0
+        },
+        {
+          "date": "2023-06-01",
+          "value": 13700.0
+        },
+        {
+          "date": "2023-07-01",
+          "value": 11648.0
+        },
+        {
+          "date": "2023-08-01",
+          "value": 12826.0
+        },
+        {
+          "date": "2023-09-01",
+          "value": 11687.0
+        },
+        {
+          "date": "2023-10-01",
+          "value": 10502.0
+        },
+        {
+          "date": "2023-11-01",
+          "value": 12530.0
+        },
+        {
+          "date": "2023-12-01",
+          "value": 11738.0
+        },
+        {
+          "date": "2024-01-01",
+          "value": 10115.0
+        },
+        {
+          "date": "2024-02-01",
+          "value": 9472.0
+        },
+        {
+          "date": "2024-03-01",
+          "value": 11086.0
+        },
+        {
+          "date": "2024-04-01",
+          "value": 12229.0
+        },
+        {
+          "date": "2024-05-01",
+          "value": 12398.0
+        },
+        {
+          "date": "2024-06-01",
+          "value": 10674.0
+        },
+        {
+          "date": "2024-07-01",
+          "value": 11754.0
+        },
+        {
+          "date": "2024-08-01",
+          "value": 10437.0
+        },
+        {
+          "date": "2024-09-01",
+          "value": 9326.0
+        },
+        {
+          "date": "2024-10-01",
+          "value": 10873.0
+        },
+        {
+          "date": "2024-11-01",
+          "value": 11345.0
+        },
+        {
+          "date": "2024-12-01",
+          "value": 12032.0
+        },
+        {
+          "date": "2025-01-01",
+          "value": 7417.0
+        },
+        {
+          "date": "2025-02-01",
+          "value": 8455.0
+        },
+        {
+          "date": "2025-03-01",
+          "value": 10950.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 11533.0
+        },
+        {
+          "date": "2025-05-01",
+          "value": 10783.0
+        },
+        {
+          "date": "2025-06-01",
+          "value": 10361.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 10637.0
+        },
+        {
+          "date": "2025-08-01",
+          "value": 9741.0
+        },
+        {
+          "date": "2025-09-01",
+          "value": 12138.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 8871.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 10596.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 12350.0
+        },
+        {
+          "date": "2026-01-01",
+          "value": 8812.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 7248.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 10915.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 11813.0
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
     },
     {
       "id": "f5b24e872a87",
