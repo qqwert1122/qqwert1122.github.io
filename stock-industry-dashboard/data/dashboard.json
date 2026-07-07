@@ -1,7 +1,7 @@
 {
   "title": "산업별 지표 대시보드",
-  "generated_at": "2026-07-07T22:20:35+09:00",
-  "generated_label": "2026-07-07 22:20 KST",
+  "generated_at": "2026-07-07T22:28:29+09:00",
+  "generated_label": "2026-07-07 22:28 KST",
   "timezone": "Asia/Seoul",
   "industries": [
     "반도체",
@@ -94,7 +94,7 @@
     {
       "name": "SEC CAPEX",
       "status": "ok",
-      "message": "4/4개 지표 자동 수집"
+      "message": "5/5개 지표 자동 수집"
     },
     {
       "name": "USAspending 방산",
@@ -118,8 +118,8 @@
     },
     {
       "name": "Launch Library",
-      "status": "ok",
-      "message": "1/1개 지표 자동 수집"
+      "status": "partial",
+      "message": "0/1개 지표 자동 수집"
     },
     {
       "name": "AFDC EV 충전",
@@ -128,8 +128,8 @@
     },
     {
       "name": "KOSIS",
-      "status": "ok",
-      "message": "2/3개 지표 자동 수집"
+      "status": "partial",
+      "message": "0/3개 지표 자동 수집"
     },
     {
       "name": "한국 수출",
@@ -17607,37 +17607,37 @@
       "name_en": "Total Stablecoin Supply",
       "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
       "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
-      "value": 310.61141475220853,
+      "value": 310.5499196487921,
       "unit": "$B",
       "unit_en": "$B",
-      "display_value": "$310.6B",
+      "display_value": "$310.5B",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -0.13010640338205803,
-      "change_pct": -0.04186965517135599,
-      "change_abs_label": "-0.13B",
-      "change_pct_label": "-0.0%",
+      "change_abs": -0.17130779915009953,
+      "change_pct": -0.0551323128313741,
+      "change_abs_label": "-0.17B",
+      "change_pct_label": "-0.1%",
       "yoy_pct": null,
       "yoy_pct_label": "n/a",
       "history": [
         {
           "date": "2026-06-07",
-          "value": 314.59726493970317
+          "value": 314.57715731440663
         },
         {
           "date": "2026-06-30",
-          "value": 311.32992882517146
+          "value": 311.3098361281298
         },
         {
           "date": "2026-07-06",
-          "value": 310.7415211555906
+          "value": 310.7212274479422
         },
         {
           "date": "2026-07-07",
-          "value": 310.61141475220853
+          "value": 310.5499196487921
         }
       ],
       "period_label": "2026.06.07 - 2026.07.07"
@@ -17652,7 +17652,7 @@
       "name_en": "USDT Supply",
       "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
       "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
-      "value": 184.1182573129025,
+      "value": 184.1001342210928,
       "unit": "$B",
       "unit_en": "$B",
       "display_value": "$184.1B",
@@ -17661,8 +17661,8 @@
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -0.03295237079845492,
-      "change_pct": -0.017894191873657483,
+      "change_abs": -0.0329491771997823,
+      "change_pct": -0.017894219002734246,
       "change_abs_label": "-0.03B",
       "change_pct_label": "-0.0%",
       "yoy_pct": null,
@@ -17670,19 +17670,19 @@
       "history": [
         {
           "date": "2026-06-07",
-          "value": 186.77395022926035
+          "value": 186.75556578348602
         },
         {
           "date": "2026-06-30",
-          "value": 184.8071234473591
+          "value": 184.7889325993551
         },
         {
           "date": "2026-07-06",
-          "value": 184.15120968370096
+          "value": 184.13308339829257
         },
         {
           "date": "2026-07-07",
-          "value": 184.1182573129025
+          "value": 184.1001342210928
         }
       ],
       "period_label": "2026.06.07 - 2026.07.07"
@@ -17697,37 +17697,37 @@
       "name_en": "USDC Supply",
       "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
       "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
-      "value": 73.17256087647344,
+      "value": 73.12256381613985,
       "unit": "$B",
       "unit_en": "$B",
-      "display_value": "$73.17B",
+      "display_value": "$73.12B",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 0.1267836820306485,
-      "change_pct": 0.17356743524428175,
-      "change_abs_label": "+0.13B",
-      "change_pct_label": "+0.2%",
+      "change_abs": 0.07902691961859887,
+      "change_pct": 0.1081915292937552,
+      "change_abs_label": "+0.08B",
+      "change_pct_label": "+0.1%",
       "yoy_pct": null,
       "yoy_pct_label": "n/a",
       "history": [
         {
           "date": "2026-06-07",
-          "value": 75.50364298782861
+          "value": 75.50132730770373
         },
         {
           "date": "2026-06-30",
-          "value": 73.90694360387113
+          "value": 73.90467689416519
         },
         {
           "date": "2026-07-06",
-          "value": 73.04577719444279
+          "value": 73.04353689652125
         },
         {
           "date": "2026-07-07",
-          "value": 73.17256087647344
+          "value": 73.12256381613985
         }
       ],
       "period_label": "2026.06.07 - 2026.07.07"
@@ -18962,6 +18962,99 @@
         }
       ],
       "period_label": "2012.03.31 - 2026.03.31"
+    },
+    {
+      "id": "6eeb89e9064b",
+      "industry": "데이터인프라",
+      "industry_en": "Data Infrastructure",
+      "group": "CAPEX",
+      "group_en": "CAPEX",
+      "name": "Oracle",
+      "name_en": "Oracle",
+      "meaning": "Oracle의 CAPEX는 데이터센터, 서버, AI 인프라 같은 장기 설비투자 규모를 보여줍니다. 투자가 커질수록 클라우드와 AI 인프라 수요가 강하다는 신호로 볼 수 있습니다.",
+      "meaning_en": "Oracle의 CAPEX는 데이터센터, 서버, AI 인프라 같은 장기 설비투자 규모를 보여줍니다. 투자가 커질수록 클라우드와 AI 인프라 수요가 강하다는 신호로 볼 수 있습니다.",
+      "value": 8.502,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$8.50B",
+      "frequency": "분기",
+      "frequency_en": "Quarterly",
+      "observed_at": "2025-08-31",
+      "observed_label": "2025.08.31",
+      "next_update_label": "2025.11",
+      "change_abs": 6.199000000000001,
+      "change_pct": 269.1706469821972,
+      "change_abs_label": "+6.20B",
+      "change_pct_label": "+269.2%",
+      "yoy_pct": 269.1706469821972,
+      "yoy_pct_label": "+269.2%",
+      "history": [
+        {
+          "date": "2010-08-31",
+          "value": 0.118
+        },
+        {
+          "date": "2011-08-31",
+          "value": 0.16
+        },
+        {
+          "date": "2012-08-31",
+          "value": 0.139
+        },
+        {
+          "date": "2013-08-31",
+          "value": 0.153
+        },
+        {
+          "date": "2014-08-31",
+          "value": 0.201
+        },
+        {
+          "date": "2015-08-31",
+          "value": 0.446
+        },
+        {
+          "date": "2016-08-31",
+          "value": 0.299
+        },
+        {
+          "date": "2017-08-31",
+          "value": 0.473
+        },
+        {
+          "date": "2018-08-31",
+          "value": 0.383
+        },
+        {
+          "date": "2019-08-31",
+          "value": 0.386
+        },
+        {
+          "date": "2020-08-31",
+          "value": 0.436
+        },
+        {
+          "date": "2021-08-31",
+          "value": 1.062
+        },
+        {
+          "date": "2022-08-31",
+          "value": 1.719
+        },
+        {
+          "date": "2023-08-31",
+          "value": 1.314
+        },
+        {
+          "date": "2024-08-31",
+          "value": 2.303
+        },
+        {
+          "date": "2025-08-31",
+          "value": 8.502
+        }
+      ],
+      "period_label": "2010.08.31 - 2025.08.31"
     },
     {
       "id": "29989cc3085a",
@@ -20574,107 +20667,6 @@
       "period_label": "2025.01 - 2026.06"
     },
     {
-      "id": "d5ab88b67d0f",
-      "industry": "우주",
-      "industry_en": "Space",
-      "group": "발사 이벤트",
-      "group_en": "Launch Events",
-      "name": "글로벌 우주 발사 건수",
-      "name_en": "Global Space Launch Count",
-      "meaning": "글로벌 발사 건수로 우주 산업 활동성과 위성 인프라 수요를 확인합니다.",
-      "meaning_en": "Global launch count indicates space industry activity and satellite infrastructure demand.",
-      "value": 29.0,
-      "unit": "건",
-      "unit_en": "events",
-      "display_value": "29.00 건",
-      "frequency": "월간",
-      "frequency_en": "Monthly",
-      "observed_at": "2026-06-01",
-      "observed_label": "2026.06",
-      "next_update_label": "2026.07",
-      "change_abs": 6.0,
-      "change_pct": 26.086956521739136,
-      "change_abs_label": "+6.00 건",
-      "change_pct_label": "+26.1%",
-      "yoy_pct": 11.538461538461542,
-      "yoy_pct_label": "+11.5%",
-      "history": [
-        {
-          "date": "2025-01-01",
-          "value": 22.0
-        },
-        {
-          "date": "2025-02-01",
-          "value": 22.0
-        },
-        {
-          "date": "2025-03-01",
-          "value": 27.0
-        },
-        {
-          "date": "2025-04-01",
-          "value": 27.0
-        },
-        {
-          "date": "2025-05-01",
-          "value": 30.0
-        },
-        {
-          "date": "2025-06-01",
-          "value": 26.0
-        },
-        {
-          "date": "2025-07-01",
-          "value": 24.0
-        },
-        {
-          "date": "2025-08-01",
-          "value": 30.0
-        },
-        {
-          "date": "2025-09-01",
-          "value": 32.0
-        },
-        {
-          "date": "2025-10-01",
-          "value": 28.0
-        },
-        {
-          "date": "2025-11-01",
-          "value": 32.0
-        },
-        {
-          "date": "2025-12-01",
-          "value": 41.0
-        },
-        {
-          "date": "2026-01-01",
-          "value": 25.0
-        },
-        {
-          "date": "2026-02-01",
-          "value": 19.0
-        },
-        {
-          "date": "2026-03-01",
-          "value": 30.0
-        },
-        {
-          "date": "2026-04-01",
-          "value": 33.0
-        },
-        {
-          "date": "2026-05-01",
-          "value": 23.0
-        },
-        {
-          "date": "2026-06-01",
-          "value": 29.0
-        }
-      ],
-      "period_label": "2025.01 - 2026.06"
-    },
-    {
       "id": "bd3d2907e306",
       "industry": "전기차",
       "industry_en": "EVs",
@@ -20739,448 +20731,6 @@
         }
       ],
       "period_label": "2026.07.07"
-    },
-    {
-      "id": "320be6d22e2e",
-      "industry": "건설/부동산",
-      "industry_en": "Construction & Real Estate",
-      "group": "국내 주택",
-      "group_en": "Korea Housing",
-      "name": "한국 주택매매가격지수",
-      "name_en": "Korea Home Sale Price Index",
-      "meaning": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
-      "meaning_en": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
-      "value": 96.1686227,
-      "unit": "지수",
-      "unit_en": "Index",
-      "display_value": "96.17 지수",
-      "frequency": "월간",
-      "frequency_en": "Monthly",
-      "observed_at": "2025-03-01",
-      "observed_label": "2025.03",
-      "next_update_label": "2025.04",
-      "change_abs": 0.0137210500000009,
-      "change_pct": 0.014269735358829472,
-      "change_abs_label": "+0.01 지수",
-      "change_pct_label": "+0.0%",
-      "yoy_pct": 0.3985847910131124,
-      "yoy_pct_label": "+0.4%",
-      "history": [
-        {
-          "date": "2021-04-01",
-          "value": 98.17542084
-        },
-        {
-          "date": "2021-05-01",
-          "value": 98.86155873
-        },
-        {
-          "date": "2021-06-01",
-          "value": 100.0
-        },
-        {
-          "date": "2021-07-01",
-          "value": 100.8527701
-        },
-        {
-          "date": "2021-08-01",
-          "value": 101.8232676
-        },
-        {
-          "date": "2021-09-01",
-          "value": 102.7556195
-        },
-        {
-          "date": "2021-10-01",
-          "value": 103.6644343
-        },
-        {
-          "date": "2021-11-01",
-          "value": 104.3169996
-        },
-        {
-          "date": "2021-12-01",
-          "value": 104.6169034
-        },
-        {
-          "date": "2022-01-01",
-          "value": 104.7193237
-        },
-        {
-          "date": "2022-02-01",
-          "value": 104.7501852
-        },
-        {
-          "date": "2022-03-01",
-          "value": 104.7681327
-        },
-        {
-          "date": "2022-04-01",
-          "value": 104.8296115
-        },
-        {
-          "date": "2022-05-01",
-          "value": 104.8440136
-        },
-        {
-          "date": "2022-06-01",
-          "value": 104.8372099
-        },
-        {
-          "date": "2022-07-01",
-          "value": 104.7582611
-        },
-        {
-          "date": "2022-08-01",
-          "value": 104.4590502
-        },
-        {
-          "date": "2022-09-01",
-          "value": 103.9498545
-        },
-        {
-          "date": "2022-10-01",
-          "value": 103.1485214
-        },
-        {
-          "date": "2022-11-01",
-          "value": 101.7361712
-        },
-        {
-          "date": "2022-12-01",
-          "value": 99.72380843
-        },
-        {
-          "date": "2023-01-01",
-          "value": 98.2335662
-        },
-        {
-          "date": "2023-02-01",
-          "value": 97.10790976
-        },
-        {
-          "date": "2023-03-01",
-          "value": 96.34640819
-        },
-        {
-          "date": "2023-04-01",
-          "value": 95.89740291
-        },
-        {
-          "date": "2023-05-01",
-          "value": 95.68618947
-        },
-        {
-          "date": "2023-06-01",
-          "value": 95.63459488
-        },
-        {
-          "date": "2023-07-01",
-          "value": 95.66082943
-        },
-        {
-          "date": "2023-08-01",
-          "value": 95.80974121
-        },
-        {
-          "date": "2023-09-01",
-          "value": 96.04961444
-        },
-        {
-          "date": "2023-10-01",
-          "value": 96.24235212
-        },
-        {
-          "date": "2023-11-01",
-          "value": 96.27707003
-        },
-        {
-          "date": "2023-12-01",
-          "value": 96.17770118
-        },
-        {
-          "date": "2024-01-01",
-          "value": 96.04017992
-        },
-        {
-          "date": "2024-02-01",
-          "value": 95.90192663
-        },
-        {
-          "date": "2024-03-01",
-          "value": 95.78683096
-        },
-        {
-          "date": "2024-04-01",
-          "value": 95.73790935
-        },
-        {
-          "date": "2024-05-01",
-          "value": 95.71735078
-        },
-        {
-          "date": "2024-06-01",
-          "value": 95.75427614
-        },
-        {
-          "date": "2024-07-01",
-          "value": 95.89980579
-        },
-        {
-          "date": "2024-08-01",
-          "value": 96.12914525
-        },
-        {
-          "date": "2024-09-01",
-          "value": 96.29618613
-        },
-        {
-          "date": "2024-10-01",
-          "value": 96.36714121
-        },
-        {
-          "date": "2024-11-01",
-          "value": 96.37408597
-        },
-        {
-          "date": "2024-12-01",
-          "value": 96.30494577
-        },
-        {
-          "date": "2025-01-01",
-          "value": 96.20897892
-        },
-        {
-          "date": "2025-02-01",
-          "value": 96.15490165
-        },
-        {
-          "date": "2025-03-01",
-          "value": 96.1686227
-        }
-      ],
-      "period_label": "2021.04 - 2025.03"
-    },
-    {
-      "id": "65615e553195",
-      "industry": "건설/부동산",
-      "industry_en": "Construction & Real Estate",
-      "group": "건설 허가",
-      "group_en": "Construction Permits",
-      "name": "한국 건축허가 동수",
-      "name_en": "Korea Building Permits Count",
-      "meaning": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
-      "meaning_en": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
-      "value": 11813.0,
-      "unit": "동",
-      "unit_en": "동",
-      "display_value": "11,813.0 동",
-      "frequency": "월간",
-      "frequency_en": "Monthly",
-      "observed_at": "2026-04-01",
-      "observed_label": "2026.04",
-      "next_update_label": "2026.05",
-      "change_abs": 898.0,
-      "change_pct": 8.227210261108574,
-      "change_abs_label": "+898.00 동",
-      "change_pct_label": "+8.2%",
-      "yoy_pct": 2.42781583282754,
-      "yoy_pct_label": "+2.4%",
-      "history": [
-        {
-          "date": "2022-05-01",
-          "value": 19700.0
-        },
-        {
-          "date": "2022-06-01",
-          "value": 16918.0
-        },
-        {
-          "date": "2022-07-01",
-          "value": 15973.0
-        },
-        {
-          "date": "2022-08-01",
-          "value": 16129.0
-        },
-        {
-          "date": "2022-09-01",
-          "value": 13785.0
-        },
-        {
-          "date": "2022-10-01",
-          "value": 13616.0
-        },
-        {
-          "date": "2022-11-01",
-          "value": 15309.0
-        },
-        {
-          "date": "2022-12-01",
-          "value": 14373.0
-        },
-        {
-          "date": "2023-01-01",
-          "value": 10255.0
-        },
-        {
-          "date": "2023-02-01",
-          "value": 10540.0
-        },
-        {
-          "date": "2023-03-01",
-          "value": 13454.0
-        },
-        {
-          "date": "2023-04-01",
-          "value": 12569.0
-        },
-        {
-          "date": "2023-05-01",
-          "value": 13492.0
-        },
-        {
-          "date": "2023-06-01",
-          "value": 13700.0
-        },
-        {
-          "date": "2023-07-01",
-          "value": 11648.0
-        },
-        {
-          "date": "2023-08-01",
-          "value": 12826.0
-        },
-        {
-          "date": "2023-09-01",
-          "value": 11687.0
-        },
-        {
-          "date": "2023-10-01",
-          "value": 10502.0
-        },
-        {
-          "date": "2023-11-01",
-          "value": 12530.0
-        },
-        {
-          "date": "2023-12-01",
-          "value": 11738.0
-        },
-        {
-          "date": "2024-01-01",
-          "value": 10115.0
-        },
-        {
-          "date": "2024-02-01",
-          "value": 9472.0
-        },
-        {
-          "date": "2024-03-01",
-          "value": 11086.0
-        },
-        {
-          "date": "2024-04-01",
-          "value": 12229.0
-        },
-        {
-          "date": "2024-05-01",
-          "value": 12398.0
-        },
-        {
-          "date": "2024-06-01",
-          "value": 10674.0
-        },
-        {
-          "date": "2024-07-01",
-          "value": 11754.0
-        },
-        {
-          "date": "2024-08-01",
-          "value": 10437.0
-        },
-        {
-          "date": "2024-09-01",
-          "value": 9326.0
-        },
-        {
-          "date": "2024-10-01",
-          "value": 10873.0
-        },
-        {
-          "date": "2024-11-01",
-          "value": 11345.0
-        },
-        {
-          "date": "2024-12-01",
-          "value": 12032.0
-        },
-        {
-          "date": "2025-01-01",
-          "value": 7417.0
-        },
-        {
-          "date": "2025-02-01",
-          "value": 8455.0
-        },
-        {
-          "date": "2025-03-01",
-          "value": 10950.0
-        },
-        {
-          "date": "2025-04-01",
-          "value": 11533.0
-        },
-        {
-          "date": "2025-05-01",
-          "value": 10783.0
-        },
-        {
-          "date": "2025-06-01",
-          "value": 10361.0
-        },
-        {
-          "date": "2025-07-01",
-          "value": 10637.0
-        },
-        {
-          "date": "2025-08-01",
-          "value": 9741.0
-        },
-        {
-          "date": "2025-09-01",
-          "value": 12138.0
-        },
-        {
-          "date": "2025-10-01",
-          "value": 8871.0
-        },
-        {
-          "date": "2025-11-01",
-          "value": 10596.0
-        },
-        {
-          "date": "2025-12-01",
-          "value": 12350.0
-        },
-        {
-          "date": "2026-01-01",
-          "value": 8812.0
-        },
-        {
-          "date": "2026-02-01",
-          "value": 7248.0
-        },
-        {
-          "date": "2026-03-01",
-          "value": 10915.0
-        },
-        {
-          "date": "2026-04-01",
-          "value": 11813.0
-        }
-      ],
-      "period_label": "2022.05 - 2026.04"
     },
     {
       "id": "f5b24e872a87",
