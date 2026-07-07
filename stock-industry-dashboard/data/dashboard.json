@@ -1,7 +1,7 @@
 {
   "title": "산업별 지표 대시보드",
-  "generated_at": "2026-07-07T22:54:53+09:00",
-  "generated_label": "2026-07-07 22:54 KST",
+  "generated_at": "2026-07-07T22:59:31+09:00",
+  "generated_label": "2026-07-07 22:59 KST",
   "timezone": "Asia/Seoul",
   "industries": [
     "반도체",
@@ -128,8 +128,8 @@
     },
     {
       "name": "KOSIS",
-      "status": "partial",
-      "message": "0/3개 지표 자동 수집"
+      "status": "ok",
+      "message": "2/3개 지표 자동 수집"
     },
     {
       "name": "한국 수출",
@@ -2898,26 +2898,22 @@
       "name_en": "US High Yield Corporate OAS",
       "meaning": "하이일드 OAS는 위험자산 선호와 기업 부도위험 변화를 보여주는 대표 신용 스프레드입니다.",
       "meaning_en": "High yield OAS is a representative credit spread for risk appetite and corporate default risk.",
-      "value": 2.74,
+      "value": 2.72,
       "unit": "%",
       "unit_en": "%",
-      "display_value": "2.74%",
+      "display_value": "2.72%",
       "frequency": "일간",
       "frequency_en": "Daily",
-      "observed_at": "2026-07-03",
-      "observed_label": "2026.07.03",
-      "next_update_label": "2026.07.04",
-      "change_abs": -0.009999999999999787,
-      "change_pct": -0.3636363636363549,
-      "change_abs_label": "-0.01%p",
-      "change_pct_label": "-0.4%",
+      "observed_at": "2026-07-06",
+      "observed_label": "2026.07.06",
+      "next_update_label": "2026.07.07",
+      "change_abs": -0.020000000000000018,
+      "change_pct": -0.7299270072992692,
+      "change_abs_label": "-0.02%p",
+      "change_pct_label": "-0.7%",
       "yoy_pct": null,
       "yoy_pct_label": "n/a",
       "history": [
-        {
-          "date": "2026-04-30",
-          "value": 2.83
-        },
         {
           "date": "2026-05-01",
           "value": 2.77
@@ -3105,12 +3101,16 @@
         {
           "date": "2026-07-03",
           "value": 2.74
+        },
+        {
+          "date": "2026-07-06",
+          "value": 2.72
         }
       ],
-      "period_label": "2026.04.30 - 2026.07.03",
-      "daily_status": "",
+      "period_label": "2026.05 - 2026.07.06",
+      "daily_status": "updated",
       "is_new": false,
-      "is_updated_today": false,
+      "is_updated_today": true,
       "previous_run_observed_at": "2026-07-03",
       "previous_run_value": 2.74,
       "previous_run_display_value": "2.74%"
@@ -6543,9 +6543,12 @@
         }
       ],
       "period_label": "2022.06 - 2026.05",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-05-01",
+      "previous_run_value": 30.104,
+      "previous_run_display_value": "30.10 지수"
     },
     {
       "id": "662c9cc1f646",
@@ -6769,9 +6772,12 @@
         }
       ],
       "period_label": "2022.06 - 2026.05",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-05-01",
+      "previous_run_value": 107.043,
+      "previous_run_display_value": "107.0 지수"
     },
     {
       "id": "79eb884a3cdd",
@@ -6995,9 +7001,12 @@
         }
       ],
       "period_label": "2022.06 - 2026.05",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-05-01",
+      "previous_run_value": 135.421,
+      "previous_run_display_value": "135.4 지수"
     },
     {
       "id": "7ce5793dc33a",
@@ -7221,9 +7230,12 @@
         }
       ],
       "period_label": "2021.04 - 2026.05",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-05-01",
+      "previous_run_value": 20.915,
+      "previous_run_display_value": "20.91 지수"
     },
     {
       "id": "32c8808003a6",
@@ -10195,12 +10207,12 @@
         }
       ],
       "period_label": "2026.04.30 - 2026.07.06",
-      "daily_status": "updated",
+      "daily_status": "",
       "is_new": false,
-      "is_updated_today": true,
-      "previous_run_observed_at": "2026-07-03",
-      "previous_run_value": 15.81,
-      "previous_run_display_value": "15.81"
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-07-06",
+      "previous_run_value": 15.57,
+      "previous_run_display_value": "15.57"
     },
     {
       "id": "e571cc471e26",
@@ -10901,21 +10913,21 @@
       "name_en": "NVIDIA(NVDA)",
       "meaning": "NVIDIA(NVDA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "NVIDIA(NVDA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 191.89999389648438,
+      "value": 192.85000610351562,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$191.9",
+      "display_value": "$192.9",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -3.6500091552734375,
-      "change_pct": -1.8665349518339647,
-      "change_abs_label": "$-3.65",
-      "change_pct_label": "-1.9%",
-      "yoy_pct": 7.887782742701144,
-      "yoy_pct_label": "+7.9%",
+      "change_abs": -2.6999969482421875,
+      "change_pct": -1.380719461061608,
+      "change_abs_label": "$-2.70",
+      "change_pct_label": "-1.4%",
+      "yoy_pct": 8.421887556953456,
+      "yoy_pct_label": "+8.4%",
       "history": [
         {
           "date": "2026-04-28",
@@ -11107,7 +11119,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 191.89999389648438
+          "value": 192.85000610351562
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -11115,8 +11127,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 192.64999389648438,
-      "previous_run_display_value": "$192.6"
+      "previous_run_value": 191.89999389648438,
+      "previous_run_display_value": "$191.9"
     },
     {
       "id": "4bffa8579327",
@@ -11340,9 +11352,12 @@
         }
       ],
       "period_label": "2026.04.27 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 2201000.0,
+      "previous_run_display_value": "2,201,000원"
     },
     {
       "id": "df08e35f00ed",
@@ -11356,21 +11371,21 @@
       "name_en": "Micron(MU)",
       "meaning": "Micron(MU)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Micron(MU)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 912.6599731445312,
+      "value": 919.0,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$912.7",
+      "display_value": "$919.0",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -72.09002685546875,
-      "change_pct": -7.320642483419015,
-      "change_abs_label": "$-72.09",
-      "change_pct_label": "-7.3%",
-      "yoy_pct": 736.2286771563735,
-      "yoy_pct_label": "+736.2%",
+      "change_abs": -65.75,
+      "change_pct": -6.676821528306675,
+      "change_abs_label": "$-65.75",
+      "change_pct_label": "-6.7%",
+      "yoy_pct": 742.0377543883,
+      "yoy_pct_label": "+742.0%",
       "history": [
         {
           "date": "2026-04-28",
@@ -11562,13 +11577,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 912.6599731445312
+          "value": 919.0
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 912.6599731445312,
+      "previous_run_display_value": "$912.7"
     },
     {
       "id": "75ff1ab8f86f",
@@ -11582,21 +11600,21 @@
       "name_en": "AMD(AMD)",
       "meaning": "AMD(AMD)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "AMD(AMD)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 511.8349914550781,
+      "value": 514.75,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$511.8",
+      "display_value": "$514.8",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -40.214996337890625,
-      "change_pct": -7.28466574171398,
-      "change_abs_label": "$-40.21",
-      "change_pct_label": "-7.3%",
-      "yoy_pct": 190.3040091557928,
-      "yoy_pct_label": "+190.3%",
+      "change_abs": -37.29998779296875,
+      "change_pct": -6.7566323010149425,
+      "change_abs_label": "$-37.30",
+      "change_pct_label": "-6.8%",
+      "yoy_pct": 191.95735189601555,
+      "yoy_pct_label": "+192.0%",
       "history": [
         {
           "date": "2026-04-28",
@@ -11788,13 +11806,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 511.8349914550781
+          "value": 514.75
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 511.8349914550781,
+      "previous_run_display_value": "$511.8"
     },
     {
       "id": "95b1bd8b729a",
@@ -11808,21 +11829,21 @@
       "name_en": "Intel(INTC)",
       "meaning": "Intel(INTC)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Intel(INTC)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 112.16999816894531,
+      "value": 112.66500091552734,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$112.2",
+      "display_value": "$112.7",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -10.029998779296875,
-      "change_pct": -8.207855179853308,
-      "change_abs_label": "$-10.03",
-      "change_pct_label": "-8.2%",
-      "yoy_pct": 466.5151640965304,
-      "yoy_pct_label": "+466.5%",
+      "change_abs": -9.534996032714844,
+      "change_pct": -7.802779272370519,
+      "change_abs_label": "$-9.53",
+      "change_pct_label": "-7.8%",
+      "yoy_pct": 469.01517806448805,
+      "yoy_pct_label": "+469.0%",
       "history": [
         {
           "date": "2026-04-28",
@@ -12014,13 +12035,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 112.16999816894531
+          "value": 112.66500091552734
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 112.16999816894531,
+      "previous_run_display_value": "$112.2"
     },
     {
       "id": "f52a4974e818",
@@ -12034,21 +12058,21 @@
       "name_en": "TSMC(TSM)",
       "meaning": "TSMC(TSM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "TSMC(TSM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 434.6300048828125,
+      "value": 436.07501220703125,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$434.6",
+      "display_value": "$436.1",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -17.160003662109375,
-      "change_pct": -3.798225577713976,
-      "change_abs_label": "$-17.16",
-      "change_pct_label": "-3.8%",
-      "yoy_pct": 79.881637971234,
-      "yoy_pct_label": "+79.9%",
+      "change_abs": -15.714996337890625,
+      "change_pct": -3.478385099419057,
+      "change_abs_label": "$-15.71",
+      "change_pct_label": "-3.5%",
+      "yoy_pct": 80.47968753394422,
+      "yoy_pct_label": "+80.5%",
       "history": [
         {
           "date": "2026-04-28",
@@ -12240,13 +12264,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 434.6300048828125
+          "value": 436.07501220703125
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 434.6300048828125,
+      "previous_run_display_value": "$434.6"
     },
     {
       "id": "6410c11f526b",
@@ -12260,21 +12287,21 @@
       "name_en": "ASML(ASML)",
       "meaning": "ASML(ASML)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "ASML(ASML)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 1729.550048828125,
+      "value": 1736.0,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$1,729.6",
+      "display_value": "$1,736.0",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -95.5198974609375,
-      "change_pct": -5.233766390990069,
-      "change_abs_label": "$-95.52",
-      "change_pct_label": "-5.2%",
-      "yoy_pct": 148.95999685120418,
-      "yoy_pct_label": "+149.0%",
+      "change_abs": -89.0699462890625,
+      "change_pct": -4.880357953960591,
+      "change_abs_label": "$-89.07",
+      "change_pct_label": "-4.9%",
+      "yoy_pct": 149.88843475592307,
+      "yoy_pct_label": "+149.9%",
       "history": [
         {
           "date": "2026-04-28",
@@ -12466,13 +12493,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 1729.550048828125
+          "value": 1736.0
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 1729.550048828125,
+      "previous_run_display_value": "$1,729.6"
     },
     {
       "id": "64a572db5684",
@@ -12486,21 +12516,21 @@
       "name_en": "Applied Materials(AMAT)",
       "meaning": "Applied Materials(AMAT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Applied Materials(AMAT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 532.9500122070312,
+      "value": 538.0892944335938,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$533.0",
+      "display_value": "$538.1",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -59.8399658203125,
-      "change_pct": -10.094631832246037,
-      "change_abs_label": "$-59.84",
-      "change_pct_label": "-10.1%",
-      "yoy_pct": 195.98468256871033,
-      "yoy_pct_label": "+196.0%",
+      "change_abs": -54.70068359375,
+      "change_pct": -9.227666732116512,
+      "change_abs_label": "$-54.70",
+      "change_pct_label": "-9.2%",
+      "yoy_pct": 198.83888799814784,
+      "yoy_pct_label": "+198.8%",
       "history": [
         {
           "date": "2026-04-28",
@@ -12692,13 +12722,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 532.9500122070312
+          "value": 538.0892944335938
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 532.9500122070312,
+      "previous_run_display_value": "$533.0"
     },
     {
       "id": "67fcc5136d2d",
@@ -12712,21 +12745,21 @@
       "name_en": "Lam Research(LRCX)",
       "meaning": "Lam Research(LRCX)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Lam Research(LRCX)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 320.07000732421875,
+      "value": 324.239990234375,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$320.1",
+      "display_value": "$324.2",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -30.1300048828125,
-      "change_pct": -8.603656148646921,
-      "change_abs_label": "$-30.13",
-      "change_pct_label": "-8.6%",
-      "yoy_pct": 237.48420464282947,
-      "yoy_pct_label": "+237.5%",
+      "change_abs": -25.96002197265625,
+      "change_pct": -7.412912926259185,
+      "change_abs_label": "$-25.96",
+      "change_pct_label": "-7.4%",
+      "yoy_pct": 241.8810657469776,
+      "yoy_pct_label": "+241.9%",
       "history": [
         {
           "date": "2026-04-28",
@@ -12918,13 +12951,16 @@
         },
         {
           "date": "2026-07-07",
-          "value": 320.07000732421875
+          "value": 324.239990234375
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "updated",
+      "is_new": false,
+      "is_updated_today": true,
+      "previous_run_observed_at": "2026-07-07",
+      "previous_run_value": 320.07000732421875,
+      "previous_run_display_value": "$320.1"
     },
     {
       "id": "978b7b09e6c6",
@@ -13167,21 +13203,21 @@
       "name_en": "Microsoft(MSFT)",
       "meaning": "Microsoft(MSFT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Microsoft(MSFT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 393.4549865722656,
+      "value": 393.57000732421875,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$393.5",
+      "display_value": "$393.6",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 6.714996337890625,
-      "change_pct": 1.736307728047759,
-      "change_abs_label": "$+6.71",
-      "change_pct_label": "+1.7%",
-      "yoy_pct": -26.25023681869435,
-      "yoy_pct_label": "-26.3%",
+      "change_abs": 6.83001708984375,
+      "change_pct": 1.7660488344390268,
+      "change_abs_label": "$+6.83",
+      "change_pct_label": "+1.8%",
+      "yoy_pct": -26.228677165094894,
+      "yoy_pct_label": "-26.2%",
       "history": [
         {
           "date": "2026-04-28",
@@ -13373,7 +13409,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 393.4549865722656
+          "value": 393.57000732421875
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -13381,8 +13417,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 393.760009765625,
-      "previous_run_display_value": "$393.8"
+      "previous_run_value": 393.4549865722656,
+      "previous_run_display_value": "$393.5"
     },
     {
       "id": "357faedb889d",
@@ -13625,7 +13661,7 @@
       "name_en": "Toyota(TM)",
       "meaning": "Toyota(TM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Toyota(TM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 180.94500732421875,
+      "value": 180.89999389648438,
       "unit": "$",
       "unit_en": "USD",
       "display_value": "$180.9",
@@ -13634,11 +13670,11 @@
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 1.1450042724609375,
-      "change_pct": 0.636821052851344,
-      "change_abs_label": "$+1.15",
+      "change_abs": 1.0999908447265625,
+      "change_pct": 0.6117857764495804,
+      "change_abs_label": "$+1.10",
       "change_pct_label": "+0.6%",
-      "yoy_pct": 1.103540308456541,
+      "yoy_pct": 1.078388926980689,
       "yoy_pct_label": "+1.1%",
       "history": [
         {
@@ -13831,7 +13867,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 180.94500732421875
+          "value": 180.89999389648438
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -13839,8 +13875,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 181.02999877929688,
-      "previous_run_display_value": "$181.0"
+      "previous_run_value": 180.94500732421875,
+      "previous_run_display_value": "$180.9"
     },
     {
       "id": "401396037f0e",
@@ -14083,21 +14119,21 @@
       "name_en": "Tesla(TSLA)",
       "meaning": "Tesla(TSLA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Tesla(TSLA)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 412.6050109863281,
+      "value": 413.1099853515625,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$412.6",
+      "display_value": "$413.1",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -7.16497802734375,
-      "change_pct": -1.706881915064773,
-      "change_abs_label": "$-7.16",
-      "change_pct_label": "-1.7%",
-      "yoy_pct": 33.84533872612199,
-      "yoy_pct_label": "+33.8%",
+      "change_abs": -6.660003662109375,
+      "change_pct": -1.5865840427893185,
+      "change_abs_label": "$-6.66",
+      "change_pct_label": "-1.6%",
+      "yoy_pct": 34.009147849043764,
+      "yoy_pct_label": "+34.0%",
       "history": [
         {
           "date": "2026-04-28",
@@ -14289,7 +14325,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 412.6050109863281
+          "value": 413.1099853515625
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -14297,8 +14333,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 415.07000732421875,
-      "previous_run_display_value": "$415.1"
+      "previous_run_value": 412.6050109863281,
+      "previous_run_display_value": "$412.6"
     },
     {
       "id": "dc57e5380aee",
@@ -14541,21 +14577,21 @@
       "name_en": "Huntington Ingalls(HII)",
       "meaning": "Huntington Ingalls(HII)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Huntington Ingalls(HII)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 289.92498779296875,
+      "value": 290.1700134277344,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$289.9",
+      "display_value": "$290.2",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -4.175018310546875,
-      "change_pct": -1.4195913716089414,
-      "change_abs_label": "$-4.18",
-      "change_pct_label": "-1.4%",
-      "yoy_pct": 3.96794198617505,
-      "yoy_pct_label": "+4.0%",
+      "change_abs": -3.92999267578125,
+      "change_pct": -1.3362776586947733,
+      "change_abs_label": "$-3.93",
+      "change_pct_label": "-1.3%",
+      "yoy_pct": 4.055808889867496,
+      "yoy_pct_label": "+4.1%",
       "history": [
         {
           "date": "2026-04-28",
@@ -14747,7 +14783,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 289.92498779296875
+          "value": 290.1700134277344
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -14755,8 +14791,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 293.6499938964844,
-      "previous_run_display_value": "$293.6"
+      "previous_run_value": 289.92498779296875,
+      "previous_run_display_value": "$289.9"
     },
     {
       "id": "f18445e2954e",
@@ -14999,21 +15035,21 @@
       "name_en": "Nucor(NUE)",
       "meaning": "Nucor(NUE)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Nucor(NUE)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 223.52999877929688,
+      "value": 223.1699981689453,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$223.5",
+      "display_value": "$223.2",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -0.3899993896484375,
-      "change_pct": -0.17416907504357315,
-      "change_abs_label": "$-0.39",
-      "change_pct_label": "-0.2%",
-      "yoy_pct": 56.238196222876645,
-      "yoy_pct_label": "+56.2%",
+      "change_abs": -0.75,
+      "change_pct": -0.3349410531140351,
+      "change_abs_label": "$-0.75",
+      "change_pct_label": "-0.3%",
+      "yoy_pct": 55.9865707305149,
+      "yoy_pct_label": "+56.0%",
       "history": [
         {
           "date": "2026-04-28",
@@ -15205,7 +15241,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 223.52999877929688
+          "value": 223.1699981689453
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -15213,8 +15249,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 222.7100067138672,
-      "previous_run_display_value": "$222.7"
+      "previous_run_value": 223.52999877929688,
+      "previous_run_display_value": "$223.5"
     },
     {
       "id": "ecc828144f7e",
@@ -15457,21 +15493,21 @@
       "name_en": "Exxon Mobil(XOM)",
       "meaning": "Exxon Mobil(XOM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Exxon Mobil(XOM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 140.08999633789062,
+      "value": 139.99000549316406,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$140.1",
+      "display_value": "$140.0",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 3.649993896484375,
-      "change_pct": 2.675164050991463,
-      "change_abs_label": "$+3.65",
-      "change_pct_label": "+2.7%",
-      "yoy_pct": 25.48369500517944,
-      "yoy_pct_label": "+25.5%",
+      "change_abs": 3.5500030517578125,
+      "change_pct": 2.60187847276121,
+      "change_abs_label": "$+3.55",
+      "change_pct_label": "+2.6%",
+      "yoy_pct": 25.39412957587701,
+      "yoy_pct_label": "+25.4%",
       "history": [
         {
           "date": "2026-04-28",
@@ -15663,7 +15699,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 140.08999633789062
+          "value": 139.99000549316406
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -15671,8 +15707,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 139.9600067138672,
-      "previous_run_display_value": "$140.0"
+      "previous_run_value": 140.08999633789062,
+      "previous_run_display_value": "$140.1"
     },
     {
       "id": "98de535a0a23",
@@ -15915,21 +15951,21 @@
       "name_en": "JPMorgan Chase(JPM)",
       "meaning": "JPMorgan Chase(JPM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "JPMorgan Chase(JPM)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 340.9649963378906,
+      "value": 339.9549865722656,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$341.0",
+      "display_value": "$340.0",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 3.2449951171875,
-      "change_pct": 0.9608536969851755,
-      "change_abs_label": "$+3.24",
-      "change_pct_label": "+1.0%",
-      "yoy_pct": 15.097558593669525,
-      "yoy_pct_label": "+15.1%",
+      "change_abs": 2.2349853515625,
+      "change_pct": 0.6617864927999761,
+      "change_abs_label": "$+2.23",
+      "change_pct_label": "+0.7%",
+      "yoy_pct": 14.756615507347547,
+      "yoy_pct_label": "+14.8%",
       "history": [
         {
           "date": "2026-04-28",
@@ -16121,7 +16157,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 340.9649963378906
+          "value": 339.9549865722656
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -16129,8 +16165,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 339.17999267578125,
-      "previous_run_display_value": "$339.2"
+      "previous_run_value": 340.9649963378906,
+      "previous_run_display_value": "$341.0"
     },
     {
       "id": "20977ed178d1",
@@ -16373,7 +16409,7 @@
       "name_en": "D.R. Horton(DHI)",
       "meaning": "D.R. Horton(DHI)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "D.R. Horton(DHI)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 158.5800018310547,
+      "value": 158.6125030517578,
       "unit": "$",
       "unit_en": "USD",
       "display_value": "$158.6",
@@ -16382,11 +16418,11 @@
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 1.6999969482421875,
-      "change_pct": 1.0836288216028889,
-      "change_abs_label": "$+1.70",
+      "change_abs": 1.7324981689453125,
+      "change_pct": 1.1043460702589103,
+      "change_abs_label": "$+1.73",
       "change_pct_label": "+1.1%",
-      "yoy_pct": 11.019326446866318,
+      "yoy_pct": 11.04208003237206,
       "yoy_pct_label": "+11.0%",
       "history": [
         {
@@ -16579,7 +16615,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 158.5800018310547
+          "value": 158.6125030517578
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -16587,8 +16623,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 159.30999755859375,
-      "previous_run_display_value": "$159.3"
+      "previous_run_value": 158.5800018310547,
+      "previous_run_display_value": "$158.6"
     },
     {
       "id": "f1309b1d96bf",
@@ -16831,21 +16867,21 @@
       "name_en": "Lockheed Martin(LMT)",
       "meaning": "Lockheed Martin(LMT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Lockheed Martin(LMT)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 541.0916748046875,
+      "value": 540.3856201171875,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$541.1",
+      "display_value": "$540.4",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 3.0916748046875,
-      "change_pct": 0.5746607443656959,
-      "change_abs_label": "$+3.09",
-      "change_pct_label": "+0.6%",
-      "yoy_pct": 28.531441085990217,
-      "yoy_pct_label": "+28.5%",
+      "change_abs": 2.3856201171875,
+      "change_pct": 0.44342381360362726,
+      "change_abs_label": "$+2.39",
+      "change_pct_label": "+0.4%",
+      "yoy_pct": 28.36372417091728,
+      "yoy_pct_label": "+28.4%",
       "history": [
         {
           "date": "2026-04-28",
@@ -17037,7 +17073,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 541.0916748046875
+          "value": 540.3856201171875
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -17045,8 +17081,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 543.4201049804688,
-      "previous_run_display_value": "$543.4"
+      "previous_run_value": 541.0916748046875,
+      "previous_run_display_value": "$541.1"
     },
     {
       "id": "3054b46e95f2",
@@ -17060,20 +17096,20 @@
       "name_en": "Coinbase(COIN)",
       "meaning": "Coinbase(COIN)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Coinbase(COIN)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 165.9499969482422,
+      "value": 165.7949981689453,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$165.9",
+      "display_value": "$165.8",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -2.9199981689453125,
-      "change_pct": -1.7291397248628937,
-      "change_abs_label": "$-2.92",
-      "change_pct_label": "-1.7%",
-      "yoy_pct": -56.069993472521574,
+      "change_abs": -3.0749969482421875,
+      "change_pct": -1.820925586045219,
+      "change_abs_label": "$-3.07",
+      "change_pct_label": "-1.8%",
+      "yoy_pct": -56.11102449096978,
       "yoy_pct_label": "-56.1%",
       "history": [
         {
@@ -17266,7 +17302,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 165.9499969482422
+          "value": 165.7949981689453
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -17274,8 +17310,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 168.0800018310547,
-      "previous_run_display_value": "$168.1"
+      "previous_run_value": 165.9499969482422,
+      "previous_run_display_value": "$165.9"
     },
     {
       "id": "f1f724a230f7",
@@ -17289,21 +17325,21 @@
       "name_en": "Circle(CRCL)",
       "meaning": "Circle(CRCL)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Circle(CRCL)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 67.3093032836914,
+      "value": 67.58499908447266,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$67.31",
+      "display_value": "$67.58",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -1.3406982421875,
-      "change_pct": -1.9529471411331323,
-      "change_abs_label": "$-1.34",
-      "change_pct_label": "-2.0%",
-      "yoy_pct": -63.32317909945044,
-      "yoy_pct_label": "-63.3%",
+      "change_abs": -1.06500244140625,
+      "change_pct": -1.5513509362483857,
+      "change_abs_label": "$-1.07",
+      "change_pct_label": "-1.6%",
+      "yoy_pct": -63.17295253321086,
+      "yoy_pct_label": "-63.2%",
       "history": [
         {
           "date": "2026-04-28",
@@ -17495,7 +17531,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 67.3093032836914
+          "value": 67.58499908447266
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -17503,8 +17539,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 68.46499633789062,
-      "previous_run_display_value": "$68.46"
+      "previous_run_value": 67.3093032836914,
+      "previous_run_display_value": "$67.31"
     },
     {
       "id": "6b5151610375",
@@ -17747,21 +17783,21 @@
       "name_en": "GE Vernova(GEV)",
       "meaning": "GE Vernova(GEV)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "GE Vernova(GEV)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 1046.8299560546875,
+      "value": 1046.93505859375,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$1,046.8",
+      "display_value": "$1,046.9",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -105.2100830078125,
-      "change_pct": -9.132502295096423,
-      "change_abs_label": "$-105.21",
+      "change_abs": -105.10498046875,
+      "change_pct": -9.123379127888786,
+      "change_abs_label": "$-105.10",
       "change_pct_label": "-9.1%",
-      "yoy_pct": 58.540942750964554,
-      "yoy_pct_label": "+58.5%",
+      "yoy_pct": 58.55686038451346,
+      "yoy_pct_label": "+58.6%",
       "history": [
         {
           "date": "2026-04-28",
@@ -17953,7 +17989,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 1046.8299560546875
+          "value": 1046.93505859375
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -17961,7 +17997,7 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 1046.81005859375,
+      "previous_run_value": 1046.8299560546875,
       "previous_run_display_value": "$1,046.8"
     },
     {
@@ -18205,21 +18241,21 @@
       "name_en": "Teradyne(TER)",
       "meaning": "Teradyne(TER)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Teradyne(TER)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 344.93499755859375,
+      "value": 347.70001220703125,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$344.9",
+      "display_value": "$347.7",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -34.584991455078125,
-      "change_pct": -9.112824740789138,
-      "change_abs_label": "$-34.58",
-      "change_pct_label": "-9.1%",
-      "yoy_pct": 221.07883885203285,
-      "yoy_pct_label": "+221.1%",
+      "change_abs": -31.819976806640625,
+      "change_pct": -8.384269004996813,
+      "change_abs_label": "$-31.82",
+      "change_pct_label": "-8.4%",
+      "yoy_pct": 223.65262144589204,
+      "yoy_pct_label": "+223.7%",
       "history": [
         {
           "date": "2026-04-28",
@@ -18411,7 +18447,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 344.93499755859375
+          "value": 347.70001220703125
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -18419,8 +18455,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 353.31500244140625,
-      "previous_run_display_value": "$353.3"
+      "previous_run_value": 344.93499755859375,
+      "previous_run_display_value": "$344.9"
     },
     {
       "id": "1708f3deb23c",
@@ -18663,21 +18699,21 @@
       "name_en": "Rocket Lab(RKLB)",
       "meaning": "Rocket Lab(RKLB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Rocket Lab(RKLB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 85.91999816894531,
+      "value": 86.0,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$85.92",
+      "display_value": "$86.00",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -7.1699981689453125,
-      "change_pct": -7.702221990556568,
-      "change_abs_label": "$-7.17",
-      "change_pct_label": "-7.7%",
-      "yoy_pct": 87.10801741070435,
-      "yoy_pct_label": "+87.1%",
+      "change_abs": -7.089996337890625,
+      "change_pct": -7.616281680961645,
+      "change_abs_label": "$-7.09",
+      "change_pct_label": "-7.6%",
+      "yoy_pct": 87.28223743301436,
+      "yoy_pct_label": "+87.3%",
       "history": [
         {
           "date": "2026-04-28",
@@ -18869,7 +18905,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 85.91999816894531
+          "value": 86.0
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -18877,8 +18913,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 88.1449966430664,
-      "previous_run_display_value": "$88.14"
+      "previous_run_value": 85.91999816894531,
+      "previous_run_display_value": "$85.92"
     },
     {
       "id": "95cabb4c530d",
@@ -19121,21 +19157,21 @@
       "name_en": "Eli Lilly(LLY)",
       "meaning": "Eli Lilly(LLY)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Eli Lilly(LLY)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 1236.530029296875,
+      "value": 1234.469970703125,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$1,236.5",
+      "display_value": "$1,234.5",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 36.469970703125,
-      "change_pct": 3.0390121262648284,
-      "change_abs_label": "$+36.47",
-      "change_pct_label": "+3.0%",
-      "yoy_pct": 67.08284581990378,
-      "yoy_pct_label": "+67.1%",
+      "change_abs": 34.409912109375,
+      "change_pct": 2.867349168315547,
+      "change_abs_label": "$+34.41",
+      "change_pct_label": "+2.9%",
+      "yoy_pct": 66.80448585755397,
+      "yoy_pct_label": "+66.8%",
       "history": [
         {
           "date": "2026-04-28",
@@ -19327,7 +19363,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 1236.530029296875
+          "value": 1234.469970703125
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -19335,8 +19371,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 1231.3499755859375,
-      "previous_run_display_value": "$1,231.3"
+      "previous_run_value": 1236.530029296875,
+      "previous_run_display_value": "$1,236.5"
     },
     {
       "id": "c04f98aa050d",
@@ -19579,21 +19615,21 @@
       "name_en": "Albemarle(ALB)",
       "meaning": "Albemarle(ALB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
       "meaning_en": "Albemarle(ALB)는 해당 산업을 대표하는 상장사의 주가 흐름으로 시장이 반영하는 성장성과 리스크를 확인하는 proxy입니다.",
-      "value": 129.1699981689453,
+      "value": 129.36000061035156,
       "unit": "$",
       "unit_en": "USD",
-      "display_value": "$129.2",
+      "display_value": "$129.4",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -4.6300048828125,
-      "change_pct": -3.460392210171681,
-      "change_abs_label": "$-4.63",
-      "change_pct_label": "-3.5%",
-      "yoy_pct": 90.37583061731755,
-      "yoy_pct_label": "+90.4%",
+      "change_abs": -4.44000244140625,
+      "change_pct": -3.3183873992056023,
+      "change_abs_label": "$-4.44",
+      "change_pct_label": "-3.3%",
+      "yoy_pct": 90.65586369864285,
+      "yoy_pct_label": "+90.7%",
       "history": [
         {
           "date": "2026-04-28",
@@ -19785,7 +19821,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 129.1699981689453
+          "value": 129.36000061035156
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -19793,8 +19829,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 130.1699981689453,
-      "previous_run_display_value": "$130.2"
+      "previous_run_value": 129.1699981689453,
+      "previous_run_display_value": "$129.2"
     },
     {
       "id": "890be20fa286",
@@ -20266,20 +20302,20 @@
       "name_en": "NASDAQ Composite",
       "meaning": "나스닥은 미국 기술주 중심의 시장 흐름을 보여주는 지수입니다. AI, 반도체, 소프트웨어 같은 성장 산업의 투자심리를 볼 때 사용합니다.",
       "meaning_en": "나스닥은 미국 기술주 중심의 시장 흐름을 보여주는 지수입니다. AI, 반도체, 소프트웨어 같은 성장 산업의 투자심리를 볼 때 사용합니다.",
-      "value": 25866.111328125,
+      "value": 25875.1484375,
       "unit": "지수",
       "unit_en": "Index",
-      "display_value": "25,866.1 지수",
+      "display_value": "25,875.1 지수",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -255.048828125,
-      "change_pct": -0.976406968907062,
-      "change_abs_label": "-255.05 지수",
-      "change_pct_label": "-1.0%",
-      "yoy_pct": 22.457916978510895,
+      "change_abs": -246.01171875,
+      "change_pct": -0.9418100776474758,
+      "change_abs_label": "-246.01 지수",
+      "change_pct_label": "-0.9%",
+      "yoy_pct": 22.50070136057478,
       "yoy_pct_label": "+22.5%",
       "history": [
         {
@@ -20472,7 +20508,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 25866.111328125
+          "value": 25875.1484375
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -20480,8 +20516,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 25931.01171875,
-      "previous_run_display_value": "25,931.0 지수"
+      "previous_run_value": 25866.111328125,
+      "previous_run_display_value": "25,866.1 지수"
     },
     {
       "id": "c3d9b26b0cca",
@@ -20495,21 +20531,21 @@
       "name_en": "S&P 500",
       "meaning": "S&P 500은 미국 대형주 500개로 구성된 대표 지수입니다. 미국 증시와 글로벌 위험자산 분위기를 보는 기준으로 사용합니다.",
       "meaning_en": "S&P 500은 미국 대형주 500개로 구성된 대표 지수입니다. 미국 증시와 글로벌 위험자산 분위기를 보는 기준으로 사용합니다.",
-      "value": 7514.43994140625,
+      "value": 7515.47021484375,
       "unit": "지수",
       "unit_en": "Index",
-      "display_value": "7,514.4 지수",
+      "display_value": "7,515.5 지수",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": -22.990234375,
-      "change_pct": -0.30501422684976465,
-      "change_abs_label": "-22.99 지수",
+      "change_abs": -21.9599609375,
+      "change_pct": -0.2913454642413882,
+      "change_abs_label": "-21.96 지수",
       "change_pct_label": "-0.3%",
-      "yoy_pct": 18.53569159407662,
-      "yoy_pct_label": "+18.5%",
+      "yoy_pct": 18.55194352707461,
+      "yoy_pct_label": "+18.6%",
       "history": [
         {
           "date": "2026-04-28",
@@ -20701,7 +20737,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 7514.43994140625
+          "value": 7515.47021484375
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -20709,8 +20745,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 7520.68994140625,
-      "previous_run_display_value": "7,520.7 지수"
+      "previous_run_value": 7514.43994140625,
+      "previous_run_display_value": "7,514.4 지수"
     },
     {
       "id": "b2ddd162aa6d",
@@ -20724,21 +20760,21 @@
       "name_en": "Dow Jones Industrial Average",
       "meaning": "다우는 미국 전통 대형 우량주 흐름을 보여주는 지수입니다. 경기민감주와 오래된 대형 기업들의 시장 분위기를 볼 때 사용합니다.",
       "meaning_en": "다우는 미국 전통 대형 우량주 흐름을 보여주는 지수입니다. 경기민감주와 오래된 대형 기업들의 시장 분위기를 볼 때 사용합니다.",
-      "value": 53088.21875,
+      "value": 53043.55078125,
       "unit": "지수",
       "unit_en": "Index",
-      "display_value": "53,088.2 지수",
+      "display_value": "53,043.6 지수",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
       "observed_label": "2026.07.07",
       "next_update_label": "2026.07.08",
-      "change_abs": 32.30859375,
-      "change_pct": 0.06089537179712057,
-      "change_abs_label": "+32.31 지수",
-      "change_pct_label": "+0.1%",
-      "yoy_pct": 20.296939216188026,
-      "yoy_pct_label": "+20.3%",
+      "change_abs": -12.359375,
+      "change_pct": -0.02329500137421281,
+      "change_abs_label": "-12.36 지수",
+      "change_pct_label": "-0.0%",
+      "yoy_pct": 20.195722410498362,
+      "yoy_pct_label": "+20.2%",
       "history": [
         {
           "date": "2026-04-28",
@@ -20930,7 +20966,7 @@
         },
         {
           "date": "2026-07-07",
-          "value": 53088.21875
+          "value": 53043.55078125
         }
       ],
       "period_label": "2026.04.28 - 2026.07.07",
@@ -20938,8 +20974,8 @@
       "is_new": false,
       "is_updated_today": true,
       "previous_run_observed_at": "2026-07-07",
-      "previous_run_value": 53180.01953125,
-      "previous_run_display_value": "53,180.0 지수"
+      "previous_run_value": 53088.21875,
+      "previous_run_display_value": "53,088.2 지수"
     },
     {
       "id": "c9e38f8f2070",
@@ -23773,12 +23809,12 @@
         }
       ],
       "period_label": "2025.08.11 - 2026.07.06",
-      "daily_status": "updated",
+      "daily_status": "",
       "is_new": false,
-      "is_updated_today": true,
-      "previous_run_observed_at": "2026-06-29",
-      "previous_run_value": 3.964,
-      "previous_run_display_value": "3.96 $/gal"
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-07-06",
+      "previous_run_value": 3.911,
+      "previous_run_display_value": "3.91 $/gal"
     },
     {
       "id": "7cf9257921fd",
@@ -24002,12 +24038,12 @@
         }
       ],
       "period_label": "2025.08.11 - 2026.07.06",
-      "daily_status": "updated",
+      "daily_status": "",
       "is_new": false,
-      "is_updated_today": true,
-      "previous_run_observed_at": "2026-06-29",
-      "previous_run_value": 4.668,
-      "previous_run_display_value": "4.67 $/gal"
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-07-06",
+      "previous_run_value": 4.578,
+      "previous_run_display_value": "4.58 $/gal"
     },
     {
       "id": "338fa22c1a4c",
@@ -24419,6 +24455,458 @@
       "previous_run_display_value": "288,361.0 개"
     },
     {
+      "id": "320be6d22e2e",
+      "industry": "건설/부동산",
+      "industry_en": "Construction & Real Estate",
+      "depth": "",
+      "depth_en": "",
+      "group": "국내 주택",
+      "group_en": "Korea Housing",
+      "name": "한국 주택매매가격지수",
+      "name_en": "Korea Home Sale Price Index",
+      "meaning": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
+      "meaning_en": "전국 주택매매가격지수로 국내 주택가격 사이클과 가계 자산 효과를 확인합니다.",
+      "value": 96.1686227,
+      "unit": "지수",
+      "unit_en": "Index",
+      "display_value": "96.17 지수",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2025-03-01",
+      "observed_label": "2025.03",
+      "next_update_label": "2025.04",
+      "change_abs": 0.0137210500000009,
+      "change_pct": 0.014269735358829472,
+      "change_abs_label": "+0.01 지수",
+      "change_pct_label": "+0.0%",
+      "yoy_pct": 0.3985847910131124,
+      "yoy_pct_label": "+0.4%",
+      "history": [
+        {
+          "date": "2021-04-01",
+          "value": 98.17542084
+        },
+        {
+          "date": "2021-05-01",
+          "value": 98.86155873
+        },
+        {
+          "date": "2021-06-01",
+          "value": 100.0
+        },
+        {
+          "date": "2021-07-01",
+          "value": 100.8527701
+        },
+        {
+          "date": "2021-08-01",
+          "value": 101.8232676
+        },
+        {
+          "date": "2021-09-01",
+          "value": 102.7556195
+        },
+        {
+          "date": "2021-10-01",
+          "value": 103.6644343
+        },
+        {
+          "date": "2021-11-01",
+          "value": 104.3169996
+        },
+        {
+          "date": "2021-12-01",
+          "value": 104.6169034
+        },
+        {
+          "date": "2022-01-01",
+          "value": 104.7193237
+        },
+        {
+          "date": "2022-02-01",
+          "value": 104.7501852
+        },
+        {
+          "date": "2022-03-01",
+          "value": 104.7681327
+        },
+        {
+          "date": "2022-04-01",
+          "value": 104.8296115
+        },
+        {
+          "date": "2022-05-01",
+          "value": 104.8440136
+        },
+        {
+          "date": "2022-06-01",
+          "value": 104.8372099
+        },
+        {
+          "date": "2022-07-01",
+          "value": 104.7582611
+        },
+        {
+          "date": "2022-08-01",
+          "value": 104.4590502
+        },
+        {
+          "date": "2022-09-01",
+          "value": 103.9498545
+        },
+        {
+          "date": "2022-10-01",
+          "value": 103.1485214
+        },
+        {
+          "date": "2022-11-01",
+          "value": 101.7361712
+        },
+        {
+          "date": "2022-12-01",
+          "value": 99.72380843
+        },
+        {
+          "date": "2023-01-01",
+          "value": 98.2335662
+        },
+        {
+          "date": "2023-02-01",
+          "value": 97.10790976
+        },
+        {
+          "date": "2023-03-01",
+          "value": 96.34640819
+        },
+        {
+          "date": "2023-04-01",
+          "value": 95.89740291
+        },
+        {
+          "date": "2023-05-01",
+          "value": 95.68618947
+        },
+        {
+          "date": "2023-06-01",
+          "value": 95.63459488
+        },
+        {
+          "date": "2023-07-01",
+          "value": 95.66082943
+        },
+        {
+          "date": "2023-08-01",
+          "value": 95.80974121
+        },
+        {
+          "date": "2023-09-01",
+          "value": 96.04961444
+        },
+        {
+          "date": "2023-10-01",
+          "value": 96.24235212
+        },
+        {
+          "date": "2023-11-01",
+          "value": 96.27707003
+        },
+        {
+          "date": "2023-12-01",
+          "value": 96.17770118
+        },
+        {
+          "date": "2024-01-01",
+          "value": 96.04017992
+        },
+        {
+          "date": "2024-02-01",
+          "value": 95.90192663
+        },
+        {
+          "date": "2024-03-01",
+          "value": 95.78683096
+        },
+        {
+          "date": "2024-04-01",
+          "value": 95.73790935
+        },
+        {
+          "date": "2024-05-01",
+          "value": 95.71735078
+        },
+        {
+          "date": "2024-06-01",
+          "value": 95.75427614
+        },
+        {
+          "date": "2024-07-01",
+          "value": 95.89980579
+        },
+        {
+          "date": "2024-08-01",
+          "value": 96.12914525
+        },
+        {
+          "date": "2024-09-01",
+          "value": 96.29618613
+        },
+        {
+          "date": "2024-10-01",
+          "value": 96.36714121
+        },
+        {
+          "date": "2024-11-01",
+          "value": 96.37408597
+        },
+        {
+          "date": "2024-12-01",
+          "value": 96.30494577
+        },
+        {
+          "date": "2025-01-01",
+          "value": 96.20897892
+        },
+        {
+          "date": "2025-02-01",
+          "value": 96.15490165
+        },
+        {
+          "date": "2025-03-01",
+          "value": 96.1686227
+        }
+      ],
+      "period_label": "2021.04 - 2025.03",
+      "daily_status": "new",
+      "is_new": true,
+      "is_updated_today": false
+    },
+    {
+      "id": "65615e553195",
+      "industry": "건설/부동산",
+      "industry_en": "Construction & Real Estate",
+      "depth": "",
+      "depth_en": "",
+      "group": "건설 허가",
+      "group_en": "Construction Permits",
+      "name": "한국 건축허가 동수",
+      "name_en": "Korea Building Permits Count",
+      "meaning": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
+      "meaning_en": "건축허가 동수는 향후 건설 활동과 건축 경기의 선행 흐름을 보여줍니다.",
+      "value": 11813.0,
+      "unit": "동",
+      "unit_en": "동",
+      "display_value": "11,813.0 동",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": 898.0,
+      "change_pct": 8.227210261108574,
+      "change_abs_label": "+898.00 동",
+      "change_pct_label": "+8.2%",
+      "yoy_pct": 2.42781583282754,
+      "yoy_pct_label": "+2.4%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 19700.0
+        },
+        {
+          "date": "2022-06-01",
+          "value": 16918.0
+        },
+        {
+          "date": "2022-07-01",
+          "value": 15973.0
+        },
+        {
+          "date": "2022-08-01",
+          "value": 16129.0
+        },
+        {
+          "date": "2022-09-01",
+          "value": 13785.0
+        },
+        {
+          "date": "2022-10-01",
+          "value": 13616.0
+        },
+        {
+          "date": "2022-11-01",
+          "value": 15309.0
+        },
+        {
+          "date": "2022-12-01",
+          "value": 14373.0
+        },
+        {
+          "date": "2023-01-01",
+          "value": 10255.0
+        },
+        {
+          "date": "2023-02-01",
+          "value": 10540.0
+        },
+        {
+          "date": "2023-03-01",
+          "value": 13454.0
+        },
+        {
+          "date": "2023-04-01",
+          "value": 12569.0
+        },
+        {
+          "date": "2023-05-01",
+          "value": 13492.0
+        },
+        {
+          "date": "2023-06-01",
+          "value": 13700.0
+        },
+        {
+          "date": "2023-07-01",
+          "value": 11648.0
+        },
+        {
+          "date": "2023-08-01",
+          "value": 12826.0
+        },
+        {
+          "date": "2023-09-01",
+          "value": 11687.0
+        },
+        {
+          "date": "2023-10-01",
+          "value": 10502.0
+        },
+        {
+          "date": "2023-11-01",
+          "value": 12530.0
+        },
+        {
+          "date": "2023-12-01",
+          "value": 11738.0
+        },
+        {
+          "date": "2024-01-01",
+          "value": 10115.0
+        },
+        {
+          "date": "2024-02-01",
+          "value": 9472.0
+        },
+        {
+          "date": "2024-03-01",
+          "value": 11086.0
+        },
+        {
+          "date": "2024-04-01",
+          "value": 12229.0
+        },
+        {
+          "date": "2024-05-01",
+          "value": 12398.0
+        },
+        {
+          "date": "2024-06-01",
+          "value": 10674.0
+        },
+        {
+          "date": "2024-07-01",
+          "value": 11754.0
+        },
+        {
+          "date": "2024-08-01",
+          "value": 10437.0
+        },
+        {
+          "date": "2024-09-01",
+          "value": 9326.0
+        },
+        {
+          "date": "2024-10-01",
+          "value": 10873.0
+        },
+        {
+          "date": "2024-11-01",
+          "value": 11345.0
+        },
+        {
+          "date": "2024-12-01",
+          "value": 12032.0
+        },
+        {
+          "date": "2025-01-01",
+          "value": 7417.0
+        },
+        {
+          "date": "2025-02-01",
+          "value": 8455.0
+        },
+        {
+          "date": "2025-03-01",
+          "value": 10950.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 11533.0
+        },
+        {
+          "date": "2025-05-01",
+          "value": 10783.0
+        },
+        {
+          "date": "2025-06-01",
+          "value": 10361.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 10637.0
+        },
+        {
+          "date": "2025-08-01",
+          "value": 9741.0
+        },
+        {
+          "date": "2025-09-01",
+          "value": 12138.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 8871.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 10596.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 12350.0
+        },
+        {
+          "date": "2026-01-01",
+          "value": 8812.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 7248.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 10915.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 11813.0
+        }
+      ],
+      "period_label": "2022.05 - 2026.04",
+      "daily_status": "new",
+      "is_new": true,
+      "is_updated_today": false
+    },
+    {
       "id": "f5b24e872a87",
       "industry": "반도체",
       "industry_en": "Semiconductors",
@@ -24597,9 +25085,12 @@
         }
       ],
       "period_label": "2025.04 - 2026.05",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-05-01",
+      "previous_run_value": 24.950563221,
+      "previous_run_display_value": "$24.95B"
     },
     {
       "id": "31d5add3ce4f",
@@ -24687,9 +25178,12 @@
         }
       ],
       "period_label": "2025.04 - 2026.05",
-      "daily_status": "new",
-      "is_new": true,
-      "is_updated_today": false
+      "daily_status": "",
+      "is_new": false,
+      "is_updated_today": false,
+      "previous_run_observed_at": "2026-05-01",
+      "previous_run_value": 3.519130437,
+      "previous_run_display_value": "$3.52B"
     },
     {
       "id": "26975ec57dc3",
@@ -25904,82 +26398,22 @@
   "daily_changes": {
     "date": "2026-07-07",
     "has_previous": true,
-    "updated_count": 23,
-    "new_count": 14,
+    "updated_count": 28,
+    "new_count": 2,
     "metrics": [
       {
-        "id": "6b60c9b119bc",
-        "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "가격/수요",
-        "group_en": "Price/Demand",
-        "name": "미국 반도체 제조 PPI",
-        "name_en": "US Semiconductor Device Manufacturing PPI",
-        "display_value": "30.10 지수",
-        "observed_label": "2026.05",
-        "change_pct_label": "-1.7%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
-      },
-      {
-        "id": "662c9cc1f646",
-        "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "투자/장비",
-        "group_en": "Investment/Equipment",
-        "name": "미국 반도체 장비 PPI",
-        "name_en": "US Semiconductor Machinery PPI",
-        "display_value": "107.0 지수",
-        "observed_label": "2026.05",
-        "change_pct_label": "+0.0%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
-      },
-      {
-        "id": "79eb884a3cdd",
-        "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "투자/장비",
-        "group_en": "Investment/Equipment",
-        "name": "미국 반도체 장비/부품 PPI",
-        "name_en": "US Semiconductor Machinery and Parts PPI",
-        "display_value": "135.4 지수",
-        "observed_label": "2026.05",
-        "change_pct_label": "+0.0%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
-      },
-      {
-        "id": "7ce5793dc33a",
-        "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "가격/수요",
-        "group_en": "Price/Demand",
-        "name": "미국 반도체 패키징 PPI",
-        "name_en": "US Semiconductor IC Packaging PPI",
-        "display_value": "20.91 지수",
-        "observed_label": "2026.05",
-        "change_pct_label": "-0.2%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
-      },
-      {
-        "id": "d52ec106cae6",
+        "id": "1dbb497f2b22",
         "status": "updated",
-        "industry": "매크로",
-        "industry_en": "Macro",
-        "group": "리스크",
-        "group_en": "Risk",
-        "name": "VIX",
-        "name_en": "VIX",
-        "display_value": "15.57",
+        "industry": "은행/금융",
+        "industry_en": "Banks & Financials",
+        "group": "신용 스프레드",
+        "group_en": "Credit Spreads",
+        "name": "미국 하이일드 회사채 OAS",
+        "name_en": "US High Yield Corporate OAS",
+        "display_value": "2.72%",
         "observed_label": "2026.07.06",
-        "change_pct_label": "-1.5%",
-        "previous_display_value": "15.81",
+        "change_pct_label": "-0.7%",
+        "previous_display_value": "2.74%",
         "previous_observed_label": "2026.07.03"
       },
       {
@@ -25991,131 +26425,116 @@
         "group_en": "Representative Stock Prices",
         "name": "NVIDIA(NVDA)",
         "name_en": "NVIDIA(NVDA)",
-        "display_value": "$191.9",
+        "display_value": "$192.9",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-1.9%",
-        "previous_display_value": "$192.6",
+        "change_pct_label": "-1.4%",
+        "previous_display_value": "$191.9",
         "previous_observed_label": "2026.07.07"
       },
       {
-        "id": "4bffa8579327",
-        "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "대표주가",
-        "group_en": "Representative Stock Prices",
-        "name": "SK하이닉스(000660.KS)",
-        "name_en": "SK하이닉스(000660.KS)",
-        "display_value": "2,201,000원",
-        "observed_label": "2026.07.07",
-        "change_pct_label": "-6.1%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
-      },
-      {
         "id": "df08e35f00ed",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "Micron(MU)",
         "name_en": "Micron(MU)",
-        "display_value": "$912.7",
+        "display_value": "$919.0",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-7.3%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-6.7%",
+        "previous_display_value": "$912.7",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "75ff1ab8f86f",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "AMD(AMD)",
         "name_en": "AMD(AMD)",
-        "display_value": "$511.8",
+        "display_value": "$514.8",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-7.3%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-6.8%",
+        "previous_display_value": "$511.8",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "95b1bd8b729a",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "Intel(INTC)",
         "name_en": "Intel(INTC)",
-        "display_value": "$112.2",
+        "display_value": "$112.7",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-8.2%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-7.8%",
+        "previous_display_value": "$112.2",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "f52a4974e818",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "TSMC(TSM)",
         "name_en": "TSMC(TSM)",
-        "display_value": "$434.6",
+        "display_value": "$436.1",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-3.8%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-3.5%",
+        "previous_display_value": "$434.6",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "6410c11f526b",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "ASML(ASML)",
         "name_en": "ASML(ASML)",
-        "display_value": "$1,729.6",
+        "display_value": "$1,736.0",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-5.2%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-4.9%",
+        "previous_display_value": "$1,729.6",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "64a572db5684",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "Applied Materials(AMAT)",
         "name_en": "Applied Materials(AMAT)",
-        "display_value": "$533.0",
+        "display_value": "$538.1",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-10.1%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-9.2%",
+        "previous_display_value": "$533.0",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "67fcc5136d2d",
-        "status": "new",
+        "status": "updated",
         "industry": "반도체",
         "industry_en": "Semiconductors",
         "group": "대표주가",
         "group_en": "Representative Stock Prices",
         "name": "Lam Research(LRCX)",
         "name_en": "Lam Research(LRCX)",
-        "display_value": "$320.1",
+        "display_value": "$324.2",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-8.6%",
-        "previous_display_value": "",
-        "previous_observed_label": ""
+        "change_pct_label": "-7.4%",
+        "previous_display_value": "$320.1",
+        "previous_observed_label": "2026.07.07"
       },
       {
         "id": "4af5a09d8c1f",
@@ -26126,10 +26545,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Microsoft(MSFT)",
         "name_en": "Microsoft(MSFT)",
-        "display_value": "$393.5",
+        "display_value": "$393.6",
         "observed_label": "2026.07.07",
-        "change_pct_label": "+1.7%",
-        "previous_display_value": "$393.8",
+        "change_pct_label": "+1.8%",
+        "previous_display_value": "$393.5",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26144,7 +26563,7 @@
         "display_value": "$180.9",
         "observed_label": "2026.07.07",
         "change_pct_label": "+0.6%",
-        "previous_display_value": "$181.0",
+        "previous_display_value": "$180.9",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26156,10 +26575,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Tesla(TSLA)",
         "name_en": "Tesla(TSLA)",
-        "display_value": "$412.6",
+        "display_value": "$413.1",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-1.7%",
-        "previous_display_value": "$415.1",
+        "change_pct_label": "-1.6%",
+        "previous_display_value": "$412.6",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26171,10 +26590,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Huntington Ingalls(HII)",
         "name_en": "Huntington Ingalls(HII)",
-        "display_value": "$289.9",
+        "display_value": "$290.2",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-1.4%",
-        "previous_display_value": "$293.6",
+        "change_pct_label": "-1.3%",
+        "previous_display_value": "$289.9",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26186,10 +26605,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Nucor(NUE)",
         "name_en": "Nucor(NUE)",
-        "display_value": "$223.5",
+        "display_value": "$223.2",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-0.2%",
-        "previous_display_value": "$222.7",
+        "change_pct_label": "-0.3%",
+        "previous_display_value": "$223.5",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26201,10 +26620,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Exxon Mobil(XOM)",
         "name_en": "Exxon Mobil(XOM)",
-        "display_value": "$140.1",
+        "display_value": "$140.0",
         "observed_label": "2026.07.07",
-        "change_pct_label": "+2.7%",
-        "previous_display_value": "$140.0",
+        "change_pct_label": "+2.6%",
+        "previous_display_value": "$140.1",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26216,10 +26635,10 @@
         "group_en": "Representative Stock Prices",
         "name": "JPMorgan Chase(JPM)",
         "name_en": "JPMorgan Chase(JPM)",
-        "display_value": "$341.0",
+        "display_value": "$340.0",
         "observed_label": "2026.07.07",
-        "change_pct_label": "+1.0%",
-        "previous_display_value": "$339.2",
+        "change_pct_label": "+0.7%",
+        "previous_display_value": "$341.0",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26234,7 +26653,7 @@
         "display_value": "$158.6",
         "observed_label": "2026.07.07",
         "change_pct_label": "+1.1%",
-        "previous_display_value": "$159.3",
+        "previous_display_value": "$158.6",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26246,10 +26665,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Lockheed Martin(LMT)",
         "name_en": "Lockheed Martin(LMT)",
-        "display_value": "$541.1",
+        "display_value": "$540.4",
         "observed_label": "2026.07.07",
-        "change_pct_label": "+0.6%",
-        "previous_display_value": "$543.4",
+        "change_pct_label": "+0.4%",
+        "previous_display_value": "$541.1",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26261,10 +26680,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Coinbase(COIN)",
         "name_en": "Coinbase(COIN)",
-        "display_value": "$165.9",
+        "display_value": "$165.8",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-1.7%",
-        "previous_display_value": "$168.1",
+        "change_pct_label": "-1.8%",
+        "previous_display_value": "$165.9",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26276,10 +26695,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Circle(CRCL)",
         "name_en": "Circle(CRCL)",
-        "display_value": "$67.31",
+        "display_value": "$67.58",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-2.0%",
-        "previous_display_value": "$68.46",
+        "change_pct_label": "-1.6%",
+        "previous_display_value": "$67.31",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26291,7 +26710,7 @@
         "group_en": "Representative Stock Prices",
         "name": "GE Vernova(GEV)",
         "name_en": "GE Vernova(GEV)",
-        "display_value": "$1,046.8",
+        "display_value": "$1,046.9",
         "observed_label": "2026.07.07",
         "change_pct_label": "-9.1%",
         "previous_display_value": "$1,046.8",
@@ -26306,10 +26725,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Teradyne(TER)",
         "name_en": "Teradyne(TER)",
-        "display_value": "$344.9",
+        "display_value": "$347.7",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-9.1%",
-        "previous_display_value": "$353.3",
+        "change_pct_label": "-8.4%",
+        "previous_display_value": "$344.9",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26321,10 +26740,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Rocket Lab(RKLB)",
         "name_en": "Rocket Lab(RKLB)",
-        "display_value": "$85.92",
+        "display_value": "$86.00",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-7.7%",
-        "previous_display_value": "$88.14",
+        "change_pct_label": "-7.6%",
+        "previous_display_value": "$85.92",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26336,10 +26755,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Eli Lilly(LLY)",
         "name_en": "Eli Lilly(LLY)",
-        "display_value": "$1,236.5",
+        "display_value": "$1,234.5",
         "observed_label": "2026.07.07",
-        "change_pct_label": "+3.0%",
-        "previous_display_value": "$1,231.3",
+        "change_pct_label": "+2.9%",
+        "previous_display_value": "$1,236.5",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26351,10 +26770,10 @@
         "group_en": "Representative Stock Prices",
         "name": "Albemarle(ALB)",
         "name_en": "Albemarle(ALB)",
-        "display_value": "$129.2",
+        "display_value": "$129.4",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-3.5%",
-        "previous_display_value": "$130.2",
+        "change_pct_label": "-3.3%",
+        "previous_display_value": "$129.2",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26366,10 +26785,10 @@
         "group_en": "Market Indexes",
         "name": "나스닥",
         "name_en": "NASDAQ Composite",
-        "display_value": "25,866.1 지수",
+        "display_value": "25,875.1 지수",
         "observed_label": "2026.07.07",
-        "change_pct_label": "-1.0%",
-        "previous_display_value": "25,931.0 지수",
+        "change_pct_label": "-0.9%",
+        "previous_display_value": "25,866.1 지수",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26381,10 +26800,10 @@
         "group_en": "Market Indexes",
         "name": "S&P 500",
         "name_en": "S&P 500",
-        "display_value": "7,514.4 지수",
+        "display_value": "7,515.5 지수",
         "observed_label": "2026.07.07",
         "change_pct_label": "-0.3%",
-        "previous_display_value": "7,520.7 지수",
+        "previous_display_value": "7,514.4 지수",
         "previous_observed_label": "2026.07.07"
       },
       {
@@ -26396,69 +26815,39 @@
         "group_en": "Market Indexes",
         "name": "다우",
         "name_en": "Dow Jones Industrial Average",
-        "display_value": "53,088.2 지수",
+        "display_value": "53,043.6 지수",
         "observed_label": "2026.07.07",
-        "change_pct_label": "+0.1%",
-        "previous_display_value": "53,180.0 지수",
+        "change_pct_label": "-0.0%",
+        "previous_display_value": "53,088.2 지수",
         "previous_observed_label": "2026.07.07"
       },
       {
-        "id": "b3afa8d66655",
-        "status": "updated",
-        "industry": "화학/정유",
-        "industry_en": "Chemicals & Refining",
-        "group": "제품 가격",
-        "group_en": "Product Prices",
-        "name": "미국 휘발유 가격",
-        "name_en": "미국 휘발유 가격",
-        "display_value": "3.91 $/gal",
-        "observed_label": "2026.07.06",
-        "change_pct_label": "-1.3%",
-        "previous_display_value": "3.96 $/gal",
-        "previous_observed_label": "2026.06.29"
-      },
-      {
-        "id": "7cf9257921fd",
-        "status": "updated",
-        "industry": "화학/정유",
-        "industry_en": "Chemicals & Refining",
-        "group": "제품 가격",
-        "group_en": "Product Prices",
-        "name": "미국 디젤 가격",
-        "name_en": "미국 디젤 가격",
-        "display_value": "4.58 $/gal",
-        "observed_label": "2026.07.06",
-        "change_pct_label": "-1.9%",
-        "previous_display_value": "4.67 $/gal",
-        "previous_observed_label": "2026.06.29"
-      },
-      {
-        "id": "84f53d127d66",
+        "id": "320be6d22e2e",
         "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "수출",
-        "group_en": "Exports",
-        "name": "한국 수출 메모리 IC(854232)",
-        "name_en": "한국 수출 메모리 IC(854232)",
-        "display_value": "$24.95B",
-        "observed_label": "2026.05",
-        "change_pct_label": "+19.8%",
+        "industry": "건설/부동산",
+        "industry_en": "Construction & Real Estate",
+        "group": "국내 주택",
+        "group_en": "Korea Housing",
+        "name": "한국 주택매매가격지수",
+        "name_en": "Korea Home Sale Price Index",
+        "display_value": "96.17 지수",
+        "observed_label": "2025.03",
+        "change_pct_label": "+0.0%",
         "previous_display_value": "",
         "previous_observed_label": ""
       },
       {
-        "id": "31d5add3ce4f",
+        "id": "65615e553195",
         "status": "new",
-        "industry": "반도체",
-        "industry_en": "Semiconductors",
-        "group": "수출",
-        "group_en": "Exports",
-        "name": "한국 수출 프로세서/컨트롤러 IC(854231)",
-        "name_en": "한국 수출 프로세서/컨트롤러 IC(854231)",
-        "display_value": "$3.52B",
-        "observed_label": "2026.05",
-        "change_pct_label": "-0.5%",
+        "industry": "건설/부동산",
+        "industry_en": "Construction & Real Estate",
+        "group": "건설 허가",
+        "group_en": "Construction Permits",
+        "name": "한국 건축허가 동수",
+        "name_en": "Korea Building Permits Count",
+        "display_value": "11,813.0 동",
+        "observed_label": "2026.04",
+        "change_pct_label": "+8.2%",
         "previous_display_value": "",
         "previous_observed_label": ""
       }
