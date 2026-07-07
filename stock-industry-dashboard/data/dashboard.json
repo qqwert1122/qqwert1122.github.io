@@ -1,7 +1,7 @@
 {
   "title": "산업별 지표 대시보드",
-  "generated_at": "2026-07-07T09:18:53+09:00",
-  "generated_label": "2026-07-07 09:18 KST",
+  "generated_at": "2026-07-07T09:25:03+09:00",
+  "generated_label": "2026-07-07 09:25 KST",
   "timezone": "Asia/Seoul",
   "industries": [
     "반도체",
@@ -115,6 +115,11 @@
       "name": "AFDC EV 충전",
       "status": "ok",
       "message": "2/2개 지표 자동 수집"
+    },
+    {
+      "name": "KOSIS",
+      "status": "partial",
+      "message": "0/3개 지표 자동 수집"
     },
     {
       "name": "한국 수출",
@@ -11387,10 +11392,10 @@
       "name_en": "US EV Charging Stations",
       "meaning": "미국 EV 충전소 수는 전기차 보급 환경과 충전 인프라 투자 흐름을 보여주는 지표입니다.",
       "meaning_en": "US EV charging station count shows EV adoption conditions and charging infrastructure investment trends.",
-      "value": 88809.0,
+      "value": 88810.0,
       "unit": "곳",
       "unit_en": "stations",
-      "display_value": "88,809.0 곳",
+      "display_value": "88,810.0 곳",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
@@ -11405,7 +11410,7 @@
       "history": [
         {
           "date": "2026-07-07",
-          "value": 88809.0
+          "value": 88810.0
         }
       ],
       "period_label": "2026.07.07"
@@ -11420,10 +11425,10 @@
       "name_en": "US EV Charging Ports",
       "meaning": "미국 EV 충전 포트 수는 전기차 이용 편의성과 인프라 확장 속도를 확인하는 지표입니다.",
       "meaning_en": "US EV charging port count shows EV usability and the pace of infrastructure expansion.",
-      "value": 288243.0,
+      "value": 288246.0,
       "unit": "개",
       "unit_en": "ports",
-      "display_value": "288,243.0 개",
+      "display_value": "288,246.0 개",
       "frequency": "일간",
       "frequency_en": "Daily",
       "observed_at": "2026-07-07",
@@ -11438,7 +11443,7 @@
       "history": [
         {
           "date": "2026-07-07",
-          "value": 288243.0
+          "value": 288246.0
         }
       ],
       "period_label": "2026.07.07"
