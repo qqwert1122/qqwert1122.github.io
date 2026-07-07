@@ -1,0 +1,3324 @@
+{
+  "title": "산업별 지표 대시보드",
+  "generated_at": "2026-07-07T05:39:48+09:00",
+  "generated_label": "2026-07-07 05:39 KST",
+  "timezone": "Asia/Seoul",
+  "industries": [
+    "반도체",
+    "데이터인프라",
+    "자동차",
+    "전기차",
+    "조선",
+    "철강/소재",
+    "화학/정유",
+    "은행/금융",
+    "건설/부동산",
+    "방산",
+    "스테이블코인",
+    "전력",
+    "로봇",
+    "우주",
+    "바이오",
+    "배터리",
+    "매크로"
+  ],
+  "industry_labels_en": {
+    "반도체": "Semiconductors",
+    "데이터인프라": "Data Infrastructure",
+    "자동차": "Automobiles",
+    "전기차": "EVs",
+    "조선": "Shipbuilding",
+    "철강/소재": "Steel & Materials",
+    "화학/정유": "Chemicals & Refining",
+    "은행/금융": "Banks & Financials",
+    "건설/부동산": "Construction & Real Estate",
+    "방산": "Defense",
+    "스테이블코인": "Stablecoins",
+    "전력": "Power",
+    "로봇": "Robotics",
+    "우주": "Space",
+    "바이오": "Biotech",
+    "배터리": "Batteries",
+    "매크로": "Macro"
+  },
+  "industry_icons": {
+    "반도체": "assets/industry-icons/semiconductor.png",
+    "자동차": "assets/industry-icons/auto.png",
+    "전기차": "assets/industry-icons/electric-car.png",
+    "조선": "assets/industry-icons/shipbuilding.png",
+    "철강/소재": "assets/industry-icons/steel-materials.png",
+    "화학/정유": "assets/industry-icons/oil-barrel.png",
+    "은행/금융": "assets/industry-icons/finance.png",
+    "건설/부동산": "assets/industry-icons/construction-real-estate.png",
+    "방산": "assets/industry-icons/tank.png",
+    "스테이블코인": "assets/industry-icons/bitcoin.png",
+    "전력": "assets/industry-icons/power.png",
+    "로봇": "assets/industry-icons/robotics.png",
+    "우주": "assets/industry-icons/space.png",
+    "바이오": "assets/industry-icons/biotech.png",
+    "배터리": "assets/industry-icons/battery.png",
+    "데이터인프라": "assets/industry-icons/data-infrastructure.png",
+    "매크로": "assets/industry-icons/macro-trend.png"
+  },
+  "source_status": [
+    {
+      "name": "WSTS",
+      "status": "ok",
+      "message": "6/6개 지표 자동 수집"
+    },
+    {
+      "name": "FRED",
+      "status": "partial",
+      "message": "0/31개 지표 자동 수집"
+    },
+    {
+      "name": "스테이블코인",
+      "status": "ok",
+      "message": "3/3개 지표 자동 수집"
+    },
+    {
+      "name": "World Bank 원자재",
+      "status": "ok",
+      "message": "3/3개 지표 자동 수집"
+    },
+    {
+      "name": "SEC CAPEX",
+      "status": "ok",
+      "message": "4/4개 지표 자동 수집"
+    },
+    {
+      "name": "USAspending 방산",
+      "status": "ok",
+      "message": "3/3개 지표 자동 수집"
+    },
+    {
+      "name": "EIA",
+      "status": "partial",
+      "message": "0/5개 지표 자동 수집"
+    },
+    {
+      "name": "openFDA",
+      "status": "ok",
+      "message": "1/1개 지표 자동 수집"
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "status": "ok",
+      "message": "1/1개 지표 자동 수집"
+    },
+    {
+      "name": "Launch Library",
+      "status": "partial",
+      "message": "0/1개 지표 자동 수집"
+    },
+    {
+      "name": "AFDC EV 충전",
+      "status": "partial",
+      "message": "0/2개 지표 자동 수집"
+    },
+    {
+      "name": "한국 수출",
+      "status": "partial",
+      "message": "0/14개 지표 자동 수집"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "299947a7b50c",
+      "industry": "반도체",
+      "industry_en": "Semiconductors",
+      "group": "판매액",
+      "group_en": "Sales",
+      "name": "WSTS 반도체 판매액 - Worldwide",
+      "name_en": "WSTS Semiconductor Sales - Worldwide",
+      "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.",
+      "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.",
+      "value": 113.676716,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$113.7B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": -2.5328810000000033,
+      "change_pct": -2.17957988443932,
+      "change_abs_label": "-2.53B",
+      "change_pct_label": "-2.2%",
+      "yoy_pct": 106.33355214251945,
+      "yoy_pct_label": "+106.3%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 52.448741
+        },
+        {
+          "date": "2022-06-01",
+          "value": 50.096559
+        },
+        {
+          "date": "2022-07-01",
+          "value": 44.455809
+        },
+        {
+          "date": "2022-08-01",
+          "value": 47.160207
+        },
+        {
+          "date": "2022-09-01",
+          "value": 49.398222
+        },
+        {
+          "date": "2022-10-01",
+          "value": 44.271165
+        },
+        {
+          "date": "2022-11-01",
+          "value": 43.069269
+        },
+        {
+          "date": "2022-12-01",
+          "value": 43.4762
+        },
+        {
+          "date": "2023-01-01",
+          "value": 37.462375
+        },
+        {
+          "date": "2023-02-01",
+          "value": 38.163241
+        },
+        {
+          "date": "2023-03-01",
+          "value": 43.885496
+        },
+        {
+          "date": "2023-04-01",
+          "value": 38.262275
+        },
+        {
+          "date": "2023-05-01",
+          "value": 41.413894
+        },
+        {
+          "date": "2023-06-01",
+          "value": 47.038061
+        },
+        {
+          "date": "2023-07-01",
+          "value": 41.2354
+        },
+        {
+          "date": "2023-08-01",
+          "value": 43.867062
+        },
+        {
+          "date": "2023-09-01",
+          "value": 49.571957
+        },
+        {
+          "date": "2023-10-01",
+          "value": 46.380189
+        },
+        {
+          "date": "2023-11-01",
+          "value": 47.987406
+        },
+        {
+          "date": "2023-12-01",
+          "value": 51.618069
+        },
+        {
+          "date": "2024-01-01",
+          "value": 44.262371
+        },
+        {
+          "date": "2024-02-01",
+          "value": 44.821582
+        },
+        {
+          "date": "2024-03-01",
+          "value": 52.050509
+        },
+        {
+          "date": "2024-04-01",
+          "value": 44.7629
+        },
+        {
+          "date": "2024-05-01",
+          "value": 50.884385
+        },
+        {
+          "date": "2024-06-01",
+          "value": 54.660967
+        },
+        {
+          "date": "2024-07-01",
+          "value": 48.887935
+        },
+        {
+          "date": "2024-08-01",
+          "value": 56.348695
+        },
+        {
+          "date": "2024-09-01",
+          "value": 61.310821
+        },
+        {
+          "date": "2024-10-01",
+          "value": 53.796369
+        },
+        {
+          "date": "2024-11-01",
+          "value": 58.94912
+        },
+        {
+          "date": "2024-12-01",
+          "value": 59.812952
+        },
+        {
+          "date": "2025-01-01",
+          "value": 50.76837
+        },
+        {
+          "date": "2025-02-01",
+          "value": 54.074184
+        },
+        {
+          "date": "2025-03-01",
+          "value": 61.772249
+        },
+        {
+          "date": "2025-04-01",
+          "value": 55.093665
+        },
+        {
+          "date": "2025-05-01",
+          "value": 60.402493
+        },
+        {
+          "date": "2025-06-01",
+          "value": 64.855618
+        },
+        {
+          "date": "2025-07-01",
+          "value": 62.10079
+        },
+        {
+          "date": "2025-08-01",
+          "value": 69.17366
+        },
+        {
+          "date": "2025-09-01",
+          "value": 78.520702
+        },
+        {
+          "date": "2025-10-01",
+          "value": 71.647272
+        },
+        {
+          "date": "2025-11-01",
+          "value": 81.883025
+        },
+        {
+          "date": "2025-12-01",
+          "value": 85.348277
+        },
+        {
+          "date": "2026-01-01",
+          "value": 80.780827
+        },
+        {
+          "date": "2026-02-01",
+          "value": 101.555208
+        },
+        {
+          "date": "2026-03-01",
+          "value": 116.209597
+        },
+        {
+          "date": "2026-04-01",
+          "value": 113.676716
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
+    },
+    {
+      "id": "393b93c6822c",
+      "industry": "반도체",
+      "industry_en": "Semiconductors",
+      "group": "판매액",
+      "group_en": "Sales",
+      "name": "WSTS 반도체 판매액 - Asia Pacific",
+      "name_en": "WSTS Semiconductor Sales - Asia Pacific",
+      "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.",
+      "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.",
+      "value": 60.958983,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$60.96B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": -3.656509,
+      "change_pct": -5.658873571681545,
+      "change_abs_label": "-3.66B",
+      "change_pct_label": "-5.7%",
+      "yoy_pct": 94.40526066350256,
+      "yoy_pct_label": "+94.4%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 31.122857
+        },
+        {
+          "date": "2022-06-01",
+          "value": 29.406183
+        },
+        {
+          "date": "2022-07-01",
+          "value": 25.228516
+        },
+        {
+          "date": "2022-08-01",
+          "value": 26.987299
+        },
+        {
+          "date": "2022-09-01",
+          "value": 26.985699
+        },
+        {
+          "date": "2022-10-01",
+          "value": 24.097271
+        },
+        {
+          "date": "2022-11-01",
+          "value": 23.626157
+        },
+        {
+          "date": "2022-12-01",
+          "value": 23.521171
+        },
+        {
+          "date": "2023-01-01",
+          "value": 20.140251
+        },
+        {
+          "date": "2023-02-01",
+          "value": 20.447421
+        },
+        {
+          "date": "2023-03-01",
+          "value": 24.72153
+        },
+        {
+          "date": "2023-04-01",
+          "value": 21.113795
+        },
+        {
+          "date": "2023-05-01",
+          "value": 22.683446
+        },
+        {
+          "date": "2023-06-01",
+          "value": 25.820601
+        },
+        {
+          "date": "2023-07-01",
+          "value": 22.201592
+        },
+        {
+          "date": "2023-08-01",
+          "value": 23.802074
+        },
+        {
+          "date": "2023-09-01",
+          "value": 27.117003
+        },
+        {
+          "date": "2023-10-01",
+          "value": 26.125327
+        },
+        {
+          "date": "2023-11-01",
+          "value": 26.452611
+        },
+        {
+          "date": "2023-12-01",
+          "value": 29.368189
+        },
+        {
+          "date": "2024-01-01",
+          "value": 24.932559
+        },
+        {
+          "date": "2024-02-01",
+          "value": 24.814021
+        },
+        {
+          "date": "2024-03-01",
+          "value": 29.394303
+        },
+        {
+          "date": "2024-04-01",
+          "value": 24.617367
+        },
+        {
+          "date": "2024-05-01",
+          "value": 28.222927
+        },
+        {
+          "date": "2024-06-01",
+          "value": 29.282974
+        },
+        {
+          "date": "2024-07-01",
+          "value": 26.513686
+        },
+        {
+          "date": "2024-08-01",
+          "value": 29.650675
+        },
+        {
+          "date": "2024-09-01",
+          "value": 32.740166
+        },
+        {
+          "date": "2024-10-01",
+          "value": 26.879887
+        },
+        {
+          "date": "2024-11-01",
+          "value": 30.089659
+        },
+        {
+          "date": "2024-12-01",
+          "value": 30.29837
+        },
+        {
+          "date": "2025-01-01",
+          "value": 26.473983
+        },
+        {
+          "date": "2025-02-01",
+          "value": 28.544613
+        },
+        {
+          "date": "2025-03-01",
+          "value": 32.197775
+        },
+        {
+          "date": "2025-04-01",
+          "value": 31.356653
+        },
+        {
+          "date": "2025-05-01",
+          "value": 33.973437
+        },
+        {
+          "date": "2025-06-01",
+          "value": 35.651258
+        },
+        {
+          "date": "2025-07-01",
+          "value": 33.334793
+        },
+        {
+          "date": "2025-08-01",
+          "value": 39.499033
+        },
+        {
+          "date": "2025-09-01",
+          "value": 43.984832
+        },
+        {
+          "date": "2025-10-01",
+          "value": 39.514299
+        },
+        {
+          "date": "2025-11-01",
+          "value": 47.316124
+        },
+        {
+          "date": "2025-12-01",
+          "value": 47.899782
+        },
+        {
+          "date": "2026-01-01",
+          "value": 46.998751
+        },
+        {
+          "date": "2026-02-01",
+          "value": 54.762826
+        },
+        {
+          "date": "2026-03-01",
+          "value": 64.615492
+        },
+        {
+          "date": "2026-04-01",
+          "value": 60.958983
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
+    },
+    {
+      "id": "9f57f90d99b3",
+      "industry": "반도체",
+      "industry_en": "Semiconductors",
+      "group": "판매액",
+      "group_en": "Sales",
+      "name": "WSTS 반도체 판매액 - Americas",
+      "name_en": "WSTS Semiconductor Sales - Americas",
+      "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.",
+      "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.",
+      "value": 41.534424,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$41.53B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": 0.9385699999999986,
+      "change_pct": 2.3119848642671803,
+      "change_abs_label": "+0.94B",
+      "change_pct_label": "+2.3%",
+      "yoy_pct": 158.15657427348754,
+      "yoy_pct_label": "+158.2%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 12.613681
+        },
+        {
+          "date": "2022-06-01",
+          "value": 12.100136
+        },
+        {
+          "date": "2022-07-01",
+          "value": 10.804439
+        },
+        {
+          "date": "2022-08-01",
+          "value": 11.522933
+        },
+        {
+          "date": "2022-09-01",
+          "value": 13.774165
+        },
+        {
+          "date": "2022-10-01",
+          "value": 11.688909
+        },
+        {
+          "date": "2022-11-01",
+          "value": 11.057371
+        },
+        {
+          "date": "2022-12-01",
+          "value": 11.457333
+        },
+        {
+          "date": "2023-01-01",
+          "value": 9.002994
+        },
+        {
+          "date": "2023-02-01",
+          "value": 9.39549
+        },
+        {
+          "date": "2023-03-01",
+          "value": 10.426524
+        },
+        {
+          "date": "2023-04-01",
+          "value": 8.806483
+        },
+        {
+          "date": "2023-05-01",
+          "value": 9.946461
+        },
+        {
+          "date": "2023-06-01",
+          "value": 12.298284
+        },
+        {
+          "date": "2023-07-01",
+          "value": 10.751171
+        },
+        {
+          "date": "2023-08-01",
+          "value": 11.475553
+        },
+        {
+          "date": "2023-09-01",
+          "value": 13.139106
+        },
+        {
+          "date": "2023-10-01",
+          "value": 11.971442
+        },
+        {
+          "date": "2023-11-01",
+          "value": 13.434747
+        },
+        {
+          "date": "2023-12-01",
+          "value": 13.729063
+        },
+        {
+          "date": "2024-01-01",
+          "value": 11.725442
+        },
+        {
+          "date": "2024-02-01",
+          "value": 12.24237
+        },
+        {
+          "date": "2024-03-01",
+          "value": 14.370787
+        },
+        {
+          "date": "2024-04-01",
+          "value": 12.525457
+        },
+        {
+          "date": "2024-05-01",
+          "value": 14.786593
+        },
+        {
+          "date": "2024-06-01",
+          "value": 17.012422
+        },
+        {
+          "date": "2024-07-01",
+          "value": 14.423623
+        },
+        {
+          "date": "2024-08-01",
+          "value": 18.244138
+        },
+        {
+          "date": "2024-09-01",
+          "value": 19.066463
+        },
+        {
+          "date": "2024-10-01",
+          "value": 18.727383
+        },
+        {
+          "date": "2024-11-01",
+          "value": 20.710242
+        },
+        {
+          "date": "2024-12-01",
+          "value": 21.287587
+        },
+        {
+          "date": "2025-01-01",
+          "value": 16.64846
+        },
+        {
+          "date": "2025-02-01",
+          "value": 18.02861
+        },
+        {
+          "date": "2025-03-01",
+          "value": 20.713691
+        },
+        {
+          "date": "2025-04-01",
+          "value": 16.08885
+        },
+        {
+          "date": "2025-05-01",
+          "value": 18.569494
+        },
+        {
+          "date": "2025-06-01",
+          "value": 20.768301
+        },
+        {
+          "date": "2025-07-01",
+          "value": 20.8717
+        },
+        {
+          "date": "2025-08-01",
+          "value": 21.419182
+        },
+        {
+          "date": "2025-09-01",
+          "value": 25.145834
+        },
+        {
+          "date": "2025-10-01",
+          "value": 23.591451
+        },
+        {
+          "date": "2025-11-01",
+          "value": 25.936756
+        },
+        {
+          "date": "2025-12-01",
+          "value": 28.694121
+        },
+        {
+          "date": "2026-01-01",
+          "value": 24.625051
+        },
+        {
+          "date": "2026-02-01",
+          "value": 36.199755
+        },
+        {
+          "date": "2026-03-01",
+          "value": 40.595854
+        },
+        {
+          "date": "2026-04-01",
+          "value": 41.534424
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
+    },
+    {
+      "id": "3f4a60928d08",
+      "industry": "반도체",
+      "industry_en": "Semiconductors",
+      "group": "판매액",
+      "group_en": "Sales",
+      "name": "WSTS 반도체 판매액 3MMA - Worldwide",
+      "name_en": "WSTS Semiconductor Sales 3MMA - Worldwide",
+      "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.",
+      "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.",
+      "value": 110.480507,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$110.5B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": 10.965296333333328,
+      "change_pct": 11.018713882908182,
+      "change_abs_label": "+10.97B",
+      "change_pct_label": "+11.0%",
+      "yoy_pct": 93.89337251930205,
+      "yoy_pct_label": "+93.9%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 51.65228
+        },
+        {
+          "date": "2022-06-01",
+          "value": 50.168058333333335
+        },
+        {
+          "date": "2022-07-01",
+          "value": 49.000369666666664
+        },
+        {
+          "date": "2022-08-01",
+          "value": 47.237525
+        },
+        {
+          "date": "2022-09-01",
+          "value": 47.004746
+        },
+        {
+          "date": "2022-10-01",
+          "value": 46.943198
+        },
+        {
+          "date": "2022-11-01",
+          "value": 45.579552
+        },
+        {
+          "date": "2022-12-01",
+          "value": 43.60554466666667
+        },
+        {
+          "date": "2023-01-01",
+          "value": 41.335948
+        },
+        {
+          "date": "2023-02-01",
+          "value": 39.700605333333336
+        },
+        {
+          "date": "2023-03-01",
+          "value": 39.837037333333335
+        },
+        {
+          "date": "2023-04-01",
+          "value": 40.103670666666666
+        },
+        {
+          "date": "2023-05-01",
+          "value": 41.187221666666666
+        },
+        {
+          "date": "2023-06-01",
+          "value": 42.238076666666664
+        },
+        {
+          "date": "2023-07-01",
+          "value": 43.22911833333334
+        },
+        {
+          "date": "2023-08-01",
+          "value": 44.046841
+        },
+        {
+          "date": "2023-09-01",
+          "value": 44.891473
+        },
+        {
+          "date": "2023-10-01",
+          "value": 46.60640266666666
+        },
+        {
+          "date": "2023-11-01",
+          "value": 47.979850666666664
+        },
+        {
+          "date": "2023-12-01",
+          "value": 48.661888
+        },
+        {
+          "date": "2024-01-01",
+          "value": 47.955948666666664
+        },
+        {
+          "date": "2024-02-01",
+          "value": 46.900674
+        },
+        {
+          "date": "2024-03-01",
+          "value": 47.044820666666666
+        },
+        {
+          "date": "2024-04-01",
+          "value": 47.21166366666667
+        },
+        {
+          "date": "2024-05-01",
+          "value": 49.232598
+        },
+        {
+          "date": "2024-06-01",
+          "value": 50.102750666666665
+        },
+        {
+          "date": "2024-07-01",
+          "value": 51.47776233333334
+        },
+        {
+          "date": "2024-08-01",
+          "value": 53.299199
+        },
+        {
+          "date": "2024-09-01",
+          "value": 55.515817
+        },
+        {
+          "date": "2024-10-01",
+          "value": 57.151961666666665
+        },
+        {
+          "date": "2024-11-01",
+          "value": 58.01877
+        },
+        {
+          "date": "2024-12-01",
+          "value": 57.519480333333334
+        },
+        {
+          "date": "2025-01-01",
+          "value": 56.510147333333336
+        },
+        {
+          "date": "2025-02-01",
+          "value": 54.885168666666665
+        },
+        {
+          "date": "2025-03-01",
+          "value": 55.53826766666666
+        },
+        {
+          "date": "2025-04-01",
+          "value": 56.980032666666666
+        },
+        {
+          "date": "2025-05-01",
+          "value": 59.089469
+        },
+        {
+          "date": "2025-06-01",
+          "value": 60.117258666666665
+        },
+        {
+          "date": "2025-07-01",
+          "value": 62.452967
+        },
+        {
+          "date": "2025-08-01",
+          "value": 65.37668933333333
+        },
+        {
+          "date": "2025-09-01",
+          "value": 69.93171733333332
+        },
+        {
+          "date": "2025-10-01",
+          "value": 73.113878
+        },
+        {
+          "date": "2025-11-01",
+          "value": 77.350333
+        },
+        {
+          "date": "2025-12-01",
+          "value": 79.62619133333332
+        },
+        {
+          "date": "2026-01-01",
+          "value": 82.67070966666667
+        },
+        {
+          "date": "2026-02-01",
+          "value": 89.228104
+        },
+        {
+          "date": "2026-03-01",
+          "value": 99.51521066666668
+        },
+        {
+          "date": "2026-04-01",
+          "value": 110.480507
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
+    },
+    {
+      "id": "f04bebf4dd0a",
+      "industry": "반도체",
+      "industry_en": "Semiconductors",
+      "group": "판매액",
+      "group_en": "Sales",
+      "name": "WSTS 반도체 판매액 3MMA - Asia Pacific",
+      "name_en": "WSTS Semiconductor Sales 3MMA - Asia Pacific",
+      "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.",
+      "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.",
+      "value": 60.11243366666666,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$60.11B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": 4.653410666666659,
+      "change_pct": 8.390718795508988,
+      "change_abs_label": "+4.65B",
+      "change_pct_label": "+8.4%",
+      "yoy_pct": 95.80801172511664,
+      "yoy_pct_label": "+95.8%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 30.780241333333333
+        },
+        {
+          "date": "2022-06-01",
+          "value": 29.62072566666667
+        },
+        {
+          "date": "2022-07-01",
+          "value": 28.585852
+        },
+        {
+          "date": "2022-08-01",
+          "value": 27.20733266666667
+        },
+        {
+          "date": "2022-09-01",
+          "value": 26.400504666666667
+        },
+        {
+          "date": "2022-10-01",
+          "value": 26.023423
+        },
+        {
+          "date": "2022-11-01",
+          "value": 24.90304233333333
+        },
+        {
+          "date": "2022-12-01",
+          "value": 23.748199666666668
+        },
+        {
+          "date": "2023-01-01",
+          "value": 22.429193
+        },
+        {
+          "date": "2023-02-01",
+          "value": 21.36961433333333
+        },
+        {
+          "date": "2023-03-01",
+          "value": 21.769734
+        },
+        {
+          "date": "2023-04-01",
+          "value": 22.09424866666667
+        },
+        {
+          "date": "2023-05-01",
+          "value": 22.839590333333334
+        },
+        {
+          "date": "2023-06-01",
+          "value": 23.20594733333333
+        },
+        {
+          "date": "2023-07-01",
+          "value": 23.568546333333334
+        },
+        {
+          "date": "2023-08-01",
+          "value": 23.941422333333332
+        },
+        {
+          "date": "2023-09-01",
+          "value": 24.373556333333333
+        },
+        {
+          "date": "2023-10-01",
+          "value": 25.681468
+        },
+        {
+          "date": "2023-11-01",
+          "value": 26.56498033333333
+        },
+        {
+          "date": "2023-12-01",
+          "value": 27.315375666666668
+        },
+        {
+          "date": "2024-01-01",
+          "value": 26.917786333333332
+        },
+        {
+          "date": "2024-02-01",
+          "value": 26.37158966666667
+        },
+        {
+          "date": "2024-03-01",
+          "value": 26.38029433333333
+        },
+        {
+          "date": "2024-04-01",
+          "value": 26.275230333333333
+        },
+        {
+          "date": "2024-05-01",
+          "value": 27.411532333333334
+        },
+        {
+          "date": "2024-06-01",
+          "value": 27.374422666666668
+        },
+        {
+          "date": "2024-07-01",
+          "value": 28.006529
+        },
+        {
+          "date": "2024-08-01",
+          "value": 28.482445
+        },
+        {
+          "date": "2024-09-01",
+          "value": 29.63484233333333
+        },
+        {
+          "date": "2024-10-01",
+          "value": 29.756909333333333
+        },
+        {
+          "date": "2024-11-01",
+          "value": 29.903237333333333
+        },
+        {
+          "date": "2024-12-01",
+          "value": 29.089305333333332
+        },
+        {
+          "date": "2025-01-01",
+          "value": 28.954004
+        },
+        {
+          "date": "2025-02-01",
+          "value": 28.438988666666667
+        },
+        {
+          "date": "2025-03-01",
+          "value": 29.072123666666666
+        },
+        {
+          "date": "2025-04-01",
+          "value": 30.699680333333333
+        },
+        {
+          "date": "2025-05-01",
+          "value": 32.50928833333333
+        },
+        {
+          "date": "2025-06-01",
+          "value": 33.66044933333333
+        },
+        {
+          "date": "2025-07-01",
+          "value": 34.31982933333334
+        },
+        {
+          "date": "2025-08-01",
+          "value": 36.16169466666666
+        },
+        {
+          "date": "2025-09-01",
+          "value": 38.939552666666664
+        },
+        {
+          "date": "2025-10-01",
+          "value": 40.999388
+        },
+        {
+          "date": "2025-11-01",
+          "value": 43.605085
+        },
+        {
+          "date": "2025-12-01",
+          "value": 44.910068333333335
+        },
+        {
+          "date": "2026-01-01",
+          "value": 47.404885666666665
+        },
+        {
+          "date": "2026-02-01",
+          "value": 49.88711966666666
+        },
+        {
+          "date": "2026-03-01",
+          "value": 55.459023
+        },
+        {
+          "date": "2026-04-01",
+          "value": 60.11243366666666
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
+    },
+    {
+      "id": "4b612a22bdd8",
+      "industry": "반도체",
+      "industry_en": "Semiconductors",
+      "group": "판매액",
+      "group_en": "Sales",
+      "name": "WSTS 반도체 판매액 3MMA - Americas",
+      "name_en": "WSTS Semiconductor Sales 3MMA - Americas",
+      "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.",
+      "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.",
+      "value": 39.443344333333336,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$39.44B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-04-01",
+      "observed_label": "2026.04",
+      "next_update_label": "2026.05",
+      "change_abs": 5.636457666666672,
+      "change_pct": 16.672513272936705,
+      "change_abs_label": "+5.64B",
+      "change_pct_label": "+16.7%",
+      "yoy_pct": 115.80804130848907,
+      "yoy_pct_label": "+115.8%",
+      "history": [
+        {
+          "date": "2022-05-01",
+          "value": 12.32605
+        },
+        {
+          "date": "2022-06-01",
+          "value": 12.113105333333333
+        },
+        {
+          "date": "2022-07-01",
+          "value": 11.839418666666665
+        },
+        {
+          "date": "2022-08-01",
+          "value": 11.475836
+        },
+        {
+          "date": "2022-09-01",
+          "value": 12.033845666666666
+        },
+        {
+          "date": "2022-10-01",
+          "value": 12.328669
+        },
+        {
+          "date": "2022-11-01",
+          "value": 12.173481666666666
+        },
+        {
+          "date": "2022-12-01",
+          "value": 11.401204333333334
+        },
+        {
+          "date": "2023-01-01",
+          "value": 10.505899333333334
+        },
+        {
+          "date": "2023-02-01",
+          "value": 9.951939
+        },
+        {
+          "date": "2023-03-01",
+          "value": 9.608336
+        },
+        {
+          "date": "2023-04-01",
+          "value": 9.542832333333333
+        },
+        {
+          "date": "2023-05-01",
+          "value": 9.726489333333333
+        },
+        {
+          "date": "2023-06-01",
+          "value": 10.350409333333333
+        },
+        {
+          "date": "2023-07-01",
+          "value": 10.998638666666666
+        },
+        {
+          "date": "2023-08-01",
+          "value": 11.508336
+        },
+        {
+          "date": "2023-09-01",
+          "value": 11.78861
+        },
+        {
+          "date": "2023-10-01",
+          "value": 12.195367
+        },
+        {
+          "date": "2023-11-01",
+          "value": 12.848431666666666
+        },
+        {
+          "date": "2023-12-01",
+          "value": 13.045084
+        },
+        {
+          "date": "2024-01-01",
+          "value": 12.963084
+        },
+        {
+          "date": "2024-02-01",
+          "value": 12.565625
+        },
+        {
+          "date": "2024-03-01",
+          "value": 12.779533
+        },
+        {
+          "date": "2024-04-01",
+          "value": 13.046204666666666
+        },
+        {
+          "date": "2024-05-01",
+          "value": 13.894279
+        },
+        {
+          "date": "2024-06-01",
+          "value": 14.774824
+        },
+        {
+          "date": "2024-07-01",
+          "value": 15.407546
+        },
+        {
+          "date": "2024-08-01",
+          "value": 16.560061
+        },
+        {
+          "date": "2024-09-01",
+          "value": 17.244741333333334
+        },
+        {
+          "date": "2024-10-01",
+          "value": 18.679328
+        },
+        {
+          "date": "2024-11-01",
+          "value": 19.50136266666667
+        },
+        {
+          "date": "2024-12-01",
+          "value": 20.241737333333333
+        },
+        {
+          "date": "2025-01-01",
+          "value": 19.548763
+        },
+        {
+          "date": "2025-02-01",
+          "value": 18.65488566666667
+        },
+        {
+          "date": "2025-03-01",
+          "value": 18.463587
+        },
+        {
+          "date": "2025-04-01",
+          "value": 18.27705033333333
+        },
+        {
+          "date": "2025-05-01",
+          "value": 18.457345
+        },
+        {
+          "date": "2025-06-01",
+          "value": 18.475548333333332
+        },
+        {
+          "date": "2025-07-01",
+          "value": 20.06983166666667
+        },
+        {
+          "date": "2025-08-01",
+          "value": 21.019727666666668
+        },
+        {
+          "date": "2025-09-01",
+          "value": 22.478905333333334
+        },
+        {
+          "date": "2025-10-01",
+          "value": 23.385489
+        },
+        {
+          "date": "2025-11-01",
+          "value": 24.891347
+        },
+        {
+          "date": "2025-12-01",
+          "value": 26.074109333333332
+        },
+        {
+          "date": "2026-01-01",
+          "value": 26.418642666666667
+        },
+        {
+          "date": "2026-02-01",
+          "value": 29.839642333333334
+        },
+        {
+          "date": "2026-03-01",
+          "value": 33.806886666666664
+        },
+        {
+          "date": "2026-04-01",
+          "value": 39.443344333333336
+        }
+      ],
+      "period_label": "2022.05 - 2026.04"
+    },
+    {
+      "id": "c9e38f8f2070",
+      "industry": "스테이블코인",
+      "industry_en": "Stablecoins",
+      "group": "유통량",
+      "group_en": "Supply",
+      "name": "전체 스테이블코인 유통량",
+      "name_en": "Total Stablecoin Supply",
+      "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
+      "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
+      "value": 310.6893130723461,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$310.7B",
+      "frequency": "일간",
+      "frequency_en": "Daily",
+      "observed_at": "2026-07-07",
+      "observed_label": "2026.07.07",
+      "next_update_label": "2026.07.08",
+      "change_abs": 0.6977226323538162,
+      "change_pct": 0.22507792271508897,
+      "change_abs_label": "+0.70B",
+      "change_pct_label": "+0.2%",
+      "yoy_pct": null,
+      "yoy_pct_label": "n/a",
+      "history": [
+        {
+          "date": "2026-06-07",
+          "value": 315.0192415528832
+        },
+        {
+          "date": "2026-06-30",
+          "value": 311.77199244840654
+        },
+        {
+          "date": "2026-07-06",
+          "value": 309.9915904399923
+        },
+        {
+          "date": "2026-07-07",
+          "value": 310.6893130723461
+        }
+      ],
+      "period_label": "2026.06.07 - 2026.07.07"
+    },
+    {
+      "id": "9833e22b7865",
+      "industry": "스테이블코인",
+      "industry_en": "Stablecoins",
+      "group": "유통량",
+      "group_en": "Supply",
+      "name": "USDT 유통량",
+      "name_en": "USDT Supply",
+      "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
+      "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
+      "value": 184.25474203875044,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$184.3B",
+      "frequency": "일간",
+      "frequency_en": "Daily",
+      "observed_at": "2026-07-07",
+      "observed_label": "2026.07.07",
+      "next_update_label": "2026.07.08",
+      "change_abs": 0.10913585781329971,
+      "change_pct": 0.0592660667157352,
+      "change_abs_label": "+0.11B",
+      "change_pct_label": "+0.1%",
+      "yoy_pct": null,
+      "yoy_pct_label": "n/a",
+      "history": [
+        {
+          "date": "2026-06-07",
+          "value": 187.1830276952233
+        },
+        {
+          "date": "2026-06-30",
+          "value": 185.0340088563073
+        },
+        {
+          "date": "2026-07-06",
+          "value": 184.14560618093714
+        },
+        {
+          "date": "2026-07-07",
+          "value": 184.25474203875044
+        }
+      ],
+      "period_label": "2026.06.07 - 2026.07.07"
+    },
+    {
+      "id": "6738d7df4ecd",
+      "industry": "스테이블코인",
+      "industry_en": "Stablecoins",
+      "group": "유통량",
+      "group_en": "Supply",
+      "name": "USDC 유통량",
+      "name_en": "USDC Supply",
+      "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.",
+      "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.",
+      "value": 73.19061306184092,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$73.19B",
+      "frequency": "일간",
+      "frequency_en": "Daily",
+      "observed_at": "2026-07-07",
+      "observed_label": "2026.07.07",
+      "next_update_label": "2026.07.08",
+      "change_abs": 0.13658862359773138,
+      "change_pct": 0.18696933488338008,
+      "change_abs_label": "+0.14B",
+      "change_pct_label": "+0.2%",
+      "yoy_pct": null,
+      "yoy_pct_label": "n/a",
+      "history": [
+        {
+          "date": "2026-06-07",
+          "value": 75.60996652055266
+        },
+        {
+          "date": "2026-06-30",
+          "value": 73.80545197458235
+        },
+        {
+          "date": "2026-07-06",
+          "value": 73.05402443824319
+        },
+        {
+          "date": "2026-07-07",
+          "value": 73.19061306184092
+        }
+      ],
+      "period_label": "2026.06.07 - 2026.07.07"
+    },
+    {
+      "id": "64fa63647ec0",
+      "industry": "배터리",
+      "industry_en": "Batteries",
+      "group": "배터리 원재료",
+      "group_en": "Battery Raw Materials",
+      "name": "니켈 가격",
+      "name_en": "Nickel Price",
+      "meaning": "니켈 가격은 배터리 양극재 원가와 소재 업체 마진 환경을 보여주는 원재료 proxy입니다.",
+      "meaning_en": "Nickel price is a raw material proxy for battery cathode costs and materials-company margins.",
+      "value": 17588.0,
+      "unit": "$/mt",
+      "unit_en": "USD/mt",
+      "display_value": "17,588.0 $/mt",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": -1218.0,
+      "change_pct": -6.476656386259705,
+      "change_abs_label": "-1,218.00 $/mt",
+      "change_pct_label": "-6.5%",
+      "yoy_pct": 17.22988735586215,
+      "yoy_pct_label": "+17.2%",
+      "history": [
+        {
+          "date": "2022-07-01",
+          "value": 21482.0
+        },
+        {
+          "date": "2022-08-01",
+          "value": 22057.0
+        },
+        {
+          "date": "2022-09-01",
+          "value": 22774.0
+        },
+        {
+          "date": "2022-10-01",
+          "value": 22033.0
+        },
+        {
+          "date": "2022-11-01",
+          "value": 25563.0
+        },
+        {
+          "date": "2022-12-01",
+          "value": 28947.0
+        },
+        {
+          "date": "2023-01-01",
+          "value": 28195.0
+        },
+        {
+          "date": "2023-02-01",
+          "value": 26728.0
+        },
+        {
+          "date": "2023-03-01",
+          "value": 23289.0
+        },
+        {
+          "date": "2023-04-01",
+          "value": 23895.0
+        },
+        {
+          "date": "2023-05-01",
+          "value": 21970.0
+        },
+        {
+          "date": "2023-06-01",
+          "value": 21233.0
+        },
+        {
+          "date": "2023-07-01",
+          "value": 21091.0
+        },
+        {
+          "date": "2023-08-01",
+          "value": 20439.0
+        },
+        {
+          "date": "2023-09-01",
+          "value": 19645.0
+        },
+        {
+          "date": "2023-10-01",
+          "value": 18281.0
+        },
+        {
+          "date": "2023-11-01",
+          "value": 17027.0
+        },
+        {
+          "date": "2023-12-01",
+          "value": 16461.0
+        },
+        {
+          "date": "2024-01-01",
+          "value": 16104.0
+        },
+        {
+          "date": "2024-02-01",
+          "value": 16338.0
+        },
+        {
+          "date": "2024-03-01",
+          "value": 17439.0
+        },
+        {
+          "date": "2024-04-01",
+          "value": 18164.0
+        },
+        {
+          "date": "2024-05-01",
+          "value": 19587.0
+        },
+        {
+          "date": "2024-06-01",
+          "value": 17498.0
+        },
+        {
+          "date": "2024-07-01",
+          "value": 16335.0
+        },
+        {
+          "date": "2024-08-01",
+          "value": 16292.0
+        },
+        {
+          "date": "2024-09-01",
+          "value": 16077.0
+        },
+        {
+          "date": "2024-10-01",
+          "value": 16766.0
+        },
+        {
+          "date": "2024-11-01",
+          "value": 15723.0
+        },
+        {
+          "date": "2024-12-01",
+          "value": 15445.0
+        },
+        {
+          "date": "2025-01-01",
+          "value": 15394.0
+        },
+        {
+          "date": "2025-02-01",
+          "value": 15288.0
+        },
+        {
+          "date": "2025-03-01",
+          "value": 16066.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 15113.0
+        },
+        {
+          "date": "2025-05-01",
+          "value": 15346.0
+        },
+        {
+          "date": "2025-06-01",
+          "value": 15003.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 15034.0
+        },
+        {
+          "date": "2025-08-01",
+          "value": 14949.0
+        },
+        {
+          "date": "2025-09-01",
+          "value": 15106.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 15092.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 14671.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 14884.0
+        },
+        {
+          "date": "2026-01-01",
+          "value": 17769.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 17173.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 17076.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 17962.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 18806.0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 17588.0
+        }
+      ],
+      "period_label": "2022.07 - 2026.06"
+    },
+    {
+      "id": "d907cfbca0b2",
+      "industry": "전력",
+      "industry_en": "Power",
+      "group": "에너지 가격",
+      "group_en": "Energy Prices",
+      "name": "유럽 천연가스 가격",
+      "name_en": "Europe Natural Gas Price",
+      "meaning": "천연가스 가격은 전력 생산 원가와 산업 에너지 비용을 좌우하는 에너지 원료 지표입니다.",
+      "meaning_en": "Natural gas price indicates power generation costs and industrial energy cost pressure.",
+      "value": 15.17,
+      "unit": "$/mmbtu",
+      "unit_en": "USD/mmbtu",
+      "display_value": "15.17 $/mmbtu",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": -1.0000000000000018,
+      "change_pct": -6.184291898577621,
+      "change_abs_label": "-1.00 $/mmbtu",
+      "change_pct_label": "-6.2%",
+      "yoy_pct": 22.635408245755873,
+      "yoy_pct_label": "+22.6%",
+      "history": [
+        {
+          "date": "2022-07-01",
+          "value": 51.33
+        },
+        {
+          "date": "2022-08-01",
+          "value": 70.04
+        },
+        {
+          "date": "2022-09-01",
+          "value": 59.1
+        },
+        {
+          "date": "2022-10-01",
+          "value": 39.02
+        },
+        {
+          "date": "2022-11-01",
+          "value": 35.72
+        },
+        {
+          "date": "2022-12-01",
+          "value": 36.04
+        },
+        {
+          "date": "2023-01-01",
+          "value": 20.18
+        },
+        {
+          "date": "2023-02-01",
+          "value": 16.54
+        },
+        {
+          "date": "2023-03-01",
+          "value": 13.81
+        },
+        {
+          "date": "2023-04-01",
+          "value": 13.52
+        },
+        {
+          "date": "2023-05-01",
+          "value": 10.11
+        },
+        {
+          "date": "2023-06-01",
+          "value": 10.35
+        },
+        {
+          "date": "2023-07-01",
+          "value": 9.55
+        },
+        {
+          "date": "2023-08-01",
+          "value": 11.19
+        },
+        {
+          "date": "2023-09-01",
+          "value": 11.55
+        },
+        {
+          "date": "2023-10-01",
+          "value": 14.57
+        },
+        {
+          "date": "2023-11-01",
+          "value": 14.49
+        },
+        {
+          "date": "2023-12-01",
+          "value": 11.51
+        },
+        {
+          "date": "2024-01-01",
+          "value": 9.56
+        },
+        {
+          "date": "2024-02-01",
+          "value": 8.15
+        },
+        {
+          "date": "2024-03-01",
+          "value": 8.55
+        },
+        {
+          "date": "2024-04-01",
+          "value": 9.09
+        },
+        {
+          "date": "2024-05-01",
+          "value": 10.12
+        },
+        {
+          "date": "2024-06-01",
+          "value": 10.87
+        },
+        {
+          "date": "2024-07-01",
+          "value": 10.35
+        },
+        {
+          "date": "2024-08-01",
+          "value": 12.37
+        },
+        {
+          "date": "2024-09-01",
+          "value": 11.78
+        },
+        {
+          "date": "2024-10-01",
+          "value": 12.92
+        },
+        {
+          "date": "2024-11-01",
+          "value": 13.93
+        },
+        {
+          "date": "2024-12-01",
+          "value": 13.86
+        },
+        {
+          "date": "2025-01-01",
+          "value": 14.66
+        },
+        {
+          "date": "2025-02-01",
+          "value": 15.34
+        },
+        {
+          "date": "2025-03-01",
+          "value": 13.24
+        },
+        {
+          "date": "2025-04-01",
+          "value": 11.59
+        },
+        {
+          "date": "2025-05-01",
+          "value": 11.66
+        },
+        {
+          "date": "2025-06-01",
+          "value": 12.37
+        },
+        {
+          "date": "2025-07-01",
+          "value": 11.62
+        },
+        {
+          "date": "2025-08-01",
+          "value": 11.15
+        },
+        {
+          "date": "2025-09-01",
+          "value": 11.12
+        },
+        {
+          "date": "2025-10-01",
+          "value": 10.89
+        },
+        {
+          "date": "2025-11-01",
+          "value": 10.42
+        },
+        {
+          "date": "2025-12-01",
+          "value": 9.48
+        },
+        {
+          "date": "2026-01-01",
+          "value": 11.76
+        },
+        {
+          "date": "2026-02-01",
+          "value": 11.24
+        },
+        {
+          "date": "2026-03-01",
+          "value": 17.91
+        },
+        {
+          "date": "2026-04-01",
+          "value": 15.41
+        },
+        {
+          "date": "2026-05-01",
+          "value": 16.17
+        },
+        {
+          "date": "2026-06-01",
+          "value": 15.17
+        }
+      ],
+      "period_label": "2022.07 - 2026.06"
+    },
+    {
+      "id": "85f0653c42e0",
+      "industry": "전력",
+      "industry_en": "Power",
+      "group": "에너지 가격",
+      "group_en": "Energy Prices",
+      "name": "호주 석탄 가격",
+      "name_en": "Australian Coal Price",
+      "meaning": "석탄 가격은 화력발전 원가와 전력 가격 압력을 확인하는 원료 proxy입니다.",
+      "meaning_en": "Coal price is a feedstock proxy for thermal power costs and power price pressure.",
+      "value": 138.5,
+      "unit": "$/mt",
+      "unit_en": "USD/mt",
+      "display_value": "138.5 $/mt",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": 1.5999999999999943,
+      "change_pct": 1.1687363038714427,
+      "change_abs_label": "+1.60 $/mt",
+      "change_pct_label": "+1.2%",
+      "yoy_pct": 27.064220183486242,
+      "yoy_pct_label": "+27.1%",
+      "history": [
+        {
+          "date": "2022-07-01",
+          "value": 402.2
+        },
+        {
+          "date": "2022-08-01",
+          "value": 407.0
+        },
+        {
+          "date": "2022-09-01",
+          "value": 430.8
+        },
+        {
+          "date": "2022-10-01",
+          "value": 389.8
+        },
+        {
+          "date": "2022-11-01",
+          "value": 342.2
+        },
+        {
+          "date": "2022-12-01",
+          "value": 379.2
+        },
+        {
+          "date": "2023-01-01",
+          "value": 318.0
+        },
+        {
+          "date": "2023-02-01",
+          "value": 207.5
+        },
+        {
+          "date": "2023-03-01",
+          "value": 187.2
+        },
+        {
+          "date": "2023-04-01",
+          "value": 194.3
+        },
+        {
+          "date": "2023-05-01",
+          "value": 160.5
+        },
+        {
+          "date": "2023-06-01",
+          "value": 139.4
+        },
+        {
+          "date": "2023-07-01",
+          "value": 140.6
+        },
+        {
+          "date": "2023-08-01",
+          "value": 152.6
+        },
+        {
+          "date": "2023-09-01",
+          "value": 162.5
+        },
+        {
+          "date": "2023-10-01",
+          "value": 142.1
+        },
+        {
+          "date": "2023-11-01",
+          "value": 126.8
+        },
+        {
+          "date": "2023-12-01",
+          "value": 141.8
+        },
+        {
+          "date": "2024-01-01",
+          "value": 124.9
+        },
+        {
+          "date": "2024-02-01",
+          "value": 124.2
+        },
+        {
+          "date": "2024-03-01",
+          "value": 131.5
+        },
+        {
+          "date": "2024-04-01",
+          "value": 135.0
+        },
+        {
+          "date": "2024-05-01",
+          "value": 142.0
+        },
+        {
+          "date": "2024-06-01",
+          "value": 135.1
+        },
+        {
+          "date": "2024-07-01",
+          "value": 137.6
+        },
+        {
+          "date": "2024-08-01",
+          "value": 145.8
+        },
+        {
+          "date": "2024-09-01",
+          "value": 139.2
+        },
+        {
+          "date": "2024-10-01",
+          "value": 146.6
+        },
+        {
+          "date": "2024-11-01",
+          "value": 142.1
+        },
+        {
+          "date": "2024-12-01",
+          "value": 129.8
+        },
+        {
+          "date": "2025-01-01",
+          "value": 118.6
+        },
+        {
+          "date": "2025-02-01",
+          "value": 106.9
+        },
+        {
+          "date": "2025-03-01",
+          "value": 104.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 98.6
+        },
+        {
+          "date": "2025-05-01",
+          "value": 104.4
+        },
+        {
+          "date": "2025-06-01",
+          "value": 109.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 112.9
+        },
+        {
+          "date": "2025-08-01",
+          "value": 112.2
+        },
+        {
+          "date": "2025-09-01",
+          "value": 106.3
+        },
+        {
+          "date": "2025-10-01",
+          "value": 107.5
+        },
+        {
+          "date": "2025-11-01",
+          "value": 112.6
+        },
+        {
+          "date": "2025-12-01",
+          "value": 107.7
+        },
+        {
+          "date": "2026-01-01",
+          "value": 109.8
+        },
+        {
+          "date": "2026-02-01",
+          "value": 118.4
+        },
+        {
+          "date": "2026-03-01",
+          "value": 138.6
+        },
+        {
+          "date": "2026-04-01",
+          "value": 130.9
+        },
+        {
+          "date": "2026-05-01",
+          "value": 136.9
+        },
+        {
+          "date": "2026-06-01",
+          "value": 138.5
+        }
+      ],
+      "period_label": "2022.07 - 2026.06"
+    },
+    {
+      "id": "bd9110d72bc2",
+      "industry": "데이터인프라",
+      "industry_en": "Data Infrastructure",
+      "group": "CAPEX",
+      "group_en": "CAPEX",
+      "name": "Microsoft CAPEX",
+      "name_en": "Microsoft CAPEX",
+      "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.",
+      "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.",
+      "value": 30.876,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$30.88B",
+      "frequency": "분기",
+      "frequency_en": "Quarterly",
+      "observed_at": "2026-03-31",
+      "observed_label": "2026.03.31",
+      "next_update_label": "2026.06",
+      "change_abs": 1.0,
+      "change_pct": 3.347168295621894,
+      "change_abs_label": "+1.00B",
+      "change_pct_label": "+3.3%",
+      "yoy_pct": 84.38936996118245,
+      "yoy_pct_label": "+84.4%",
+      "history": [
+        {
+          "date": "2010-09-30",
+          "value": 0.564
+        },
+        {
+          "date": "2010-12-31",
+          "value": 0.491
+        },
+        {
+          "date": "2011-03-31",
+          "value": 0.658
+        },
+        {
+          "date": "2011-09-30",
+          "value": 0.436
+        },
+        {
+          "date": "2011-12-31",
+          "value": 0.498
+        },
+        {
+          "date": "2012-03-31",
+          "value": 0.749
+        },
+        {
+          "date": "2012-09-30",
+          "value": 0.603
+        },
+        {
+          "date": "2012-12-31",
+          "value": 0.93
+        },
+        {
+          "date": "2013-03-31",
+          "value": 0.93
+        },
+        {
+          "date": "2013-09-30",
+          "value": 1.231
+        },
+        {
+          "date": "2013-12-31",
+          "value": 1.732
+        },
+        {
+          "date": "2014-03-31",
+          "value": 1.192
+        },
+        {
+          "date": "2014-09-30",
+          "value": 1.282
+        },
+        {
+          "date": "2014-12-31",
+          "value": 1.49
+        },
+        {
+          "date": "2015-03-31",
+          "value": 1.391
+        },
+        {
+          "date": "2015-09-30",
+          "value": 1.356
+        },
+        {
+          "date": "2015-12-31",
+          "value": 2.024
+        },
+        {
+          "date": "2016-03-31",
+          "value": 2.308
+        },
+        {
+          "date": "2016-09-30",
+          "value": 2.163
+        },
+        {
+          "date": "2016-12-31",
+          "value": 1.988
+        },
+        {
+          "date": "2017-03-31",
+          "value": 1.695
+        },
+        {
+          "date": "2017-09-30",
+          "value": 2.132
+        },
+        {
+          "date": "2017-12-31",
+          "value": 2.586
+        },
+        {
+          "date": "2018-03-31",
+          "value": 2.934
+        },
+        {
+          "date": "2018-09-30",
+          "value": 3.602
+        },
+        {
+          "date": "2018-12-31",
+          "value": 3.707
+        },
+        {
+          "date": "2019-03-31",
+          "value": 2.565
+        },
+        {
+          "date": "2019-09-30",
+          "value": 3.385
+        },
+        {
+          "date": "2019-12-31",
+          "value": 3.545
+        },
+        {
+          "date": "2020-03-31",
+          "value": 3.767
+        },
+        {
+          "date": "2020-09-30",
+          "value": 4.907
+        },
+        {
+          "date": "2020-12-31",
+          "value": 4.174
+        },
+        {
+          "date": "2021-03-31",
+          "value": 5.089
+        },
+        {
+          "date": "2021-09-30",
+          "value": 5.81
+        },
+        {
+          "date": "2021-12-31",
+          "value": 5.865
+        },
+        {
+          "date": "2022-03-31",
+          "value": 5.34
+        },
+        {
+          "date": "2022-09-30",
+          "value": 6.283
+        },
+        {
+          "date": "2022-12-31",
+          "value": 6.274
+        },
+        {
+          "date": "2023-03-31",
+          "value": 6.607
+        },
+        {
+          "date": "2023-09-30",
+          "value": 9.917
+        },
+        {
+          "date": "2023-12-31",
+          "value": 9.735
+        },
+        {
+          "date": "2024-03-31",
+          "value": 10.952
+        },
+        {
+          "date": "2024-09-30",
+          "value": 14.923
+        },
+        {
+          "date": "2024-12-31",
+          "value": 15.804
+        },
+        {
+          "date": "2025-03-31",
+          "value": 16.745
+        },
+        {
+          "date": "2025-09-30",
+          "value": 19.394
+        },
+        {
+          "date": "2025-12-31",
+          "value": 29.876
+        },
+        {
+          "date": "2026-03-31",
+          "value": 30.876
+        }
+      ],
+      "period_label": "2010.09.30 - 2026.03.31"
+    },
+    {
+      "id": "7393f10df322",
+      "industry": "데이터인프라",
+      "industry_en": "Data Infrastructure",
+      "group": "CAPEX",
+      "group_en": "CAPEX",
+      "name": "Amazon CAPEX",
+      "name_en": "Amazon CAPEX",
+      "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.",
+      "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.",
+      "value": 44.203,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$44.20B",
+      "frequency": "분기",
+      "frequency_en": "Quarterly",
+      "observed_at": "2026-03-31",
+      "observed_label": "2026.03.31",
+      "next_update_label": "2026.06",
+      "change_abs": 9.108000000000004,
+      "change_pct": 25.952414873913664,
+      "change_abs_label": "+9.11B",
+      "change_pct_label": "+26.0%",
+      "yoy_pct": 76.67772492905394,
+      "yoy_pct_label": "+76.7%",
+      "history": [
+        {
+          "date": "2017-09-30",
+          "value": 3.074
+        },
+        {
+          "date": "2018-03-31",
+          "value": 3.098
+        },
+        {
+          "date": "2018-06-30",
+          "value": 3.243
+        },
+        {
+          "date": "2018-09-30",
+          "value": 3.352
+        },
+        {
+          "date": "2019-03-31",
+          "value": 3.29
+        },
+        {
+          "date": "2019-06-30",
+          "value": 3.562
+        },
+        {
+          "date": "2019-09-30",
+          "value": 4.697
+        },
+        {
+          "date": "2020-03-31",
+          "value": 6.795
+        },
+        {
+          "date": "2020-06-30",
+          "value": 7.459
+        },
+        {
+          "date": "2020-09-30",
+          "value": 11.063
+        },
+        {
+          "date": "2021-03-31",
+          "value": 12.082
+        },
+        {
+          "date": "2021-06-30",
+          "value": 14.288
+        },
+        {
+          "date": "2021-09-30",
+          "value": 15.748
+        },
+        {
+          "date": "2022-03-31",
+          "value": 14.951
+        },
+        {
+          "date": "2022-06-30",
+          "value": 15.724
+        },
+        {
+          "date": "2022-09-30",
+          "value": 16.378
+        },
+        {
+          "date": "2023-03-31",
+          "value": 14.207
+        },
+        {
+          "date": "2023-06-30",
+          "value": 11.455
+        },
+        {
+          "date": "2023-09-30",
+          "value": 12.479
+        },
+        {
+          "date": "2024-03-31",
+          "value": 14.925
+        },
+        {
+          "date": "2024-06-30",
+          "value": 17.62
+        },
+        {
+          "date": "2024-09-30",
+          "value": 22.62
+        },
+        {
+          "date": "2025-03-31",
+          "value": 25.019
+        },
+        {
+          "date": "2025-06-30",
+          "value": 32.183
+        },
+        {
+          "date": "2025-09-30",
+          "value": 35.095
+        },
+        {
+          "date": "2026-03-31",
+          "value": 44.203
+        }
+      ],
+      "period_label": "2017.09.30 - 2026.03.31"
+    },
+    {
+      "id": "4fb5123c407f",
+      "industry": "데이터인프라",
+      "industry_en": "Data Infrastructure",
+      "group": "CAPEX",
+      "group_en": "CAPEX",
+      "name": "Alphabet CAPEX",
+      "name_en": "Alphabet CAPEX",
+      "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.",
+      "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.",
+      "value": 35.674,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$35.67B",
+      "frequency": "분기",
+      "frequency_en": "Quarterly",
+      "observed_at": "2026-03-31",
+      "observed_label": "2026.03.31",
+      "next_update_label": "2026.06",
+      "change_abs": 18.477,
+      "change_pct": 107.44315869046926,
+      "change_abs_label": "+18.48B",
+      "change_pct_label": "+107.4%",
+      "yoy_pct": 107.44315869046926,
+      "yoy_pct_label": "+107.4%",
+      "history": [
+        {
+          "date": "2015-03-31",
+          "value": 2.927
+        },
+        {
+          "date": "2015-06-30",
+          "value": 2.515
+        },
+        {
+          "date": "2015-09-30",
+          "value": 2.383
+        },
+        {
+          "date": "2016-03-31",
+          "value": 2.444
+        },
+        {
+          "date": "2016-06-30",
+          "value": 2.136
+        },
+        {
+          "date": "2016-09-30",
+          "value": 2.554
+        },
+        {
+          "date": "2017-03-31",
+          "value": 2.508
+        },
+        {
+          "date": "2017-06-30",
+          "value": 2.831
+        },
+        {
+          "date": "2017-09-30",
+          "value": 3.538
+        },
+        {
+          "date": "2018-03-31",
+          "value": 7.299
+        },
+        {
+          "date": "2018-06-30",
+          "value": 5.477
+        },
+        {
+          "date": "2018-09-30",
+          "value": 5.282
+        },
+        {
+          "date": "2019-03-31",
+          "value": 4.638
+        },
+        {
+          "date": "2019-06-30",
+          "value": 6.126
+        },
+        {
+          "date": "2019-09-30",
+          "value": 6.732
+        },
+        {
+          "date": "2020-03-31",
+          "value": 6.005
+        },
+        {
+          "date": "2020-06-30",
+          "value": 5.391
+        },
+        {
+          "date": "2020-09-30",
+          "value": 5.406
+        },
+        {
+          "date": "2021-03-31",
+          "value": 5.942
+        },
+        {
+          "date": "2022-03-31",
+          "value": 9.786
+        },
+        {
+          "date": "2023-03-31",
+          "value": 6.289
+        },
+        {
+          "date": "2024-03-31",
+          "value": 12.012
+        },
+        {
+          "date": "2025-03-31",
+          "value": 17.197
+        },
+        {
+          "date": "2026-03-31",
+          "value": 35.674
+        }
+      ],
+      "period_label": "2015.03.31 - 2026.03.31"
+    },
+    {
+      "id": "89f36662405e",
+      "industry": "데이터인프라",
+      "industry_en": "Data Infrastructure",
+      "group": "CAPEX",
+      "group_en": "CAPEX",
+      "name": "Meta CAPEX",
+      "name_en": "Meta CAPEX",
+      "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.",
+      "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.",
+      "value": 18.997,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$19.00B",
+      "frequency": "분기",
+      "frequency_en": "Quarterly",
+      "observed_at": "2026-03-31",
+      "observed_label": "2026.03.31",
+      "next_update_label": "2026.06",
+      "change_abs": 6.055999999999999,
+      "change_pct": 46.797001777296956,
+      "change_abs_label": "+6.06B",
+      "change_pct_label": "+46.8%",
+      "yoy_pct": 46.797001777296956,
+      "yoy_pct_label": "+46.8%",
+      "history": [
+        {
+          "date": "2012-03-31",
+          "value": 0.453
+        },
+        {
+          "date": "2013-03-31",
+          "value": 0.327
+        },
+        {
+          "date": "2014-03-31",
+          "value": 0.363
+        },
+        {
+          "date": "2015-03-31",
+          "value": 0.502
+        },
+        {
+          "date": "2016-03-31",
+          "value": 1.132
+        },
+        {
+          "date": "2017-03-31",
+          "value": 1.271
+        },
+        {
+          "date": "2018-03-31",
+          "value": 2.812
+        },
+        {
+          "date": "2019-03-31",
+          "value": 3.837
+        },
+        {
+          "date": "2020-03-31",
+          "value": 3.558
+        },
+        {
+          "date": "2021-03-31",
+          "value": 4.303
+        },
+        {
+          "date": "2022-03-31",
+          "value": 5.441
+        },
+        {
+          "date": "2023-03-31",
+          "value": 6.823
+        },
+        {
+          "date": "2024-03-31",
+          "value": 6.4
+        },
+        {
+          "date": "2025-03-31",
+          "value": 12.941
+        },
+        {
+          "date": "2026-03-31",
+          "value": 18.997
+        }
+      ],
+      "period_label": "2012.03.31 - 2026.03.31"
+    },
+    {
+      "id": "29989cc3085a",
+      "industry": "방산",
+      "industry_en": "Defense",
+      "group": "국방 계약",
+      "group_en": "Defense Contracts",
+      "name": "미국 국방부 계약 의무액",
+      "name_en": "US DoD Contract Obligations",
+      "meaning": "미국 국방부가 집행한 계약 의무액으로 방산 예산 집행과 수주 환경의 큰 흐름을 확인합니다.",
+      "meaning_en": "Uses US DoD contract obligations to read the broad trend in defense budget execution and order conditions.",
+      "value": 0.01711577416,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$0.02B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": -0.014306447700000002,
+      "change_pct": -45.52971385582344,
+      "change_abs_label": "-0.01B",
+      "change_pct_label": "-45.5%",
+      "yoy_pct": -99.95673053525233,
+      "yoy_pct_label": "-100.0%",
+      "history": [
+        {
+          "date": "2025-01-01",
+          "value": 29.73515487037
+        },
+        {
+          "date": "2025-02-01",
+          "value": 30.06904219342
+        },
+        {
+          "date": "2025-03-01",
+          "value": 37.313298567690005
+        },
+        {
+          "date": "2025-04-01",
+          "value": 37.5288390253
+        },
+        {
+          "date": "2025-05-01",
+          "value": 35.634584205370004
+        },
+        {
+          "date": "2025-06-01",
+          "value": 39.556241936
+        },
+        {
+          "date": "2025-07-01",
+          "value": 43.19853598923
+        },
+        {
+          "date": "2025-08-01",
+          "value": 43.07791945126
+        },
+        {
+          "date": "2025-09-01",
+          "value": 92.34439888319
+        },
+        {
+          "date": "2025-10-01",
+          "value": 13.31795191195
+        },
+        {
+          "date": "2025-11-01",
+          "value": 28.62616315534
+        },
+        {
+          "date": "2025-12-01",
+          "value": 48.843195337400005
+        },
+        {
+          "date": "2026-01-01",
+          "value": 35.49433970067
+        },
+        {
+          "date": "2026-02-01",
+          "value": 27.20634026704
+        },
+        {
+          "date": "2026-03-01",
+          "value": 68.48701280683
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4.13495763781
+        },
+        {
+          "date": "2026-05-01",
+          "value": 0.03142222186
+        },
+        {
+          "date": "2026-06-01",
+          "value": 0.01711577416
+        }
+      ],
+      "period_label": "2025.01 - 2026.06"
+    },
+    {
+      "id": "6c07660204fb",
+      "industry": "방산",
+      "industry_en": "Defense",
+      "group": "국방 계약",
+      "group_en": "Defense Contracts",
+      "name": "미국 방산 제조 계약 의무액",
+      "name_en": "US Defense Manufacturing Contract Obligations",
+      "meaning": "미국 연방 방산/항공우주 제조업 계약 의무액으로 방산 제조 밸류체인의 수주 모멘텀을 확인합니다.",
+      "meaning_en": "Uses US federal defense/aerospace manufacturing obligations to read order momentum across the defense manufacturing value chain.",
+      "value": 0.67375068386,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$0.67B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": 0.18077433628000006,
+      "change_pct": 36.66998166695292,
+      "change_abs_label": "+0.18B",
+      "change_pct_label": "+36.7%",
+      "yoy_pct": -89.96767922389613,
+      "yoy_pct_label": "-90.0%",
+      "history": [
+        {
+          "date": "2025-01-01",
+          "value": 6.321908488189999
+        },
+        {
+          "date": "2025-02-01",
+          "value": 5.171398673300001
+        },
+        {
+          "date": "2025-03-01",
+          "value": 8.608285341690001
+        },
+        {
+          "date": "2025-04-01",
+          "value": 3.7766361382699998
+        },
+        {
+          "date": "2025-05-01",
+          "value": 5.01116494712
+        },
+        {
+          "date": "2025-06-01",
+          "value": 6.71580084904
+        },
+        {
+          "date": "2025-07-01",
+          "value": 9.38723822909
+        },
+        {
+          "date": "2025-08-01",
+          "value": 11.914846126719999
+        },
+        {
+          "date": "2025-09-01",
+          "value": 31.7313236964
+        },
+        {
+          "date": "2025-10-01",
+          "value": 2.46131573569
+        },
+        {
+          "date": "2025-11-01",
+          "value": 10.06660248407
+        },
+        {
+          "date": "2025-12-01",
+          "value": 16.08025073116
+        },
+        {
+          "date": "2026-01-01",
+          "value": 5.72852406534
+        },
+        {
+          "date": "2026-02-01",
+          "value": 5.81133740976
+        },
+        {
+          "date": "2026-03-01",
+          "value": 17.32225666382
+        },
+        {
+          "date": "2026-04-01",
+          "value": 0.88146200175
+        },
+        {
+          "date": "2026-05-01",
+          "value": 0.49297634758
+        },
+        {
+          "date": "2026-06-01",
+          "value": 0.67375068386
+        }
+      ],
+      "period_label": "2025.01 - 2026.06"
+    },
+    {
+      "id": "ecb4b1ee414e",
+      "industry": "우주",
+      "industry_en": "Space",
+      "group": "우주 계약",
+      "group_en": "Space Contracts",
+      "name": "미국 NASA 계약 의무액",
+      "name_en": "US NASA Contract Obligations",
+      "meaning": "NASA 계약 의무액은 우주 장비와 서비스 수요, 정부 우주 예산 집행 흐름을 보여주는 proxy입니다.",
+      "meaning_en": "NASA contract obligations proxy demand for space equipment and services and government space budget execution.",
+      "value": 1.5052678153299999,
+      "unit": "$B",
+      "unit_en": "$B",
+      "display_value": "$1.51B",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": 0.2202217999199998,
+      "change_pct": 17.13726958250106,
+      "change_abs_label": "+0.22B",
+      "change_pct_label": "+17.1%",
+      "yoy_pct": 31.0984601684406,
+      "yoy_pct_label": "+31.1%",
+      "history": [
+        {
+          "date": "2025-01-01",
+          "value": 1.19840631281
+        },
+        {
+          "date": "2025-02-01",
+          "value": 1.20014422579
+        },
+        {
+          "date": "2025-03-01",
+          "value": 1.18912678796
+        },
+        {
+          "date": "2025-04-01",
+          "value": 0.91576693716
+        },
+        {
+          "date": "2025-05-01",
+          "value": 0.91257456461
+        },
+        {
+          "date": "2025-06-01",
+          "value": 1.1481964116099999
+        },
+        {
+          "date": "2025-07-01",
+          "value": 1.3699296066500002
+        },
+        {
+          "date": "2025-08-01",
+          "value": 1.9008523475699999
+        },
+        {
+          "date": "2025-09-01",
+          "value": 3.3030970597600002
+        },
+        {
+          "date": "2025-10-01",
+          "value": 0.09034814731999999
+        },
+        {
+          "date": "2025-11-01",
+          "value": 1.10112919507
+        },
+        {
+          "date": "2025-12-01",
+          "value": 0.99468209168
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1.02528439341
+        },
+        {
+          "date": "2026-02-01",
+          "value": 0.9036601129099999
+        },
+        {
+          "date": "2026-03-01",
+          "value": 1.3947802259200002
+        },
+        {
+          "date": "2026-04-01",
+          "value": 1.0530991836399999
+        },
+        {
+          "date": "2026-05-01",
+          "value": 1.28504601541
+        },
+        {
+          "date": "2026-06-01",
+          "value": 1.5052678153299999
+        }
+      ],
+      "period_label": "2025.01 - 2026.06"
+    },
+    {
+      "id": "338fa22c1a4c",
+      "industry": "바이오",
+      "industry_en": "Biotech",
+      "group": "승인 이벤트",
+      "group_en": "Approval Events",
+      "name": "FDA 의약품 승인 활동",
+      "name_en": "FDA Drug Approval Activity",
+      "meaning": "FDA 의약품 승인 관련 기록 수로 바이오 규제 이벤트와 신약 모멘텀을 확인합니다.",
+      "meaning_en": "Counts FDA drug approval records to read biotech regulatory events and new-drug momentum.",
+      "value": 562.0,
+      "unit": "건",
+      "unit_en": "events",
+      "display_value": "562.0 건",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": 300.0,
+      "change_pct": 114.50381679389312,
+      "change_abs_label": "+300.00 건",
+      "change_pct_label": "+114.5%",
+      "yoy_pct": 45.97402597402598,
+      "yoy_pct_label": "+46.0%",
+      "history": [
+        {
+          "date": "2025-01-01",
+          "value": 444.0
+        },
+        {
+          "date": "2025-02-01",
+          "value": 343.0
+        },
+        {
+          "date": "2025-03-01",
+          "value": 426.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 338.0
+        },
+        {
+          "date": "2025-05-01",
+          "value": 244.0
+        },
+        {
+          "date": "2025-06-01",
+          "value": 385.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 413.0
+        },
+        {
+          "date": "2025-08-01",
+          "value": 273.0
+        },
+        {
+          "date": "2025-09-01",
+          "value": 325.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 285.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 244.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 497.0
+        },
+        {
+          "date": "2026-01-01",
+          "value": 237.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 275.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 305.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 271.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 262.0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 562.0
+        }
+      ],
+      "period_label": "2025.01 - 2026.06"
+    },
+    {
+      "id": "983f03b746cf",
+      "industry": "바이오",
+      "industry_en": "Biotech",
+      "group": "임상 이벤트",
+      "group_en": "Clinical Trial Events",
+      "name": "글로벌 Phase 3 임상 시작",
+      "name_en": "Global Phase 3 Trial Starts",
+      "meaning": "Phase 3 임상 시작 건수는 후기 파이프라인 활동성과 바이오 투자심리의 이벤트 밀도를 보여줍니다.",
+      "meaning_en": "Phase 3 trial starts show late-stage pipeline activity and event density for biotech sentiment.",
+      "value": 229.0,
+      "unit": "건",
+      "unit_en": "events",
+      "display_value": "229.0 건",
+      "frequency": "월간",
+      "frequency_en": "Monthly",
+      "observed_at": "2026-06-01",
+      "observed_label": "2026.06",
+      "next_update_label": "2026.07",
+      "change_abs": 24.0,
+      "change_pct": 11.707317073170742,
+      "change_abs_label": "+24.00 건",
+      "change_pct_label": "+11.7%",
+      "yoy_pct": 26.519337016574585,
+      "yoy_pct_label": "+26.5%",
+      "history": [
+        {
+          "date": "2025-01-01",
+          "value": 164.0
+        },
+        {
+          "date": "2025-02-01",
+          "value": 157.0
+        },
+        {
+          "date": "2025-03-01",
+          "value": 191.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 177.0
+        },
+        {
+          "date": "2025-05-01",
+          "value": 159.0
+        },
+        {
+          "date": "2025-06-01",
+          "value": 181.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 165.0
+        },
+        {
+          "date": "2025-08-01",
+          "value": 152.0
+        },
+        {
+          "date": "2025-09-01",
+          "value": 180.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 161.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 153.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 197.0
+        },
+        {
+          "date": "2026-01-01",
+          "value": 169.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 148.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 210.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 205.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 205.0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 229.0
+        }
+      ],
+      "period_label": "2025.01 - 2026.06"
+    }
+  ]
+}

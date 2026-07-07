@@ -1,0 +1,2281 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>산업별 지표 대시보드</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --sidebar: #f7f7f7;
+      --panel: #ffffff;
+      --text: #171717;
+      --muted: #6d6d6d;
+      --line: #e6e6e6;
+      --menu: #f0f0f0;
+      --menu-active: #e6e6e6;
+      --chart-up: #d83b32;
+      --chart-down: #2f6fd6;
+      --shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+      --menu-shadow: 0 8px 24px rgba(0, 0, 0, 0.055);
+    }
+
+    body.theme-dark {
+      color-scheme: dark;
+      --bg: #111111;
+      --surface: #151515;
+      --sidebar: #181818;
+      --panel: #1d1d1d;
+      --text: #f2f2f2;
+      --muted: #a7a7a7;
+      --line: #303030;
+      --menu: #242424;
+      --menu-active: #303030;
+      --shadow: none;
+      --menu-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body.theme-ready {
+      transition: background-color 520ms ease, color 520ms ease;
+    }
+
+    body.theme-ready .sidebar,
+    body.theme-ready .side-menu button,
+    body.theme-ready .menu-item,
+    body.theme-ready .mobile-menu-toggle,
+    body.theme-ready .drawer-close,
+    body.theme-ready .drawer-backdrop,
+    body.theme-ready .settings-button,
+    body.theme-ready .settings-menu,
+    body.theme-ready .settings-menu button,
+    body.theme-ready .reorder-actions button,
+    body.theme-ready .currency-toggle,
+    body.theme-ready .theme-toggle,
+    body.theme-ready .industry,
+    body.theme-ready .industry-head,
+    body.theme-ready .industry-icon-wrap,
+    body.theme-ready .group,
+    body.theme-ready .metric,
+    body.theme-ready .metric-table-wrap,
+    body.theme-ready .metric-table th,
+    body.theme-ready .metric-table td,
+    body.theme-ready .metric-toggle,
+    body.theme-ready .metric-detail-panel,
+    body.theme-ready .detail-stats,
+    body.theme-ready .detail-stat,
+    body.theme-ready .chart,
+    body.theme-ready .empty {
+      transition:
+        background-color 520ms ease,
+        border-color 520ms ease,
+        box-shadow 520ms ease,
+        color 520ms ease;
+    }
+
+    body.theme-ready .chart text,
+    body.theme-ready .axis-line,
+    body.theme-ready .guide,
+    body.theme-ready .trend-line,
+    body.theme-ready .current-dot {
+      transition: fill 520ms ease, stroke 520ms ease;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 232px minmax(0, 1fr);
+      gap: 26px;
+      width: min(1540px, 100%);
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 22px 24px 42px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 22px;
+      align-self: start;
+      min-width: 0;
+      min-height: calc(100vh - 44px);
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto auto;
+      gap: 12px;
+      padding: 14px;
+      border: 0;
+      border-radius: 18px;
+      background: var(--sidebar);
+      box-shadow: var(--menu-shadow);
+      overflow: visible;
+    }
+
+    .side-menu {
+      display: grid;
+      gap: 7px;
+      min-width: 0;
+      max-width: 100%;
+      min-height: 0;
+      align-content: start;
+      overflow-y: auto;
+      padding-right: 2px;
+    }
+
+    .menu-item {
+      position: relative;
+      min-width: 0;
+      border-radius: 12px;
+    }
+
+    .side-menu button {
+      width: 100%;
+      min-height: 38px;
+      border: 0;
+      border-radius: 12px;
+      background: transparent;
+      padding: 0 12px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 720;
+      cursor: pointer;
+    }
+
+    .sidebar.is-reordering .side-menu button {
+      padding-right: 36px;
+      cursor: grab;
+    }
+
+    .side-menu button:hover {
+      background: var(--menu);
+    }
+
+    .side-menu button[aria-pressed="true"] {
+      background: var(--menu-active);
+    }
+
+    .side-menu button[aria-current="true"] {
+      background: var(--menu-active);
+    }
+
+    .drawer-head,
+    .mobile-menu-toggle,
+    .drawer-backdrop {
+      display: none;
+    }
+
+    .drawer-close,
+    .mobile-menu-toggle {
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 999px;
+      display: none;
+      place-items: center;
+      background: var(--menu);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: var(--menu-shadow);
+    }
+
+    .drawer-close:hover,
+    .mobile-menu-toggle:hover {
+      background: var(--menu-active);
+    }
+
+    .drawer-close:focus-visible,
+    .mobile-menu-toggle:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    .drag-handle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-50%);
+      transition: opacity 180ms ease;
+    }
+
+    .sidebar.is-reordering .drag-handle {
+      opacity: 1;
+      pointer-events: auto;
+      cursor: grab;
+    }
+
+    .menu-item.is-dragging {
+      opacity: 0.45;
+    }
+
+    .menu-settings {
+      position: relative;
+      display: grid;
+      gap: 8px;
+    }
+
+    .settings-button,
+    .settings-menu button,
+    .reorder-actions button {
+      min-width: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .settings-button {
+      min-height: 40px;
+      border-radius: 14px;
+      display: grid;
+      grid-template-columns: 20px minmax(0, 1fr) 14px;
+      gap: 8px;
+      align-items: center;
+      padding: 0 12px;
+      background: var(--menu);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 760;
+      text-align: left;
+    }
+
+    .settings-button:hover,
+    .settings-button[aria-expanded="true"] {
+      background: var(--menu-active);
+    }
+
+    .settings-chevron {
+      color: var(--muted);
+      font-size: 11px;
+      transition: transform 180ms ease;
+    }
+
+    .settings-button[aria-expanded="true"] .settings-chevron {
+      transform: rotate(180deg);
+    }
+
+    .settings-menu {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(100% + 8px);
+      z-index: 20;
+      display: grid;
+      gap: 5px;
+      padding: 7px;
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: var(--menu-shadow);
+    }
+
+    .settings-menu[hidden],
+    .reorder-actions[hidden] {
+      display: none;
+    }
+
+    .settings-menu button {
+      min-height: 36px;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 18px minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      padding: 0 9px;
+      background: transparent;
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 720;
+      text-align: left;
+    }
+
+    .settings-menu button:hover {
+      background: var(--menu);
+    }
+
+    .settings-meta {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+    }
+
+    .reorder-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .reorder-actions button {
+      min-height: 38px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 780;
+    }
+
+    .reorder-cancel {
+      background: var(--menu);
+      color: var(--text);
+    }
+
+    .reorder-save {
+      background: var(--chart-down);
+      color: #ffffff;
+    }
+
+    .content {
+      min-width: 0;
+      display: grid;
+      gap: 20px;
+      align-content: start;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 46px;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(22px, 2.2vw, 30px);
+      line-height: 1.12;
+      font-weight: 810;
+    }
+
+    .currency-toggle,
+    .theme-toggle {
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--menu);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .currency-toggle:hover,
+    .theme-toggle:hover {
+      background: var(--menu-active);
+    }
+
+    .currency-toggle:focus-visible,
+    .theme-toggle:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    .currency-toggle {
+      font-size: 16px;
+      font-weight: 820;
+    }
+
+    .currency-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: grid;
+      place-items: center;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.7) rotate(-18deg);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    body.currency-usd .currency-icon-dollar,
+    body.currency-krw .currency-icon-won {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+
+    body.currency-usd .currency-icon-won,
+    body.currency-krw .currency-icon-dollar {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.7) rotate(18deg);
+    }
+
+    .theme-toggle:disabled {
+      cursor: default;
+    }
+
+    .theme-icon-orbit {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .theme-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1em;
+      height: 1em;
+      display: grid;
+      place-items: center;
+      color: currentColor;
+      opacity: 0;
+      transform: translate(-50%, -50%) translate3d(30px, 26px, 0) scale(0.72) rotate(36deg);
+      transform-origin: center;
+      pointer-events: none;
+    }
+
+    body:not(.theme-dark) .theme-icon-moon,
+    body.theme-dark .theme-icon-sun {
+      opacity: 1;
+      transform: translate(-50%, -50%) translate3d(0, 0, 0) scale(1) rotate(0deg);
+    }
+
+    body:not(.theme-dark) .theme-icon-sun,
+    body.theme-dark .theme-icon-moon {
+      opacity: 0;
+      transform: translate(-50%, -50%) translate3d(30px, 26px, 0) scale(0.72) rotate(36deg);
+    }
+
+    .theme-icon.is-exiting {
+      animation: themeIconExit 520ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    .theme-icon.is-entering {
+      animation: themeIconEnter 520ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes themeIconExit {
+      0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translate3d(0, 0, 0) scale(1) rotate(0deg);
+      }
+      45% {
+        opacity: 0.92;
+        transform: translate(-50%, -50%) translate3d(-14px, -12px, 0) scale(0.94) rotate(-16deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translate3d(-38px, 30px, 0) scale(0.66) rotate(-52deg);
+      }
+    }
+
+    @keyframes themeIconEnter {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translate3d(38px, 30px, 0) scale(0.66) rotate(52deg);
+      }
+      55% {
+        opacity: 0.96;
+        transform: translate(-50%, -50%) translate3d(14px, -12px, 0) scale(0.94) rotate(16deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translate3d(0, 0, 0) scale(1) rotate(0deg);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body.theme-ready,
+      body.theme-ready .sidebar,
+      body.theme-ready .side-menu button,
+      body.theme-ready .menu-item,
+      body.theme-ready .mobile-menu-toggle,
+      body.theme-ready .drawer-close,
+      body.theme-ready .drawer-backdrop,
+      body.theme-ready .settings-button,
+      body.theme-ready .settings-menu,
+      body.theme-ready .settings-menu button,
+      body.theme-ready .reorder-actions button,
+      body.theme-ready .currency-toggle,
+      body.theme-ready .theme-toggle,
+      body.theme-ready .industry,
+      body.theme-ready .industry-head,
+      body.theme-ready .industry-icon-wrap,
+      body.theme-ready .group,
+      body.theme-ready .metric,
+      body.theme-ready .metric-table-wrap,
+      body.theme-ready .metric-table th,
+      body.theme-ready .metric-table td,
+      body.theme-ready .metric-toggle,
+      body.theme-ready .metric-detail-panel,
+      body.theme-ready .detail-stats,
+      body.theme-ready .detail-stat,
+      body.theme-ready .chart,
+      body.theme-ready .empty,
+      body.theme-ready .chart text,
+      body.theme-ready .axis-line,
+      body.theme-ready .guide,
+      body.theme-ready .trend-line,
+      body.theme-ready .current-dot {
+        transition-duration: 1ms;
+      }
+
+      .theme-icon.is-exiting,
+      .theme-icon.is-entering {
+        animation-duration: 1ms;
+      }
+    }
+
+    .industry-stack {
+      display: grid;
+      gap: 0;
+      min-width: 0;
+    }
+
+    .industry {
+      min-width: 0;
+      scroll-margin-top: 22px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+      background: transparent;
+      box-shadow: none;
+      overflow: visible;
+    }
+
+    .industry:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .industry-head {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      gap: 16px;
+      align-items: center;
+      padding: 22px 0 16px;
+      border-bottom: 0;
+      background: transparent;
+    }
+
+    .industry-icon-wrap {
+      width: 86px;
+      height: 86px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: var(--menu);
+    }
+
+    .industry-icon {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .industry h2 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.18;
+      font-weight: 800;
+    }
+
+    .group {
+      padding: 0 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .group:last-child { border-bottom: 0; }
+
+    .group-title {
+      margin-bottom: 12px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .metric-table-wrap {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      background: var(--panel);
+      overflow: hidden;
+    }
+
+    .metric-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .metric-table th {
+      height: 34px;
+      padding: 0 12px;
+      background: var(--menu);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 820;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .metric-table td {
+      padding: 7px 12px;
+      border-top: 1px solid var(--line);
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    .metric-row {
+      cursor: pointer;
+    }
+
+    .metric-row:hover td {
+      background: var(--menu);
+    }
+
+    .metric-row.is-expanded td {
+      background: var(--menu-active);
+    }
+
+    .metric-name-cell { width: 22%; }
+    .metric-description-cell { width: 30%; }
+    .metric-date-cell { width: 11%; }
+    .metric-value-cell { width: 12%; }
+    .metric-chart-cell { width: 14%; }
+
+    .metric-toggle {
+      width: 100%;
+      min-width: 0;
+      display: block;
+      align-items: center;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .metric-toggle:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .metric-name {
+      min-width: 0;
+      font-size: 13px;
+      line-height: 1.26;
+      font-weight: 780;
+      overflow-wrap: anywhere;
+    }
+
+    .metric-description {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .metric-mobile-description {
+      display: none;
+    }
+
+    .metric-date {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 680;
+      white-space: nowrap;
+    }
+
+    .metric-current-value {
+      display: block;
+      color: var(--text);
+      font-size: 12.5px;
+      line-height: 1.25;
+      font-weight: 820;
+      overflow-wrap: anywhere;
+    }
+
+    .metric-value-wrap {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+    }
+
+    .metric-change-badge {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+
+    .metric-change-badge i {
+      font-size: 10px;
+    }
+
+    .chart-mini {
+      height: 34px;
+      max-height: 34px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .metric-detail-row td {
+      padding: 0 14px;
+      border-top: 0;
+      background: var(--surface);
+    }
+
+    .metric-detail-panel {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition:
+        max-height 380ms ease,
+        opacity 260ms ease,
+        transform 260ms ease;
+    }
+
+    .metric-detail-row.is-open .metric-detail-panel {
+      max-height: 640px;
+      opacity: 1;
+      transform: translateY(0);
+      border-top: 1px solid var(--line);
+    }
+
+    .metric-detail-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+      padding: 16px 0 18px;
+    }
+
+    .detail-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px 12px;
+      align-content: start;
+      padding: 12px;
+      border-radius: 12px;
+      background: var(--menu);
+    }
+
+    .detail-stat {
+      min-width: 0;
+      padding: 6px 4px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .detail-label {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 780;
+    }
+
+    .detail-value {
+      display: block;
+      margin-top: 6px;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.15;
+      font-weight: 820;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-note {
+      grid-column: 1 / -1;
+      margin: 4px 0 0;
+      padding: 10px 4px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-chart {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 2px 0 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .detail-chart .chart {
+      width: max(100%, var(--detail-chart-width, 760px));
+      min-width: max(100%, var(--detail-chart-width, 760px));
+      height: 190px;
+      display: block;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      min-height: 348px;
+      display: grid;
+      grid-template-rows: auto auto 158px;
+      gap: 13px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow: hidden;
+    }
+
+    .metric h3 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.32;
+      font-weight: 790;
+      overflow-wrap: anywhere;
+    }
+
+    .meaning {
+      margin: 7px 0 0;
+      min-height: 38px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+
+    .metric-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: end;
+    }
+
+    .value {
+      font-size: 31px;
+      line-height: 1;
+      font-weight: 820;
+      overflow-wrap: anywhere;
+    }
+
+    .deltas {
+      display: grid;
+      gap: 5px;
+      min-width: 92px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .deltas strong {
+      display: inline-block;
+      min-width: 54px;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .positive { color: var(--chart-up) !important; }
+    .negative { color: var(--chart-down) !important; }
+
+    .chart {
+      width: 100%;
+      height: 158px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      overflow: visible;
+    }
+
+    .chart text {
+      fill: var(--muted);
+      font-size: 10.5px;
+      font-weight: 650;
+    }
+
+    .axis-line {
+      stroke: var(--line);
+      stroke-width: 1;
+    }
+
+    .guide {
+      stroke: var(--line);
+      stroke-width: 1;
+      stroke-dasharray: 4 4;
+    }
+
+    .trend-line {
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .trend-line.up { stroke: var(--chart-up); }
+    .trend-line.down { stroke: var(--chart-down); }
+
+    .current-dot.up { fill: var(--chart-up); }
+    .current-dot.down { fill: var(--chart-down); }
+
+    .empty {
+      display: none;
+      margin: 28px 0;
+      padding: 26px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 1180px) {
+      .shell {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 18px;
+        padding-inline: 18px;
+      }
+
+      .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 14px 10px 30px;
+      }
+
+      body.drawer-open {
+        overflow: hidden;
+      }
+
+      .sidebar {
+        position: fixed;
+        inset: 0 auto 0 0;
+        z-index: 70;
+        width: min(320px, calc(100vw - 54px));
+        max-width: calc(100vw - 54px);
+        min-height: 100dvh;
+        grid-template-rows: auto minmax(0, 1fr) auto auto;
+        padding: 14px;
+        border-radius: 0 20px 20px 0;
+        overflow: visible;
+        transform: translateX(calc(-100% - 24px));
+        transition: transform 260ms ease;
+      }
+
+      body.drawer-open .sidebar {
+        transform: translateX(0);
+      }
+
+      .drawer-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-width: 0;
+        padding: 2px 0 4px;
+        font-size: 15px;
+        font-weight: 820;
+      }
+
+      .drawer-close,
+      .mobile-menu-toggle {
+        display: grid;
+        flex: 0 0 auto;
+      }
+
+      .drawer-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        display: block;
+        background: rgba(18, 18, 18, 0.28);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 220ms ease;
+      }
+
+      .drawer-backdrop[hidden] {
+        display: none;
+      }
+
+      body.drawer-open .drawer-backdrop {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .side-menu {
+        display: grid;
+        gap: 7px;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0 2px 0 0;
+      }
+
+      .side-menu button {
+        width: 100%;
+        white-space: normal;
+      }
+
+      .sidebar.is-reordering .side-menu button {
+        padding-right: 34px;
+      }
+
+      .settings-menu {
+        position: static;
+        order: -1;
+      }
+
+      .reorder-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .topbar {
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .topbar-actions {
+        gap: 6px;
+      }
+
+      h1 {
+        min-width: 0;
+        font-size: clamp(18px, 5vw, 22px);
+      }
+
+      .industry-head {
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 12px;
+        padding: 18px 0 12px;
+      }
+
+      .industry-icon-wrap {
+        width: 72px;
+        height: 72px;
+      }
+
+      .industry-icon {
+        width: 64px;
+        height: 64px;
+      }
+
+      .industry h2 {
+        font-size: 18px;
+      }
+
+      .group { padding: 0 0 18px; }
+
+      .metric-table-wrap {
+        overflow-x: visible;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .metric-table {
+        display: table;
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+      }
+
+      .metric-table thead {
+        display: table-header-group;
+      }
+
+      .metric-table tbody {
+        display: table-row-group;
+      }
+
+      .metric-table tr {
+        display: table-row;
+      }
+
+      .metric-table td {
+        display: table-cell;
+      }
+
+      .metric-table col.metric-description-cell,
+      .metric-table col.metric-date-cell,
+      .metric-table th:nth-child(2),
+      .metric-table th:nth-child(3),
+      .metric-table th:nth-child(4),
+      .metric-table td.metric-description-cell,
+      .metric-table td.metric-date-cell {
+        display: none;
+      }
+
+      .metric-table th[data-mobile-label] {
+        font-size: 0;
+      }
+
+      .metric-table th[data-mobile-label]::after {
+        content: attr(data-mobile-label);
+        font-size: 10.5px;
+      }
+
+      .metric-row {
+        padding: 0;
+        border-top: 0;
+      }
+
+      .metric-row:first-child {
+        border-top: 0;
+      }
+
+      .metric-row td {
+        padding: 7px 6px;
+        border-top: 1px solid var(--line);
+      }
+
+      .metric-row td:not(.metric-name-cell)::before {
+        content: none;
+      }
+
+      .metric-name-cell { width: 52%; }
+      .metric-value-cell { width: 20%; }
+      .metric-chart-cell { width: 28%; }
+
+      .metric-name {
+        font-size: 12.5px;
+        line-height: 1.22;
+      }
+
+      .metric-mobile-description {
+        display: -webkit-box;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 10.5px;
+        line-height: 1.28;
+        font-weight: 580;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      .metric-current-value {
+        font-size: 11.5px;
+        line-height: 1.2;
+      }
+
+      .metric-value-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .metric-change-badge {
+        font-size: 10.5px;
+      }
+
+      .metric-chart-cell .chart-mini {
+        height: 30px;
+        max-height: 30px;
+      }
+
+      .metric-detail-row td {
+        padding: 0 6px;
+      }
+
+      .metric-detail-inner {
+        gap: 8px;
+        padding: 10px 0 12px;
+      }
+
+      .detail-chart {
+        overflow-x: hidden;
+        padding: 0 0 6px;
+      }
+
+      .detail-chart .chart {
+        width: 100%;
+        min-width: 100%;
+        height: 126px;
+      }
+
+      .detail-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 5px 7px;
+        padding: 9px;
+      }
+
+      .detail-stat {
+        padding: 3px 2px;
+      }
+
+      .detail-label {
+        font-size: 9.5px;
+        line-height: 1.12;
+      }
+
+      .detail-value {
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 1.12;
+      }
+
+      .detail-note {
+        display: none;
+      }
+
+      .metric-grid { grid-template-columns: 1fr; }
+      .metric-main { grid-template-columns: 1fr; }
+      .deltas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <aside class="sidebar" id="mobileDrawer" aria-label="업종 메뉴">
+      <div class="drawer-head">
+        <span data-i18n="drawerTitle">메뉴</span>
+        <button class="drawer-close" id="drawerClose" type="button" aria-label="메뉴 닫기">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <nav class="side-menu" id="industryFilters" aria-label="업종 메뉴"></nav>
+      <div class="menu-settings" id="menuSettings">
+        <div class="settings-menu" id="settingsMenu" role="menu" hidden>
+          <button type="button" role="menuitem" data-setting-action="theme">
+            <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+            <span data-i18n="darkMode">다크모드</span>
+            <span class="settings-meta" id="themeSettingLabel"></span>
+          </button>
+          <button type="button" role="menuitem" data-setting-action="language">
+            <i class="fa-solid fa-language" aria-hidden="true"></i>
+            <span data-i18n="language">언어변경</span>
+            <span class="settings-meta" id="languageSettingLabel">KO</span>
+          </button>
+          <button type="button" role="menuitem" data-setting-action="reorder">
+            <i class="fa-solid fa-arrow-up-wide-short" aria-hidden="true"></i>
+            <span data-i18n="reorderMenu">메뉴 순서변경</span>
+            <span></span>
+          </button>
+        </div>
+        <button class="settings-button" id="settingsToggle" type="button" aria-label="설정" aria-expanded="false" aria-controls="settingsMenu">
+          <i class="fa-solid fa-gear" aria-hidden="true"></i>
+          <span data-i18n="settings">설정</span>
+          <i class="fa-solid fa-chevron-up settings-chevron" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="reorder-actions" id="reorderActions" hidden>
+        <button class="reorder-cancel" id="reorderCancel" type="button" data-i18n="cancel">취소</button>
+        <button class="reorder-save" id="reorderSave" type="button" data-i18n="save">저장</button>
+      </div>
+    </aside>
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+    <section class="content">
+      <header class="topbar">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileDrawer">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <h1 data-i18n="title">산업별 지표 대시보드</h1>
+        <div class="topbar-actions">
+          <button class="currency-toggle" id="currencyToggle" type="button" aria-label="원화 표시" title="원화 표시">
+            <i class="fa-solid fa-dollar-sign currency-icon currency-icon-dollar" aria-hidden="true"></i>
+            <i class="fa-solid fa-won-sign currency-icon currency-icon-won" aria-hidden="true"></i>
+          </button>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="다크모드 전환" title="다크모드 전환">
+            <span class="theme-icon-orbit" aria-hidden="true">
+              <i class="fa-solid fa-moon theme-icon theme-icon-moon"></i>
+              <i class="fa-solid fa-sun theme-icon theme-icon-sun"></i>
+            </span>
+          </button>
+        </div>
+      </header>
+      <section class="industry-stack" id="industryStack"></section>
+      <div class="empty" id="empty" data-i18n="empty">표시할 지표가 없습니다.</div>
+    </section>
+  </main>
+
+  <script>
+    const DASHBOARD_DATA = {"title": "산업별 지표 대시보드", "generated_at": "2026-07-07T05:39:48+09:00", "generated_label": "2026-07-07 05:39 KST", "timezone": "Asia/Seoul", "industries": ["반도체", "데이터인프라", "자동차", "전기차", "조선", "철강/소재", "화학/정유", "은행/금융", "건설/부동산", "방산", "스테이블코인", "전력", "로봇", "우주", "바이오", "배터리", "매크로"], "industry_labels_en": {"반도체": "Semiconductors", "데이터인프라": "Data Infrastructure", "자동차": "Automobiles", "전기차": "EVs", "조선": "Shipbuilding", "철강/소재": "Steel & Materials", "화학/정유": "Chemicals & Refining", "은행/금융": "Banks & Financials", "건설/부동산": "Construction & Real Estate", "방산": "Defense", "스테이블코인": "Stablecoins", "전력": "Power", "로봇": "Robotics", "우주": "Space", "바이오": "Biotech", "배터리": "Batteries", "매크로": "Macro"}, "industry_icons": {"반도체": "assets/industry-icons/semiconductor.png", "자동차": "assets/industry-icons/auto.png", "전기차": "assets/industry-icons/electric-car.png", "조선": "assets/industry-icons/shipbuilding.png", "철강/소재": "assets/industry-icons/steel-materials.png", "화학/정유": "assets/industry-icons/oil-barrel.png", "은행/금융": "assets/industry-icons/finance.png", "건설/부동산": "assets/industry-icons/construction-real-estate.png", "방산": "assets/industry-icons/tank.png", "스테이블코인": "assets/industry-icons/bitcoin.png", "전력": "assets/industry-icons/power.png", "로봇": "assets/industry-icons/robotics.png", "우주": "assets/industry-icons/space.png", "바이오": "assets/industry-icons/biotech.png", "배터리": "assets/industry-icons/battery.png", "데이터인프라": "assets/industry-icons/data-infrastructure.png", "매크로": "assets/industry-icons/macro-trend.png"}, "source_status": [{"name": "WSTS", "status": "ok", "message": "6/6개 지표 자동 수집"}, {"name": "FRED", "status": "partial", "message": "0/31개 지표 자동 수집"}, {"name": "스테이블코인", "status": "ok", "message": "3/3개 지표 자동 수집"}, {"name": "World Bank 원자재", "status": "ok", "message": "3/3개 지표 자동 수집"}, {"name": "SEC CAPEX", "status": "ok", "message": "4/4개 지표 자동 수집"}, {"name": "USAspending 방산", "status": "ok", "message": "3/3개 지표 자동 수집"}, {"name": "EIA", "status": "partial", "message": "0/5개 지표 자동 수집"}, {"name": "openFDA", "status": "ok", "message": "1/1개 지표 자동 수집"}, {"name": "ClinicalTrials.gov", "status": "ok", "message": "1/1개 지표 자동 수집"}, {"name": "Launch Library", "status": "partial", "message": "0/1개 지표 자동 수집"}, {"name": "AFDC EV 충전", "status": "partial", "message": "0/2개 지표 자동 수집"}, {"name": "한국 수출", "status": "partial", "message": "0/14개 지표 자동 수집"}], "metrics": [{"id": "299947a7b50c", "industry": "반도체", "industry_en": "Semiconductors", "group": "판매액", "group_en": "Sales", "name": "WSTS 반도체 판매액 - Worldwide", "name_en": "WSTS Semiconductor Sales - Worldwide", "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.", "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.", "value": 113.676716, "unit": "$B", "unit_en": "$B", "display_value": "$113.7B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-04-01", "observed_label": "2026.04", "next_update_label": "2026.05", "change_abs": -2.5328810000000033, "change_pct": -2.17957988443932, "change_abs_label": "-2.53B", "change_pct_label": "-2.2%", "yoy_pct": 106.33355214251945, "yoy_pct_label": "+106.3%", "history": [{"date": "2022-05-01", "value": 52.448741}, {"date": "2022-06-01", "value": 50.096559}, {"date": "2022-07-01", "value": 44.455809}, {"date": "2022-08-01", "value": 47.160207}, {"date": "2022-09-01", "value": 49.398222}, {"date": "2022-10-01", "value": 44.271165}, {"date": "2022-11-01", "value": 43.069269}, {"date": "2022-12-01", "value": 43.4762}, {"date": "2023-01-01", "value": 37.462375}, {"date": "2023-02-01", "value": 38.163241}, {"date": "2023-03-01", "value": 43.885496}, {"date": "2023-04-01", "value": 38.262275}, {"date": "2023-05-01", "value": 41.413894}, {"date": "2023-06-01", "value": 47.038061}, {"date": "2023-07-01", "value": 41.2354}, {"date": "2023-08-01", "value": 43.867062}, {"date": "2023-09-01", "value": 49.571957}, {"date": "2023-10-01", "value": 46.380189}, {"date": "2023-11-01", "value": 47.987406}, {"date": "2023-12-01", "value": 51.618069}, {"date": "2024-01-01", "value": 44.262371}, {"date": "2024-02-01", "value": 44.821582}, {"date": "2024-03-01", "value": 52.050509}, {"date": "2024-04-01", "value": 44.7629}, {"date": "2024-05-01", "value": 50.884385}, {"date": "2024-06-01", "value": 54.660967}, {"date": "2024-07-01", "value": 48.887935}, {"date": "2024-08-01", "value": 56.348695}, {"date": "2024-09-01", "value": 61.310821}, {"date": "2024-10-01", "value": 53.796369}, {"date": "2024-11-01", "value": 58.94912}, {"date": "2024-12-01", "value": 59.812952}, {"date": "2025-01-01", "value": 50.76837}, {"date": "2025-02-01", "value": 54.074184}, {"date": "2025-03-01", "value": 61.772249}, {"date": "2025-04-01", "value": 55.093665}, {"date": "2025-05-01", "value": 60.402493}, {"date": "2025-06-01", "value": 64.855618}, {"date": "2025-07-01", "value": 62.10079}, {"date": "2025-08-01", "value": 69.17366}, {"date": "2025-09-01", "value": 78.520702}, {"date": "2025-10-01", "value": 71.647272}, {"date": "2025-11-01", "value": 81.883025}, {"date": "2025-12-01", "value": 85.348277}, {"date": "2026-01-01", "value": 80.780827}, {"date": "2026-02-01", "value": 101.555208}, {"date": "2026-03-01", "value": 116.209597}, {"date": "2026-04-01", "value": 113.676716}], "period_label": "2022.05 - 2026.04"}, {"id": "393b93c6822c", "industry": "반도체", "industry_en": "Semiconductors", "group": "판매액", "group_en": "Sales", "name": "WSTS 반도체 판매액 - Asia Pacific", "name_en": "WSTS Semiconductor Sales - Asia Pacific", "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.", "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.", "value": 60.958983, "unit": "$B", "unit_en": "$B", "display_value": "$60.96B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-04-01", "observed_label": "2026.04", "next_update_label": "2026.05", "change_abs": -3.656509, "change_pct": -5.658873571681545, "change_abs_label": "-3.66B", "change_pct_label": "-5.7%", "yoy_pct": 94.40526066350256, "yoy_pct_label": "+94.4%", "history": [{"date": "2022-05-01", "value": 31.122857}, {"date": "2022-06-01", "value": 29.406183}, {"date": "2022-07-01", "value": 25.228516}, {"date": "2022-08-01", "value": 26.987299}, {"date": "2022-09-01", "value": 26.985699}, {"date": "2022-10-01", "value": 24.097271}, {"date": "2022-11-01", "value": 23.626157}, {"date": "2022-12-01", "value": 23.521171}, {"date": "2023-01-01", "value": 20.140251}, {"date": "2023-02-01", "value": 20.447421}, {"date": "2023-03-01", "value": 24.72153}, {"date": "2023-04-01", "value": 21.113795}, {"date": "2023-05-01", "value": 22.683446}, {"date": "2023-06-01", "value": 25.820601}, {"date": "2023-07-01", "value": 22.201592}, {"date": "2023-08-01", "value": 23.802074}, {"date": "2023-09-01", "value": 27.117003}, {"date": "2023-10-01", "value": 26.125327}, {"date": "2023-11-01", "value": 26.452611}, {"date": "2023-12-01", "value": 29.368189}, {"date": "2024-01-01", "value": 24.932559}, {"date": "2024-02-01", "value": 24.814021}, {"date": "2024-03-01", "value": 29.394303}, {"date": "2024-04-01", "value": 24.617367}, {"date": "2024-05-01", "value": 28.222927}, {"date": "2024-06-01", "value": 29.282974}, {"date": "2024-07-01", "value": 26.513686}, {"date": "2024-08-01", "value": 29.650675}, {"date": "2024-09-01", "value": 32.740166}, {"date": "2024-10-01", "value": 26.879887}, {"date": "2024-11-01", "value": 30.089659}, {"date": "2024-12-01", "value": 30.29837}, {"date": "2025-01-01", "value": 26.473983}, {"date": "2025-02-01", "value": 28.544613}, {"date": "2025-03-01", "value": 32.197775}, {"date": "2025-04-01", "value": 31.356653}, {"date": "2025-05-01", "value": 33.973437}, {"date": "2025-06-01", "value": 35.651258}, {"date": "2025-07-01", "value": 33.334793}, {"date": "2025-08-01", "value": 39.499033}, {"date": "2025-09-01", "value": 43.984832}, {"date": "2025-10-01", "value": 39.514299}, {"date": "2025-11-01", "value": 47.316124}, {"date": "2025-12-01", "value": 47.899782}, {"date": "2026-01-01", "value": 46.998751}, {"date": "2026-02-01", "value": 54.762826}, {"date": "2026-03-01", "value": 64.615492}, {"date": "2026-04-01", "value": 60.958983}], "period_label": "2022.05 - 2026.04"}, {"id": "9f57f90d99b3", "industry": "반도체", "industry_en": "Semiconductors", "group": "판매액", "group_en": "Sales", "name": "WSTS 반도체 판매액 - Americas", "name_en": "WSTS Semiconductor Sales - Americas", "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.", "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.", "value": 41.534424, "unit": "$B", "unit_en": "$B", "display_value": "$41.53B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-04-01", "observed_label": "2026.04", "next_update_label": "2026.05", "change_abs": 0.9385699999999986, "change_pct": 2.3119848642671803, "change_abs_label": "+0.94B", "change_pct_label": "+2.3%", "yoy_pct": 158.15657427348754, "yoy_pct_label": "+158.2%", "history": [{"date": "2022-05-01", "value": 12.613681}, {"date": "2022-06-01", "value": 12.100136}, {"date": "2022-07-01", "value": 10.804439}, {"date": "2022-08-01", "value": 11.522933}, {"date": "2022-09-01", "value": 13.774165}, {"date": "2022-10-01", "value": 11.688909}, {"date": "2022-11-01", "value": 11.057371}, {"date": "2022-12-01", "value": 11.457333}, {"date": "2023-01-01", "value": 9.002994}, {"date": "2023-02-01", "value": 9.39549}, {"date": "2023-03-01", "value": 10.426524}, {"date": "2023-04-01", "value": 8.806483}, {"date": "2023-05-01", "value": 9.946461}, {"date": "2023-06-01", "value": 12.298284}, {"date": "2023-07-01", "value": 10.751171}, {"date": "2023-08-01", "value": 11.475553}, {"date": "2023-09-01", "value": 13.139106}, {"date": "2023-10-01", "value": 11.971442}, {"date": "2023-11-01", "value": 13.434747}, {"date": "2023-12-01", "value": 13.729063}, {"date": "2024-01-01", "value": 11.725442}, {"date": "2024-02-01", "value": 12.24237}, {"date": "2024-03-01", "value": 14.370787}, {"date": "2024-04-01", "value": 12.525457}, {"date": "2024-05-01", "value": 14.786593}, {"date": "2024-06-01", "value": 17.012422}, {"date": "2024-07-01", "value": 14.423623}, {"date": "2024-08-01", "value": 18.244138}, {"date": "2024-09-01", "value": 19.066463}, {"date": "2024-10-01", "value": 18.727383}, {"date": "2024-11-01", "value": 20.710242}, {"date": "2024-12-01", "value": 21.287587}, {"date": "2025-01-01", "value": 16.64846}, {"date": "2025-02-01", "value": 18.02861}, {"date": "2025-03-01", "value": 20.713691}, {"date": "2025-04-01", "value": 16.08885}, {"date": "2025-05-01", "value": 18.569494}, {"date": "2025-06-01", "value": 20.768301}, {"date": "2025-07-01", "value": 20.8717}, {"date": "2025-08-01", "value": 21.419182}, {"date": "2025-09-01", "value": 25.145834}, {"date": "2025-10-01", "value": 23.591451}, {"date": "2025-11-01", "value": 25.936756}, {"date": "2025-12-01", "value": 28.694121}, {"date": "2026-01-01", "value": 24.625051}, {"date": "2026-02-01", "value": 36.199755}, {"date": "2026-03-01", "value": 40.595854}, {"date": "2026-04-01", "value": 41.534424}], "period_label": "2022.05 - 2026.04"}, {"id": "3f4a60928d08", "industry": "반도체", "industry_en": "Semiconductors", "group": "판매액", "group_en": "Sales", "name": "WSTS 반도체 판매액 3MMA - Worldwide", "name_en": "WSTS Semiconductor Sales 3MMA - Worldwide", "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.", "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.", "value": 110.480507, "unit": "$B", "unit_en": "$B", "display_value": "$110.5B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-04-01", "observed_label": "2026.04", "next_update_label": "2026.05", "change_abs": 10.965296333333328, "change_pct": 11.018713882908182, "change_abs_label": "+10.97B", "change_pct_label": "+11.0%", "yoy_pct": 93.89337251930205, "yoy_pct_label": "+93.9%", "history": [{"date": "2022-05-01", "value": 51.65228}, {"date": "2022-06-01", "value": 50.168058333333335}, {"date": "2022-07-01", "value": 49.000369666666664}, {"date": "2022-08-01", "value": 47.237525}, {"date": "2022-09-01", "value": 47.004746}, {"date": "2022-10-01", "value": 46.943198}, {"date": "2022-11-01", "value": 45.579552}, {"date": "2022-12-01", "value": 43.60554466666667}, {"date": "2023-01-01", "value": 41.335948}, {"date": "2023-02-01", "value": 39.700605333333336}, {"date": "2023-03-01", "value": 39.837037333333335}, {"date": "2023-04-01", "value": 40.103670666666666}, {"date": "2023-05-01", "value": 41.187221666666666}, {"date": "2023-06-01", "value": 42.238076666666664}, {"date": "2023-07-01", "value": 43.22911833333334}, {"date": "2023-08-01", "value": 44.046841}, {"date": "2023-09-01", "value": 44.891473}, {"date": "2023-10-01", "value": 46.60640266666666}, {"date": "2023-11-01", "value": 47.979850666666664}, {"date": "2023-12-01", "value": 48.661888}, {"date": "2024-01-01", "value": 47.955948666666664}, {"date": "2024-02-01", "value": 46.900674}, {"date": "2024-03-01", "value": 47.044820666666666}, {"date": "2024-04-01", "value": 47.21166366666667}, {"date": "2024-05-01", "value": 49.232598}, {"date": "2024-06-01", "value": 50.102750666666665}, {"date": "2024-07-01", "value": 51.47776233333334}, {"date": "2024-08-01", "value": 53.299199}, {"date": "2024-09-01", "value": 55.515817}, {"date": "2024-10-01", "value": 57.151961666666665}, {"date": "2024-11-01", "value": 58.01877}, {"date": "2024-12-01", "value": 57.519480333333334}, {"date": "2025-01-01", "value": 56.510147333333336}, {"date": "2025-02-01", "value": 54.885168666666665}, {"date": "2025-03-01", "value": 55.53826766666666}, {"date": "2025-04-01", "value": 56.980032666666666}, {"date": "2025-05-01", "value": 59.089469}, {"date": "2025-06-01", "value": 60.117258666666665}, {"date": "2025-07-01", "value": 62.452967}, {"date": "2025-08-01", "value": 65.37668933333333}, {"date": "2025-09-01", "value": 69.93171733333332}, {"date": "2025-10-01", "value": 73.113878}, {"date": "2025-11-01", "value": 77.350333}, {"date": "2025-12-01", "value": 79.62619133333332}, {"date": "2026-01-01", "value": 82.67070966666667}, {"date": "2026-02-01", "value": 89.228104}, {"date": "2026-03-01", "value": 99.51521066666668}, {"date": "2026-04-01", "value": 110.480507}], "period_label": "2022.05 - 2026.04"}, {"id": "f04bebf4dd0a", "industry": "반도체", "industry_en": "Semiconductors", "group": "판매액", "group_en": "Sales", "name": "WSTS 반도체 판매액 3MMA - Asia Pacific", "name_en": "WSTS Semiconductor Sales 3MMA - Asia Pacific", "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.", "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.", "value": 60.11243366666666, "unit": "$B", "unit_en": "$B", "display_value": "$60.11B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-04-01", "observed_label": "2026.04", "next_update_label": "2026.05", "change_abs": 4.653410666666659, "change_pct": 8.390718795508988, "change_abs_label": "+4.65B", "change_pct_label": "+8.4%", "yoy_pct": 95.80801172511664, "yoy_pct_label": "+95.8%", "history": [{"date": "2022-05-01", "value": 30.780241333333333}, {"date": "2022-06-01", "value": 29.62072566666667}, {"date": "2022-07-01", "value": 28.585852}, {"date": "2022-08-01", "value": 27.20733266666667}, {"date": "2022-09-01", "value": 26.400504666666667}, {"date": "2022-10-01", "value": 26.023423}, {"date": "2022-11-01", "value": 24.90304233333333}, {"date": "2022-12-01", "value": 23.748199666666668}, {"date": "2023-01-01", "value": 22.429193}, {"date": "2023-02-01", "value": 21.36961433333333}, {"date": "2023-03-01", "value": 21.769734}, {"date": "2023-04-01", "value": 22.09424866666667}, {"date": "2023-05-01", "value": 22.839590333333334}, {"date": "2023-06-01", "value": 23.20594733333333}, {"date": "2023-07-01", "value": 23.568546333333334}, {"date": "2023-08-01", "value": 23.941422333333332}, {"date": "2023-09-01", "value": 24.373556333333333}, {"date": "2023-10-01", "value": 25.681468}, {"date": "2023-11-01", "value": 26.56498033333333}, {"date": "2023-12-01", "value": 27.315375666666668}, {"date": "2024-01-01", "value": 26.917786333333332}, {"date": "2024-02-01", "value": 26.37158966666667}, {"date": "2024-03-01", "value": 26.38029433333333}, {"date": "2024-04-01", "value": 26.275230333333333}, {"date": "2024-05-01", "value": 27.411532333333334}, {"date": "2024-06-01", "value": 27.374422666666668}, {"date": "2024-07-01", "value": 28.006529}, {"date": "2024-08-01", "value": 28.482445}, {"date": "2024-09-01", "value": 29.63484233333333}, {"date": "2024-10-01", "value": 29.756909333333333}, {"date": "2024-11-01", "value": 29.903237333333333}, {"date": "2024-12-01", "value": 29.089305333333332}, {"date": "2025-01-01", "value": 28.954004}, {"date": "2025-02-01", "value": 28.438988666666667}, {"date": "2025-03-01", "value": 29.072123666666666}, {"date": "2025-04-01", "value": 30.699680333333333}, {"date": "2025-05-01", "value": 32.50928833333333}, {"date": "2025-06-01", "value": 33.66044933333333}, {"date": "2025-07-01", "value": 34.31982933333334}, {"date": "2025-08-01", "value": 36.16169466666666}, {"date": "2025-09-01", "value": 38.939552666666664}, {"date": "2025-10-01", "value": 40.999388}, {"date": "2025-11-01", "value": 43.605085}, {"date": "2025-12-01", "value": 44.910068333333335}, {"date": "2026-01-01", "value": 47.404885666666665}, {"date": "2026-02-01", "value": 49.88711966666666}, {"date": "2026-03-01", "value": 55.459023}, {"date": "2026-04-01", "value": 60.11243366666666}], "period_label": "2022.05 - 2026.04"}, {"id": "4b612a22bdd8", "industry": "반도체", "industry_en": "Semiconductors", "group": "판매액", "group_en": "Sales", "name": "WSTS 반도체 판매액 3MMA - Americas", "name_en": "WSTS Semiconductor Sales 3MMA - Americas", "meaning": "반도체 업황의 현재 수요 강도와 재고 순환을 확인하는 월간 지표입니다.", "meaning_en": "Monthly indicator for semiconductor demand strength and inventory cycles.", "value": 39.443344333333336, "unit": "$B", "unit_en": "$B", "display_value": "$39.44B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-04-01", "observed_label": "2026.04", "next_update_label": "2026.05", "change_abs": 5.636457666666672, "change_pct": 16.672513272936705, "change_abs_label": "+5.64B", "change_pct_label": "+16.7%", "yoy_pct": 115.80804130848907, "yoy_pct_label": "+115.8%", "history": [{"date": "2022-05-01", "value": 12.32605}, {"date": "2022-06-01", "value": 12.113105333333333}, {"date": "2022-07-01", "value": 11.839418666666665}, {"date": "2022-08-01", "value": 11.475836}, {"date": "2022-09-01", "value": 12.033845666666666}, {"date": "2022-10-01", "value": 12.328669}, {"date": "2022-11-01", "value": 12.173481666666666}, {"date": "2022-12-01", "value": 11.401204333333334}, {"date": "2023-01-01", "value": 10.505899333333334}, {"date": "2023-02-01", "value": 9.951939}, {"date": "2023-03-01", "value": 9.608336}, {"date": "2023-04-01", "value": 9.542832333333333}, {"date": "2023-05-01", "value": 9.726489333333333}, {"date": "2023-06-01", "value": 10.350409333333333}, {"date": "2023-07-01", "value": 10.998638666666666}, {"date": "2023-08-01", "value": 11.508336}, {"date": "2023-09-01", "value": 11.78861}, {"date": "2023-10-01", "value": 12.195367}, {"date": "2023-11-01", "value": 12.848431666666666}, {"date": "2023-12-01", "value": 13.045084}, {"date": "2024-01-01", "value": 12.963084}, {"date": "2024-02-01", "value": 12.565625}, {"date": "2024-03-01", "value": 12.779533}, {"date": "2024-04-01", "value": 13.046204666666666}, {"date": "2024-05-01", "value": 13.894279}, {"date": "2024-06-01", "value": 14.774824}, {"date": "2024-07-01", "value": 15.407546}, {"date": "2024-08-01", "value": 16.560061}, {"date": "2024-09-01", "value": 17.244741333333334}, {"date": "2024-10-01", "value": 18.679328}, {"date": "2024-11-01", "value": 19.50136266666667}, {"date": "2024-12-01", "value": 20.241737333333333}, {"date": "2025-01-01", "value": 19.548763}, {"date": "2025-02-01", "value": 18.65488566666667}, {"date": "2025-03-01", "value": 18.463587}, {"date": "2025-04-01", "value": 18.27705033333333}, {"date": "2025-05-01", "value": 18.457345}, {"date": "2025-06-01", "value": 18.475548333333332}, {"date": "2025-07-01", "value": 20.06983166666667}, {"date": "2025-08-01", "value": 21.019727666666668}, {"date": "2025-09-01", "value": 22.478905333333334}, {"date": "2025-10-01", "value": 23.385489}, {"date": "2025-11-01", "value": 24.891347}, {"date": "2025-12-01", "value": 26.074109333333332}, {"date": "2026-01-01", "value": 26.418642666666667}, {"date": "2026-02-01", "value": 29.839642333333334}, {"date": "2026-03-01", "value": 33.806886666666664}, {"date": "2026-04-01", "value": 39.443344333333336}], "period_label": "2022.05 - 2026.04"}, {"id": "c9e38f8f2070", "industry": "스테이블코인", "industry_en": "Stablecoins", "group": "유통량", "group_en": "Supply", "name": "전체 스테이블코인 유통량", "name_en": "Total Stablecoin Supply", "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.", "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.", "value": 310.6893130723461, "unit": "$B", "unit_en": "$B", "display_value": "$310.7B", "frequency": "일간", "frequency_en": "Daily", "observed_at": "2026-07-07", "observed_label": "2026.07.07", "next_update_label": "2026.07.08", "change_abs": 0.6977226323538162, "change_pct": 0.22507792271508897, "change_abs_label": "+0.70B", "change_pct_label": "+0.2%", "yoy_pct": null, "yoy_pct_label": "n/a", "history": [{"date": "2026-06-07", "value": 315.0192415528832}, {"date": "2026-06-30", "value": 311.77199244840654}, {"date": "2026-07-06", "value": 309.9915904399923}, {"date": "2026-07-07", "value": 310.6893130723461}], "period_label": "2026.06.07 - 2026.07.07"}, {"id": "9833e22b7865", "industry": "스테이블코인", "industry_en": "Stablecoins", "group": "유통량", "group_en": "Supply", "name": "USDT 유통량", "name_en": "USDT Supply", "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.", "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.", "value": 184.25474203875044, "unit": "$B", "unit_en": "$B", "display_value": "$184.3B", "frequency": "일간", "frequency_en": "Daily", "observed_at": "2026-07-07", "observed_label": "2026.07.07", "next_update_label": "2026.07.08", "change_abs": 0.10913585781329971, "change_pct": 0.0592660667157352, "change_abs_label": "+0.11B", "change_pct_label": "+0.1%", "yoy_pct": null, "yoy_pct_label": "n/a", "history": [{"date": "2026-06-07", "value": 187.1830276952233}, {"date": "2026-06-30", "value": 185.0340088563073}, {"date": "2026-07-06", "value": 184.14560618093714}, {"date": "2026-07-07", "value": 184.25474203875044}], "period_label": "2026.06.07 - 2026.07.07"}, {"id": "6738d7df4ecd", "industry": "스테이블코인", "industry_en": "Stablecoins", "group": "유통량", "group_en": "Supply", "name": "USDC 유통량", "name_en": "USDC Supply", "meaning": "달러 연동 스테이블코인의 유통량 변화로 온체인 달러 유동성과 결제/거래 수요를 확인합니다.", "meaning_en": "Tracks USD-pegged stablecoin supply to read on-chain dollar liquidity and payment/trading demand.", "value": 73.19061306184092, "unit": "$B", "unit_en": "$B", "display_value": "$73.19B", "frequency": "일간", "frequency_en": "Daily", "observed_at": "2026-07-07", "observed_label": "2026.07.07", "next_update_label": "2026.07.08", "change_abs": 0.13658862359773138, "change_pct": 0.18696933488338008, "change_abs_label": "+0.14B", "change_pct_label": "+0.2%", "yoy_pct": null, "yoy_pct_label": "n/a", "history": [{"date": "2026-06-07", "value": 75.60996652055266}, {"date": "2026-06-30", "value": 73.80545197458235}, {"date": "2026-07-06", "value": 73.05402443824319}, {"date": "2026-07-07", "value": 73.19061306184092}], "period_label": "2026.06.07 - 2026.07.07"}, {"id": "64fa63647ec0", "industry": "배터리", "industry_en": "Batteries", "group": "배터리 원재료", "group_en": "Battery Raw Materials", "name": "니켈 가격", "name_en": "Nickel Price", "meaning": "니켈 가격은 배터리 양극재 원가와 소재 업체 마진 환경을 보여주는 원재료 proxy입니다.", "meaning_en": "Nickel price is a raw material proxy for battery cathode costs and materials-company margins.", "value": 17588.0, "unit": "$/mt", "unit_en": "USD/mt", "display_value": "17,588.0 $/mt", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": -1218.0, "change_pct": -6.476656386259705, "change_abs_label": "-1,218.00 $/mt", "change_pct_label": "-6.5%", "yoy_pct": 17.22988735586215, "yoy_pct_label": "+17.2%", "history": [{"date": "2022-07-01", "value": 21482.0}, {"date": "2022-08-01", "value": 22057.0}, {"date": "2022-09-01", "value": 22774.0}, {"date": "2022-10-01", "value": 22033.0}, {"date": "2022-11-01", "value": 25563.0}, {"date": "2022-12-01", "value": 28947.0}, {"date": "2023-01-01", "value": 28195.0}, {"date": "2023-02-01", "value": 26728.0}, {"date": "2023-03-01", "value": 23289.0}, {"date": "2023-04-01", "value": 23895.0}, {"date": "2023-05-01", "value": 21970.0}, {"date": "2023-06-01", "value": 21233.0}, {"date": "2023-07-01", "value": 21091.0}, {"date": "2023-08-01", "value": 20439.0}, {"date": "2023-09-01", "value": 19645.0}, {"date": "2023-10-01", "value": 18281.0}, {"date": "2023-11-01", "value": 17027.0}, {"date": "2023-12-01", "value": 16461.0}, {"date": "2024-01-01", "value": 16104.0}, {"date": "2024-02-01", "value": 16338.0}, {"date": "2024-03-01", "value": 17439.0}, {"date": "2024-04-01", "value": 18164.0}, {"date": "2024-05-01", "value": 19587.0}, {"date": "2024-06-01", "value": 17498.0}, {"date": "2024-07-01", "value": 16335.0}, {"date": "2024-08-01", "value": 16292.0}, {"date": "2024-09-01", "value": 16077.0}, {"date": "2024-10-01", "value": 16766.0}, {"date": "2024-11-01", "value": 15723.0}, {"date": "2024-12-01", "value": 15445.0}, {"date": "2025-01-01", "value": 15394.0}, {"date": "2025-02-01", "value": 15288.0}, {"date": "2025-03-01", "value": 16066.0}, {"date": "2025-04-01", "value": 15113.0}, {"date": "2025-05-01", "value": 15346.0}, {"date": "2025-06-01", "value": 15003.0}, {"date": "2025-07-01", "value": 15034.0}, {"date": "2025-08-01", "value": 14949.0}, {"date": "2025-09-01", "value": 15106.0}, {"date": "2025-10-01", "value": 15092.0}, {"date": "2025-11-01", "value": 14671.0}, {"date": "2025-12-01", "value": 14884.0}, {"date": "2026-01-01", "value": 17769.0}, {"date": "2026-02-01", "value": 17173.0}, {"date": "2026-03-01", "value": 17076.0}, {"date": "2026-04-01", "value": 17962.0}, {"date": "2026-05-01", "value": 18806.0}, {"date": "2026-06-01", "value": 17588.0}], "period_label": "2022.07 - 2026.06"}, {"id": "d907cfbca0b2", "industry": "전력", "industry_en": "Power", "group": "에너지 가격", "group_en": "Energy Prices", "name": "유럽 천연가스 가격", "name_en": "Europe Natural Gas Price", "meaning": "천연가스 가격은 전력 생산 원가와 산업 에너지 비용을 좌우하는 에너지 원료 지표입니다.", "meaning_en": "Natural gas price indicates power generation costs and industrial energy cost pressure.", "value": 15.17, "unit": "$/mmbtu", "unit_en": "USD/mmbtu", "display_value": "15.17 $/mmbtu", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": -1.0000000000000018, "change_pct": -6.184291898577621, "change_abs_label": "-1.00 $/mmbtu", "change_pct_label": "-6.2%", "yoy_pct": 22.635408245755873, "yoy_pct_label": "+22.6%", "history": [{"date": "2022-07-01", "value": 51.33}, {"date": "2022-08-01", "value": 70.04}, {"date": "2022-09-01", "value": 59.1}, {"date": "2022-10-01", "value": 39.02}, {"date": "2022-11-01", "value": 35.72}, {"date": "2022-12-01", "value": 36.04}, {"date": "2023-01-01", "value": 20.18}, {"date": "2023-02-01", "value": 16.54}, {"date": "2023-03-01", "value": 13.81}, {"date": "2023-04-01", "value": 13.52}, {"date": "2023-05-01", "value": 10.11}, {"date": "2023-06-01", "value": 10.35}, {"date": "2023-07-01", "value": 9.55}, {"date": "2023-08-01", "value": 11.19}, {"date": "2023-09-01", "value": 11.55}, {"date": "2023-10-01", "value": 14.57}, {"date": "2023-11-01", "value": 14.49}, {"date": "2023-12-01", "value": 11.51}, {"date": "2024-01-01", "value": 9.56}, {"date": "2024-02-01", "value": 8.15}, {"date": "2024-03-01", "value": 8.55}, {"date": "2024-04-01", "value": 9.09}, {"date": "2024-05-01", "value": 10.12}, {"date": "2024-06-01", "value": 10.87}, {"date": "2024-07-01", "value": 10.35}, {"date": "2024-08-01", "value": 12.37}, {"date": "2024-09-01", "value": 11.78}, {"date": "2024-10-01", "value": 12.92}, {"date": "2024-11-01", "value": 13.93}, {"date": "2024-12-01", "value": 13.86}, {"date": "2025-01-01", "value": 14.66}, {"date": "2025-02-01", "value": 15.34}, {"date": "2025-03-01", "value": 13.24}, {"date": "2025-04-01", "value": 11.59}, {"date": "2025-05-01", "value": 11.66}, {"date": "2025-06-01", "value": 12.37}, {"date": "2025-07-01", "value": 11.62}, {"date": "2025-08-01", "value": 11.15}, {"date": "2025-09-01", "value": 11.12}, {"date": "2025-10-01", "value": 10.89}, {"date": "2025-11-01", "value": 10.42}, {"date": "2025-12-01", "value": 9.48}, {"date": "2026-01-01", "value": 11.76}, {"date": "2026-02-01", "value": 11.24}, {"date": "2026-03-01", "value": 17.91}, {"date": "2026-04-01", "value": 15.41}, {"date": "2026-05-01", "value": 16.17}, {"date": "2026-06-01", "value": 15.17}], "period_label": "2022.07 - 2026.06"}, {"id": "85f0653c42e0", "industry": "전력", "industry_en": "Power", "group": "에너지 가격", "group_en": "Energy Prices", "name": "호주 석탄 가격", "name_en": "Australian Coal Price", "meaning": "석탄 가격은 화력발전 원가와 전력 가격 압력을 확인하는 원료 proxy입니다.", "meaning_en": "Coal price is a feedstock proxy for thermal power costs and power price pressure.", "value": 138.5, "unit": "$/mt", "unit_en": "USD/mt", "display_value": "138.5 $/mt", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": 1.5999999999999943, "change_pct": 1.1687363038714427, "change_abs_label": "+1.60 $/mt", "change_pct_label": "+1.2%", "yoy_pct": 27.064220183486242, "yoy_pct_label": "+27.1%", "history": [{"date": "2022-07-01", "value": 402.2}, {"date": "2022-08-01", "value": 407.0}, {"date": "2022-09-01", "value": 430.8}, {"date": "2022-10-01", "value": 389.8}, {"date": "2022-11-01", "value": 342.2}, {"date": "2022-12-01", "value": 379.2}, {"date": "2023-01-01", "value": 318.0}, {"date": "2023-02-01", "value": 207.5}, {"date": "2023-03-01", "value": 187.2}, {"date": "2023-04-01", "value": 194.3}, {"date": "2023-05-01", "value": 160.5}, {"date": "2023-06-01", "value": 139.4}, {"date": "2023-07-01", "value": 140.6}, {"date": "2023-08-01", "value": 152.6}, {"date": "2023-09-01", "value": 162.5}, {"date": "2023-10-01", "value": 142.1}, {"date": "2023-11-01", "value": 126.8}, {"date": "2023-12-01", "value": 141.8}, {"date": "2024-01-01", "value": 124.9}, {"date": "2024-02-01", "value": 124.2}, {"date": "2024-03-01", "value": 131.5}, {"date": "2024-04-01", "value": 135.0}, {"date": "2024-05-01", "value": 142.0}, {"date": "2024-06-01", "value": 135.1}, {"date": "2024-07-01", "value": 137.6}, {"date": "2024-08-01", "value": 145.8}, {"date": "2024-09-01", "value": 139.2}, {"date": "2024-10-01", "value": 146.6}, {"date": "2024-11-01", "value": 142.1}, {"date": "2024-12-01", "value": 129.8}, {"date": "2025-01-01", "value": 118.6}, {"date": "2025-02-01", "value": 106.9}, {"date": "2025-03-01", "value": 104.0}, {"date": "2025-04-01", "value": 98.6}, {"date": "2025-05-01", "value": 104.4}, {"date": "2025-06-01", "value": 109.0}, {"date": "2025-07-01", "value": 112.9}, {"date": "2025-08-01", "value": 112.2}, {"date": "2025-09-01", "value": 106.3}, {"date": "2025-10-01", "value": 107.5}, {"date": "2025-11-01", "value": 112.6}, {"date": "2025-12-01", "value": 107.7}, {"date": "2026-01-01", "value": 109.8}, {"date": "2026-02-01", "value": 118.4}, {"date": "2026-03-01", "value": 138.6}, {"date": "2026-04-01", "value": 130.9}, {"date": "2026-05-01", "value": 136.9}, {"date": "2026-06-01", "value": 138.5}], "period_label": "2022.07 - 2026.06"}, {"id": "bd9110d72bc2", "industry": "데이터인프라", "industry_en": "Data Infrastructure", "group": "CAPEX", "group_en": "CAPEX", "name": "Microsoft CAPEX", "name_en": "Microsoft CAPEX", "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.", "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.", "value": 30.876, "unit": "$B", "unit_en": "$B", "display_value": "$30.88B", "frequency": "분기", "frequency_en": "Quarterly", "observed_at": "2026-03-31", "observed_label": "2026.03.31", "next_update_label": "2026.06", "change_abs": 1.0, "change_pct": 3.347168295621894, "change_abs_label": "+1.00B", "change_pct_label": "+3.3%", "yoy_pct": 84.38936996118245, "yoy_pct_label": "+84.4%", "history": [{"date": "2010-09-30", "value": 0.564}, {"date": "2010-12-31", "value": 0.491}, {"date": "2011-03-31", "value": 0.658}, {"date": "2011-09-30", "value": 0.436}, {"date": "2011-12-31", "value": 0.498}, {"date": "2012-03-31", "value": 0.749}, {"date": "2012-09-30", "value": 0.603}, {"date": "2012-12-31", "value": 0.93}, {"date": "2013-03-31", "value": 0.93}, {"date": "2013-09-30", "value": 1.231}, {"date": "2013-12-31", "value": 1.732}, {"date": "2014-03-31", "value": 1.192}, {"date": "2014-09-30", "value": 1.282}, {"date": "2014-12-31", "value": 1.49}, {"date": "2015-03-31", "value": 1.391}, {"date": "2015-09-30", "value": 1.356}, {"date": "2015-12-31", "value": 2.024}, {"date": "2016-03-31", "value": 2.308}, {"date": "2016-09-30", "value": 2.163}, {"date": "2016-12-31", "value": 1.988}, {"date": "2017-03-31", "value": 1.695}, {"date": "2017-09-30", "value": 2.132}, {"date": "2017-12-31", "value": 2.586}, {"date": "2018-03-31", "value": 2.934}, {"date": "2018-09-30", "value": 3.602}, {"date": "2018-12-31", "value": 3.707}, {"date": "2019-03-31", "value": 2.565}, {"date": "2019-09-30", "value": 3.385}, {"date": "2019-12-31", "value": 3.545}, {"date": "2020-03-31", "value": 3.767}, {"date": "2020-09-30", "value": 4.907}, {"date": "2020-12-31", "value": 4.174}, {"date": "2021-03-31", "value": 5.089}, {"date": "2021-09-30", "value": 5.81}, {"date": "2021-12-31", "value": 5.865}, {"date": "2022-03-31", "value": 5.34}, {"date": "2022-09-30", "value": 6.283}, {"date": "2022-12-31", "value": 6.274}, {"date": "2023-03-31", "value": 6.607}, {"date": "2023-09-30", "value": 9.917}, {"date": "2023-12-31", "value": 9.735}, {"date": "2024-03-31", "value": 10.952}, {"date": "2024-09-30", "value": 14.923}, {"date": "2024-12-31", "value": 15.804}, {"date": "2025-03-31", "value": 16.745}, {"date": "2025-09-30", "value": 19.394}, {"date": "2025-12-31", "value": 29.876}, {"date": "2026-03-31", "value": 30.876}], "period_label": "2010.09.30 - 2026.03.31"}, {"id": "7393f10df322", "industry": "데이터인프라", "industry_en": "Data Infrastructure", "group": "CAPEX", "group_en": "CAPEX", "name": "Amazon CAPEX", "name_en": "Amazon CAPEX", "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.", "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.", "value": 44.203, "unit": "$B", "unit_en": "$B", "display_value": "$44.20B", "frequency": "분기", "frequency_en": "Quarterly", "observed_at": "2026-03-31", "observed_label": "2026.03.31", "next_update_label": "2026.06", "change_abs": 9.108000000000004, "change_pct": 25.952414873913664, "change_abs_label": "+9.11B", "change_pct_label": "+26.0%", "yoy_pct": 76.67772492905394, "yoy_pct_label": "+76.7%", "history": [{"date": "2017-09-30", "value": 3.074}, {"date": "2018-03-31", "value": 3.098}, {"date": "2018-06-30", "value": 3.243}, {"date": "2018-09-30", "value": 3.352}, {"date": "2019-03-31", "value": 3.29}, {"date": "2019-06-30", "value": 3.562}, {"date": "2019-09-30", "value": 4.697}, {"date": "2020-03-31", "value": 6.795}, {"date": "2020-06-30", "value": 7.459}, {"date": "2020-09-30", "value": 11.063}, {"date": "2021-03-31", "value": 12.082}, {"date": "2021-06-30", "value": 14.288}, {"date": "2021-09-30", "value": 15.748}, {"date": "2022-03-31", "value": 14.951}, {"date": "2022-06-30", "value": 15.724}, {"date": "2022-09-30", "value": 16.378}, {"date": "2023-03-31", "value": 14.207}, {"date": "2023-06-30", "value": 11.455}, {"date": "2023-09-30", "value": 12.479}, {"date": "2024-03-31", "value": 14.925}, {"date": "2024-06-30", "value": 17.62}, {"date": "2024-09-30", "value": 22.62}, {"date": "2025-03-31", "value": 25.019}, {"date": "2025-06-30", "value": 32.183}, {"date": "2025-09-30", "value": 35.095}, {"date": "2026-03-31", "value": 44.203}], "period_label": "2017.09.30 - 2026.03.31"}, {"id": "4fb5123c407f", "industry": "데이터인프라", "industry_en": "Data Infrastructure", "group": "CAPEX", "group_en": "CAPEX", "name": "Alphabet CAPEX", "name_en": "Alphabet CAPEX", "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.", "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.", "value": 35.674, "unit": "$B", "unit_en": "$B", "display_value": "$35.67B", "frequency": "분기", "frequency_en": "Quarterly", "observed_at": "2026-03-31", "observed_label": "2026.03.31", "next_update_label": "2026.06", "change_abs": 18.477, "change_pct": 107.44315869046926, "change_abs_label": "+18.48B", "change_pct_label": "+107.4%", "yoy_pct": 107.44315869046926, "yoy_pct_label": "+107.4%", "history": [{"date": "2015-03-31", "value": 2.927}, {"date": "2015-06-30", "value": 2.515}, {"date": "2015-09-30", "value": 2.383}, {"date": "2016-03-31", "value": 2.444}, {"date": "2016-06-30", "value": 2.136}, {"date": "2016-09-30", "value": 2.554}, {"date": "2017-03-31", "value": 2.508}, {"date": "2017-06-30", "value": 2.831}, {"date": "2017-09-30", "value": 3.538}, {"date": "2018-03-31", "value": 7.299}, {"date": "2018-06-30", "value": 5.477}, {"date": "2018-09-30", "value": 5.282}, {"date": "2019-03-31", "value": 4.638}, {"date": "2019-06-30", "value": 6.126}, {"date": "2019-09-30", "value": 6.732}, {"date": "2020-03-31", "value": 6.005}, {"date": "2020-06-30", "value": 5.391}, {"date": "2020-09-30", "value": 5.406}, {"date": "2021-03-31", "value": 5.942}, {"date": "2022-03-31", "value": 9.786}, {"date": "2023-03-31", "value": 6.289}, {"date": "2024-03-31", "value": 12.012}, {"date": "2025-03-31", "value": 17.197}, {"date": "2026-03-31", "value": 35.674}], "period_label": "2015.03.31 - 2026.03.31"}, {"id": "89f36662405e", "industry": "데이터인프라", "industry_en": "Data Infrastructure", "group": "CAPEX", "group_en": "CAPEX", "name": "Meta CAPEX", "name_en": "Meta CAPEX", "meaning": "빅테크 CAPEX는 AI 데이터센터, 서버, 전력 인프라 투자 수요를 보여주는 핵심 proxy입니다.", "meaning_en": "Big Tech CAPEX is a core proxy for AI data center, server, and power infrastructure investment demand.", "value": 18.997, "unit": "$B", "unit_en": "$B", "display_value": "$19.00B", "frequency": "분기", "frequency_en": "Quarterly", "observed_at": "2026-03-31", "observed_label": "2026.03.31", "next_update_label": "2026.06", "change_abs": 6.055999999999999, "change_pct": 46.797001777296956, "change_abs_label": "+6.06B", "change_pct_label": "+46.8%", "yoy_pct": 46.797001777296956, "yoy_pct_label": "+46.8%", "history": [{"date": "2012-03-31", "value": 0.453}, {"date": "2013-03-31", "value": 0.327}, {"date": "2014-03-31", "value": 0.363}, {"date": "2015-03-31", "value": 0.502}, {"date": "2016-03-31", "value": 1.132}, {"date": "2017-03-31", "value": 1.271}, {"date": "2018-03-31", "value": 2.812}, {"date": "2019-03-31", "value": 3.837}, {"date": "2020-03-31", "value": 3.558}, {"date": "2021-03-31", "value": 4.303}, {"date": "2022-03-31", "value": 5.441}, {"date": "2023-03-31", "value": 6.823}, {"date": "2024-03-31", "value": 6.4}, {"date": "2025-03-31", "value": 12.941}, {"date": "2026-03-31", "value": 18.997}], "period_label": "2012.03.31 - 2026.03.31"}, {"id": "29989cc3085a", "industry": "방산", "industry_en": "Defense", "group": "국방 계약", "group_en": "Defense Contracts", "name": "미국 국방부 계약 의무액", "name_en": "US DoD Contract Obligations", "meaning": "미국 국방부가 집행한 계약 의무액으로 방산 예산 집행과 수주 환경의 큰 흐름을 확인합니다.", "meaning_en": "Uses US DoD contract obligations to read the broad trend in defense budget execution and order conditions.", "value": 0.01711577416, "unit": "$B", "unit_en": "$B", "display_value": "$0.02B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": -0.014306447700000002, "change_pct": -45.52971385582344, "change_abs_label": "-0.01B", "change_pct_label": "-45.5%", "yoy_pct": -99.95673053525233, "yoy_pct_label": "-100.0%", "history": [{"date": "2025-01-01", "value": 29.73515487037}, {"date": "2025-02-01", "value": 30.06904219342}, {"date": "2025-03-01", "value": 37.313298567690005}, {"date": "2025-04-01", "value": 37.5288390253}, {"date": "2025-05-01", "value": 35.634584205370004}, {"date": "2025-06-01", "value": 39.556241936}, {"date": "2025-07-01", "value": 43.19853598923}, {"date": "2025-08-01", "value": 43.07791945126}, {"date": "2025-09-01", "value": 92.34439888319}, {"date": "2025-10-01", "value": 13.31795191195}, {"date": "2025-11-01", "value": 28.62616315534}, {"date": "2025-12-01", "value": 48.843195337400005}, {"date": "2026-01-01", "value": 35.49433970067}, {"date": "2026-02-01", "value": 27.20634026704}, {"date": "2026-03-01", "value": 68.48701280683}, {"date": "2026-04-01", "value": 4.13495763781}, {"date": "2026-05-01", "value": 0.03142222186}, {"date": "2026-06-01", "value": 0.01711577416}], "period_label": "2025.01 - 2026.06"}, {"id": "6c07660204fb", "industry": "방산", "industry_en": "Defense", "group": "국방 계약", "group_en": "Defense Contracts", "name": "미국 방산 제조 계약 의무액", "name_en": "US Defense Manufacturing Contract Obligations", "meaning": "미국 연방 방산/항공우주 제조업 계약 의무액으로 방산 제조 밸류체인의 수주 모멘텀을 확인합니다.", "meaning_en": "Uses US federal defense/aerospace manufacturing obligations to read order momentum across the defense manufacturing value chain.", "value": 0.67375068386, "unit": "$B", "unit_en": "$B", "display_value": "$0.67B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": 0.18077433628000006, "change_pct": 36.66998166695292, "change_abs_label": "+0.18B", "change_pct_label": "+36.7%", "yoy_pct": -89.96767922389613, "yoy_pct_label": "-90.0%", "history": [{"date": "2025-01-01", "value": 6.321908488189999}, {"date": "2025-02-01", "value": 5.171398673300001}, {"date": "2025-03-01", "value": 8.608285341690001}, {"date": "2025-04-01", "value": 3.7766361382699998}, {"date": "2025-05-01", "value": 5.01116494712}, {"date": "2025-06-01", "value": 6.71580084904}, {"date": "2025-07-01", "value": 9.38723822909}, {"date": "2025-08-01", "value": 11.914846126719999}, {"date": "2025-09-01", "value": 31.7313236964}, {"date": "2025-10-01", "value": 2.46131573569}, {"date": "2025-11-01", "value": 10.06660248407}, {"date": "2025-12-01", "value": 16.08025073116}, {"date": "2026-01-01", "value": 5.72852406534}, {"date": "2026-02-01", "value": 5.81133740976}, {"date": "2026-03-01", "value": 17.32225666382}, {"date": "2026-04-01", "value": 0.88146200175}, {"date": "2026-05-01", "value": 0.49297634758}, {"date": "2026-06-01", "value": 0.67375068386}], "period_label": "2025.01 - 2026.06"}, {"id": "ecb4b1ee414e", "industry": "우주", "industry_en": "Space", "group": "우주 계약", "group_en": "Space Contracts", "name": "미국 NASA 계약 의무액", "name_en": "US NASA Contract Obligations", "meaning": "NASA 계약 의무액은 우주 장비와 서비스 수요, 정부 우주 예산 집행 흐름을 보여주는 proxy입니다.", "meaning_en": "NASA contract obligations proxy demand for space equipment and services and government space budget execution.", "value": 1.5052678153299999, "unit": "$B", "unit_en": "$B", "display_value": "$1.51B", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": 0.2202217999199998, "change_pct": 17.13726958250106, "change_abs_label": "+0.22B", "change_pct_label": "+17.1%", "yoy_pct": 31.0984601684406, "yoy_pct_label": "+31.1%", "history": [{"date": "2025-01-01", "value": 1.19840631281}, {"date": "2025-02-01", "value": 1.20014422579}, {"date": "2025-03-01", "value": 1.18912678796}, {"date": "2025-04-01", "value": 0.91576693716}, {"date": "2025-05-01", "value": 0.91257456461}, {"date": "2025-06-01", "value": 1.1481964116099999}, {"date": "2025-07-01", "value": 1.3699296066500002}, {"date": "2025-08-01", "value": 1.9008523475699999}, {"date": "2025-09-01", "value": 3.3030970597600002}, {"date": "2025-10-01", "value": 0.09034814731999999}, {"date": "2025-11-01", "value": 1.10112919507}, {"date": "2025-12-01", "value": 0.99468209168}, {"date": "2026-01-01", "value": 1.02528439341}, {"date": "2026-02-01", "value": 0.9036601129099999}, {"date": "2026-03-01", "value": 1.3947802259200002}, {"date": "2026-04-01", "value": 1.0530991836399999}, {"date": "2026-05-01", "value": 1.28504601541}, {"date": "2026-06-01", "value": 1.5052678153299999}], "period_label": "2025.01 - 2026.06"}, {"id": "338fa22c1a4c", "industry": "바이오", "industry_en": "Biotech", "group": "승인 이벤트", "group_en": "Approval Events", "name": "FDA 의약품 승인 활동", "name_en": "FDA Drug Approval Activity", "meaning": "FDA 의약품 승인 관련 기록 수로 바이오 규제 이벤트와 신약 모멘텀을 확인합니다.", "meaning_en": "Counts FDA drug approval records to read biotech regulatory events and new-drug momentum.", "value": 562.0, "unit": "건", "unit_en": "events", "display_value": "562.0 건", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": 300.0, "change_pct": 114.50381679389312, "change_abs_label": "+300.00 건", "change_pct_label": "+114.5%", "yoy_pct": 45.97402597402598, "yoy_pct_label": "+46.0%", "history": [{"date": "2025-01-01", "value": 444.0}, {"date": "2025-02-01", "value": 343.0}, {"date": "2025-03-01", "value": 426.0}, {"date": "2025-04-01", "value": 338.0}, {"date": "2025-05-01", "value": 244.0}, {"date": "2025-06-01", "value": 385.0}, {"date": "2025-07-01", "value": 413.0}, {"date": "2025-08-01", "value": 273.0}, {"date": "2025-09-01", "value": 325.0}, {"date": "2025-10-01", "value": 285.0}, {"date": "2025-11-01", "value": 244.0}, {"date": "2025-12-01", "value": 497.0}, {"date": "2026-01-01", "value": 237.0}, {"date": "2026-02-01", "value": 275.0}, {"date": "2026-03-01", "value": 305.0}, {"date": "2026-04-01", "value": 271.0}, {"date": "2026-05-01", "value": 262.0}, {"date": "2026-06-01", "value": 562.0}], "period_label": "2025.01 - 2026.06"}, {"id": "983f03b746cf", "industry": "바이오", "industry_en": "Biotech", "group": "임상 이벤트", "group_en": "Clinical Trial Events", "name": "글로벌 Phase 3 임상 시작", "name_en": "Global Phase 3 Trial Starts", "meaning": "Phase 3 임상 시작 건수는 후기 파이프라인 활동성과 바이오 투자심리의 이벤트 밀도를 보여줍니다.", "meaning_en": "Phase 3 trial starts show late-stage pipeline activity and event density for biotech sentiment.", "value": 229.0, "unit": "건", "unit_en": "events", "display_value": "229.0 건", "frequency": "월간", "frequency_en": "Monthly", "observed_at": "2026-06-01", "observed_label": "2026.06", "next_update_label": "2026.07", "change_abs": 24.0, "change_pct": 11.707317073170742, "change_abs_label": "+24.00 건", "change_pct_label": "+11.7%", "yoy_pct": 26.519337016574585, "yoy_pct_label": "+26.5%", "history": [{"date": "2025-01-01", "value": 164.0}, {"date": "2025-02-01", "value": 157.0}, {"date": "2025-03-01", "value": 191.0}, {"date": "2025-04-01", "value": 177.0}, {"date": "2025-05-01", "value": 159.0}, {"date": "2025-06-01", "value": 181.0}, {"date": "2025-07-01", "value": 165.0}, {"date": "2025-08-01", "value": 152.0}, {"date": "2025-09-01", "value": 180.0}, {"date": "2025-10-01", "value": 161.0}, {"date": "2025-11-01", "value": 153.0}, {"date": "2025-12-01", "value": 197.0}, {"date": "2026-01-01", "value": 169.0}, {"date": "2026-02-01", "value": 148.0}, {"date": "2026-03-01", "value": 210.0}, {"date": "2026-04-01", "value": 205.0}, {"date": "2026-05-01", "value": 205.0}, {"date": "2026-06-01", "value": 229.0}], "period_label": "2025.01 - 2026.06"}]};
+    const state = {
+      activeIndustry: "",
+      isReordering: false,
+      draftIndustryOrder: null,
+      draggedMenuItem: null,
+      language: "ko",
+      currency: "usd"
+    };
+    const mobileDrawerQuery = window.matchMedia ? window.matchMedia("(max-width: 760px)") : { matches: false };
+    let scrollSpyFrame = 0;
+    const groupOrder = [
+      "판매액", "시장 매출", "가격/수요", "투자/장비", "수출",
+      "판매/수요", "판매량", "배터리 원재료",
+      "운임/해운", "선가/발주",
+      "원자재 가격", "중국 경기",
+      "에너지 가격", "원유/원료", "화학 스프레드 proxy", "스프레드/마진",
+      "금리", "스프레드", "금리/스프레드", "은행 건전성", "대출/건전성",
+      "주택 경기", "건설 선행", "금융비용", "주택 시장",
+      "환율", "리스크", "시장 환경", "핵심 지표"
+    ];
+    const translations = {
+      ko: {
+        title: "산업별 지표 대시보드",
+        settings: "설정",
+        darkMode: "다크모드",
+        lightMode: "라이트",
+        darkModeState: "다크",
+        language: "언어변경",
+        reorderMenu: "메뉴 순서변경",
+        cancel: "취소",
+        save: "저장",
+        empty: "표시할 지표가 없습니다.",
+        metric: "지표",
+        description: "설명",
+        lastUpdated: "마지막 업데이트일",
+        nextUpdate: "다음 예정일",
+        chart: "차트",
+        metricSummary: "지표명/설명",
+        metricValueShort: "지표",
+        currentValue: "현재값",
+        previousChange: "전기 변화",
+        previousChangePct: "전기 변화율",
+        yoy: "YoY",
+        visiblePeriod: "표시 기간",
+        updateFrequency: "업데이트 주기",
+        irregular: "비정기",
+        menuLabel: "업종 메뉴",
+        drawerTitle: "메뉴",
+        openMenu: "메뉴 열기",
+        closeMenu: "메뉴 닫기",
+        toggleTheme: "다크모드 전환",
+        showKrw: "원화 표시",
+        showUsd: "달러 표시"
+      },
+      en: {
+        title: "Industry Metrics Dashboard",
+        settings: "Settings",
+        darkMode: "Dark mode",
+        lightMode: "Light",
+        darkModeState: "Dark",
+        language: "Language",
+        reorderMenu: "Reorder menu",
+        cancel: "Cancel",
+        save: "Save",
+        empty: "No metrics to display.",
+        metric: "Metric",
+        description: "Description",
+        lastUpdated: "Last updated",
+        nextUpdate: "Next update",
+        chart: "Chart",
+        metricSummary: "Metric/description",
+        metricValueShort: "Value",
+        currentValue: "Current",
+        previousChange: "Previous change",
+        previousChangePct: "Previous %",
+        yoy: "YoY",
+        visiblePeriod: "Period",
+        updateFrequency: "Frequency",
+        irregular: "Irregular",
+        menuLabel: "Industry menu",
+        drawerTitle: "Menu",
+        openMenu: "Open menu",
+        closeMenu: "Close menu",
+        toggleTheme: "Toggle dark mode",
+        showKrw: "Show KRW",
+        showUsd: "Show USD"
+      }
+    };
+
+    function t(key) {
+      return translations[state.language]?.[key] || translations.ko[key] || key;
+    }
+
+    function localizedIndustry(industry) {
+      if (state.language !== "en") return industry || "";
+      return DASHBOARD_DATA.industry_labels_en?.[industry] || industry || "";
+    }
+
+    function localizedField(item, field) {
+      if (!item) return "";
+      if (state.language === "en") {
+        return item[`${field}_en`] || item[field] || "";
+      }
+      return item[field] || "";
+    }
+
+    function localizedGroup(group, items = []) {
+      if (state.language !== "en") return group || "";
+      const first = items.find((item) => item.group === group && item.group_en);
+      return first?.group_en || group || "";
+    }
+
+    function localizedUnit(metric) {
+      if (!metric) return "";
+      return state.language === "en" ? (metric.unit_en || metric.unit || "") : (metric.unit || "");
+    }
+
+    function formatMetricNumberWithUnit(value, unit, signed = false, isChange = false) {
+      if (typeof value !== "number" || !Number.isFinite(value)) return "n/a";
+      const text = numberText(value, signed);
+      if (unit === "$B") {
+        const prefix = signed ? (value > 0 ? "+" : value < 0 ? "-" : "") : "";
+        return `${prefix}$${numberText(Math.abs(value))}B`;
+      }
+      if (unit === "%") return `${text}${isChange ? "%p" : "%"}`;
+      if (!unit) return text;
+      return `${text} ${unit}`;
+    }
+
+    function numberText(value, signed = false) {
+      if (typeof value !== "number" || !Number.isFinite(value)) return "n/a";
+      const abs = Math.abs(value);
+      const digits = abs >= 100 ? 1 : 2;
+      const formatted = abs.toLocaleString(state.language === "en" ? "en-US" : "ko-KR", {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+      });
+      if (!signed || value === 0) return formatted;
+      return `${value > 0 ? "+" : "-"}${formatted}`;
+    }
+
+    function dollarUnitScale(metric) {
+      const unit = String(metric.unit || "");
+      const rate = usdKrwRate();
+      const english = state.language === "en";
+      if (unit === "$B") return { scale: rate / 1000, unit: english ? "tn KRW" : "조원" };
+      if (unit.includes("백만달러")) {
+        return english ? { scale: rate / 1000, unit: "bn KRW" } : { scale: rate / 100, unit: "억원" };
+      }
+      if (unit === "$" || unit.includes("달러") || unit.toUpperCase().includes("USD")) {
+        return { scale: rate, unit: english ? "KRW" : "원" };
+      }
+      return null;
+    }
+
+    function isDollarMetric(metric) {
+      return Boolean(dollarUnitScale(metric));
+    }
+
+    function usdKrwRate() {
+      const match = DASHBOARD_DATA.metrics.find((metric) => {
+        const name = String(metric.name || "").toUpperCase();
+        return typeof metric.value === "number" &&
+          Number.isFinite(metric.value) &&
+          String(metric.unit || "") === "원" &&
+          (name.includes("환율") || name.includes("원/달러") || name.includes("USD/KRW"));
+      });
+      return match?.value || 1350;
+    }
+
+    function displayMetricValue(metric) {
+      const scale = state.currency === "krw" ? dollarUnitScale(metric) : null;
+      if (scale && typeof metric.value === "number" && Number.isFinite(metric.value)) {
+        const separator = state.language === "en" ? " " : "";
+        return `${numberText(metric.value * scale.scale)}${separator}${scale.unit}`;
+      }
+      if (state.language === "en" && typeof metric.value === "number" && Number.isFinite(metric.value)) {
+        return formatMetricNumberWithUnit(metric.value, localizedUnit(metric));
+      }
+      if (!scale || typeof metric.value !== "number" || !Number.isFinite(metric.value)) {
+        return metric.display_value;
+      }
+      return `${numberText(metric.value * scale.scale)}${scale.unit}`;
+    }
+
+    function displayMetricChange(metric) {
+      const scale = state.currency === "krw" ? dollarUnitScale(metric) : null;
+      if (scale && typeof metric.change_abs === "number" && Number.isFinite(metric.change_abs)) {
+        const separator = state.language === "en" ? " " : "";
+        return `${numberText(metric.change_abs * scale.scale, true)}${separator}${scale.unit}`;
+      }
+      if (state.language === "en" && typeof metric.change_abs === "number" && Number.isFinite(metric.change_abs)) {
+        return formatMetricNumberWithUnit(metric.change_abs, localizedUnit(metric), true, true);
+      }
+      if (!scale || typeof metric.change_abs !== "number" || !Number.isFinite(metric.change_abs)) {
+        return metric.change_abs_label;
+      }
+      return `${numberText(metric.change_abs * scale.scale, true)}${scale.unit}`;
+    }
+
+    function displayHistory(history, metric) {
+      const scale = state.currency === "krw" ? dollarUnitScale(metric || {}) : null;
+      if (!scale) return history;
+      return (history || []).map((point) => ({
+        ...point,
+        value: point.value * scale.scale
+      }));
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[char]));
+    }
+
+    function directionClass(value) {
+      if (typeof value !== "number" || !Number.isFinite(value) || value === 0) return "";
+      return value > 0 ? "positive" : "negative";
+    }
+
+    function trendIconClass(value) {
+      if (typeof value !== "number" || !Number.isFinite(value) || value === 0) return "fa-minus";
+      return value > 0 ? "fa-arrow-trend-up" : "fa-arrow-trend-down";
+    }
+
+    function metricChangeBadge(metric) {
+      const className = directionClass(metric.change_pct);
+      const label = metric.change_pct_label || "n/a";
+      return `<span class="metric-change-badge ${className}">
+        <i class="fa-solid ${trendIconClass(metric.change_pct)}" aria-hidden="true"></i>
+        <span>${escapeHtml(label)}</span>
+      </span>`;
+    }
+
+    function groupRank(group) {
+      const index = groupOrder.indexOf(group);
+      return index === -1 ? 999 : index;
+    }
+
+    function baseVisibleIndustries() {
+      return DASHBOARD_DATA.industries.filter((industry) =>
+        DASHBOARD_DATA.metrics.some((metric) => metric.industry === industry)
+      );
+    }
+
+    function storedIndustryOrder() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem("dashboard-industry-order") || "[]");
+        return Array.isArray(parsed) ? parsed.filter((item) => typeof item === "string") : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function orderedIndustries(industries, order = null) {
+      const selectedOrder = order || state.draftIndustryOrder || storedIndustryOrder();
+      const rank = new Map(selectedOrder.map((industry, index) => [industry, index]));
+      return [...industries].sort((a, b) => {
+        const aRank = rank.has(a) ? rank.get(a) : Number.MAX_SAFE_INTEGER;
+        const bRank = rank.has(b) ? rank.get(b) : Number.MAX_SAFE_INTEGER;
+        if (aRank !== bRank) return aRank - bRank;
+        return industries.indexOf(a) - industries.indexOf(b);
+      });
+    }
+
+    function visibleIndustries() {
+      return orderedIndustries(baseVisibleIndustries());
+    }
+
+    function industryId(industry) {
+      return `industry-${Array.from(industry).map((char) => char.charCodeAt(0).toString(36)).join("-")}`;
+    }
+
+    function setActiveIndustry(industry) {
+      if (!industry || state.activeIndustry === industry) return;
+      state.activeIndustry = industry;
+      document.querySelectorAll("[data-industry]").forEach((button) => {
+        const active = button.dataset.industry === industry;
+        button.setAttribute("aria-pressed", String(active));
+        button.setAttribute("aria-current", String(active));
+      });
+    }
+
+    function renderFilters() {
+      const industries = visibleIndustries();
+      if (!state.activeIndustry && industries.length) {
+        state.activeIndustry = industries[0];
+      }
+      document.getElementById("industryFilters").innerHTML = industries.map((industry) => `
+        <div class="menu-item" data-menu-item data-industry-item="${escapeHtml(industry)}" draggable="${state.isReordering}">
+          <button type="button" data-industry="${escapeHtml(industry)}" data-target="${industryId(industry)}" aria-pressed="${state.activeIndustry === industry}" aria-current="${state.activeIndustry === industry}" ${state.isReordering ? 'tabindex="-1"' : ""}>
+            ${escapeHtml(localizedIndustry(industry))}
+          </button>
+          <span class="drag-handle" aria-hidden="true"><i class="fa-solid fa-grip-lines"></i></span>
+        </div>
+      `).join("");
+      document.querySelectorAll("[data-industry]").forEach((button) => {
+        button.addEventListener("click", () => {
+          if (state.isReordering) return;
+          const industry = button.dataset.industry;
+          const target = document.getElementById(button.dataset.target);
+          if (!industry || !target) return;
+          setActiveIndustry(industry);
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          closeDrawerOnMobile();
+        });
+      });
+      initMenuDrag();
+    }
+
+    function formatAxisValue(value) {
+      const abs = Math.abs(value);
+      if (abs >= 1000) return `${(value / 1000).toFixed(1)}k`;
+      if (abs >= 100) return value.toFixed(0);
+      if (abs >= 10) return value.toFixed(1);
+      return value.toFixed(2);
+    }
+
+    function yearLabel(dateText) {
+      const year = Number(String(dateText).slice(2, 4));
+      if (!Number.isFinite(year)) return "";
+      const shortYear = String(year).padStart(2, "0");
+      return state.language === "en" ? shortYear : `${shortYear}년`;
+    }
+
+    function chartDateParts(dateText) {
+      const match = String(dateText || "").match(/^(\d{4})-(\d{1,2})/);
+      if (!match) return null;
+      const year = Number(match[1]);
+      const month = Number(match[2]);
+      if (!Number.isFinite(year) || !Number.isFinite(month)) return null;
+      return { year, month };
+    }
+
+    function detailTickLabel(point, seenYears) {
+      const date = chartDateParts(point.date);
+      if (!date) return "";
+      if (!seenYears.has(date.year)) {
+        seenYears.add(date.year);
+        return yearLabel(point.date);
+      }
+      if ([3, 6, 9].includes(date.month)) {
+        return String(date.month);
+      }
+      return "";
+    }
+
+    function chartTicks(history, left, right, includeQuarterMonths = false) {
+      const seen = new Set();
+      const seenYears = new Set();
+      const ticks = [];
+      history.forEach((point, index) => {
+        const label = includeQuarterMonths
+          ? detailTickLabel(point, seenYears)
+          : yearLabel(point.date);
+        if (!label) return;
+        const key = includeQuarterMonths ? `${point.date}-${label}` : String(point.date).slice(0, 4);
+        if (seen.has(key)) return;
+        seen.add(key);
+        const x = left + (index / Math.max(history.length - 1, 1)) * (right - left);
+        ticks.push({ label, x });
+      });
+      if (ticks.length === 1 && history.length > 1) {
+        ticks.push({ label: yearLabel(history[history.length - 1].date), x: right });
+      }
+      return ticks.filter((tick, index) => index === 0 || tick.label !== ticks[index - 1].label);
+    }
+
+    function separatedLabelPositions(levels, minY, maxY, minGap = 13) {
+      const sorted = [...levels]
+        .sort((a, b) => a.y - b.y)
+        .map((level) => ({ ...level, labelY: Math.min(maxY, Math.max(minY, level.y)) }));
+      for (let index = 1; index < sorted.length; index += 1) {
+        if (sorted[index].labelY - sorted[index - 1].labelY < minGap) {
+          sorted[index].labelY = sorted[index - 1].labelY + minGap;
+        }
+      }
+      for (let index = sorted.length - 1; index >= 0; index -= 1) {
+        if (sorted[index].labelY > maxY) {
+          sorted[index].labelY = maxY;
+        }
+        if (index > 0 && sorted[index].labelY - sorted[index - 1].labelY < minGap) {
+          sorted[index - 1].labelY = sorted[index].labelY - minGap;
+        }
+      }
+      return sorted.map((level) => ({
+        ...level,
+        labelY: Math.min(maxY, Math.max(minY, level.labelY))
+      }));
+    }
+
+    function detailChartWidth(points) {
+      const count = Array.isArray(points) ? points.length : 0;
+      return Math.max(760, count * 54);
+    }
+
+    function miniChart(history, metric = null) {
+      const displayPoints = displayHistory(history, metric);
+      const chartClass = "chart chart-mini";
+      if (!displayPoints || displayPoints.length < 2) {
+        return `<svg class="${chartClass}" viewBox="0 0 160 36" role="img" aria-label="trend unavailable"></svg>`;
+      }
+      const values = displayPoints.map((point) => point.value).filter((value) => typeof value === "number" && Number.isFinite(value));
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const latest = displayPoints[displayPoints.length - 1].value;
+      const first = displayPoints[0].value;
+      const span = max - min || 1;
+      const left = 4;
+      const right = 156;
+      const top = 5;
+      const bottom = 31;
+      const yFor = (value) => bottom - ((value - min) / span) * (bottom - top);
+      const points = displayPoints.map((point, index) => {
+        const x = left + (index / Math.max(displayPoints.length - 1, 1)) * (right - left);
+        const y = yFor(point.value);
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(" ");
+      const trend = latest >= first ? "up" : "down";
+      return `<svg class="${chartClass}" viewBox="0 0 160 36" role="img" aria-label="trend">
+        <polyline points="${points}" class="trend-line ${trend}"></polyline>
+      </svg>`;
+    }
+
+    function chart(history, extraClass = "", metric = null) {
+      if (extraClass.split(" ").includes("chart-mini")) {
+        return miniChart(history, metric);
+      }
+      const displayPoints = displayHistory(history, metric);
+      const chartClass = `chart${extraClass ? ` ${extraClass}` : ""}`;
+      const isDetailChart = extraClass.split(" ").includes("chart-detail");
+      const svgWidth = isDetailChart ? detailChartWidth(displayPoints) : 360;
+      const chartStyle = isDetailChart ? ` style="--detail-chart-width: ${svgWidth}px"` : "";
+      const left = 62;
+      const right = svgWidth - 16;
+      if (!displayPoints || displayPoints.length < 2) {
+        return `<svg class="${chartClass}"${chartStyle} viewBox="0 0 ${svgWidth} 158" role="img" aria-label="trend unavailable">
+          <line x1="${left}" y1="72" x2="${right}" y2="72" class="guide"></line>
+        </svg>`;
+      }
+      const values = displayPoints.map((point) => point.value).filter((value) => typeof value === "number" && Number.isFinite(value));
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const latest = displayPoints[displayPoints.length - 1].value;
+      const first = displayPoints[0].value;
+      const span = max - min || 1;
+      const top = 16;
+      const bottom = 116;
+      const yFor = (value) => bottom - ((value - min) / span) * (bottom - top);
+      const points = displayPoints.map((point, index) => {
+        const x = left + (index / Math.max(displayPoints.length - 1, 1)) * (right - left);
+        const y = yFor(point.value);
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(" ");
+      const trend = latest >= first ? "up" : "down";
+      const levelValues = [];
+      [max, latest, min].forEach((value) => {
+        if (!levelValues.some((existing) => Math.abs(existing - value) < 1e-9)) {
+          levelValues.push(value);
+        }
+      });
+      const levels = separatedLabelPositions(
+        levelValues.map((value) => ({
+          value,
+          label: formatAxisValue(value),
+          y: yFor(value)
+        })),
+        14,
+        118
+      );
+      const yGuides = levels.map((level) => {
+        const y = level.y;
+        const labelY = level.labelY;
+        const connector = Math.abs(labelY - y) > 7
+          ? `<line x1="50" y1="${labelY.toFixed(1)}" x2="${left}" y2="${y.toFixed(1)}" class="guide"></line>`
+          : "";
+        return `<g>
+          <text x="8" y="${(labelY + 3).toFixed(1)}">${level.label}</text>
+          ${connector}
+          <line x1="${left}" y1="${y.toFixed(1)}" x2="${right}" y2="${y.toFixed(1)}" class="guide"></line>
+        </g>`;
+      }).join("");
+      const xGuides = chartTicks(history, left, right, isDetailChart).map((tick) => `
+        <text x="${tick.x.toFixed(1)}" y="146" text-anchor="middle">${tick.label}</text>
+      `).join("");
+      const latestX = right;
+      const latestY = yFor(latest);
+      return `<svg class="${chartClass}"${chartStyle} viewBox="0 0 ${svgWidth} 158" role="img" aria-label="trend">
+        ${yGuides}
+        <line x1="${left}" y1="126" x2="${right}" y2="126" class="axis-line"></line>
+        ${xGuides}
+        <polyline points="${points}" class="trend-line ${trend}"></polyline>
+        <circle cx="${latestX}" cy="${latestY.toFixed(1)}" r="4" class="current-dot ${trend}"></circle>
+      </svg>`;
+    }
+
+    function dateText(value) {
+      if (!value) return t("irregular");
+      if (String(value).includes("비정기")) return t("irregular");
+      const match = String(value).match(/^(\d{4})[.-](\d{1,2})(?:[.-](\d{1,2}))?/);
+      if (!match) return value;
+      if (state.language === "en") {
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const year = match[1];
+        const month = monthNames[Math.max(0, Math.min(11, Number(match[2]) - 1))];
+        return match[3] ? `${month} ${Number(match[3])}, ${year}` : `${month} ${year}`;
+      }
+      const year = match[1].slice(2);
+      const month = String(Number(match[2]));
+      const day = match[3] ? ` ${Number(match[3])}일` : "";
+      return `${year}년 ${month}월${day}`;
+    }
+
+    function detailStat(label, value, className = "") {
+      return `<div class="detail-stat">
+        <span class="detail-label">${escapeHtml(label)}</span>
+        <strong class="detail-value ${className}">${escapeHtml(value)}</strong>
+      </div>`;
+    }
+
+    function metricDetail(metric) {
+      return `<div class="metric-detail-panel">
+        <div class="metric-detail-inner">
+          <div class="detail-chart">${chart(metric.history, "chart-detail", metric)}</div>
+          <div class="detail-stats">
+            ${detailStat(t("currentValue"), displayMetricValue(metric))}
+            ${detailStat(t("previousChange"), displayMetricChange(metric), directionClass(metric.change_abs))}
+            ${detailStat(t("previousChangePct"), metric.change_pct_label, directionClass(metric.change_pct))}
+            ${detailStat(t("yoy"), metric.yoy_pct_label, directionClass(metric.yoy_pct))}
+            ${detailStat(t("visiblePeriod"), metric.period_label || metric.observed_label || "")}
+            ${detailStat(t("updateFrequency"), localizedField(metric, "frequency") || t("irregular"))}
+            <p class="detail-note">${escapeHtml(localizedField(metric, "meaning"))}</p>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    function metricRows(metric) {
+      const detailId = `metric-detail-${metric.id}`;
+      return `<tr class="metric-row" data-metric-row data-detail-id="${detailId}">
+        <td class="metric-name-cell" data-label="${escapeHtml(t("metric"))}">
+          <button class="metric-toggle" type="button" data-metric-toggle aria-expanded="false" aria-controls="${detailId}">
+            <span class="metric-name">${escapeHtml(localizedField(metric, "name"))}</span>
+            <span class="metric-mobile-description">${escapeHtml(localizedField(metric, "meaning"))}</span>
+          </button>
+        </td>
+        <td class="metric-description-cell" data-label="${escapeHtml(t("description"))}">
+          <p class="metric-description">${escapeHtml(localizedField(metric, "meaning"))}</p>
+        </td>
+        <td class="metric-date-cell" data-label="${escapeHtml(t("lastUpdated"))}">
+          <span class="metric-date">${escapeHtml(dateText(metric.observed_label))}</span>
+        </td>
+        <td class="metric-date-cell" data-label="${escapeHtml(t("nextUpdate"))}">
+          <span class="metric-date">${escapeHtml(dateText(metric.next_update_label))}</span>
+        </td>
+        <td class="metric-value-cell" data-label="${escapeHtml(t("currentValue"))}">
+          <span class="metric-value-wrap">
+            <span class="metric-current-value">${escapeHtml(displayMetricValue(metric))}</span>
+            ${metricChangeBadge(metric)}
+          </span>
+        </td>
+        <td class="metric-chart-cell" data-label="${escapeHtml(t("chart"))}">
+          ${chart(metric.history, "chart-mini", metric)}
+        </td>
+      </tr>
+      <tr class="metric-detail-row" id="${detailId}" aria-hidden="true">
+        <td colspan="6">${metricDetail(metric)}</td>
+      </tr>`;
+    }
+
+    function renderIndustry(industry, metrics) {
+      const groups = Map.groupBy
+        ? Map.groupBy(metrics, (metric) => metric.group || "핵심 지표")
+        : metrics.reduce((map, metric) => {
+            const key = metric.group || "핵심 지표";
+            map.set(key, [...(map.get(key) || []), metric]);
+            return map;
+          }, new Map());
+      const icon = DASHBOARD_DATA.industry_icons?.[industry] || "";
+      const groupHtml = [...groups.entries()]
+        .sort(([a], [b]) => groupRank(a) - groupRank(b) || String(a).localeCompare(String(b), "ko"))
+        .map(([group, items]) => `
+          <section class="group">
+            <div class="group-title">${escapeHtml(localizedGroup(group, items))}</div>
+            <div class="metric-table-wrap">
+              <table class="metric-table">
+                <colgroup>
+                  <col class="metric-name-cell">
+                  <col class="metric-description-cell">
+                  <col class="metric-date-cell">
+                  <col class="metric-date-cell">
+                  <col class="metric-value-cell">
+                  <col class="metric-chart-cell">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" data-mobile-label="${escapeHtml(t("metricSummary"))}">${escapeHtml(t("metric"))}</th>
+                    <th scope="col">${escapeHtml(t("description"))}</th>
+                    <th scope="col">${escapeHtml(t("lastUpdated"))}</th>
+                    <th scope="col">${escapeHtml(t("nextUpdate"))}</th>
+                    <th scope="col" data-mobile-label="${escapeHtml(t("metricValueShort"))}">${escapeHtml(t("currentValue"))}</th>
+                    <th scope="col" data-mobile-label="${escapeHtml(t("chart"))}">${escapeHtml(t("chart"))}</th>
+                  </tr>
+                </thead>
+                <tbody>${items.map(metricRows).join("")}</tbody>
+              </table>
+            </div>
+          </section>
+        `).join("");
+
+      return `<article class="industry" id="${industryId(industry)}" data-industry-section data-industry-name="${escapeHtml(industry)}">
+        <div class="industry-head">
+          <div class="industry-icon-wrap">${icon ? `<img class="industry-icon" src="${escapeHtml(icon)}" alt="">` : ""}</div>
+          <div>
+            <h2>${escapeHtml(localizedIndustry(industry))}</h2>
+          </div>
+        </div>
+        <div class="group-stack">${groupHtml}</div>
+      </article>`;
+    }
+
+    function renderIndustries() {
+      const metrics = DASHBOARD_DATA.metrics;
+      const stack = document.getElementById("industryStack");
+      document.getElementById("empty").style.display = metrics.length ? "none" : "block";
+      const byIndustry = metrics.reduce((map, metric) => {
+        map.set(metric.industry, [...(map.get(metric.industry) || []), metric]);
+        return map;
+      }, new Map());
+      stack.innerHTML = visibleIndustries()
+        .filter((industry) => byIndustry.has(industry))
+        .map((industry) => renderIndustry(industry, byIndustry.get(industry)))
+        .join("");
+      initMetricRows();
+      updateActiveFromScroll();
+    }
+
+    function toggleMetricRow(row) {
+      const detail = document.getElementById(row.dataset.detailId);
+      const toggle = row.querySelector("[data-metric-toggle]");
+      if (!detail || !toggle) return;
+      const expanded = !row.classList.contains("is-expanded");
+      row.classList.toggle("is-expanded", expanded);
+      detail.classList.toggle("is-open", expanded);
+      detail.setAttribute("aria-hidden", String(!expanded));
+      toggle.setAttribute("aria-expanded", String(expanded));
+      if (expanded) {
+        const scroller = detail.querySelector(".detail-chart");
+        if (scroller) {
+          requestAnimationFrame(() => {
+            scroller.scrollLeft = scroller.scrollWidth;
+          });
+        }
+      }
+    }
+
+    function initMetricRows() {
+      document.querySelectorAll("[data-metric-row]").forEach((row) => {
+        row.addEventListener("click", () => toggleMetricRow(row));
+      });
+    }
+
+    function currentMenuOrder() {
+      return [...document.querySelectorAll("[data-menu-item]")]
+        .map((item) => item.dataset.industryItem)
+        .filter(Boolean);
+    }
+
+    function dragDirection(container) {
+      return getComputedStyle(container).display === "flex" ? "horizontal" : "vertical";
+    }
+
+    function initMenuDrag() {
+      document.querySelectorAll("[data-menu-item]").forEach((item) => {
+        item.draggable = state.isReordering;
+        item.addEventListener("dragstart", (event) => {
+          if (!state.isReordering) {
+            event.preventDefault();
+            return;
+          }
+          state.draggedMenuItem = item;
+          item.classList.add("is-dragging");
+          event.dataTransfer.effectAllowed = "move";
+          event.dataTransfer.setData("text/plain", item.dataset.industryItem || "");
+        });
+        item.addEventListener("dragend", () => {
+          item.classList.remove("is-dragging");
+          state.draggedMenuItem = null;
+          state.draftIndustryOrder = currentMenuOrder();
+        });
+      });
+
+      const menu = document.getElementById("industryFilters");
+      menu.ondragover = (event) => {
+        if (!state.isReordering || !state.draggedMenuItem) return;
+        event.preventDefault();
+        const target = event.target.closest("[data-menu-item]");
+        if (!target || target === state.draggedMenuItem || !menu.contains(target)) return;
+        const rect = target.getBoundingClientRect();
+        const horizontal = dragDirection(menu) === "horizontal";
+        const insertAfter = horizontal
+          ? event.clientX > rect.left + rect.width / 2
+          : event.clientY > rect.top + rect.height / 2;
+        menu.insertBefore(state.draggedMenuItem, insertAfter ? target.nextSibling : target);
+      };
+      menu.ondrop = (event) => {
+        if (!state.isReordering) return;
+        event.preventDefault();
+        state.draftIndustryOrder = currentMenuOrder();
+      };
+    }
+
+    function setSettingsOpen(open) {
+      const toggle = document.getElementById("settingsToggle");
+      const menu = document.getElementById("settingsMenu");
+      toggle.setAttribute("aria-expanded", String(open));
+      menu.hidden = !open;
+    }
+
+    function updateThemeSettingLabel() {
+      const label = document.getElementById("themeSettingLabel");
+      if (!label) return;
+      label.textContent = document.body.classList.contains("theme-dark") ? t("darkModeState") : t("lightMode");
+    }
+
+    function updateLanguageText() {
+      document.documentElement.lang = state.language;
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        element.textContent = t(element.dataset.i18n);
+      });
+      document.querySelector(".side-menu")?.setAttribute("aria-label", t("menuLabel"));
+      document.getElementById("mobileDrawer")?.setAttribute("aria-label", t("menuLabel"));
+      document.getElementById("mobileMenuToggle")?.setAttribute("aria-label", t("openMenu"));
+      document.getElementById("drawerClose")?.setAttribute("aria-label", t("closeMenu"));
+      document.getElementById("settingsToggle")?.setAttribute("aria-label", t("settings"));
+      document.getElementById("themeToggle")?.setAttribute("aria-label", t("toggleTheme"));
+      document.getElementById("themeToggle")?.setAttribute("title", t("toggleTheme"));
+      const languageLabel = document.getElementById("languageSettingLabel");
+      if (languageLabel) languageLabel.textContent = state.language === "ko" ? "KO" : "EN";
+      updateThemeSettingLabel();
+      updateCurrencyButton();
+    }
+
+    function setLanguage(language) {
+      state.language = language === "en" ? "en" : "ko";
+      localStorage.setItem("dashboard-language", state.language);
+      updateLanguageText();
+      renderFilters();
+      renderIndustries();
+    }
+
+    function initLanguage() {
+      state.language = localStorage.getItem("dashboard-language") === "en" ? "en" : "ko";
+      updateLanguageText();
+    }
+
+    function updateReorderControls() {
+      document.querySelector(".sidebar")?.classList.toggle("is-reordering", state.isReordering);
+      document.getElementById("reorderActions").hidden = !state.isReordering;
+    }
+
+    function startMenuReorder() {
+      state.isReordering = true;
+      state.draftIndustryOrder = visibleIndustries();
+      setSettingsOpen(false);
+      updateReorderControls();
+      renderFilters();
+    }
+
+    function cancelMenuReorder() {
+      state.isReordering = false;
+      state.draftIndustryOrder = null;
+      updateReorderControls();
+      renderFilters();
+    }
+
+    function saveMenuReorder() {
+      const order = currentMenuOrder();
+      localStorage.setItem("dashboard-industry-order", JSON.stringify(order));
+      state.isReordering = false;
+      state.draftIndustryOrder = null;
+      updateReorderControls();
+      renderFilters();
+      renderIndustries();
+    }
+
+    function initSettings() {
+      const settings = document.getElementById("menuSettings");
+      const toggle = document.getElementById("settingsToggle");
+      toggle.addEventListener("click", () => {
+        setSettingsOpen(toggle.getAttribute("aria-expanded") !== "true");
+      });
+      document.addEventListener("click", (event) => {
+        if (!settings.contains(event.target)) setSettingsOpen(false);
+      });
+      document.querySelector('[data-setting-action="theme"]').addEventListener("click", () => {
+        animateThemeToggle(document.body.classList.contains("theme-dark") ? "light" : "dark");
+      });
+      document.querySelector('[data-setting-action="language"]').addEventListener("click", () => {
+        setLanguage(state.language === "ko" ? "en" : "ko");
+      });
+      document.querySelector('[data-setting-action="reorder"]').addEventListener("click", startMenuReorder);
+      document.getElementById("reorderCancel").addEventListener("click", cancelMenuReorder);
+      document.getElementById("reorderSave").addEventListener("click", saveMenuReorder);
+      updateReorderControls();
+    }
+
+    function applyTheme(theme) {
+      const isDark = theme === "dark";
+      document.body.classList.toggle("theme-dark", isDark);
+      localStorage.setItem("dashboard-theme", isDark ? "dark" : "light");
+      updateThemeSettingLabel();
+    }
+
+    function animateThemeToggle(nextTheme) {
+      const toggle = document.getElementById("themeToggle");
+      const isDark = document.body.classList.contains("theme-dark");
+      const outgoing = toggle.querySelector(isDark ? ".theme-icon-sun" : ".theme-icon-moon");
+      const incoming = toggle.querySelector(isDark ? ".theme-icon-moon" : ".theme-icon-sun");
+      toggle.disabled = true;
+      toggle.querySelectorAll(".theme-icon").forEach((icon) => {
+        icon.classList.remove("is-exiting", "is-entering");
+      });
+      void toggle.offsetWidth;
+      outgoing.classList.add("is-exiting");
+      incoming.classList.add("is-entering");
+      applyTheme(nextTheme);
+      window.setTimeout(() => {
+        outgoing.classList.remove("is-exiting");
+        incoming.classList.remove("is-entering");
+        toggle.disabled = false;
+      }, 540);
+    }
+
+    function initTheme() {
+      const saved = localStorage.getItem("dashboard-theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(saved || (prefersDark ? "dark" : "light"));
+      requestAnimationFrame(() => document.body.classList.add("theme-ready"));
+      document.getElementById("themeToggle").addEventListener("click", () => {
+        animateThemeToggle(document.body.classList.contains("theme-dark") ? "light" : "dark");
+      });
+    }
+
+    function updateCurrencyButton() {
+      const toggle = document.getElementById("currencyToggle");
+      if (!toggle) return;
+      const isKrw = state.currency === "krw";
+      toggle.setAttribute("aria-label", isKrw ? t("showUsd") : t("showKrw"));
+      toggle.setAttribute("title", isKrw ? t("showUsd") : t("showKrw"));
+    }
+
+    function applyCurrency(currency) {
+      state.currency = currency === "krw" ? "krw" : "usd";
+      document.body.classList.toggle("currency-krw", state.currency === "krw");
+      document.body.classList.toggle("currency-usd", state.currency === "usd");
+      localStorage.setItem("dashboard-currency", state.currency);
+      updateCurrencyButton();
+    }
+
+    function initCurrency() {
+      applyCurrency(localStorage.getItem("dashboard-currency") === "krw" ? "krw" : "usd");
+      document.getElementById("currencyToggle").addEventListener("click", () => {
+        applyCurrency(state.currency === "usd" ? "krw" : "usd");
+        renderIndustries();
+      });
+    }
+
+    function setDrawerOpen(open) {
+      const drawer = document.getElementById("mobileDrawer");
+      const toggle = document.getElementById("mobileMenuToggle");
+      const backdrop = document.getElementById("drawerBackdrop");
+      if (!drawer || !toggle || !backdrop) return;
+      const shouldOpen = Boolean(open && mobileDrawerQuery.matches);
+      document.body.classList.toggle("drawer-open", shouldOpen);
+      toggle.setAttribute("aria-expanded", String(shouldOpen));
+      drawer.setAttribute("aria-hidden", String(mobileDrawerQuery.matches && !shouldOpen));
+      backdrop.hidden = !shouldOpen;
+      if (shouldOpen) {
+        document.getElementById("drawerClose")?.focus({ preventScroll: true });
+      }
+    }
+
+    function closeDrawerOnMobile() {
+      if (mobileDrawerQuery.matches) setDrawerOpen(false);
+    }
+
+    function initMobileDrawer() {
+      const toggle = document.getElementById("mobileMenuToggle");
+      const close = document.getElementById("drawerClose");
+      const backdrop = document.getElementById("drawerBackdrop");
+      toggle?.addEventListener("click", () => {
+        setDrawerOpen(!document.body.classList.contains("drawer-open"));
+      });
+      close?.addEventListener("click", () => setDrawerOpen(false));
+      backdrop?.addEventListener("click", () => setDrawerOpen(false));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setDrawerOpen(false);
+      });
+      if (mobileDrawerQuery.addEventListener) {
+        mobileDrawerQuery.addEventListener("change", () => setDrawerOpen(false));
+      } else if (mobileDrawerQuery.addListener) {
+        mobileDrawerQuery.addListener(() => setDrawerOpen(false));
+      }
+      setDrawerOpen(false);
+    }
+
+    function updateActiveFromScroll() {
+      const sections = [...document.querySelectorAll("[data-industry-section]")];
+      if (!sections.length) return;
+      const anchor = window.innerHeight * 0.5;
+      let current = sections[0];
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= anchor) {
+          current = section;
+        } else {
+          break;
+        }
+      }
+      setActiveIndustry(current.dataset.industryName);
+    }
+
+    function onScrollSpy() {
+      if (scrollSpyFrame) return;
+      scrollSpyFrame = requestAnimationFrame(() => {
+        scrollSpyFrame = 0;
+        updateActiveFromScroll();
+      });
+    }
+
+    window.addEventListener("scroll", onScrollSpy, { passive: true });
+    window.addEventListener("resize", onScrollSpy);
+
+    function render() {
+      renderFilters();
+      renderIndustries();
+    }
+
+    initLanguage();
+    initSettings();
+    initTheme();
+    initCurrency();
+    initMobileDrawer();
+    render();
+  </script>
+</body>
+</html>
