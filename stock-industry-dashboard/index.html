@@ -15192,7 +15192,7 @@
 
     function initMetricRows() {
       document.querySelectorAll("[data-metric-row]").forEach((row) => {
-        row.addEventListener("click", () => openMetricDetail(row.dataset.metricId));
+        row.addEventListener("click", () => toggleMetricRow(row));
       });
       initFavoriteButtons();
       initNoteButtons();
