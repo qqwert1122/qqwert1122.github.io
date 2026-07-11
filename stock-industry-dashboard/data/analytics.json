@@ -1,8 +1,82 @@
 {
-  "generated_at": "2026-07-11T17:37:00.049240+00:00",
+  "generated_at": "2026-07-11T23:57:48.831305+00:00",
   "period": "최근 30일",
-  "summary": {},
-  "daily": [],
-  "pages": [],
-  "clicks": []
+  "summary": {
+    "screenPageViews": 1.0,
+    "totalUsers": 1.0,
+    "sessions": 1.0,
+    "eventCount": 27.0
+  },
+  "daily": [
+    {
+      "date": "20260712",
+      "screenPageViews": 1.0,
+      "totalUsers": 1.0
+    }
+  ],
+  "pages": [
+    {
+      "pagePath": "/stock-industry-dashboard/",
+      "screenPageViews": 1.0,
+      "totalUsers": 1.0
+    }
+  ],
+  "clicks": [
+    {
+      "customEvent:element_label": "메뉴 열기",
+      "eventCount": 5.0
+    },
+    {
+      "customEvent:element_label": "← 뒤로",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "브리핑 시간 선택",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "설정",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "시황",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "지표 검색",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "허용",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "‹ 이전 연도 펼치기",
+      "eventCount": 1.0
+    },
+    {
+      "customEvent:element_label": "먼 미래 펼치기 ›",
+      "eventCount": 1.0
+    },
+    {
+      "customEvent:element_label": "미래",
+      "eventCount": 1.0
+    },
+    {
+      "customEvent:element_label": "분석 설정",
+      "eventCount": 1.0
+    },
+    {
+      "customEvent:element_label": "최상단 이동",
+      "eventCount": 1.0
+    },
+    {
+      "customEvent:element_label": "캘린더",
+      "eventCount": 1.0
+    },
+    {
+      "customEvent:element_label": "홈",
+      "eventCount": 1.0
+    }
+  ]
 }
