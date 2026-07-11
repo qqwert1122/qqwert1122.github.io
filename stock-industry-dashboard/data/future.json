@@ -1050,6 +1050,7 @@
       "why_en": "Communications, Earth observation, defense, and logistics data could increasingly rely on space infrastructure.",
       "now": "민간 발사는 이미 일상이 됐고, 수익성 있는 서비스와 발사 비용 안정이 다음 과제입니다.",
       "now_en": "Private launches are already routine; profitable services and stable launch costs are the next test.",
+      "image": "assets/future-images/commercial-space.png",
       "bottleneck": "병목: 수익성·발사 비용",
       "bottleneck_en": "Bottleneck: profitability and launch cost",
       "glossary": [
@@ -1632,6 +1633,7 @@
       "why_en": "Travel costs could fall, and people who cannot drive could move around more easily.",
       "now": "일부 도시는 유료 운행을 시작했지만, 사고 책임과 보험 제도가 확산 속도를 정하고 있습니다.",
       "now_en": "Paid service has started in some cities, but liability and insurance rules still decide how fast it spreads.",
+      "image": "assets/future-images/robotaxi.png",
       "bottleneck": "병목: 규제·보험",
       "bottleneck_en": "Bottleneck: regulation and insurance",
       "glossary": [
@@ -2149,7 +2151,7 @@
           "history_key": "afdc-stations",
           "name": "미국 EV 충전소 수",
           "name_en": "US EV Charging Stations",
-          "display_value": "89,126.0 곳",
+          "display_value": "89,203.0 곳",
           "change_pct": null,
           "change_pct_label": "n/a",
           "change_abs_label": "n/a",
@@ -2165,11 +2167,11 @@
             },
             {
               "date": "2026-07-09",
-              "value": 88990.0
+              "value": 88992.0
             },
             {
-              "date": "2026-07-10",
-              "value": 89126.0
+              "date": "2026-07-11",
+              "value": 89203.0
             }
           ]
         }
@@ -2942,6 +2944,7 @@
       "why_en": "It could change the cost and speed of knowledge work such as writing, coding, research, and customer support.",
       "now": "뛰어난 AI 서비스는 이미 쓰이고 있지만, 장기 계획과 검증 가능한 추론에서는 아직 불안정합니다.",
       "now_en": "Strong AI services are already in use, but long planning and reliably checked reasoning are still uneven.",
+      "image": "assets/future-images/agi-2029.png",
       "bottleneck": "병목: HBM 공급·전력·데이터·추론 신뢰성",
       "bottleneck_en": "Bottleneck: HBM supply, power, data, and reasoning reliability",
       "glossary": [
@@ -4414,6 +4417,7 @@
       "why_en": "If they take over repetitive or dangerous work, labor cost, safety, and aging issues could change together.",
       "now": "시제품은 빠르게 늘고 있지만, 긴 시간 일하는 손재주와 낮은 제조원가가 아직 핵심 과제입니다.",
       "now_en": "Prototypes are growing quickly, but durable dexterity and low manufacturing cost remain the hard parts.",
+      "image": "assets/future-images/humanoid-robots.png",
       "bottleneck": "병목: 손재주·배터리·가격",
       "bottleneck_en": "Bottleneck: dexterity, batteries, and cost",
       "glossary": [
@@ -5471,6 +5475,7 @@
       "why_en": "If medicine shifts from treatment to prevention and slowing aging, insurance, health costs, and labor markets could change.",
       "now": "신약과 유전자 치료는 늘고 있지만, 노화 전체를 늦췄다는 사람 대상 증거는 아직 제한적입니다.",
       "now_en": "New drugs and gene therapies are increasing, but human evidence for slowing overall aging is still limited.",
+      "image": "assets/future-images/longevity-escape.png",
       "bottleneck": "병목: 장기 임상 근거",
       "bottleneck_en": "Bottleneck: long-term clinical proof",
       "glossary": [
@@ -6118,6 +6123,7 @@
       "why_en": "It could expand options for rare and hard-to-treat diseases, with markets built around long-lasting treatments.",
       "now": "일부 치료제는 승인됐지만, 가격과 안전성, 대량 생산이 넓은 보급의 장벽입니다.",
       "now_en": "Some therapies are approved, but cost, safety, and large-scale production still limit broad use.",
+      "image": "assets/future-images/gene-therapy-mainstream.png",
       "bottleneck": "병목: 가격·안전성",
       "bottleneck_en": "Bottleneck: cost and safety",
       "glossary": [
@@ -6765,6 +6771,7 @@
       "why_en": "If it works, it could produce large amounts of low-carbon power with much less fuel concern.",
       "now": "실험 성과는 나왔지만, 전기를 싸게 계속 생산하는 발전소 단계까지는 아직 검증이 필요합니다.",
       "now_en": "Experiments have improved, but cheap and continuous power-plant operation still needs proof.",
+      "image": "assets/future-images/fusion-power.png",
       "bottleneck": "병목: 순발전·경제성",
       "bottleneck_en": "Bottleneck: net power and economics",
       "glossary": [
@@ -7151,6 +7158,7 @@
       "why_en": "It could change the basic rules of work, education, assets, and national competitiveness.",
       "now": "지금은 강한 AI와 인프라 투자가 빠르게 커지는 단계이며, 특이점 자체는 아직 먼 예측입니다.",
       "now_en": "Today, powerful AI and infrastructure investment are growing quickly, but the singularity itself remains a distant forecast.",
+      "image": "assets/future-images/singularity-2045.png",
       "bottleneck": "병목: AGI 이후 경로의 불확실성",
       "bottleneck_en": "Bottleneck: uncertainty after AGI",
       "glossary": [
