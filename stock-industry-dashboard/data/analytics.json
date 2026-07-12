@@ -1,81 +1,105 @@
 {
-  "generated_at": "2026-07-11T23:57:48.831305+00:00",
+  "generated_at": "2026-07-12T16:10:55.283589+00:00",
   "period": "최근 30일",
   "summary": {
-    "screenPageViews": 1.0,
-    "totalUsers": 1.0,
-    "sessions": 1.0,
-    "eventCount": 27.0
+    "screenPageViews": 3.0,
+    "totalUsers": 2.0,
+    "sessions": 3.0,
+    "eventCount": 88.0
   },
   "daily": [
     {
       "date": "20260712",
-      "screenPageViews": 1.0,
-      "totalUsers": 1.0
+      "screenPageViews": 3.0,
+      "totalUsers": 2.0
     }
   ],
   "pages": [
     {
       "pagePath": "/stock-industry-dashboard/",
-      "screenPageViews": 1.0,
-      "totalUsers": 1.0
+      "screenPageViews": 3.0,
+      "totalUsers": 2.0
     }
   ],
   "clicks": [
+    {
+      "customEvent:element_label": "브리핑 시간 선택",
+      "eventCount": 11.0
+    },
+    {
+      "customEvent:element_label": "주요 시그널 히스토리",
+      "eventCount": 9.0
+    },
     {
       "customEvent:element_label": "메뉴 열기",
       "eventCount": 5.0
     },
     {
       "customEvent:element_label": "← 뒤로",
-      "eventCount": 2.0
+      "eventCount": 4.0
     },
     {
-      "customEvent:element_label": "브리핑 시간 선택",
-      "eventCount": 2.0
+      "customEvent:element_label": "국가 필터",
+      "eventCount": 4.0
+    },
+    {
+      "customEvent:element_label": "미국매크로 · 시장지수 S&P 500 7,575.4 지수",
+      "eventCount": 4.0
     },
     {
       "customEvent:element_label": "설정",
-      "eventCount": 2.0
+      "eventCount": 4.0
     },
     {
       "customEvent:element_label": "시황",
-      "eventCount": 2.0
+      "eventCount": 3.0
+    },
+    {
+      "customEvent:element_label": "이전 브리핑",
+      "eventCount": 3.0
     },
     {
       "customEvent:element_label": "지표 검색",
-      "eventCount": 2.0
+      "eventCount": 3.0
     },
     {
       "customEvent:element_label": "허용",
+      "eventCount": 3.0
+    },
+    {
+      "customEvent:element_label": "홈",
+      "eventCount": 3.0
+    },
+    {
+      "customEvent:element_label": "다음 브리핑",
       "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "다크모드 전환",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "미래",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "원/달러 환율",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "캘린더",
+      "eventCount": 2.0
+    },
+    {
+      "customEvent:element_label": "VIX",
+      "eventCount": 1.0
     },
     {
       "customEvent:element_label": "‹ 이전 연도 펼치기",
       "eventCount": 1.0
     },
     {
-      "customEvent:element_label": "먼 미래 펼치기 ›",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "미래",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "분석 설정",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "최상단 이동",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "캘린더",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "홈",
+      "customEvent:element_label": "건설/부동산",
       "eventCount": 1.0
     }
   ]
