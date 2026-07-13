@@ -8902,20 +8902,20 @@
               {
                 "symbol": "000660.KS",
                 "label": "SK하이닉스(000660.KS)",
-                "label_en": "SK(000660.KS)",
+                "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "2,180,000원",
-                "change_pct": -0.2744739249771255,
-                "change_pct_label": "-0.3%"
+                "display_value": "1,924,000원",
+                "change_pct": -11.743119266055047,
+                "change_pct_label": "-11.7%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
-                "label_en": "(005930.KS)",
+                "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "285,000원",
-                "change_pct": 2.517985611510798,
-                "change_pct_label": "+2.5%"
+                "display_value": "264,000원",
+                "change_pct": -7.36842105263158,
+                "change_pct_label": "-7.4%"
               },
               {
                 "symbol": "MU",
@@ -12656,11 +12656,11 @@
         {
           "symbol": "005930.KS",
           "label": "삼성전자(005930.KS)",
-          "label_en": "(005930.KS)",
+          "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "285,000원",
-          "change_pct": 2.517985611510798,
-          "change_pct_label": "+2.5%"
+          "display_value": "264,000원",
+          "change_pct": -7.36842105263158,
+          "change_pct_label": "-7.4%"
         }
       ],
       "breakdown": {
@@ -24837,7 +24837,17 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://internationalaisafetyreport.org/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://openai.com/index/updating-our-preparedness-framework/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -24873,6 +24883,11 @@
     {
       "kind": "reading_link",
       "id": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-701-47%252FCRDs%252Fcac47_crd04x.pdf",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://bostondynamics.com/atlas/",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -25007,7 +25022,17 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.fusionindustryassociation.org/about-fusion/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.iaea.org/topics/fusion-energy",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fusionindustryassociation.org/fusion-industry-reports/",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -25023,6 +25048,11 @@
     {
       "kind": "reading_link",
       "id": "https://www.oecd.org/en/publications/oecd-employment-outlook-2023_08785bba-en.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
