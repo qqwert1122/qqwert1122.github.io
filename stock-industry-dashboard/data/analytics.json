@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-17T23:56:25.699142+00:00",
+  "generated_at": "2026-07-18T23:57:03.482464+00:00",
   "period": "최근 30일",
   "summary": {
-    "screenPageViews": 8.0,
+    "screenPageViews": 9.0,
     "totalUsers": 4.0,
-    "sessions": 7.0,
-    "eventCount": 132.0
+    "sessions": 8.0,
+    "eventCount": 144.0
   },
   "daily": [
     {
@@ -22,19 +22,24 @@
       "date": "20260717",
       "screenPageViews": 1.0,
       "totalUsers": 1.0
+    },
+    {
+      "date": "20260718",
+      "screenPageViews": 1.0,
+      "totalUsers": 1.0
     }
   ],
   "pages": [
     {
       "pagePath": "/stock-industry-dashboard/",
-      "screenPageViews": 8.0,
+      "screenPageViews": 9.0,
       "totalUsers": 4.0
     }
   ],
   "clicks": [
     {
       "customEvent:element_label": "브리핑 시간 선택",
-      "eventCount": 13.0
+      "eventCount": 14.0
     },
     {
       "customEvent:element_label": "주요 시그널 히스토리",
@@ -58,6 +63,10 @@
     },
     {
       "customEvent:element_label": "이전 브리핑",
+      "eventCount": 5.0
+    },
+    {
+      "customEvent:element_label": "지표 상세 닫기",
       "eventCount": 5.0
     },
     {
@@ -101,15 +110,11 @@
       "eventCount": 2.0
     },
     {
+      "customEvent:element_label": "금리",
+      "eventCount": 2.0
+    },
+    {
       "customEvent:element_label": "다음 브리핑",
-      "eventCount": 2.0
-    },
-    {
-      "customEvent:element_label": "다크모드 전환",
-      "eventCount": 2.0
-    },
-    {
-      "customEvent:element_label": "원/달러 환율",
       "eventCount": 2.0
     }
   ]
