@@ -1,44 +1,8 @@
 {
   "version": 1,
-  "updated_at": "2026-07-20T15:39:53+09:00",
+  "updated_at": "2026-07-20T18:48:51+09:00",
   "count": 60,
   "runs": [
-    {
-      "run_id": "2026-07-16T07:30:10+09:00",
-      "run_type": "briefing-intraday",
-      "started_at": "2026-07-16T07:30:10+09:00",
-      "finished_at": "2026-07-16T07:30:13+09:00",
-      "duration_ms": 2907,
-      "summary": {
-        "success": 2,
-        "no_new_data": 0,
-        "failed": 0
-      },
-      "records": [
-        {
-          "source": "미래 타임라인",
-          "endpoint": "data/future/technologies.yaml",
-          "status": "success",
-          "message": "15개 기술 타임라인 생성",
-          "metric_count": 15,
-          "new_data_count": 0,
-          "started_at": "2026-07-16T07:30:12+09:00",
-          "duration_ms": 585,
-          "http_status": null
-        },
-        {
-          "source": "AI 요약",
-          "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
-          "status": "success",
-          "message": "카드 생성: 유의미한 변화: 이더리움 (Gemini 호출)",
-          "metric_count": 12,
-          "new_data_count": 1,
-          "started_at": "2026-07-16T07:30:10+09:00",
-          "duration_ms": 2907,
-          "http_status": null
-        }
-      ]
-    },
     {
       "run_id": "2026-07-16T08:57:08+09:00",
       "run_type": "full",
@@ -3369,6 +3333,42 @@
           "new_data_count": 1,
           "started_at": "2026-07-20T15:37:44+09:00",
           "duration_ms": 128555,
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "run_id": "2026-07-20T18:46:01+09:00",
+      "run_type": "briefing-close",
+      "started_at": "2026-07-20T18:46:01+09:00",
+      "finished_at": "2026-07-20T18:48:51+09:00",
+      "duration_ms": 170526,
+      "summary": {
+        "success": 0,
+        "no_new_data": 2,
+        "failed": 0
+      },
+      "records": [
+        {
+          "source": "미래 타임라인",
+          "endpoint": "data/future/technologies.yaml",
+          "status": "no_new_data",
+          "message": "15개 기술 타임라인 생성, YAML 경고 55건",
+          "metric_count": 15,
+          "new_data_count": 0,
+          "started_at": "2026-07-20T18:46:01+09:00",
+          "duration_ms": 170518,
+          "http_status": null
+        },
+        {
+          "source": "AI 요약",
+          "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+          "status": "no_new_data",
+          "message": "카드 생성 스킵: 직전 카드 이후 지표 변화 없음",
+          "metric_count": 0,
+          "new_data_count": 0,
+          "started_at": "2026-07-20T18:46:01+09:00",
+          "duration_ms": 170526,
           "http_status": null
         }
       ]
