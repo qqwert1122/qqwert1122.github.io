@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-18T23:57:03.482464+00:00",
+  "generated_at": "2026-07-20T00:03:50.449125+00:00",
   "period": "최근 30일",
   "summary": {
-    "screenPageViews": 9.0,
+    "screenPageViews": 10.0,
     "totalUsers": 4.0,
-    "sessions": 8.0,
-    "eventCount": 144.0
+    "sessions": 9.0,
+    "eventCount": 150.0
   },
   "daily": [
     {
@@ -27,12 +27,17 @@
       "date": "20260718",
       "screenPageViews": 1.0,
       "totalUsers": 1.0
+    },
+    {
+      "date": "20260720",
+      "screenPageViews": 1.0,
+      "totalUsers": 1.0
     }
   ],
   "pages": [
     {
       "pagePath": "/stock-industry-dashboard/",
-      "screenPageViews": 9.0,
+      "screenPageViews": 10.0,
       "totalUsers": 4.0
     }
   ],
@@ -62,11 +67,11 @@
       "eventCount": 6.0
     },
     {
-      "customEvent:element_label": "이전 브리핑",
-      "eventCount": 5.0
+      "customEvent:element_label": "지표 상세 닫기",
+      "eventCount": 6.0
     },
     {
-      "customEvent:element_label": "지표 상세 닫기",
+      "customEvent:element_label": "이전 브리핑",
       "eventCount": 5.0
     },
     {
@@ -82,6 +87,10 @@
       "eventCount": 4.0
     },
     {
+      "customEvent:element_label": "홈",
+      "eventCount": 4.0
+    },
+    {
       "customEvent:element_label": "미래",
       "eventCount": 3.0
     },
@@ -91,10 +100,6 @@
     },
     {
       "customEvent:element_label": "지표 검색",
-      "eventCount": 3.0
-    },
-    {
-      "customEvent:element_label": "홈",
       "eventCount": 3.0
     },
     {
