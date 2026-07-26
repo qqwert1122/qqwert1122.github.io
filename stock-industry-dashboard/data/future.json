@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-25",
+  "updated_at": "2026-07-26",
   "categories": [
     "전체",
     "AI",
@@ -5475,7 +5475,7 @@
           "history_key": "afdc-stations",
           "name": "미국 EV 충전소 수",
           "name_en": "US EV Charging Stations",
-          "display_value": "89,345.0 곳",
+          "display_value": "89,398.0 곳",
           "change_pct": null,
           "change_pct_label": "n/a",
           "change_abs_label": "n/a",
@@ -5548,6 +5548,10 @@
             {
               "date": "2026-07-25",
               "value": 89345.0
+            },
+            {
+              "date": "2026-07-26",
+              "value": 89398.0
             }
           ]
         }
