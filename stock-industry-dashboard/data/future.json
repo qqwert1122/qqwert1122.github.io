@@ -8546,18 +8546,18 @@
                 "label": "SK하이닉스(000660.KS)",
                 "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "1,759,000원",
-                "change_pct": 0.0,
-                "change_pct_label": "+0.0%"
+                "display_value": "1,816,000원",
+                "change_pct": 3.240477544059117,
+                "change_pct_label": "+3.2%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
                 "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "248,750원",
-                "change_pct": -0.30060120240480437,
-                "change_pct_label": "-0.3%"
+                "display_value": "254,000원",
+                "change_pct": 1.8036072144288484,
+                "change_pct_label": "+1.8%"
               },
               {
                 "symbol": "MU",
@@ -12312,9 +12312,9 @@
           "label": "삼성전자(005930.KS)",
           "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "248,750원",
-          "change_pct": -0.30060120240480437,
-          "change_pct_label": "-0.3%"
+          "display_value": "254,000원",
+          "change_pct": 1.8036072144288484,
+          "change_pct_label": "+1.8%"
         }
       ],
       "breakdown": {
@@ -24536,11 +24536,6 @@
     },
     {
       "kind": "reading_link",
-      "id": "https://www.iso.org/committee/5915511.html",
-      "message": "링크 점검이 2회 연속 실패했습니다."
-    },
-    {
-      "kind": "reading_link",
       "id": "https://www.nia.nih.gov/health/what-do-we-know-about-healthy-aging",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -24707,6 +24702,11 @@
     {
       "kind": "reading_link",
       "id": "https://www.congress.gov/crs_external_products/R/HTML/R47551.web.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://nap.nationalacademies.org/catalog/25762/reflecting-sunlight-recommendations-for-solar-geoengineering-research-and-research-governance",
       "message": "링크 점검이 2회 연속 실패했습니다."
     }
   ]
