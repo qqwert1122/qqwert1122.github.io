@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-26",
+  "updated_at": "2026-07-27",
   "categories": [
     "전체",
     "AI",
@@ -3189,211 +3189,6 @@
       ],
       "metrics": [
         {
-          "id": "d5ab88b67d0f",
-          "history_key": "launchlibrary-0",
-          "name": "글로벌 우주 발사 건수",
-          "name_en": "Global Space Launch Count",
-          "display_value": "29.00 건",
-          "change_pct": 26.086956521739136,
-          "change_pct_label": "+26.1%",
-          "change_abs_label": "+6.00 건",
-          "unit": "건",
-          "history": [
-            {
-              "date": "2022-07-01",
-              "value": 18.0
-            },
-            {
-              "date": "2022-08-01",
-              "value": 19.0
-            },
-            {
-              "date": "2022-09-01",
-              "value": 17.0
-            },
-            {
-              "date": "2022-10-01",
-              "value": 23.0
-            },
-            {
-              "date": "2022-11-01",
-              "value": 20.0
-            },
-            {
-              "date": "2022-12-01",
-              "value": 18.0
-            },
-            {
-              "date": "2023-01-01",
-              "value": 16.0
-            },
-            {
-              "date": "2023-02-01",
-              "value": 12.0
-            },
-            {
-              "date": "2023-03-01",
-              "value": 26.0
-            },
-            {
-              "date": "2023-04-01",
-              "value": 13.0
-            },
-            {
-              "date": "2023-05-01",
-              "value": 21.0
-            },
-            {
-              "date": "2023-06-01",
-              "value": 15.0
-            },
-            {
-              "date": "2023-07-01",
-              "value": 18.0
-            },
-            {
-              "date": "2023-08-01",
-              "value": 23.0
-            },
-            {
-              "date": "2023-09-01",
-              "value": 24.0
-            },
-            {
-              "date": "2023-10-01",
-              "value": 20.0
-            },
-            {
-              "date": "2023-11-01",
-              "value": 17.0
-            },
-            {
-              "date": "2023-12-01",
-              "value": 30.0
-            },
-            {
-              "date": "2024-01-01",
-              "value": 23.0
-            },
-            {
-              "date": "2024-02-01",
-              "value": 19.0
-            },
-            {
-              "date": "2024-03-01",
-              "value": 22.0
-            },
-            {
-              "date": "2024-04-01",
-              "value": 19.0
-            },
-            {
-              "date": "2024-05-01",
-              "value": 28.0
-            },
-            {
-              "date": "2024-06-01",
-              "value": 20.0
-            },
-            {
-              "date": "2024-07-01",
-              "value": 13.0
-            },
-            {
-              "date": "2024-08-01",
-              "value": 22.0
-            },
-            {
-              "date": "2024-09-01",
-              "value": 23.0
-            },
-            {
-              "date": "2024-10-01",
-              "value": 21.0
-            },
-            {
-              "date": "2024-11-01",
-              "value": 32.0
-            },
-            {
-              "date": "2024-12-01",
-              "value": 31.0
-            },
-            {
-              "date": "2025-01-01",
-              "value": 22.0
-            },
-            {
-              "date": "2025-02-01",
-              "value": 22.0
-            },
-            {
-              "date": "2025-03-01",
-              "value": 27.0
-            },
-            {
-              "date": "2025-04-01",
-              "value": 27.0
-            },
-            {
-              "date": "2025-05-01",
-              "value": 30.0
-            },
-            {
-              "date": "2025-06-01",
-              "value": 26.0
-            },
-            {
-              "date": "2025-07-01",
-              "value": 24.0
-            },
-            {
-              "date": "2025-08-01",
-              "value": 30.0
-            },
-            {
-              "date": "2025-09-01",
-              "value": 32.0
-            },
-            {
-              "date": "2025-10-01",
-              "value": 28.0
-            },
-            {
-              "date": "2025-11-01",
-              "value": 32.0
-            },
-            {
-              "date": "2025-12-01",
-              "value": 41.0
-            },
-            {
-              "date": "2026-01-01",
-              "value": 25.0
-            },
-            {
-              "date": "2026-02-01",
-              "value": 19.0
-            },
-            {
-              "date": "2026-03-01",
-              "value": 30.0
-            },
-            {
-              "date": "2026-04-01",
-              "value": 33.0
-            },
-            {
-              "date": "2026-05-01",
-              "value": 23.0
-            },
-            {
-              "date": "2026-06-01",
-              "value": 29.0
-            }
-          ]
-        },
-        {
           "id": "f23893f07b0e",
           "history_key": "equity-RKLB",
           "name": "Rocket Lab(RKLB)",
@@ -4081,211 +3876,6 @@
             "revisions": [],
             "ladder_link": null,
             "metrics": [
-              {
-                "id": "d5ab88b67d0f",
-                "history_key": "launchlibrary-0",
-                "name": "글로벌 우주 발사 건수",
-                "name_en": "Global Space Launch Count",
-                "display_value": "29.00 건",
-                "change_pct": 26.086956521739136,
-                "change_pct_label": "+26.1%",
-                "change_abs_label": "+6.00 건",
-                "unit": "건",
-                "history": [
-                  {
-                    "date": "2022-07-01",
-                    "value": 18.0
-                  },
-                  {
-                    "date": "2022-08-01",
-                    "value": 19.0
-                  },
-                  {
-                    "date": "2022-09-01",
-                    "value": 17.0
-                  },
-                  {
-                    "date": "2022-10-01",
-                    "value": 23.0
-                  },
-                  {
-                    "date": "2022-11-01",
-                    "value": 20.0
-                  },
-                  {
-                    "date": "2022-12-01",
-                    "value": 18.0
-                  },
-                  {
-                    "date": "2023-01-01",
-                    "value": 16.0
-                  },
-                  {
-                    "date": "2023-02-01",
-                    "value": 12.0
-                  },
-                  {
-                    "date": "2023-03-01",
-                    "value": 26.0
-                  },
-                  {
-                    "date": "2023-04-01",
-                    "value": 13.0
-                  },
-                  {
-                    "date": "2023-05-01",
-                    "value": 21.0
-                  },
-                  {
-                    "date": "2023-06-01",
-                    "value": 15.0
-                  },
-                  {
-                    "date": "2023-07-01",
-                    "value": 18.0
-                  },
-                  {
-                    "date": "2023-08-01",
-                    "value": 23.0
-                  },
-                  {
-                    "date": "2023-09-01",
-                    "value": 24.0
-                  },
-                  {
-                    "date": "2023-10-01",
-                    "value": 20.0
-                  },
-                  {
-                    "date": "2023-11-01",
-                    "value": 17.0
-                  },
-                  {
-                    "date": "2023-12-01",
-                    "value": 30.0
-                  },
-                  {
-                    "date": "2024-01-01",
-                    "value": 23.0
-                  },
-                  {
-                    "date": "2024-02-01",
-                    "value": 19.0
-                  },
-                  {
-                    "date": "2024-03-01",
-                    "value": 22.0
-                  },
-                  {
-                    "date": "2024-04-01",
-                    "value": 19.0
-                  },
-                  {
-                    "date": "2024-05-01",
-                    "value": 28.0
-                  },
-                  {
-                    "date": "2024-06-01",
-                    "value": 20.0
-                  },
-                  {
-                    "date": "2024-07-01",
-                    "value": 13.0
-                  },
-                  {
-                    "date": "2024-08-01",
-                    "value": 22.0
-                  },
-                  {
-                    "date": "2024-09-01",
-                    "value": 23.0
-                  },
-                  {
-                    "date": "2024-10-01",
-                    "value": 21.0
-                  },
-                  {
-                    "date": "2024-11-01",
-                    "value": 32.0
-                  },
-                  {
-                    "date": "2024-12-01",
-                    "value": 31.0
-                  },
-                  {
-                    "date": "2025-01-01",
-                    "value": 22.0
-                  },
-                  {
-                    "date": "2025-02-01",
-                    "value": 22.0
-                  },
-                  {
-                    "date": "2025-03-01",
-                    "value": 27.0
-                  },
-                  {
-                    "date": "2025-04-01",
-                    "value": 27.0
-                  },
-                  {
-                    "date": "2025-05-01",
-                    "value": 30.0
-                  },
-                  {
-                    "date": "2025-06-01",
-                    "value": 26.0
-                  },
-                  {
-                    "date": "2025-07-01",
-                    "value": 24.0
-                  },
-                  {
-                    "date": "2025-08-01",
-                    "value": 30.0
-                  },
-                  {
-                    "date": "2025-09-01",
-                    "value": 32.0
-                  },
-                  {
-                    "date": "2025-10-01",
-                    "value": 28.0
-                  },
-                  {
-                    "date": "2025-11-01",
-                    "value": 32.0
-                  },
-                  {
-                    "date": "2025-12-01",
-                    "value": 41.0
-                  },
-                  {
-                    "date": "2026-01-01",
-                    "value": 25.0
-                  },
-                  {
-                    "date": "2026-02-01",
-                    "value": 19.0
-                  },
-                  {
-                    "date": "2026-03-01",
-                    "value": 30.0
-                  },
-                  {
-                    "date": "2026-04-01",
-                    "value": 33.0
-                  },
-                  {
-                    "date": "2026-05-01",
-                    "value": 23.0
-                  },
-                  {
-                    "date": "2026-06-01",
-                    "value": 29.0
-                  }
-                ]
-              },
               {
                 "id": "f23893f07b0e",
                 "history_key": "equity-RKLB",
@@ -5475,7 +5065,7 @@
           "history_key": "afdc-stations",
           "name": "미국 EV 충전소 수",
           "name_en": "US EV Charging Stations",
-          "display_value": "89,398.0 곳",
+          "display_value": "89,404.0 곳",
           "change_pct": null,
           "change_pct_label": "n/a",
           "change_abs_label": "n/a",
@@ -5551,7 +5141,7 @@
             },
             {
               "date": "2026-07-26",
-              "value": 89398.0
+              "value": 89404.0
             }
           ]
         }
@@ -24843,5 +24433,266 @@
     "timeline_start": 2026,
     "timeline_end": 2045
   },
-  "warnings": []
+  "warnings": [
+    {
+      "kind": "reading_link",
+      "id": "https://www.oecd.org/en/publications/handbook-on-measuring-the-space-economy-2nd-edition_8bfef437-en.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fcc.gov/space",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nesdis.noaa.gov/commercial-space/regulatory-affairs",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nhtsa.gov/vehicle-safety/automated-vehicles-safety",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.transportation.gov/AV",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-06/ADS-SGO-Report-June-2022.pdf",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.rand.org/pubs/research_reports/RR1478.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://waymo.com/safety/methodologies/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.transportation.gov/av/avcp",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.transportation.gov/briefing-room/advanced-air-mobility-national-strategy-2025",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://openai.com/index/updating-our-preparedness-framework/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nccoe.nist.gov/projects/implementations/migration-post-quantum-cryptography",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nsa.gov/Cybersecurity/Post-Quantum-Cybersecurity-Resources/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://registry.khronos.org/OpenXR/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.oecd.org/en/publications/2026/02/an-overview-of-national-strategies-and-policies-for-immersive-technologies_c1bf93e7.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/food/food-ingredients-packaging/human-food-made-cultured-animal-cells",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/meat/cultivated-meat-and-poultry",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-701-47%252FCRDs%252Fcac47_crd04x.pdf",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.astm.org/get-involved/technical-committees/committee-f45",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/health/what-do-we-know-about-healthy-aging",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/blog/2024/12/bright-future-aging-biology-research",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/gsig",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/dab/nathan-shock-centers-excellence-basic-biology-aging",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/dab/translational-research-branch-and-programs",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/dab/workshops",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/dab/interventions-testing-program-itp/about-itp",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/drugs/drug-development-tool-ddt-qualification-programs/biomarker-qualification-program",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/dab/biological-resources-aging-research",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/labs/lci",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nia.nih.gov/research/dab/division-aging-biology-notices-funding-opportunities",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.gao.gov/products/gao-25-106952",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://braininitiative.nih.gov/about/overview",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/182567/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/120362/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/consumers/consumer-updates/how-gene-therapy-can-cure-or-treat-diseases",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/cellular-gene-therapy-guidances",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/191966/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/113760/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/113768/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.iaea.org/topics/fusion-energy",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.iaea.org/resources/databases/fusion-device-information-system",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.dni.gov/index.php/gt2040-home",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.oecd.org/en/publications/oecd-employment-outlook-2023_08785bba-en.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://openai.com/index/updating-our-preparedness-framework/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.congress.gov/crs-product/R47551",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.congress.gov/crs_external_products/R/HTML/R47551.web.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    }
+  ]
 }
