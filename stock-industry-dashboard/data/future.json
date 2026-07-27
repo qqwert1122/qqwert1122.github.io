@@ -8544,20 +8544,20 @@
               {
                 "symbol": "000660.KS",
                 "label": "SK하이닉스(000660.KS)",
-                "label_en": "SK(000660.KS)",
+                "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
                 "display_value": "1,759,000원",
-                "change_pct": -8.337675872850447,
-                "change_pct_label": "-8.3%"
+                "change_pct": 0.0,
+                "change_pct_label": "+0.0%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
-                "label_en": "(005930.KS)",
+                "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "249,500원",
-                "change_pct": -7.592592592592595,
-                "change_pct_label": "-7.6%"
+                "display_value": "248,750원",
+                "change_pct": -0.30060120240480437,
+                "change_pct_label": "-0.3%"
               },
               {
                 "symbol": "MU",
@@ -12310,11 +12310,11 @@
         {
           "symbol": "005930.KS",
           "label": "삼성전자(005930.KS)",
-          "label_en": "(005930.KS)",
+          "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "249,500원",
-          "change_pct": -7.592592592592595,
-          "change_pct_label": "-7.6%"
+          "display_value": "248,750원",
+          "change_pct": -0.30060120240480437,
+          "change_pct_label": "-0.3%"
         }
       ],
       "breakdown": {
@@ -24536,6 +24536,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.iso.org/committee/5915511.html",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.nia.nih.gov/health/what-do-we-know-about-healthy-aging",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -24607,6 +24612,16 @@
     {
       "kind": "reading_link",
       "id": "https://www.fda.gov/media/182567/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-neuroethics-enabling-and-enhancing-neuroscience",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
