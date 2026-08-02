@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-01T00:07:25.041513+00:00",
+  "generated_at": "2026-08-02T00:00:01.326040+00:00",
   "period": "최근 30일",
   "summary": {
-    "screenPageViews": 15.0,
+    "screenPageViews": 16.0,
     "totalUsers": 4.0,
-    "sessions": 12.0,
-    "eventCount": 181.0
+    "sessions": 13.0,
+    "eventCount": 222.0
   },
   "daily": [
     {
@@ -37,16 +37,25 @@
       "date": "20260723",
       "screenPageViews": 3.0,
       "totalUsers": 1.0
+    },
+    {
+      "date": "20260801",
+      "screenPageViews": 1.0,
+      "totalUsers": 1.0
     }
   ],
   "pages": [
     {
       "pagePath": "/stock-industry-dashboard/",
-      "screenPageViews": 15.0,
+      "screenPageViews": 16.0,
       "totalUsers": 4.0
     }
   ],
   "clicks": [
+    {
+      "customEvent:element_label": "이전 브리핑",
+      "eventCount": 40.0
+    },
     {
       "customEvent:element_label": "브리핑 시간 선택",
       "eventCount": 15.0
@@ -68,16 +77,16 @@
       "eventCount": 9.0
     },
     {
-      "customEvent:element_label": "이전 브리핑",
-      "eventCount": 9.0
-    },
-    {
       "customEvent:element_label": "설정",
       "eventCount": 7.0
     },
     {
       "customEvent:element_label": "시황",
       "eventCount": 7.0
+    },
+    {
+      "customEvent:element_label": "다음 브리핑",
+      "eventCount": 6.0
     },
     {
       "customEvent:element_label": "허용",
@@ -96,11 +105,11 @@
       "eventCount": 4.0
     },
     {
-      "customEvent:element_label": "다음 브리핑",
+      "customEvent:element_label": "미래",
       "eventCount": 3.0
     },
     {
-      "customEvent:element_label": "미래",
+      "customEvent:element_label": "반도체",
       "eventCount": 3.0
     },
     {
@@ -121,10 +130,6 @@
     },
     {
       "customEvent:element_label": "국가 선택: 전체",
-      "eventCount": 2.0
-    },
-    {
-      "customEvent:element_label": "금리",
       "eventCount": 2.0
     }
   ]
