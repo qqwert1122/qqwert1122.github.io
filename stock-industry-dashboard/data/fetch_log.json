@@ -1,44 +1,8 @@
 {
   "version": 1,
-  "updated_at": "2026-08-03T15:49:00+09:00",
+  "updated_at": "2026-08-03T19:28:34+09:00",
   "count": 60,
   "runs": [
-    {
-      "run_id": "2026-07-30T03:31:18+09:00",
-      "run_type": "briefing-intraday",
-      "started_at": "2026-07-30T03:31:18+09:00",
-      "finished_at": "2026-07-30T03:31:21+09:00",
-      "duration_ms": 3231,
-      "summary": {
-        "success": 2,
-        "no_new_data": 0,
-        "failed": 0
-      },
-      "records": [
-        {
-          "source": "미래 타임라인",
-          "endpoint": "data/future/technologies.yaml",
-          "status": "success",
-          "message": "15개 기술 타임라인 생성",
-          "metric_count": 15,
-          "new_data_count": 0,
-          "started_at": "2026-07-30T03:31:21+09:00",
-          "duration_ms": 628,
-          "http_status": null
-        },
-        {
-          "source": "AI 요약",
-          "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
-          "status": "success",
-          "message": "카드 생성: 유의미한 변화: 나스닥100 선물 (Gemini 호출)",
-          "metric_count": 44,
-          "new_data_count": 1,
-          "started_at": "2026-07-30T03:31:18+09:00",
-          "duration_ms": 3231,
-          "http_status": null
-        }
-      ]
-    },
     {
       "run_id": "2026-07-30T05:08:19+09:00",
       "run_type": "prices",
@@ -3369,6 +3333,42 @@
           "new_data_count": 1,
           "started_at": "2026-08-03T15:47:13+09:00",
           "duration_ms": 107278,
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "run_id": "2026-08-03T19:26:53+09:00",
+      "run_type": "briefing-close",
+      "started_at": "2026-08-03T19:26:53+09:00",
+      "finished_at": "2026-08-03T19:28:34+09:00",
+      "duration_ms": 101120,
+      "summary": {
+        "success": 0,
+        "no_new_data": 2,
+        "failed": 0
+      },
+      "records": [
+        {
+          "source": "미래 타임라인",
+          "endpoint": "data/future/technologies.yaml",
+          "status": "no_new_data",
+          "message": "15개 기술 타임라인 생성, YAML 경고 55건",
+          "metric_count": 15,
+          "new_data_count": 0,
+          "started_at": "2026-08-03T19:26:53+09:00",
+          "duration_ms": 101113,
+          "http_status": null
+        },
+        {
+          "source": "AI 요약",
+          "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+          "status": "no_new_data",
+          "message": "카드 생성 스킵: 직전 카드 이후 지표 변화 없음",
+          "metric_count": 0,
+          "new_data_count": 0,
+          "started_at": "2026-08-03T19:26:53+09:00",
+          "duration_ms": 101120,
           "http_status": null
         }
       ]
