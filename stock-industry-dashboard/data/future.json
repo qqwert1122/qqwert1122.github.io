@@ -9008,18 +9008,18 @@
                 "label": "SK하이닉스(000660.KS)",
                 "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "1,426,000원",
-                "change_pct": 0.2812939521800173,
-                "change_pct_label": "+0.3%"
+                "display_value": "1,420,000원",
+                "change_pct": -0.14064697609000865,
+                "change_pct_label": "-0.1%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
                 "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "231,500원",
-                "change_pct": 0.21645021645022577,
-                "change_pct_label": "+0.2%"
+                "display_value": "230,000원",
+                "change_pct": -0.43290043290042934,
+                "change_pct_label": "-0.4%"
               },
               {
                 "symbol": "MU",
@@ -12778,9 +12778,9 @@
           "label": "삼성전자(005930.KS)",
           "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "231,500원",
-          "change_pct": 0.21645021645022577,
-          "change_pct_label": "+0.2%"
+          "display_value": "230,000원",
+          "change_pct": -0.43290043290042934,
+          "change_pct_label": "-0.4%"
         }
       ],
       "breakdown": {
@@ -25137,6 +25137,11 @@
     {
       "kind": "reading_link",
       "id": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://nap.nationalacademies.org/catalog/25259/negative-emissions-technologies-and-reliable-sequestration-a-research-agenda",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
