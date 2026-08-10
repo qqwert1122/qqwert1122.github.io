@@ -9006,19 +9006,19 @@
               {
                 "symbol": "000660.KS",
                 "label": "SK하이닉스(000660.KS)",
-                "label_en": "SK(000660.KS)",
+                "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "1,422,000원",
-                "change_pct": -4.882943143812712,
-                "change_pct_label": "-4.9%"
+                "display_value": "1,438,000원",
+                "change_pct": 1.1251758087201136,
+                "change_pct_label": "+1.1%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
-                "label_en": "(005930.KS)",
+                "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "231,000원",
-                "change_pct": 0.2169197396963085,
+                "display_value": "231,500원",
+                "change_pct": 0.21645021645022577,
                 "change_pct_label": "+0.2%"
               },
               {
@@ -12776,10 +12776,10 @@
         {
           "symbol": "005930.KS",
           "label": "삼성전자(005930.KS)",
-          "label_en": "(005930.KS)",
+          "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "231,000원",
-          "change_pct": 0.2169197396963085,
+          "display_value": "231,500원",
+          "change_pct": 0.21645021645022577,
           "change_pct_label": "+0.2%"
         }
       ],
@@ -24906,6 +24906,11 @@
   "warnings": [
     {
       "kind": "reading_link",
+      "id": "https://commercialisation.esa.int/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.oecd.org/en/publications/handbook-on-measuring-the-space-economy-2nd-edition_8bfef437-en.html",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -24962,6 +24967,11 @@
     {
       "kind": "reading_link",
       "id": "https://openai.com/index/updating-our-preparedness-framework/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://csrc.nist.gov/pubs/ir/8547/ipd",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -25081,7 +25091,27 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.nih.gov/brain-initiative/about/vision",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://braininitiative.nih.gov/about/resources",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.fda.gov/media/182567/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://braininitiative.nih.gov/research/neuroethics",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://braininitiative.nih.gov/vision/priority-areas",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -25092,6 +25122,16 @@
     {
       "kind": "reading_link",
       "id": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-neuroethics-enabling-and-enhancing-neuroscience",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-20-cells-circuits-toward-cures",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-2025-scientific-vision",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
