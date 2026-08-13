@@ -1,4 +1,4 @@
-const CACHE_NAME = "stock-dashboard-2026-08-13T08:05:40Z";
+const CACHE_NAME = "stock-dashboard-2026-08-13T08:14:27Z";
 const STATIC_ASSETS = [
   "./",
   "./manifest.webmanifest",
