@@ -1,18 +1,13 @@
 {
-  "generated_at": "2026-08-21T23:34:16.475280+00:00",
+  "generated_at": "2026-08-22T23:21:41.535917+00:00",
   "period": "최근 30일",
   "summary": {
-    "screenPageViews": 5.0,
-    "totalUsers": 3.0,
-    "sessions": 5.0,
-    "eventCount": 88.0
+    "screenPageViews": 2.0,
+    "totalUsers": 2.0,
+    "sessions": 3.0,
+    "eventCount": 63.0
   },
   "daily": [
-    {
-      "date": "20260723",
-      "screenPageViews": 3.0,
-      "totalUsers": 1.0
-    },
     {
       "date": "20260801",
       "screenPageViews": 1.0,
@@ -27,30 +22,22 @@
   "pages": [
     {
       "pagePath": "/stock-industry-dashboard/",
-      "screenPageViews": 5.0,
-      "totalUsers": 3.0
+      "screenPageViews": 2.0,
+      "totalUsers": 2.0
     }
   ],
   "clicks": [
     {
       "customEvent:element_label": "이전 브리핑",
-      "eventCount": 39.0
+      "eventCount": 35.0
     },
     {
       "customEvent:element_label": "다음 브리핑",
-      "eventCount": 9.0
+      "eventCount": 8.0
     },
     {
       "customEvent:element_label": "브리핑 시간 선택",
-      "eventCount": 6.0
-    },
-    {
-      "customEvent:element_label": "지표 상세 닫기",
-      "eventCount": 4.0
-    },
-    {
-      "customEvent:element_label": "메뉴 열기",
-      "eventCount": 2.0
+      "eventCount": 5.0
     },
     {
       "customEvent:element_label": "반도체",
@@ -61,27 +48,7 @@
       "eventCount": 2.0
     },
     {
-      "customEvent:element_label": "Brent 유가 미국",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "WTI 유가 미국",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "← 뒤로",
-      "eventCount": 1.0
-    },
-    {
       "customEvent:element_label": "기관",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "스테이블코인",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "시황",
       "eventCount": 1.0
     },
     {
@@ -94,10 +61,6 @@
     },
     {
       "customEvent:element_label": "한국반도체 · 대표주가 삼성전자(005930.KS) 262,500원",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "홈",
       "eventCount": 1.0
     }
   ]
