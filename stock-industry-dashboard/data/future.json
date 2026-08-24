@@ -9062,20 +9062,20 @@
               {
                 "symbol": "000660.KS",
                 "label": "SK하이닉스(000660.KS)",
-                "label_en": "SK(000660.KS)",
+                "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "1,730,000원",
-                "change_pct": 2.30632761679479,
-                "change_pct_label": "+2.3%"
+                "display_value": "1,767,000원",
+                "change_pct": 2.1387283236994126,
+                "change_pct_label": "+2.1%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
-                "label_en": "(005930.KS)",
+                "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "281,500원",
-                "change_pct": 3.874538745387457,
-                "change_pct_label": "+3.9%"
+                "display_value": "264,000원",
+                "change_pct": -6.216696269982236,
+                "change_pct_label": "-6.2%"
               },
               {
                 "symbol": "MU",
@@ -12836,11 +12836,11 @@
         {
           "symbol": "005930.KS",
           "label": "삼성전자(005930.KS)",
-          "label_en": "(005930.KS)",
+          "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "281,500원",
-          "change_pct": 3.874538745387457,
-          "change_pct_label": "+3.9%"
+          "display_value": "264,000원",
+          "change_pct": -6.216696269982236,
+          "change_pct_label": "-6.2%"
         }
       ],
       "breakdown": {
@@ -24975,6 +24975,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.nasa.gov/clps/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.oecd.org/en/publications/handbook-on-measuring-the-space-economy-2nd-edition_8bfef437-en.html",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -25005,6 +25010,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.ntsb.gov/Advocacy/safety-topics/Pages/Vehicle-Automation.aspx",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-06/ADS-SGO-Report-June-2022.pdf",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -25026,6 +25036,11 @@
     {
       "kind": "reading_link",
       "id": "https://www.transportation.gov/briefing-room/advanced-air-mobility-national-strategy-2025",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://ntrs.nasa.gov/citations/20230010184",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
