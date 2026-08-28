@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "categories": [
     "전체",
     "AI",
@@ -11896,7 +11896,7 @@
             "is_bottleneck": true,
             "satisfied": false,
             "confidence": "high",
-            "stale": false,
+            "stale": true,
             "as_of": "2026-03-01",
             "source": "https://www.ibm.com/roadmaps/quantum/2030/",
             "source_label": "IBM Quantum 2030 로드맵",
@@ -24983,5 +24983,11 @@
     "timeline_start": 2026,
     "timeline_end": 2045
   },
-  "warnings": []
+  "warnings": [
+    {
+      "kind": "future_breakdown",
+      "id": "quantum:error-correction",
+      "message": "as_of가 180일을 넘었습니다."
+    }
+  ]
 }
