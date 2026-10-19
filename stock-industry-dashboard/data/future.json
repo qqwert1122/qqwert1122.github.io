@@ -3409,17 +3409,13 @@
           "id": "f23893f07b0e",
           "history_key": "equity-RKLB",
           "name": "Rocket Lab(RKLB)",
-          "name_en": "Rocket Lab(RKLB)",
-          "display_value": "$50.84",
-          "change_pct": -7.981900176311507,
-          "change_pct_label": "-8.0%",
-          "change_abs_label": "$-4.41",
+          "name_en": null,
+          "display_value": "$51.63",
+          "change_pct": 1.5538942664064859,
+          "change_pct_label": "+1.6%",
+          "change_abs_label": "$+0.79",
           "unit": "$",
           "history": [
-            {
-              "date": "2026-07-24",
-              "value": 63.90999984741211
-            },
             {
               "date": "2026-07-27",
               "value": 66.94000244140625
@@ -3655,6 +3651,10 @@
             {
               "date": "2026-10-16",
               "value": 50.84000015258789
+            },
+            {
+              "date": "2026-10-19",
+              "value": 51.63
             }
           ]
         }
@@ -3663,20 +3663,20 @@
         {
           "symbol": "RKLB",
           "label": "Rocket Lab(RKLB)",
-          "label_en": "Rocket Lab(RKLB)",
+          "label_en": "RKLB",
           "metric_id": "f23893f07b0e",
-          "display_value": "$50.84",
-          "change_pct": -7.981900176311507,
-          "change_pct_label": "-8.0%"
+          "display_value": "$51.63",
+          "change_pct": 1.5538942664064859,
+          "change_pct_label": "+1.6%"
         },
         {
           "symbol": "LMT",
           "label": "Lockheed Martin(LMT)",
-          "label_en": "Lockheed Martin(LMT)",
+          "label_en": "LMT",
           "metric_id": "880406c0aba7",
-          "display_value": "$552.1",
-          "change_pct": 3.651624300113654,
-          "change_pct_label": "+3.7%"
+          "display_value": "$546.5",
+          "change_pct": -1.0125208903532967,
+          "change_pct_label": "-1.0%"
         }
       ],
       "breakdown": {
@@ -4314,17 +4314,13 @@
                 "id": "f23893f07b0e",
                 "history_key": "equity-RKLB",
                 "name": "Rocket Lab(RKLB)",
-                "name_en": "Rocket Lab(RKLB)",
-                "display_value": "$50.84",
-                "change_pct": -7.981900176311507,
-                "change_pct_label": "-8.0%",
-                "change_abs_label": "$-4.41",
+                "name_en": null,
+                "display_value": "$51.63",
+                "change_pct": 1.5538942664064859,
+                "change_pct_label": "+1.6%",
+                "change_abs_label": "$+0.79",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 63.90999984741211
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 66.94000244140625
@@ -4560,6 +4556,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 50.84000015258789
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 51.63
                   }
                 ]
               }
@@ -4992,17 +4992,13 @@
           "id": "b410cee1fb25",
           "history_key": "equity-TSLA",
           "name": "Tesla(TSLA)",
-          "name_en": "Tesla(TSLA)",
-          "display_value": "$354.7",
-          "change_pct": -2.1300080478702577,
-          "change_pct_label": "-2.1%",
-          "change_abs_label": "$-7.72",
+          "name_en": null,
+          "display_value": "$355.8",
+          "change_pct": 0.3044651487314809,
+          "change_pct_label": "+0.3%",
+          "change_abs_label": "$+1.08",
           "unit": "$",
           "history": [
-            {
-              "date": "2026-07-24",
-              "value": 313.0299987792969
-            },
             {
               "date": "2026-07-27",
               "value": 309.2200012207031
@@ -5238,6 +5234,10 @@
             {
               "date": "2026-10-16",
               "value": 354.7200012207031
+            },
+            {
+              "date": "2026-10-19",
+              "value": 355.8
             }
           ]
         },
@@ -5245,17 +5245,13 @@
           "id": "d9b2a105ae08",
           "history_key": "equity-TER",
           "name": "Teradyne(TER)",
-          "name_en": "Teradyne(TER)",
-          "display_value": "$325.0",
-          "change_pct": -5.305787100741089,
-          "change_pct_label": "-5.3%",
-          "change_abs_label": "$-18.21",
+          "name_en": null,
+          "display_value": "$338.6",
+          "change_pct": 4.173015384615386,
+          "change_pct_label": "+4.2%",
+          "change_abs_label": "$+13.56",
           "unit": "$",
           "history": [
-            {
-              "date": "2026-07-24",
-              "value": 349.9200134277344
-            },
             {
               "date": "2026-07-27",
               "value": 334.7699890136719
@@ -5491,6 +5487,10 @@
             {
               "date": "2026-10-16",
               "value": 325.0
+            },
+            {
+              "date": "2026-10-19",
+              "value": 338.5623
             }
           ]
         },
@@ -5752,38 +5752,38 @@
         {
           "symbol": "TSLA",
           "label": "Tesla(TSLA)",
-          "label_en": "Tesla(TSLA)",
+          "label_en": "TSLA",
           "metric_id": "b410cee1fb25",
-          "display_value": "$354.7",
-          "change_pct": -2.1300080478702577,
-          "change_pct_label": "-2.1%"
+          "display_value": "$355.8",
+          "change_pct": 0.3044651487314809,
+          "change_pct_label": "+0.3%"
         },
         {
           "symbol": "UBER",
           "label": "Uber(UBER)",
-          "label_en": "Uber(UBER)",
+          "label_en": "UBER",
           "metric_id": "d3774ca8e71c",
-          "display_value": "$70.35",
-          "change_pct": -1.2908632135242515,
-          "change_pct_label": "-1.3%"
+          "display_value": "$70.48",
+          "change_pct": 0.18479250703429262,
+          "change_pct_label": "+0.2%"
         },
         {
           "symbol": "MBLY",
           "label": "Mobileye(MBLY)",
-          "label_en": "Mobileye(MBLY)",
+          "label_en": "MBLY",
           "metric_id": "37f3343d0417",
-          "display_value": "$7.22",
-          "change_pct": -2.8263801211140693,
-          "change_pct_label": "-2.8%"
+          "display_value": "$7.33",
+          "change_pct": 1.5221636149858275,
+          "change_pct_label": "+1.5%"
         },
         {
           "symbol": "QCOM",
           "label": "Qualcomm(QCOM)",
-          "label_en": "Qualcomm(QCOM)",
+          "label_en": "QCOM",
           "metric_id": "8ba80f881c7d",
-          "display_value": "$172.1",
-          "change_pct": -3.5257811106106596,
-          "change_pct_label": "-3.5%"
+          "display_value": "$175.1",
+          "change_pct": 1.7488811684237549,
+          "change_pct_label": "+1.7%"
         }
       ],
       "breakdown": {
@@ -5902,11 +5902,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -5920,11 +5920,11 @@
               {
                 "symbol": "MBLY",
                 "label": "Mobileye(MBLY)",
-                "label_en": "Mobileye(MBLY)",
+                "label_en": "Mobileye",
                 "metric_id": "37f3343d0417",
-                "display_value": "$7.22",
-                "change_pct": -2.8263801211140693,
-                "change_pct_label": "-2.8%"
+                "display_value": "$7.33",
+                "change_pct": 1.5221636149858275,
+                "change_pct_label": "+1.5%"
               }
             ]
           },
@@ -5974,11 +5974,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -6046,11 +6046,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               }
             ]
           },
@@ -6163,11 +6163,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -6216,17 +6216,13 @@
                 "id": "b410cee1fb25",
                 "history_key": "equity-TSLA",
                 "name": "Tesla(TSLA)",
-                "name_en": "Tesla(TSLA)",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%",
-                "change_abs_label": "$-7.72",
+                "name_en": null,
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%",
+                "change_abs_label": "$+1.08",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 313.0299987792969
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 309.2200012207031
@@ -6462,6 +6458,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 354.7200012207031
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 355.8
                   }
                 ]
               }
@@ -6487,17 +6487,13 @@
                 "id": "b410cee1fb25",
                 "history_key": "equity-TSLA",
                 "name": "Tesla(TSLA)",
-                "name_en": "Tesla(TSLA)",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%",
-                "change_abs_label": "$-7.72",
+                "name_en": null,
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%",
+                "change_abs_label": "$+1.08",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 313.0299987792969
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 309.2200012207031
@@ -6733,6 +6729,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 354.7200012207031
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 355.8
                   }
                 ]
               }
@@ -8662,29 +8662,29 @@
         {
           "symbol": "MSFT",
           "label": "Microsoft(MSFT)",
-          "label_en": "Microsoft(MSFT)",
+          "label_en": "MSFT",
           "metric_id": "4af5a09d8c1f",
-          "display_value": "$529.0",
-          "change_pct": -1.9260741883090238,
-          "change_pct_label": "-1.9%"
+          "display_value": "$531.0",
+          "change_pct": 0.36858751574044835,
+          "change_pct_label": "+0.4%"
         },
         {
           "symbol": "NVDA",
           "label": "NVIDIA(NVDA)",
-          "label_en": "NVIDIA(NVDA)",
+          "label_en": "NVDA",
           "metric_id": "308bbd1b432a",
-          "display_value": "$214.1",
-          "change_pct": -1.427054691201457,
-          "change_pct_label": "-1.4%"
+          "display_value": "$216.8",
+          "change_pct": 1.2702540770388904,
+          "change_pct_label": "+1.3%"
         },
         {
           "symbol": "GOOGL",
           "label": "Alphabet(GOOGL)",
-          "label_en": "Alphabet(GOOGL)",
+          "label_en": "GOOGL",
           "metric_id": "fa487176a31c",
-          "display_value": "$340.6",
-          "change_pct": -2.4712229690871723,
-          "change_pct_label": "-2.5%"
+          "display_value": "$343.0",
+          "change_pct": 0.695852399539687,
+          "change_pct_label": "+0.7%"
         },
         {
           "symbol": "META",
@@ -8775,17 +8775,13 @@
               "id": "308bbd1b432a",
               "history_key": "equity-NVDA",
               "name": "NVIDIA(NVDA)",
-              "name_en": "NVIDIA(NVDA)",
-              "display_value": "$214.1",
-              "change_pct": -1.427054691201457,
-              "change_pct_label": "-1.4%",
-              "change_abs_label": "$-3.10",
+              "name_en": null,
+              "display_value": "$216.8",
+              "change_pct": 1.2702540770388904,
+              "change_pct_label": "+1.3%",
+              "change_abs_label": "$+2.72",
               "unit": "$",
               "history": [
-                {
-                  "date": "2026-07-24",
-                  "value": 206.83999633789062
-                },
                 {
                   "date": "2026-07-27",
                   "value": 196.50999450683594
@@ -9021,6 +9017,10 @@
                 {
                   "date": "2026-10-16",
                   "value": 214.1300048828125
+                },
+                {
+                  "date": "2026-10-19",
+                  "value": 216.85
                 }
               ]
             },
@@ -9028,31 +9028,31 @@
               {
                 "symbol": "NVDA",
                 "label": "NVIDIA(NVDA)",
-                "label_en": "NVIDIA(NVDA)",
+                "label_en": "NVIDIA",
                 "metric_id": "308bbd1b432a",
-                "display_value": "$214.1",
-                "change_pct": -1.427054691201457,
-                "change_pct_label": "-1.4%"
+                "display_value": "$216.8",
+                "change_pct": 1.2702540770388904,
+                "change_pct_label": "+1.3%"
               }
             ],
             "pursuing": [
               {
                 "symbol": "AMD",
                 "label": "AMD(AMD)",
-                "label_en": "AMD(AMD)",
+                "label_en": "AMD",
                 "metric_id": "75ff1ab8f86f",
-                "display_value": "$528.8",
-                "change_pct": -5.954855064974762,
-                "change_pct_label": "-6.0%"
+                "display_value": "$541.9",
+                "change_pct": 2.4794326241134756,
+                "change_pct_label": "+2.5%"
               },
               {
                 "symbol": "GOOGL",
                 "label": "Alphabet(GOOGL)",
-                "label_en": "Alphabet(GOOGL)",
+                "label_en": "Google TPU",
                 "metric_id": "fa487176a31c",
-                "display_value": "$340.6",
-                "change_pct": -2.4712229690871723,
-                "change_pct_label": "-2.5%"
+                "display_value": "$343.0",
+                "change_pct": 0.695852399539687,
+                "change_pct_label": "+0.7%"
               },
               {
                 "symbol": "AMZN",
@@ -9168,22 +9168,22 @@
               {
                 "symbol": "MU",
                 "label": "Micron(MU)",
-                "label_en": "Micron(MU)",
+                "label_en": "Micron",
                 "metric_id": "df08e35f00ed",
-                "display_value": "$878.8",
-                "change_pct": -5.626902187235128,
-                "change_pct_label": "-5.6%"
+                "display_value": "$904.0",
+                "change_pct": 2.8628615419981296,
+                "change_pct_label": "+2.9%"
               }
             ],
             "pursuing": [
               {
                 "symbol": "TSM",
                 "label": "TSMC(TSM)",
-                "label_en": "TSMC(TSM)",
+                "label_en": "TSMC CoWoS",
                 "metric_id": "f52a4974e818",
-                "display_value": "$412.6",
-                "change_pct": -2.2830111660005925,
-                "change_pct_label": "-2.3%"
+                "display_value": "$418.7",
+                "change_pct": 1.466279262069392,
+                "change_pct_label": "+1.5%"
               }
             ]
           },
@@ -9224,11 +9224,11 @@
               {
                 "symbol": "MSFT",
                 "label": "Microsoft(MSFT)",
-                "label_en": "Microsoft(MSFT)",
+                "label_en": "Microsoft",
                 "metric_id": "4af5a09d8c1f",
-                "display_value": "$529.0",
-                "change_pct": -1.9260741883090238,
-                "change_pct_label": "-1.9%"
+                "display_value": "$531.0",
+                "change_pct": 0.36858751574044835,
+                "change_pct_label": "+0.4%"
               },
               {
                 "symbol": "AMZN",
@@ -9242,11 +9242,11 @@
               {
                 "symbol": "GOOGL",
                 "label": "Alphabet(GOOGL)",
-                "label_en": "Alphabet(GOOGL)",
+                "label_en": "Alphabet",
                 "metric_id": "fa487176a31c",
-                "display_value": "$340.6",
-                "change_pct": -2.4712229690871723,
-                "change_pct_label": "-2.5%"
+                "display_value": "$343.0",
+                "change_pct": 0.695852399539687,
+                "change_pct_label": "+0.7%"
               },
               {
                 "symbol": "META",
@@ -9323,11 +9323,11 @@
               {
                 "symbol": "GOOGL",
                 "label": "Alphabet(GOOGL)",
-                "label_en": "Alphabet(GOOGL)",
+                "label_en": "Google DeepMind",
                 "metric_id": "fa487176a31c",
-                "display_value": "$340.6",
-                "change_pct": -2.4712229690871723,
-                "change_pct_label": "-2.5%"
+                "display_value": "$343.0",
+                "change_pct": 0.695852399539687,
+                "change_pct_label": "+0.7%"
               },
               {
                 "symbol": "",
@@ -9395,11 +9395,11 @@
               {
                 "symbol": "GOOGL",
                 "label": "Alphabet(GOOGL)",
-                "label_en": "Alphabet(GOOGL)",
+                "label_en": "Google",
                 "metric_id": "fa487176a31c",
-                "display_value": "$340.6",
-                "change_pct": -2.4712229690871723,
-                "change_pct_label": "-2.5%"
+                "display_value": "$343.0",
+                "change_pct": 0.695852399539687,
+                "change_pct_label": "+0.7%"
               },
               {
                 "symbol": "META",
@@ -11884,20 +11884,20 @@
         {
           "symbol": "GOOGL",
           "label": "Alphabet(GOOGL)",
-          "label_en": "Alphabet(GOOGL)",
+          "label_en": "GOOGL",
           "metric_id": "fa487176a31c",
-          "display_value": "$340.6",
-          "change_pct": -2.4712229690871723,
-          "change_pct_label": "-2.5%"
+          "display_value": "$343.0",
+          "change_pct": 0.695852399539687,
+          "change_pct_label": "+0.7%"
         },
         {
           "symbol": "MSFT",
           "label": "Microsoft(MSFT)",
-          "label_en": "Microsoft(MSFT)",
+          "label_en": "MSFT",
           "metric_id": "4af5a09d8c1f",
-          "display_value": "$529.0",
-          "change_pct": -1.9260741883090238,
-          "change_pct_label": "-1.9%"
+          "display_value": "$531.0",
+          "change_pct": 0.36858751574044835,
+          "change_pct_label": "+0.4%"
         }
       ],
       "breakdown": {
@@ -12906,11 +12906,11 @@
         {
           "symbol": "GOOGL",
           "label": "Alphabet(GOOGL)",
-          "label_en": "Alphabet(GOOGL)",
+          "label_en": "GOOGL",
           "metric_id": "fa487176a31c",
-          "display_value": "$340.6",
-          "change_pct": -2.4712229690871723,
-          "change_pct_label": "-2.5%"
+          "display_value": "$343.0",
+          "change_pct": 0.695852399539687,
+          "change_pct_label": "+0.7%"
         },
         {
           "symbol": "SONY",
@@ -14566,17 +14566,13 @@
           "id": "d9b2a105ae08",
           "history_key": "equity-TER",
           "name": "Teradyne(TER)",
-          "name_en": "Teradyne(TER)",
-          "display_value": "$325.0",
-          "change_pct": -5.305787100741089,
-          "change_pct_label": "-5.3%",
-          "change_abs_label": "$-18.21",
+          "name_en": null,
+          "display_value": "$338.6",
+          "change_pct": 4.173015384615386,
+          "change_pct_label": "+4.2%",
+          "change_abs_label": "$+13.56",
           "unit": "$",
           "history": [
-            {
-              "date": "2026-07-24",
-              "value": 349.9200134277344
-            },
             {
               "date": "2026-07-27",
               "value": 334.7699890136719
@@ -14812,6 +14808,10 @@
             {
               "date": "2026-10-16",
               "value": 325.0
+            },
+            {
+              "date": "2026-10-19",
+              "value": 338.5623
             }
           ]
         },
@@ -14819,17 +14819,13 @@
           "id": "308bbd1b432a",
           "history_key": "equity-NVDA",
           "name": "NVIDIA(NVDA)",
-          "name_en": "NVIDIA(NVDA)",
-          "display_value": "$214.1",
-          "change_pct": -1.427054691201457,
-          "change_pct_label": "-1.4%",
-          "change_abs_label": "$-3.10",
+          "name_en": null,
+          "display_value": "$216.8",
+          "change_pct": 1.2702540770388904,
+          "change_pct_label": "+1.3%",
+          "change_abs_label": "$+2.72",
           "unit": "$",
           "history": [
-            {
-              "date": "2026-07-24",
-              "value": 206.83999633789062
-            },
             {
               "date": "2026-07-27",
               "value": 196.50999450683594
@@ -15065,6 +15061,10 @@
             {
               "date": "2026-10-16",
               "value": 214.1300048828125
+            },
+            {
+              "date": "2026-10-19",
+              "value": 216.85
             }
           ]
         }
@@ -15073,38 +15073,38 @@
         {
           "symbol": "TSLA",
           "label": "Tesla(TSLA)",
-          "label_en": "Tesla(TSLA)",
+          "label_en": "TSLA",
           "metric_id": "b410cee1fb25",
-          "display_value": "$354.7",
-          "change_pct": -2.1300080478702577,
-          "change_pct_label": "-2.1%"
+          "display_value": "$355.8",
+          "change_pct": 0.3044651487314809,
+          "change_pct_label": "+0.3%"
         },
         {
           "symbol": "TER",
           "label": "Teradyne(TER)",
-          "label_en": "Teradyne(TER)",
+          "label_en": "TER",
           "metric_id": "d9b2a105ae08",
-          "display_value": "$325.0",
-          "change_pct": -5.305787100741089,
-          "change_pct_label": "-5.3%"
+          "display_value": "$338.6",
+          "change_pct": 4.173015384615386,
+          "change_pct_label": "+4.2%"
         },
         {
           "symbol": "NVDA",
           "label": "NVIDIA(NVDA)",
-          "label_en": "NVIDIA(NVDA)",
+          "label_en": "NVDA",
           "metric_id": "308bbd1b432a",
-          "display_value": "$214.1",
-          "change_pct": -1.427054691201457,
-          "change_pct_label": "-1.4%"
+          "display_value": "$216.8",
+          "change_pct": 1.2702540770388904,
+          "change_pct_label": "+1.3%"
         },
         {
           "symbol": "QCOM",
           "label": "Qualcomm(QCOM)",
-          "label_en": "Qualcomm(QCOM)",
+          "label_en": "QCOM",
           "metric_id": "8ba80f881c7d",
-          "display_value": "$172.1",
-          "change_pct": -3.5257811106106596,
-          "change_pct_label": "-3.5%"
+          "display_value": "$175.1",
+          "change_pct": 1.7488811684237549,
+          "change_pct_label": "+1.7%"
         }
       ],
       "breakdown": {
@@ -15198,11 +15198,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla Optimus",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -15312,11 +15312,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla Optimus",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -15384,11 +15384,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla Optimus",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -15447,11 +15447,11 @@
               {
                 "symbol": "TSLA",
                 "label": "Tesla(TSLA)",
-                "label_en": "Tesla(TSLA)",
+                "label_en": "Tesla Optimus",
                 "metric_id": "b410cee1fb25",
-                "display_value": "$354.7",
-                "change_pct": -2.1300080478702577,
-                "change_pct_label": "-2.1%"
+                "display_value": "$355.8",
+                "change_pct": 0.3044651487314809,
+                "change_pct_label": "+0.3%"
               },
               {
                 "symbol": "",
@@ -15581,17 +15581,13 @@
                 "id": "d9b2a105ae08",
                 "history_key": "equity-TER",
                 "name": "Teradyne(TER)",
-                "name_en": "Teradyne(TER)",
-                "display_value": "$325.0",
-                "change_pct": -5.305787100741089,
-                "change_pct_label": "-5.3%",
-                "change_abs_label": "$-18.21",
+                "name_en": null,
+                "display_value": "$338.6",
+                "change_pct": 4.173015384615386,
+                "change_pct_label": "+4.2%",
+                "change_abs_label": "$+13.56",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 349.9200134277344
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 334.7699890136719
@@ -15827,6 +15823,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 325.0
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 338.5623
                   }
                 ]
               }
@@ -15858,17 +15858,13 @@
                 "id": "d9b2a105ae08",
                 "history_key": "equity-TER",
                 "name": "Teradyne(TER)",
-                "name_en": "Teradyne(TER)",
-                "display_value": "$325.0",
-                "change_pct": -5.305787100741089,
-                "change_pct_label": "-5.3%",
-                "change_abs_label": "$-18.21",
+                "name_en": null,
+                "display_value": "$338.6",
+                "change_pct": 4.173015384615386,
+                "change_pct_label": "+4.2%",
+                "change_abs_label": "$+13.56",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 349.9200134277344
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 334.7699890136719
@@ -16104,6 +16100,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 325.0
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 338.5623
                   }
                 ]
               }
@@ -16135,17 +16135,13 @@
                 "id": "308bbd1b432a",
                 "history_key": "equity-NVDA",
                 "name": "NVIDIA(NVDA)",
-                "name_en": "NVIDIA(NVDA)",
-                "display_value": "$214.1",
-                "change_pct": -1.427054691201457,
-                "change_pct_label": "-1.4%",
-                "change_abs_label": "$-3.10",
+                "name_en": null,
+                "display_value": "$216.8",
+                "change_pct": 1.2702540770388904,
+                "change_pct_label": "+1.3%",
+                "change_abs_label": "$+2.72",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 206.83999633789062
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 196.50999450683594
@@ -16381,6 +16377,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 214.1300048828125
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 216.85
                   }
                 ]
               }
@@ -17350,11 +17350,11 @@
         {
           "symbol": "LLY",
           "label": "Eli Lilly(LLY)",
-          "label_en": "Eli Lilly(LLY)",
+          "label_en": "LLY",
           "metric_id": "426f63931dfa",
-          "display_value": "$1,257.0",
-          "change_pct": 0.4330457577637503,
-          "change_pct_label": "+0.4%"
+          "display_value": "$1,240.0",
+          "change_pct": -1.3547830123358917,
+          "change_pct_label": "-1.4%"
         },
         {
           "symbol": "NVO",
@@ -20383,11 +20383,11 @@
         {
           "symbol": "LLY",
           "label": "Eli Lilly(LLY)",
-          "label_en": "Eli Lilly(LLY)",
+          "label_en": "LLY",
           "metric_id": "426f63931dfa",
-          "display_value": "$1,257.0",
-          "change_pct": 0.4330457577637503,
-          "change_pct_label": "+0.4%"
+          "display_value": "$1,240.0",
+          "change_pct": -1.3547830123358917,
+          "change_pct_label": "-1.4%"
         }
       ],
       "breakdown": {
@@ -21919,17 +21919,13 @@
           "id": "5c34f945ce51",
           "history_key": "equity-GEV",
           "name": "GE Vernova(GEV)",
-          "name_en": "GE Vernova(GEV)",
-          "display_value": "$921.2",
-          "change_pct": -0.5656049199695867,
-          "change_pct_label": "-0.6%",
-          "change_abs_label": "$-5.24",
+          "name_en": null,
+          "display_value": "$938.4",
+          "change_pct": 1.862243548159359,
+          "change_pct_label": "+1.9%",
+          "change_abs_label": "$+17.15",
           "unit": "$",
           "history": [
-            {
-              "date": "2026-07-24",
-              "value": 1014.75
-            },
             {
               "date": "2026-07-27",
               "value": 996.5700073242188
@@ -22165,6 +22161,10 @@
             {
               "date": "2026-10-16",
               "value": 921.2000122070312
+            },
+            {
+              "date": "2026-10-19",
+              "value": 938.355
             }
           ]
         }
@@ -22173,11 +22173,11 @@
         {
           "symbol": "GEV",
           "label": "GE Vernova(GEV)",
-          "label_en": "GE Vernova(GEV)",
+          "label_en": "GEV",
           "metric_id": "5c34f945ce51",
-          "display_value": "$921.2",
-          "change_pct": -0.5656049199695867,
-          "change_pct_label": "-0.6%"
+          "display_value": "$938.4",
+          "change_pct": 1.862243548159359,
+          "change_pct_label": "+1.9%"
         }
       ],
       "breakdown": {
@@ -22572,17 +22572,13 @@
                 "id": "5c34f945ce51",
                 "history_key": "equity-GEV",
                 "name": "GE Vernova(GEV)",
-                "name_en": "GE Vernova(GEV)",
-                "display_value": "$921.2",
-                "change_pct": -0.5656049199695867,
-                "change_pct_label": "-0.6%",
-                "change_abs_label": "$-5.24",
+                "name_en": null,
+                "display_value": "$938.4",
+                "change_pct": 1.862243548159359,
+                "change_pct_label": "+1.9%",
+                "change_abs_label": "$+17.15",
                 "unit": "$",
                 "history": [
-                  {
-                    "date": "2026-07-24",
-                    "value": 1014.75
-                  },
                   {
                     "date": "2026-07-27",
                     "value": 996.5700073242188
@@ -22818,6 +22814,10 @@
                   {
                     "date": "2026-10-16",
                     "value": 921.2000122070312
+                  },
+                  {
+                    "date": "2026-10-19",
+                    "value": 938.355
                   }
                 ]
               }
@@ -25118,11 +25118,6 @@
     },
     {
       "kind": "reading_link",
-      "id": "https://www.nasa.gov/mission/aam/",
-      "message": "링크 점검이 2회 연속 실패했습니다."
-    },
-    {
-      "kind": "reading_link",
       "id": "https://openai.com/index/updating-our-preparedness-framework/",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -25154,11 +25149,6 @@
     {
       "kind": "reading_link",
       "id": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/meat/cultivated-meat-and-poultry",
-      "message": "링크 점검이 2회 연속 실패했습니다."
-    },
-    {
-      "kind": "reading_link",
-      "id": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-701-47%252FCRDs%252Fcac47_crd04x.pdf",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -25359,6 +25349,11 @@
     {
       "kind": "reading_link",
       "id": "https://www.iaea.org/resources/databases/fusion-device-information-system",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://euro-fusion.org/programme/demo/",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
