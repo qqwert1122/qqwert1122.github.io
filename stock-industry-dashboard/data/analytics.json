@@ -1,15 +1,20 @@
 {
-  "generated_at": "2026-10-24T01:26:12.086898+00:00",
+  "generated_at": "2026-10-25T00:53:10.488911+00:00",
   "period": "최근 30일",
   "summary": {
-    "screenPageViews": 1.0,
+    "screenPageViews": 2.0,
     "totalUsers": 1.0,
-    "sessions": 1.0,
-    "eventCount": 54.0
+    "sessions": 2.0,
+    "eventCount": 76.0
   },
   "daily": [
     {
       "date": "20261011",
+      "screenPageViews": 1.0,
+      "totalUsers": 1.0
+    },
+    {
+      "date": "20261025",
       "screenPageViews": 1.0,
       "totalUsers": 1.0
     }
@@ -17,7 +22,7 @@
   "pages": [
     {
       "pagePath": "/stock-industry-dashboard/",
-      "screenPageViews": 1.0,
+      "screenPageViews": 2.0,
       "totalUsers": 1.0
     }
   ],
@@ -27,12 +32,32 @@
       "eventCount": 10.0
     },
     {
+      "customEvent:element_label": "← 뒤로",
+      "eventCount": 9.0
+    },
+    {
       "customEvent:element_label": "지표 검색",
       "eventCount": 9.0
     },
     {
-      "customEvent:element_label": "← 뒤로",
+      "customEvent:element_label": "다음 브리핑",
       "eventCount": 4.0
+    },
+    {
+      "customEvent:element_label": "산업",
+      "eventCount": 4.0
+    },
+    {
+      "customEvent:element_label": "시황",
+      "eventCount": 4.0
+    },
+    {
+      "customEvent:element_label": "이전 브리핑",
+      "eventCount": 4.0
+    },
+    {
+      "customEvent:element_label": "미래",
+      "eventCount": 3.0
     },
     {
       "customEvent:element_label": "2027",
@@ -40,10 +65,6 @@
     },
     {
       "customEvent:element_label": "국가 선택: 전체",
-      "eventCount": 2.0
-    },
-    {
-      "customEvent:element_label": "미래",
       "eventCount": 2.0
     },
     {
@@ -55,15 +76,7 @@
       "eventCount": 2.0
     },
     {
-      "customEvent:element_label": "산업",
-      "eventCount": 2.0
-    },
-    {
       "customEvent:element_label": "설정",
-      "eventCount": 2.0
-    },
-    {
-      "customEvent:element_label": "시황",
       "eventCount": 2.0
     },
     {
@@ -87,15 +100,11 @@
       "eventCount": 1.0
     },
     {
+      "customEvent:element_label": "SK하이닉스(000660.KS)",
+      "eventCount": 1.0
+    },
+    {
       "customEvent:element_label": "메뉴 닫기",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "반도체",
-      "eventCount": 1.0
-    },
-    {
-      "customEvent:element_label": "허용",
       "eventCount": 1.0
     }
   ]
