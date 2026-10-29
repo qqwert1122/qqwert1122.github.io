@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPARK Support</title>
+<style>
+  :root { --bg:#ffffff; --surface:#f6f6f6; --text:#1f1f1f; --muted:#6b6b6b; --line:#e4e4e4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#2f2f2f; --surface:#262626; --text:#f2f2f2; --muted:#a8a8a8; --line:#3d3d3d; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  .brand { font-weight:800; letter-spacing:.08em; color:var(--muted); font-size:13px; }
+  nav { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 28px; }
+  nav button { border:0; border-radius:999px; padding:8px 14px; background:var(--surface);
+    color:var(--muted); font:inherit; font-size:14px; cursor:pointer; }
+  nav button[aria-pressed="true"] { background:var(--text); color:var(--bg); font-weight:600; }
+  h1 { font-size:26px; line-height:1.3; margin:0 0 20px; }
+  h2 { font-size:17px; margin:28px 0 6px; }
+  p { margin:0 0 6px; }
+  a { color:inherit; }
+  section[hidden] { display:none; }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+<div class="brand">SPARK · luceforge studio</div>
+<nav aria-label="Language">
+<button type="button" data-lang="en">English</button>
+<button type="button" data-lang="ko">한국어</button>
+<button type="button" data-lang="ja">日本語</button>
+<button type="button" data-lang="zh-Hans">简体中文</button>
+<button type="button" data-lang="es">Español</button>
+</nav>
+<section data-lang="ko" lang="ko">
+<h1>SPARK 도움말</h1>
+<p>연습하다 궁금한 점이 생겼나요? 편하게 연락 주세요.</p>
+<p>도움이 필요하거나 의견이 있다면 <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>으로 보내 주세요. 기기 모델, iOS 버전, SPARK 버전과 어떤 상황에서 문제가 생겼는지 알려주시면 확인에 도움이 돼요. 비밀번호나 결제 정보는 보내지 않아도 돼요.</p>
+<h2>iPad와 Apple Watch는 어떻게 연결하나요?</h2>
+<p>워치와 페어링된 iPhone이 필요해요. iPhone과 iPad를 같은 네트워크에 연결하고 두 기기의 SPARK를 화면에 열어 주세요. Apple Watch 설정에서 iPhone의 iPad 중계를 켠 다음, iPad에서 iPhone을 선택하고 표시된 8자리 코드를 입력하면 돼요. 로컬 네트워크 접근도 허용해 주세요. 두 앱 중 하나가 백그라운드로 가면 중계는 잠시 멈춰요.</p>
+<h2>드럼 소리가 잘 인식되지 않아요.</h2>
+<p>드럼·마이크 모드를 선택하고 마이크 권한을 허용했는지 확인해 주세요. 헤드폰을 사용하면 메트로놈 소리가 드럼 소리로 인식되는 것을 줄일 수 있어요. 입력 장치가 바뀌었다면 트레이너의 지연 보정도 다시 확인해 보세요.</p>
+<h2>소리가 들리지 않아요.</h2>
+<p>기기의 음량과 현재 오디오 출력 장치를 확인해 주세요. SPARK 안의 음량, 선택한 소리와 박자별 음소거 설정도 함께 확인해 보세요.</p>
+<h2>결제나 구독이 필요한가요?</h2>
+<p>현재 버전의 모든 기능은 무료로 사용할 수 있어요. 앱 내 결제나 구독은 없어요.</p>
+<h2>마이크 소리가 저장되나요?</h2>
+<p>마이크 소리는 기기 안에서 실시간으로 분석하며 녹음하거나 업로드하지 않아요. 앱 사용 분석은 별도로 동의한 경우에만 시작해요.</p>
+</section>
+<section data-lang="en" lang="en">
+<h1>SPARK Support</h1>
+<p>A question during practice? We&#x27;re happy to help.</p>
+<p>Send questions or feedback to <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>. Your device model, iOS version, SPARK version, and a short description of what happened help us look into it. Please don&#x27;t send passwords or payment details.</p>
+<h2>How do I connect iPad and Apple Watch?</h2>
+<p>You&#x27;ll need an iPhone paired with your Watch. Keep SPARK open in the foreground on iPhone and iPad on the same network. In Apple Watch settings, enable iPad relay on iPhone, then select that iPhone on iPad and enter the eight-digit code. Allow local network access. The relay pauses when either app goes into the background.</p>
+<h2>Why aren&#x27;t my drum hits being detected?</h2>
+<p>Choose Drums · Mic mode and allow microphone access. Headphones help keep the metronome click from being detected as a drum hit. Check the trainer&#x27;s latency calibration again if you change your input device.</p>
+<h2>Why can&#x27;t I hear the metronome?</h2>
+<p>Check your device volume and selected audio output. Also check SPARK&#x27;s volume, chosen sound, and muted beats.</p>
+<h2>Do I need a purchase or subscription?</h2>
+<p>All features in the current version are free. There are no in-app purchases or subscriptions.</p>
+<h2>Is microphone audio saved?</h2>
+<p>Audio is analyzed live on your device, without recording or uploading it. Optional app usage analytics starts only after separate consent.</p>
+</section>
+<section data-lang="ja" lang="ja">
+<h1>SPARK サポート</h1>
+<p>練習中に気になることがあれば、お気軽にご連絡ください。</p>
+<p>ご質問やご意見は <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a> まで。端末のモデル、iOS と SPARK のバージョン、問題が起きた状況を教えていただくと確認に役立ちます。パスワードや決済情報は送らないでください。</p>
+<h2>iPad と Apple Watch を接続するには？</h2>
+<p>Watch とペアリング済みの iPhone が必要です。同じネットワークで iPhone と iPad の SPARK を画面に開いてください。Apple Watch 設定で iPhone の iPad 中継を有効にし、iPad でその iPhone を選んで8桁のコードを入力します。ローカルネットワークへのアクセスも許可してください。どちらかのアプリがバックグラウンドになると中継は一時停止します。</p>
+<h2>ドラム音がうまく検出されません。</h2>
+<p>「ドラム · マイク」モードを選び、マイクへのアクセスを許可してください。ヘッドホンを使うと、メトロノーム音の誤検出を減らせます。入力機器を変えた場合は、トレーナーの遅延補正も確認してください。</p>
+<h2>メトロノームの音が聞こえません。</h2>
+<p>端末の音量と音声出力先を確認してください。SPARK 内の音量、選択した音、拍ごとのミュート設定も確認できます。</p>
+<h2>購入やサブスクリプションは必要ですか？</h2>
+<p>現在のバージョンはすべての機能が無料です。アプリ内課金やサブスクリプションはありません。</p>
+<h2>マイクの音は保存されますか？</h2>
+<p>音は端末内でリアルタイムに解析し、録音・アップロードしません。任意の利用状況分析は、別途同意した場合にのみ始まります。</p>
+</section>
+<section data-lang="zh-Hans" lang="zh-Hans">
+<h1>SPARK 帮助</h1>
+<p>练习时遇到疑问？欢迎随时联系我们。</p>
+<p>如需帮助或想分享建议，请发送邮件至 <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>。请附上设备型号、iOS 版本、SPARK 版本和问题发生时的简要情况。请勿发送密码或付款信息。</p>
+<h2>如何连接 iPad 和 Apple Watch？</h2>
+<p>你需要一台与 Watch 配对的 iPhone。让 iPhone 和 iPad 位于同一网络，并在前台打开两台设备的 SPARK。在 Apple Watch 设置中启用 iPhone 的 iPad 中继，再在 iPad 上选择该 iPhone 并输入8位代码。请允许本地网络访问。任一应用进入后台后，中继都会暂停。</p>
+<h2>为什么检测不到鼓点？</h2>
+<p>请选择“鼓 · 麦克风”模式并允许麦克风访问。使用耳机可以减少将节拍器声音误识别为鼓点的情况。更换输入设备后，也请重新检查训练器的延迟校准。</p>
+<h2>为什么听不到节拍器声音？</h2>
+<p>请检查设备音量和当前音频输出设备，同时确认 SPARK 内的音量、所选声音和各拍的静音设置。</p>
+<h2>需要购买或订阅吗？</h2>
+<p>当前版本的所有功能均免费，没有 App 内购买或订阅。</p>
+<h2>麦克风声音会保存吗？</h2>
+<p>声音仅在设备上实时分析，不会录音或上传。可选的使用情况分析仅在另行获得你的同意后开启。</p>
+</section>
+<section data-lang="es" lang="es">
+<h1>Ayuda de SPARK</h1>
+<p>¿Una duda mientras practicas? Nos encantará ayudarte.</p>
+<p>Envía tus preguntas o sugerencias a <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>. Incluye el modelo del dispositivo, las versiones de iOS y SPARK y una breve explicación de lo que ocurrió. No envíes contraseñas ni datos de pago.</p>
+<h2>¿Cómo conecto el iPad y el Apple Watch?</h2>
+<p>Necesitas un iPhone enlazado con el Watch. Mantén SPARK abierto en primer plano en iPhone y iPad, en la misma red. En los ajustes de Apple Watch, activa la conexión del iPad en el iPhone. Después, selecciona ese iPhone en el iPad e introduce el código de ocho dígitos. Permite el acceso a la red local. La conexión se pausa cuando cualquiera de las apps pasa a segundo plano.</p>
+<h2>¿Por qué no se detectan mis golpes de batería?</h2>
+<p>Elige Batería · Mic y permite el acceso al micrófono. Los auriculares ayudan a que el clic del metrónomo no se detecte como un golpe. Revisa la calibración de latencia del entrenador si cambias de dispositivo de entrada.</p>
+<h2>¿Por qué no oigo el metrónomo?</h2>
+<p>Comprueba el volumen del dispositivo y la salida de audio. Revisa también el volumen de SPARK, el sonido elegido y los pulsos silenciados.</p>
+<h2>¿Hace falta una compra o suscripción?</h2>
+<p>Todas las funciones de la versión actual son gratuitas. No hay compras dentro de la app ni suscripciones.</p>
+<h2>¿Se guarda el audio del micrófono?</h2>
+<p>El audio se analiza en directo en tu dispositivo, sin grabarlo ni subirlo. El análisis de uso opcional solo se activa con un consentimiento independiente.</p>
+</section>
+<footer><a href="../privacy/">Privacy Policy</a> · <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a></footer>
+</main>
+<script>
+  // Opens in the reader's language when the page has it, else English;
+  // ?lang=ko picks one directly. Without script every language shows.
+  (function () {
+    var codes = ['en', 'ko', 'ja', 'zh-Hans', 'es'];
+    var sections = document.querySelectorAll("section[data-lang]");
+    var buttons = document.querySelectorAll("nav button");
+    function show(code) {
+      sections.forEach(function (s) { s.hidden = s.dataset.lang !== code; });
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === code); });
+      document.documentElement.lang = code;
+    }
+    function pick() {
+      var asked = new URLSearchParams(location.search).get("lang");
+      var wanted = [asked].concat(navigator.languages || [navigator.language]);
+      for (var i = 0; i < wanted.length; i++) {
+        var w = (wanted[i] || "").toLowerCase();
+        for (var j = 0; j < codes.length; j++) {
+          if (w && w.indexOf(codes[j].split("-")[0].toLowerCase()) === 0) return codes[j];
+        }
+      }
+      return "en";
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () { show(b.dataset.lang); });
+    });
+    show(pick());
+  })();
+</script>
+</body>
+</html>
