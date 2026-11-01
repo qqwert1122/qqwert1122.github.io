@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-01",
   "categories": [
     "전체",
     "AI",
@@ -3193,10 +3193,10 @@
           "history_key": "launchlibrary-0",
           "name": "글로벌 우주 발사 건수",
           "name_en": "Global Space Launch Count",
-          "display_value": "27.00 건",
-          "change_pct": 3.8461538461538547,
-          "change_pct_label": "+3.8%",
-          "change_abs_label": "+1.00 건",
+          "display_value": "21.00 건",
+          "change_pct": -22.22222222222222,
+          "change_pct_label": "-22.2%",
+          "change_abs_label": "-6.00 건",
           "unit": "건",
           "history": [
             {
@@ -3402,6 +3402,10 @@
             {
               "date": "2026-09-01",
               "value": 27.0
+            },
+            {
+              "date": "2026-10-01",
+              "value": 21.0
             }
           ]
         },
@@ -4098,10 +4102,10 @@
                 "history_key": "launchlibrary-0",
                 "name": "글로벌 우주 발사 건수",
                 "name_en": "Global Space Launch Count",
-                "display_value": "27.00 건",
-                "change_pct": 3.8461538461538547,
-                "change_pct_label": "+3.8%",
-                "change_abs_label": "+1.00 건",
+                "display_value": "21.00 건",
+                "change_pct": -22.22222222222222,
+                "change_pct_label": "-22.2%",
+                "change_abs_label": "-6.00 건",
                 "unit": "건",
                 "history": [
                   {
@@ -4307,6 +4311,10 @@
                   {
                     "date": "2026-09-01",
                     "value": 27.0
+                  },
+                  {
+                    "date": "2026-10-01",
+                    "value": 21.0
                   }
                 ]
               },
@@ -5499,16 +5507,12 @@
           "history_key": "afdc-stations",
           "name": "미국 EV 충전소 수",
           "name_en": "US EV Charging Stations",
-          "display_value": "91,070.0 곳",
+          "display_value": "91,095.0 곳",
           "change_pct": null,
           "change_pct_label": "n/a",
           "change_abs_label": "n/a",
           "unit": "곳",
           "history": [
-            {
-              "date": "2026-08-31",
-              "value": 88872.0
-            },
             {
               "date": "2026-09-01",
               "value": 88872.0
@@ -5744,6 +5748,10 @@
             {
               "date": "2026-10-31",
               "value": 91070.0
+            },
+            {
+              "date": "2026-11-01",
+              "value": 91095.0
             }
           ]
         }
@@ -16868,16 +16876,12 @@
           "history_key": "openfda-0",
           "name": "FDA 의약품 승인 활동",
           "name_en": "FDA Drug Approval Activity",
-          "display_value": "280.0 건",
-          "change_pct": -23.28767123287672,
-          "change_pct_label": "-23.3%",
-          "change_abs_label": "-85.00 건",
+          "display_value": "262.0 건",
+          "change_pct": -6.428571428571428,
+          "change_pct_label": "-6.4%",
+          "change_abs_label": "-18.00 건",
           "unit": "건",
           "history": [
-            {
-              "date": "2021-10-01",
-              "value": 248.0
-            },
             {
               "date": "2021-11-01",
               "value": 304.0
@@ -17113,6 +17117,10 @@
             {
               "date": "2026-09-01",
               "value": 280.0
+            },
+            {
+              "date": "2026-10-01",
+              "value": 262.0
             }
           ]
         },
@@ -17121,16 +17129,12 @@
           "history_key": "clinicaltrials-0",
           "name": "글로벌 Phase 3 임상 시작",
           "name_en": "Global Phase 3 Trial Starts",
-          "display_value": "270.0 건",
-          "change_pct": 42.10526315789473,
-          "change_pct_label": "+42.1%",
-          "change_abs_label": "+80.00 건",
+          "display_value": "218.0 건",
+          "change_pct": -19.259259259259252,
+          "change_pct_label": "-19.3%",
+          "change_abs_label": "-52.00 건",
           "unit": "건",
           "history": [
-            {
-              "date": "2021-10-01",
-              "value": 185.0
-            },
             {
               "date": "2021-11-01",
               "value": 173.0
@@ -17366,6 +17370,10 @@
             {
               "date": "2026-09-01",
               "value": 270.0
+            },
+            {
+              "date": "2026-10-01",
+              "value": 218.0
             }
           ]
         }
@@ -19883,16 +19891,12 @@
           "history_key": "openfda-0",
           "name": "FDA 의약품 승인 활동",
           "name_en": "FDA Drug Approval Activity",
-          "display_value": "280.0 건",
-          "change_pct": -23.28767123287672,
-          "change_pct_label": "-23.3%",
-          "change_abs_label": "-85.00 건",
+          "display_value": "262.0 건",
+          "change_pct": -6.428571428571428,
+          "change_pct_label": "-6.4%",
+          "change_abs_label": "-18.00 건",
           "unit": "건",
           "history": [
-            {
-              "date": "2021-10-01",
-              "value": 248.0
-            },
             {
               "date": "2021-11-01",
               "value": 304.0
@@ -20128,6 +20132,10 @@
             {
               "date": "2026-09-01",
               "value": 280.0
+            },
+            {
+              "date": "2026-10-01",
+              "value": 262.0
             }
           ]
         },
@@ -20136,16 +20144,12 @@
           "history_key": "clinicaltrials-0",
           "name": "글로벌 Phase 3 임상 시작",
           "name_en": "Global Phase 3 Trial Starts",
-          "display_value": "270.0 건",
-          "change_pct": 42.10526315789473,
-          "change_pct_label": "+42.1%",
-          "change_abs_label": "+80.00 건",
+          "display_value": "218.0 건",
+          "change_pct": -19.259259259259252,
+          "change_pct_label": "-19.3%",
+          "change_abs_label": "-52.00 건",
           "unit": "건",
           "history": [
-            {
-              "date": "2021-10-01",
-              "value": 185.0
-            },
             {
               "date": "2021-11-01",
               "value": 173.0
@@ -20381,6 +20385,10 @@
             {
               "date": "2026-09-01",
               "value": 270.0
+            },
+            {
+              "date": "2026-10-01",
+              "value": 218.0
             }
           ]
         }
@@ -20745,16 +20753,12 @@
                 "history_key": "openfda-0",
                 "name": "FDA 의약품 승인 활동",
                 "name_en": "FDA Drug Approval Activity",
-                "display_value": "280.0 건",
-                "change_pct": -23.28767123287672,
-                "change_pct_label": "-23.3%",
-                "change_abs_label": "-85.00 건",
+                "display_value": "262.0 건",
+                "change_pct": -6.428571428571428,
+                "change_pct_label": "-6.4%",
+                "change_abs_label": "-18.00 건",
                 "unit": "건",
                 "history": [
-                  {
-                    "date": "2021-10-01",
-                    "value": 248.0
-                  },
                   {
                     "date": "2021-11-01",
                     "value": 304.0
@@ -20990,6 +20994,10 @@
                   {
                     "date": "2026-09-01",
                     "value": 280.0
+                  },
+                  {
+                    "date": "2026-10-01",
+                    "value": 262.0
                   }
                 ]
               }
@@ -21016,16 +21024,12 @@
                 "history_key": "openfda-0",
                 "name": "FDA 의약품 승인 활동",
                 "name_en": "FDA Drug Approval Activity",
-                "display_value": "280.0 건",
-                "change_pct": -23.28767123287672,
-                "change_pct_label": "-23.3%",
-                "change_abs_label": "-85.00 건",
+                "display_value": "262.0 건",
+                "change_pct": -6.428571428571428,
+                "change_pct_label": "-6.4%",
+                "change_abs_label": "-18.00 건",
                 "unit": "건",
                 "history": [
-                  {
-                    "date": "2021-10-01",
-                    "value": 248.0
-                  },
                   {
                     "date": "2021-11-01",
                     "value": 304.0
@@ -21261,6 +21265,10 @@
                   {
                     "date": "2026-09-01",
                     "value": 280.0
+                  },
+                  {
+                    "date": "2026-10-01",
+                    "value": 262.0
                   }
                 ]
               },
@@ -21269,16 +21277,12 @@
                 "history_key": "clinicaltrials-0",
                 "name": "글로벌 Phase 3 임상 시작",
                 "name_en": "Global Phase 3 Trial Starts",
-                "display_value": "270.0 건",
-                "change_pct": 42.10526315789473,
-                "change_pct_label": "+42.1%",
-                "change_abs_label": "+80.00 건",
+                "display_value": "218.0 건",
+                "change_pct": -19.259259259259252,
+                "change_pct_label": "-19.3%",
+                "change_abs_label": "-52.00 건",
                 "unit": "건",
                 "history": [
-                  {
-                    "date": "2021-10-01",
-                    "value": 185.0
-                  },
                   {
                     "date": "2021-11-01",
                     "value": 173.0
@@ -21514,6 +21518,10 @@
                   {
                     "date": "2026-09-01",
                     "value": 270.0
+                  },
+                  {
+                    "date": "2026-10-01",
+                    "value": 218.0
                   }
                 ]
               }
