@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-07",
+  "updated_at": "2026-11-08",
   "categories": [
     "전체",
     "AI",
@@ -3414,10 +3414,10 @@
           "history_key": "equity-RKLB",
           "name": "Rocket Lab(RKLB)",
           "name_en": "Rocket Lab(RKLB)",
-          "display_value": "$45.99",
-          "change_pct": -12.18254226377995,
-          "change_pct_label": "-12.2%",
-          "change_abs_label": "$-6.38",
+          "display_value": "$53.07",
+          "change_pct": 15.394646136036961,
+          "change_pct_label": "+15.4%",
+          "change_abs_label": "$+7.08",
           "unit": "$",
           "history": [
             {
@@ -3658,7 +3658,7 @@
             },
             {
               "date": "2026-11-06",
-              "value": 48.67499923706055
+              "value": 53.06999969482422
             }
           ]
         }
@@ -3669,9 +3669,9 @@
           "label": "Rocket Lab(RKLB)",
           "label_en": "Rocket Lab(RKLB)",
           "metric_id": "f23893f07b0e",
-          "display_value": "$45.99",
-          "change_pct": -12.18254226377995,
-          "change_pct_label": "-12.2%"
+          "display_value": "$53.07",
+          "change_pct": 15.394646136036961,
+          "change_pct_label": "+15.4%"
         },
         {
           "symbol": "LMT",
@@ -4323,10 +4323,10 @@
                 "history_key": "equity-RKLB",
                 "name": "Rocket Lab(RKLB)",
                 "name_en": "Rocket Lab(RKLB)",
-                "display_value": "$45.99",
-                "change_pct": -12.18254226377995,
-                "change_pct_label": "-12.2%",
-                "change_abs_label": "$-6.38",
+                "display_value": "$53.07",
+                "change_pct": 15.394646136036961,
+                "change_pct_label": "+15.4%",
+                "change_abs_label": "$+7.08",
                 "unit": "$",
                 "history": [
                   {
@@ -4567,7 +4567,7 @@
                   },
                   {
                     "date": "2026-11-06",
-                    "value": 48.67499923706055
+                    "value": 53.06999969482422
                   }
                 ]
               }
@@ -5507,16 +5507,12 @@
           "history_key": "afdc-stations",
           "name": "미국 EV 충전소 수",
           "name_en": "US EV Charging Stations",
-          "display_value": "91,337.0 곳",
+          "display_value": "91,383.0 곳",
           "change_pct": null,
           "change_pct_label": "n/a",
           "change_abs_label": "n/a",
           "unit": "곳",
           "history": [
-            {
-              "date": "2026-09-07",
-              "value": 89156.0
-            },
             {
               "date": "2026-09-08",
               "value": 89161.0
@@ -5752,6 +5748,10 @@
             {
               "date": "2026-11-07",
               "value": 91337.0
+            },
+            {
+              "date": "2026-11-08",
+              "value": 91383.0
             }
           ]
         }
@@ -5771,18 +5771,18 @@
           "label": "Uber(UBER)",
           "label_en": "Uber(UBER)",
           "metric_id": "d3774ca8e71c",
-          "display_value": "$68.78",
-          "change_pct": -1.5600456911939675,
-          "change_pct_label": "-1.6%"
+          "display_value": "$68.59",
+          "change_pct": -0.27624664841291446,
+          "change_pct_label": "-0.3%"
         },
         {
           "symbol": "MBLY",
           "label": "Mobileye(MBLY)",
           "label_en": "Mobileye(MBLY)",
           "metric_id": "37f3343d0417",
-          "display_value": "$5.13",
-          "change_pct": -3.93258487165401,
-          "change_pct_label": "-3.9%"
+          "display_value": "$5.73",
+          "change_pct": 11.695904312820037,
+          "change_pct_label": "+11.7%"
         },
         {
           "symbol": "QCOM",
@@ -5930,9 +5930,9 @@
                 "label": "Mobileye(MBLY)",
                 "label_en": "Mobileye(MBLY)",
                 "metric_id": "37f3343d0417",
-                "display_value": "$5.13",
-                "change_pct": -3.93258487165401,
-                "change_pct_label": "-3.9%"
+                "display_value": "$5.73",
+                "change_pct": 11.695904312820037,
+                "change_pct_label": "+11.7%"
               }
             ]
           },
@@ -21952,10 +21952,10 @@
           "history_key": "equity-GEV",
           "name": "GE Vernova(GEV)",
           "name_en": "GE Vernova(GEV)",
-          "display_value": "$770.5",
-          "change_pct": -7.482920409375183,
-          "change_pct_label": "-7.5%",
-          "change_abs_label": "$-62.32",
+          "display_value": "$774.1",
+          "change_pct": 0.4672198336570066,
+          "change_pct_label": "+0.5%",
+          "change_abs_label": "$+3.60",
           "unit": "$",
           "history": [
             {
@@ -22196,7 +22196,7 @@
             },
             {
               "date": "2026-11-06",
-              "value": 801.3099975585938
+              "value": 774.1099853515625
             }
           ]
         }
@@ -22207,9 +22207,9 @@
           "label": "GE Vernova(GEV)",
           "label_en": "GE Vernova(GEV)",
           "metric_id": "5c34f945ce51",
-          "display_value": "$770.5",
-          "change_pct": -7.482920409375183,
-          "change_pct_label": "-7.5%"
+          "display_value": "$774.1",
+          "change_pct": 0.4672198336570066,
+          "change_pct_label": "+0.5%"
         }
       ],
       "breakdown": {
@@ -22605,10 +22605,10 @@
                 "history_key": "equity-GEV",
                 "name": "GE Vernova(GEV)",
                 "name_en": "GE Vernova(GEV)",
-                "display_value": "$770.5",
-                "change_pct": -7.482920409375183,
-                "change_pct_label": "-7.5%",
-                "change_abs_label": "$-62.32",
+                "display_value": "$774.1",
+                "change_pct": 0.4672198336570066,
+                "change_pct_label": "+0.5%",
+                "change_abs_label": "$+3.60",
                 "unit": "$",
                 "history": [
                   {
@@ -22849,7 +22849,7 @@
                   },
                   {
                     "date": "2026-11-06",
-                    "value": 801.3099975585938
+                    "value": 774.1099853515625
                   }
                 ]
               }
