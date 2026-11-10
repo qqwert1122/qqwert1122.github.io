@@ -34,6 +34,7 @@
 <button type="button" data-lang="ko">한국어</button>
 <button type="button" data-lang="ja">日本語</button>
 <button type="button" data-lang="zh-Hans">简体中文</button>
+<button type="button" data-lang="zh-Hant">繁體中文</button>
 <button type="button" data-lang="es">Español</button>
 </nav>
 <section data-lang="ko" lang="ko">
@@ -96,6 +97,21 @@
 <h2>麦克风声音会保存吗？</h2>
 <p>声音仅在设备上实时分析，不会录音或上传。可选的使用情况分析仅在另行获得你的同意后开启。</p>
 </section>
+<section data-lang="zh-Hant" lang="zh-Hant">
+<h1>SPARK 支援</h1>
+<p>練習時遇到問題？歡迎隨時與我們聯絡。</p>
+<p>如需協助或想分享建議，請寄信至 <a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>。請附上裝置型號、iOS 版本、SPARK 版本，以及問題發生時的簡要情況，方便我們確認。請勿傳送密碼或付款資訊。</p>
+<h2>如何連接 iPad 與 Apple Watch？</h2>
+<p>你需要一部已與 Watch 配對的 iPhone。請將 iPhone 與 iPad 連接至同一個網路，並讓兩部裝置上的 SPARK 都保持在前景開啟。在 Apple Watch 設定中啟用 iPhone 的 iPad 中繼，再於 iPad 選擇該 iPhone，輸入顯示的 8 位數代碼。也請允許區域網路存取。任一 App 進入背景時，中繼都會暫停。</p>
+<h2>為什麼偵測不到鼓點？</h2>
+<p>請選擇「鼓 · 麥克風」模式，並允許麥克風存取。使用耳機可以減少將節拍器聲音誤判為鼓點的情況。更換輸入裝置後，也請重新確認訓練器的延遲校準。</p>
+<h2>為什麼聽不到節拍器聲音？</h2>
+<p>請檢查裝置音量與目前的音訊輸出裝置，同時確認 SPARK 內的音量、所選音色，以及各拍的靜音設定。</p>
+<h2>需要購買或訂閱嗎？</h2>
+<p>目前版本的所有功能皆可免費使用，沒有 App 內購買或訂閱。</p>
+<h2>麥克風聲音會被儲存嗎？</h2>
+<p>聲音僅在裝置上即時分析，不會錄音或上傳。選用的 App 使用情況分析只會在另行取得你的同意後啟用。</p>
+</section>
 <section data-lang="es" lang="es">
 <h1>Ayuda de SPARK</h1>
 <p>¿Una duda mientras practicas? Nos encantará ayudarte.</p>
@@ -117,7 +133,7 @@
   // Opens in the reader's language when the page has it, else English;
   // ?lang=ko picks one directly. Without script every language shows.
   (function () {
-    var codes = ['en', 'ko', 'ja', 'zh-Hans', 'es'];
+    var codes = ['en', 'ko', 'ja', 'zh-Hans', 'zh-Hant', 'es'];
     var sections = document.querySelectorAll("section[data-lang]");
     var buttons = document.querySelectorAll("nav button");
     function show(code) {
@@ -125,19 +141,35 @@
       buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === code); });
       document.documentElement.lang = code;
     }
+    function resolveLanguage(tag) {
+      var value = (tag || "").trim().replace(/_/g, "-").toLowerCase();
+      var exact = codes.find(function (code) { return code.toLowerCase() === value; });
+      if (exact) return exact;
+      var parts = value.split("-");
+      if (parts[0] === "zh") {
+        if (parts.indexOf("hant") !== -1) return "zh-Hant";
+        if (parts.indexOf("hans") !== -1) return "zh-Hans";
+        return parts.some(function (part) { return ["tw", "hk", "mo"].indexOf(part) !== -1; })
+          ? "zh-Hant" : "zh-Hans";
+      }
+      return codes.indexOf(parts[0]) !== -1 ? parts[0] : null;
+    }
     function pick() {
       var asked = new URLSearchParams(location.search).get("lang");
       var wanted = [asked].concat(navigator.languages || [navigator.language]);
       for (var i = 0; i < wanted.length; i++) {
-        var w = (wanted[i] || "").toLowerCase();
-        for (var j = 0; j < codes.length; j++) {
-          if (w && w.indexOf(codes[j].split("-")[0].toLowerCase()) === 0) return codes[j];
-        }
+        var code = resolveLanguage(wanted[i]);
+        if (code) return code;
       }
       return "en";
     }
     buttons.forEach(function (b) {
-      b.addEventListener("click", function () { show(b.dataset.lang); });
+      b.addEventListener("click", function () {
+        var url = new URL(location.href);
+        url.searchParams.set("lang", b.dataset.lang);
+        history.replaceState(null, "", url);
+        show(b.dataset.lang);
+      });
     });
     show(pick());
   })();
