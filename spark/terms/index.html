@@ -34,6 +34,7 @@
 <button type="button" data-lang="ko">한국어</button>
 <button type="button" data-lang="ja">日本語</button>
 <button type="button" data-lang="zh-Hans">简体中文</button>
+<button type="button" data-lang="zh-Hant">繁體中文</button>
 <button type="button" data-lang="es">Español</button>
 </nav>
 <section data-lang="en" lang="en">
@@ -104,6 +105,23 @@
 <p>条款变更时，我们会通过应用或相关说明进行通知。如对本条款有疑问，请联系 luceforge studio(<a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>)。</p>
 <p>生效日期：2026-10-30</p>
 </section>
+<section data-lang="zh-Hant" lang="zh-Hant">
+<h1>SPARK 服務條款</h1>
+<p>本條款適用於 luceforge studio(以下簡稱&quot;我們&quot;)提供的 SPARK App(以下簡稱&quot;本 App&quot;)。</p>
+<h2>1. 服務說明</h2>
+<p>SPARK 在 iPhone、iPad 和 Apple Watch 上提供節拍器、節奏練習工具及相關功能。使用本 App 即表示你同意本條款。</p>
+<h2>2. 使用者責任</h2>
+<p>請在遵守相關法律法規並尊重他人權利的前提下使用本 App。播放時值和分析結果可能因裝置和音訊環境而異，在重要的演出或訓練中請自行確認結果。</p>
+<h2>3. 付費功能</h2>
+<p>如本 App 提供付費功能，購買和退款遵循你購買時所用 App Store 的支付及退款政策。你可以透過&quot;回復購買&quot;重新檢視該商店帳戶的購買記錄。</p>
+<h2>4. 個人資訊</h2>
+<p>選用使用分析僅在單獨同意後透過 Google Analytics for Firebase 進行，每日和每週營運報告的彙總數字可能傳送至營運者的私密 Slack 頻道。拒絕或撤回不限制功能；同意本條款不等於同意分析。資料項目、目的、服務商、境外處理、儲存期限和選擇見隱私政策及設定 &gt; 說明 &gt; App 使用資料分析。</p>
+<h2>5. 服務變更與提供</h2>
+<p>出於功能改進、安全或營運需要，我們可能會更改 App 功能或暫停提供服務。在法律允許的範圍內，本 App 按現有狀態提供，我們不對因使用本 App 而產生的間接損失承擔責任。</p>
+<h2>6. 條款變更與聯絡</h2>
+<p>條款變更時，我們會透過 App 或相關說明進行通知。如對本條款有疑問，請聯絡 luceforge studio(<a href="mailto:luceforge.studio@gmail.com">luceforge.studio@gmail.com</a>)。</p>
+<p>生效日期：2026-10-30</p>
+</section>
 <section data-lang="es" lang="es">
 <h1>Términos del servicio de SPARK</h1>
 <p>Estos términos se aplican a la app SPARK (la &quot;app&quot;), ofrecida por luceforge studio (&quot;nosotros&quot;).</p>
@@ -127,7 +145,7 @@
   // Opens in the reader's language when the page has it, else English;
   // ?lang=ko picks one directly. Without script every language shows.
   (function () {
-    var codes = ['en', 'ko', 'ja', 'zh-Hans', 'es'];
+    var codes = ['en', 'ko', 'ja', 'zh-Hans', 'zh-Hant', 'es'];
     var sections = document.querySelectorAll("section[data-lang]");
     var buttons = document.querySelectorAll("nav button");
     function show(code) {
@@ -140,6 +158,12 @@
       var wanted = [asked].concat(navigator.languages || [navigator.language]);
       for (var i = 0; i < wanted.length; i++) {
         var w = (wanted[i] || "").toLowerCase();
+        // Chinese without a script follows its region, as in the app.
+        if (w.indexOf("zh") === 0) {
+          if (/-hant(-|$)/.test(w)) return "zh-Hant";
+          if (/-hans(-|$)/.test(w)) return "zh-Hans";
+          return /-(tw|hk|mo)(-|$)/.test(w) ? "zh-Hant" : "zh-Hans";
+        }
         for (var j = 0; j < codes.length; j++) {
           if (w && w.indexOf(codes[j].split("-")[0].toLowerCase()) === 0) return codes[j];
         }
