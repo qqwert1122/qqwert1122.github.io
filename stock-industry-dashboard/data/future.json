@@ -8724,20 +8724,20 @@
               {
                 "symbol": "000660.KS",
                 "label": "SK하이닉스(000660.KS)",
-                "label_en": "SK(000660.KS)",
+                "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "1,162,000원",
-                "change_pct": -4.440789473684214,
-                "change_pct_label": "-4.4%"
+                "display_value": "1,125,000원",
+                "change_pct": -7.483552631578949,
+                "change_pct_label": "-7.5%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
-                "label_en": "(005930.KS)",
+                "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "200,250원",
-                "change_pct": -2.7912621359223344,
-                "change_pct_label": "-2.8%"
+                "display_value": "196,100원",
+                "change_pct": -4.805825242718442,
+                "change_pct_label": "-4.8%"
               },
               {
                 "symbol": "MU",
@@ -12514,11 +12514,11 @@
         {
           "symbol": "005930.KS",
           "label": "삼성전자(005930.KS)",
-          "label_en": "(005930.KS)",
+          "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "200,250원",
-          "change_pct": -2.7912621359223344,
-          "change_pct_label": "-2.8%"
+          "display_value": "196,100원",
+          "change_pct": -4.805825242718442,
+          "change_pct_label": "-4.8%"
         }
       ],
       "breakdown": {
@@ -24741,6 +24741,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.fda.gov/food/food-ingredients-packaging/human-food-made-cultured-animal-cells",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/meat/cultivated-meat-and-poultry",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -24811,6 +24816,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.fda.gov/drugs/drug-development-tool-ddt-qualification-programs/biomarker-qualification-program",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.nia.nih.gov/research/dab/biological-resources-aging-research",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -24836,6 +24846,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.fda.gov/media/182567/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -24846,12 +24861,62 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.fda.gov/media/120362/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
       "kind": "reading_link",
       "id": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.ema.europa.eu/en/human-regulatory-overview/advanced-therapy-medicinal-products-overview",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/consumers/consumer-updates/how-gene-therapy-can-cure-or-treat-diseases",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.ema.europa.eu/en/human-regulatory-overview/advanced-therapy-medicinal-products-overview/advanced-therapies-research-development",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/vaccines-blood-biologics/biologics-guidances/cellular-gene-therapy-guidances",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/191966/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/113760/download",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.fda.gov/media/113768/download",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -24867,6 +24932,11 @@
     {
       "kind": "reading_link",
       "id": "https://euro-fusion.org/programme/demo/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nrc.gov/materials/fusion",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
