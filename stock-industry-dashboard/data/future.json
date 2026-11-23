@@ -9166,20 +9166,20 @@
               {
                 "symbol": "000660.KS",
                 "label": "SK하이닉스(000660.KS)",
-                "label_en": "SK(000660.KS)",
+                "label_en": "SK hynix",
                 "metric_id": "4bffa8579327",
-                "display_value": "1,049,000원",
-                "change_pct": -5.750224618149147,
-                "change_pct_label": "-5.8%"
+                "display_value": "1,089,000원",
+                "change_pct": -2.156334231805934,
+                "change_pct_label": "-2.2%"
               },
               {
                 "symbol": "005930.KS",
                 "label": "삼성전자(005930.KS)",
-                "label_en": "(005930.KS)",
+                "label_en": "Samsung Electronics",
                 "metric_id": "73605cb1caf0",
-                "display_value": "173,200원",
-                "change_pct": -5.4068814855270375,
-                "change_pct_label": "-5.4%"
+                "display_value": "177,800원",
+                "change_pct": -2.894593118514477,
+                "change_pct_label": "-2.9%"
               },
               {
                 "symbol": "MU",
@@ -12956,11 +12956,11 @@
         {
           "symbol": "005930.KS",
           "label": "삼성전자(005930.KS)",
-          "label_en": "(005930.KS)",
+          "label_en": "005930.KS",
           "metric_id": "73605cb1caf0",
-          "display_value": "173,200원",
-          "change_pct": -5.4068814855270375,
-          "change_pct_label": "-5.4%"
+          "display_value": "177,800원",
+          "change_pct": -2.894593118514477,
+          "change_pct_label": "-2.9%"
         }
       ],
       "breakdown": {
@@ -25233,6 +25233,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://www.nationalacademies.org/read/26144/chapter/2",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.nia.nih.gov/research/dab/nathan-shock-centers-excellence-basic-biology-aging",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -25308,7 +25313,17 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://nap.nationalacademies.org/catalog/25259/negative-emissions-technologies-and-reliable-sequestration-a-research-agenda",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://nap.nationalacademies.org/read/25259/chapter/1",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
     {
@@ -25368,6 +25383,11 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://nap.nationalacademies.org/catalog/25991/bringing-fusion-to-the-us-grid",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.dni.gov/index.php/gt2040-home",
       "message": "링크 점검이 2회 연속 실패했습니다."
     },
@@ -25383,7 +25403,17 @@
     },
     {
       "kind": "reading_link",
+      "id": "https://nap.nationalacademies.org/catalog/25762/reflecting-sunlight-recommendations-for-solar-geoengineering-research-and-research-governance",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
       "id": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/",
+      "message": "링크 점검이 2회 연속 실패했습니다."
+    },
+    {
+      "kind": "reading_link",
+      "id": "https://www.nationalacademies.org/our-work/developing-a-research-agenda-and-research-governance-approaches-for-climate-intervention-strategies-that-reflect-sunlight-to-cool-earth",
       "message": "링크 점검이 2회 연속 실패했습니다."
     }
   ]
